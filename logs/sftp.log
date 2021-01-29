@@ -1,0 +1,1730 @@
+Dec 25 03:55:04 10.71.61.0 tmp103206212-665 Connection from 10.71.61.0 port 44674 on 74.208.56.25 port 22
+Dec 25 03:55:04 10.71.61.0 tmp103206212-665 Accepted password for tmp103206212-665 from 10.71.61.0 port 44674 ssh2
+Dec 25 03:55:05 10.71.61.0 tmp103206212-665 Starting session: subsystem 'sftp' for tmp103206212-665 from 10.71.61.0 port 44674 id 0
+Dec 25 03:55:05 10.71.61.0 tmp103206212-665 session opened for local user tmp103206212-665 from [10.71.61.0]
+Dec 25 03:55:22 10.71.61.0 tmp103206212-3692 Connection from 10.71.61.0 port 50890 on 74.208.56.25 port 22
+Dec 25 03:55:23 10.71.61.0 tmp103206212-3692 Accepted password for tmp103206212-3692 from 10.71.61.0 port 50890 ssh2
+Dec 25 03:55:24 10.71.61.0 tmp103206212-665 mkdir name "/colibrilab" mode 0777
+Dec 25 03:55:24 10.71.61.0 tmp103206212-665 [10.71.61.0|mkdir|0|0|511|0|0|2f636f6c696272696c6162|]
+Dec 25 04:13:09 10.71.61.0 tmp103206212-802 Connection from 10.71.61.0 port 62038 on 74.208.56.25 port 22
+Dec 25 04:13:10 10.71.61.0 tmp103206212-802 Accepted password for tmp103206212-802 from 10.71.61.0 port 62038 ssh2
+Dec 25 04:13:10 10.71.61.0 tmp103206212-802 Starting session: subsystem 'sftp' for tmp103206212-802 from 10.71.61.0 port 62038 id 0
+Dec 25 04:13:10 10.71.61.0 tmp103206212-802 session opened for local user tmp103206212-802 from [10.71.61.0]
+Dec 25 04:13:18 10.71.61.0 tmp103206212-202 Connection from 10.71.61.0 port 10322 on 74.208.56.25 port 22
+Dec 25 04:13:18 10.71.61.0 tmp103206212-202 Accepted password for tmp103206212-202 from 10.71.61.0 port 10322 ssh2
+Dec 25 04:30:27 10.71.60.0 u103206212 Connection from 10.71.60.0 port 38948 on 74.208.56.25 port 22
+Dec 25 04:30:38 10.71.60.0 u103206212 Accepted password for u103206212 from 10.71.60.0 port 38948 ssh2
+Dec 25 04:30:38 10.71.60.0 u103206212 Starting session: subsystem 'sftp' for u103206212 from 10.71.60.0 port 38948 id 0
+Dec 25 04:30:38 10.71.60.0 u103206212 session opened for local user u103206212 from [10.71.60.0]
+Dec 25 04:37:45 10.71.60.0 u103206212 Connection from 10.71.60.0 port 40154 on 74.208.56.25 port 22
+Dec 25 04:37:47 10.71.60.0 u103206212 Accepted password for u103206212 from 10.71.60.0 port 40154 ssh2
+Dec 25 04:37:47 10.71.60.0 u103206212 Starting session: subsystem 'sftp' for u103206212 from 10.71.60.0 port 40154 id 0
+Dec 25 04:37:47 10.71.60.0 u103206212 session opened for local user u103206212 from [10.71.60.0]
+Dec 25 04:37:49 10.71.60.0 u103206212 open "/colibrilab/index.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:37:49 10.71.60.0 u103206212 close "/colibrilab/index.php" bytes read 0 written 28
+Dec 25 04:37:49 10.71.60.0 u103206212 [10.71.60.0|put|0|28|0|0|0|2f636f6c696272696c61622f696e6465782e706870|]
+Dec 25 04:38:50 10.71.60.0 u103206212 session closed for local user u103206212 from [10.71.60.0]
+Dec 25 04:38:50 10.71.60.0 u103206212 Connection closed by 10.71.60.0 port 40154
+Dec 25 04:38:56 10.71.60.0 u103206212 Connection from 10.71.60.0 port 11550 on 74.208.56.25 port 22
+Dec 25 04:38:58 10.71.60.0 u103206212 Accepted password for u103206212 from 10.71.60.0 port 11550 ssh2
+Dec 25 04:38:58 10.71.60.0 u103206212 Starting session: subsystem 'sftp' for u103206212 from 10.71.60.0 port 11550 id 0
+Dec 25 04:38:58 10.71.60.0 u103206212 session opened for local user u103206212 from [10.71.60.0]
+Dec 25 04:39:00 10.71.60.0 u103206212 open "/index.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:39:00 10.71.60.0 u103206212 close "/index.php" bytes read 0 written 28
+Dec 25 04:39:00 10.71.60.0 u103206212 [10.71.60.0|put|0|28|0|0|0|2f696e6465782e706870|]
+Dec 25 04:40:00 10.71.60.0 u103206212 session closed for local user u103206212 from [10.71.60.0]
+Dec 25 04:40:00 10.71.60.0 u103206212 Connection closed by 10.71.60.0 port 11550
+Dec 25 04:41:44 - u103206212 remove name "/index.php"
+Dec 25 04:41:44 - u103206212 [10.71.60.105|rm|0|0|0|0|0|2f696e6465782e706870|]
+Dec 25 04:41:44 - u103206212 remove name "/index.html"
+Dec 25 04:41:44 - u103206212 [10.71.60.105|rm|0|0|0|0|0|2f696e6465782e68746d6c|]
+Dec 25 04:41:44 - u103206212 remove name "/colibrilab/index.php"
+Dec 25 04:41:44 - u103206212 [10.71.60.105|rm|0|0|0|0|0|2f636f6c696272696c61622f696e6465782e706870|]
+Dec 25 04:41:45 - u103206212 rmdir name "/colibrilab"
+Dec 25 04:41:45 - u103206212 [10.71.60.105|rmdir|0|0|0|0|0|2f636f6c696272696c6162|]
+Dec 25 04:41:47 - u103206212 remove name "/logs/.htaccess"
+Dec 25 04:41:47 - u103206212 [10.71.60.105|rm|0|0|0|0|13|2f6c6f67732f2e6874616363657373|]
+Dec 25 04:41:47 - u103206212 sent status Permission denied
+Dec 25 04:41:47 - u103206212 remove name "/logs/info.pl"
+Dec 25 04:41:47 - u103206212 [10.71.60.105|rm|0|0|0|0|13|2f6c6f67732f696e666f2e706c|]
+Dec 25 04:41:47 - u103206212 sent status Permission denied
+Dec 25 04:41:48 - u103206212 remove name "/logs/info.php5"
+Dec 25 04:41:48 - u103206212 [10.71.60.105|rm|0|0|0|0|13|2f6c6f67732f696e666f2e70687035|]
+Dec 25 04:41:48 - u103206212 sent status Permission denied
+Dec 25 04:41:48 - u103206212 remove name "/logs/info.py"
+Dec 25 04:41:48 - u103206212 [10.71.60.105|rm|0|0|0|0|13|2f6c6f67732f696e666f2e7079|]
+Dec 25 04:41:48 - u103206212 sent status Permission denied
+Dec 25 04:41:49 - u103206212 remove name "/logs/traffic.db"
+Dec 25 04:41:49 - u103206212 [10.71.60.105|rm|0|0|0|0|13|2f6c6f67732f747261666669632e6462|]
+Dec 25 04:41:49 - u103206212 sent status Permission denied
+Dec 25 04:41:49 - u103206212 remove name "/logs/last_traffic"
+Dec 25 04:41:49 - u103206212 [10.71.60.105|rm|0|0|0|0|13|2f6c6f67732f6c6173745f74726166666963|]
+Dec 25 04:41:49 - u103206212 sent status Permission denied
+Dec 25 04:41:49 - u103206212 remove name "/logs/access.log.51.7.gz"
+Dec 25 04:41:49 - u103206212 [10.71.60.105|rm|0|0|0|0|13|2f6c6f67732f6163636573732e6c6f672e35312e372e677a|]
+Dec 25 04:41:49 - u103206212 sent status Permission denied
+Dec 25 04:41:50 - u103206212 remove name "/logs/access.log.52.4.gz"
+Dec 25 04:41:50 - u103206212 [10.71.60.105|rm|0|0|0|0|13|2f6c6f67732f6163636573732e6c6f672e35322e342e677a|]
+Dec 25 04:41:50 - u103206212 sent status Permission denied
+Dec 25 04:41:50 - u103206212 remove name "/logs/access.log.52.5"
+Dec 25 04:41:50 - u103206212 [10.71.60.105|rm|0|0|0|0|13|2f6c6f67732f6163636573732e6c6f672e35322e35|]
+Dec 25 04:41:50 - u103206212 sent status Permission denied
+Dec 25 04:41:51 - u103206212 remove name "/logs/access.log.current"
+Dec 25 04:41:51 - u103206212 [10.71.60.105|rm|0|0|0|0|13|2f6c6f67732f6163636573732e6c6f672e63757272656e74|]
+Dec 25 04:41:51 - u103206212 sent status Permission denied
+Dec 25 04:41:51 - u103206212 remove name "/logs/sftp.log"
+Dec 25 04:41:51 - u103206212 [10.71.60.105|rm|0|0|0|0|13|2f6c6f67732f736674702e6c6f67|]
+Dec 25 04:41:51 - u103206212 sent status Permission denied
+Dec 25 04:41:53 - u103206212 remove name "/logs/traffic.html/.htaccess"
+Dec 25 04:41:53 - u103206212 [10.71.60.105|rm|0|0|0|0|13|2f6c6f67732f747261666669632e68746d6c2f2e6874616363657373|]
+Dec 25 04:41:53 - u103206212 sent status Permission denied
+Dec 25 04:41:54 - u103206212 remove name "/logs/traffic.html/index.html"
+Dec 25 04:41:54 - u103206212 [10.71.60.105|rm|0|0|0|0|13|2f6c6f67732f747261666669632e68746d6c2f696e6465782e68746d6c|]
+Dec 25 04:41:54 - u103206212 sent status Permission denied
+Dec 25 04:41:54 - u103206212 remove name "/logs/traffic.html/12.html"
+Dec 25 04:41:54 - u103206212 [10.71.60.105|rm|0|0|0|0|13|2f6c6f67732f747261666669632e68746d6c2f31322e68746d6c|]
+Dec 25 04:41:54 - u103206212 sent status Permission denied
+Dec 25 04:41:55 - u103206212 remove name "/logs/traffic.html/.md5sums"
+Dec 25 04:41:55 - u103206212 [10.71.60.105|rm|0|0|0|0|13|2f6c6f67732f747261666669632e68746d6c2f2e6d643573756d73|]
+Dec 25 04:41:55 - u103206212 sent status Permission denied
+Dec 25 04:41:55 - u103206212 rmdir name "/logs/traffic.html"
+Dec 25 04:41:55 - u103206212 [10.71.60.105|rmdir|0|0|0|0|13|2f6c6f67732f747261666669632e68746d6c|]
+Dec 25 04:41:55 - u103206212 sent status Permission denied
+Dec 25 04:41:55 - u103206212 rmdir name "/logs"
+Dec 25 04:41:55 - u103206212 [10.71.60.105|rmdir|0|0|0|0|39|2f6c6f6773|]
+Dec 25 04:41:55 - u103206212 sent status Failure
+Dec 25 04:42:10 10.71.60.0 u103206212 Connection from 10.71.60.0 port 30532 on 74.208.56.25 port 22
+Dec 25 04:42:11 10.71.60.0 u103206212 Accepted password for u103206212 from 10.71.60.0 port 30532 ssh2
+Dec 25 04:42:10 10.71.60.0 u103206212 Connection from 10.71.60.0 port 30524 on 74.208.56.25 port 22
+Dec 25 04:42:11 10.71.60.0 u103206212 Accepted password for u103206212 from 10.71.60.0 port 30524 ssh2
+Dec 25 04:42:12 10.71.60.0 u103206212 Starting session: subsystem 'sftp' for u103206212 from 10.71.60.0 port 30532 id 0
+Dec 25 04:42:12 10.71.60.0 u103206212 session opened for local user u103206212 from [10.71.60.0]
+Dec 25 04:42:12 10.71.60.0 u103206212 Starting session: subsystem 'sftp' for u103206212 from 10.71.60.0 port 30524 id 0
+Dec 25 04:42:12 10.71.60.0 u103206212 session opened for local user u103206212 from [10.71.60.0]
+Dec 25 04:42:13 10.71.60.0 u103206212 open "/call-phone.svg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:42:14 10.71.60.0 u103206212 close "/call-phone.svg" bytes read 0 written 915
+Dec 25 04:42:14 10.71.60.0 u103206212 [10.71.60.0|put|1|915|0|0|0|2f63616c6c2d70686f6e652e737667|]
+Dec 25 04:42:14 10.71.60.0 u103206212 open "/background-colibri.png" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:42:14 10.71.60.0 u103206212 open "/call_back.svg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:42:14 10.71.60.0 u103206212 close "/call_back.svg" bytes read 0 written 1852
+Dec 25 04:42:14 10.71.60.0 u103206212 [10.71.60.0|put|0|1852|0|0|0|2f63616c6c5f6261636b2e737667|]
+Dec 25 04:42:15 10.71.60.0 u103206212 open "/colibribg.png" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:42:16 10.71.60.0 u103206212 close "/colibribg.png" bytes read 0 written 399432
+Dec 25 04:42:16 10.71.60.0 u103206212 [10.71.60.0|put|1|399432|0|0|0|2f636f6c6962726962672e706e67|]
+Dec 25 04:42:17 10.71.60.0 u103206212 close "/background-colibri.png" bytes read 0 written 414245
+Dec 25 04:42:17 10.71.60.0 u103206212 [10.71.60.0|put|3|414245|0|0|0|2f6261636b67726f756e642d636f6c696272692e706e67|]
+Dec 25 04:42:17 10.71.60.0 u103206212 open "/debug.log" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:42:17 10.71.60.0 u103206212 open "/gps.svg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:42:17 10.71.60.0 u103206212 close "/debug.log" bytes read 0 written 3699
+Dec 25 04:42:17 10.71.60.0 u103206212 [10.71.60.0|put|0|3699|0|0|0|2f64656275672e6c6f67|]
+Dec 25 04:42:17 10.71.60.0 u103206212 close "/gps.svg" bytes read 0 written 535
+Dec 25 04:42:17 10.71.60.0 u103206212 [10.71.60.0|put|0|535|0|0|0|2f6770732e737667|]
+Dec 25 04:42:18 10.71.60.0 u103206212 open "/index.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:42:18 10.71.60.0 u103206212 open "/language.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:42:18 10.71.60.0 u103206212 close "/index.php" bytes read 0 written 94613
+Dec 25 04:42:18 10.71.60.0 u103206212 [10.71.60.0|put|0|94613|0|0|0|2f696e6465782e706870|]
+Dec 25 04:42:18 10.71.60.0 u103206212 open "/logo.png" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:42:19 10.71.60.0 u103206212 close "/language.php" bytes read 0 written 38334
+Dec 25 04:42:19 10.71.60.0 u103206212 [10.71.60.0|put|1|38334|0|0|0|2f6c616e67756167652e706870|]
+Dec 25 04:42:19 10.71.60.0 u103206212 close "/logo.png" bytes read 0 written 21142
+Dec 25 04:42:19 10.71.60.0 u103206212 [10.71.60.0|put|1|21142|0|0|0|2f6c6f676f2e706e67|]
+Dec 25 04:42:19 10.71.60.0 u103206212 open "/mail_2.svg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:42:19 10.71.60.0 u103206212 open "/mail_content.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:42:20 10.71.60.0 u103206212 close "/mail_2.svg" bytes read 0 written 430
+Dec 25 04:42:20 10.71.60.0 u103206212 [10.71.60.0|put|1|430|0|0|0|2f6d61696c5f322e737667|]
+Dec 25 04:42:20 10.71.60.0 u103206212 close "/mail_content.php" bytes read 0 written 6830
+Dec 25 04:42:20 10.71.60.0 u103206212 [10.71.60.0|put|1|6830|0|0|0|2f6d61696c5f636f6e74656e742e706870|]
+Dec 25 04:42:20 10.71.60.0 u103206212 open "/reg_form.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:42:20 10.71.60.0 u103206212 open "/register.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:42:21 10.71.60.0 u103206212 close "/reg_form.php" bytes read 0 written 8069
+Dec 25 04:42:21 10.71.60.0 u103206212 [10.71.60.0|put|1|8069|0|0|0|2f7265675f666f726d2e706870|]
+Dec 25 04:42:21 10.71.60.0 u103206212 close "/register.php" bytes read 0 written 4715
+Dec 25 04:42:21 10.71.60.0 u103206212 [10.71.60.0|put|1|4715|0|0|0|2f72656769737465722e706870|]
+Dec 25 04:42:21 10.71.60.0 u103206212 open "/register_lang.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:42:21 10.71.60.0 u103206212 open "/sendmail.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:42:22 10.71.60.0 u103206212 close "/sendmail.php" bytes read 0 written 2623
+Dec 25 04:42:22 10.71.60.0 u103206212 [10.71.60.0|put|1|2623|0|0|0|2f73656e646d61696c2e706870|]
+Dec 25 04:42:22 10.71.60.0 u103206212 close "/register_lang.php" bytes read 0 written 2883
+Dec 25 04:42:22 10.71.60.0 u103206212 [10.71.60.0|put|1|2883|0|0|0|2f72656769737465725f6c616e672e706870|]
+Dec 25 04:42:22 10.71.60.0 u103206212 open "/set_lang.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:42:22 10.71.60.0 u103206212 open "/translate.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:42:22 10.71.60.0 u103206212 close "/set_lang.php" bytes read 0 written 97
+Dec 25 04:42:22 10.71.60.0 u103206212 [10.71.60.0|put|0|97|0|0|0|2f7365745f6c616e672e706870|]
+Dec 25 04:42:22 10.71.60.0 u103206212 close "/translate.php" bytes read 0 written 8236
+Dec 25 04:42:22 10.71.60.0 u103206212 [10.71.60.0|put|0|8236|0|0|0|2f7472616e736c6174652e706870|]
+Dec 25 04:42:23 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:42:24 10.71.60.0 u103206212 mkdir name "/css" mode 0777
+Dec 25 04:42:24 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f637373|]
+Dec 25 04:42:26 10.71.60.0 u103206212 open "/css/css.css" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:42:26 10.71.60.0 u103206212 open "/css/font-awesome.css" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:42:26 10.71.60.0 u103206212 close "/css/css.css" bytes read 0 written 5949
+Dec 25 04:42:26 10.71.60.0 u103206212 [10.71.60.0|put|0|5949|0|0|0|2f6373732f6373732e637373|]
+Dec 25 04:42:26 10.71.60.0 u103206212 close "/css/font-awesome.css" bytes read 0 written 43889
+Dec 25 04:42:26 10.71.60.0 u103206212 [10.71.60.0|put|0|43889|0|0|0|2f6373732f666f6e742d617765736f6d652e637373|]
+Dec 25 04:42:27 10.71.60.0 u103206212 open "/css/noneed.css" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:42:27 10.71.60.0 u103206212 open "/css/pe-icon-7-stroke.css" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:42:27 10.71.60.0 u103206212 close "/css/noneed.css" bytes read 0 written 12154
+Dec 25 04:42:27 10.71.60.0 u103206212 [10.71.60.0|put|0|12154|0|0|0|2f6373732f6e6f6e6565642e637373|]
+Dec 25 04:42:27 10.71.60.0 u103206212 close "/css/pe-icon-7-stroke.css" bytes read 0 written 10374
+Dec 25 04:42:27 10.71.60.0 u103206212 [10.71.60.0|put|0|10374|0|0|0|2f6373732f70652d69636f6e2d372d7374726f6b652e637373|]
+Dec 25 04:42:28 10.71.60.0 u103206212 open "/css/revolution.addon.particles.css" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:42:28 10.71.60.0 u103206212 open "/css/settings.css" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:42:28 10.71.60.0 u103206212 close "/css/revolution.addon.particles.css" bytes read 0 written 668
+Dec 25 04:42:28 10.71.60.0 u103206212 [10.71.60.0|put|0|668|0|0|0|2f6373732f7265766f6c7574696f6e2e6164646f6e2e7061727469636c65732e637373|]
+Dec 25 04:42:28 10.71.60.0 u103206212 close "/css/settings.css" bytes read 0 written 38531
+Dec 25 04:42:28 10.71.60.0 u103206212 [10.71.60.0|put|0|38531|0|0|0|2f6373732f73657474696e67732e637373|]
+Dec 25 04:42:29 10.71.60.0 u103206212 open "/css/style.css" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:42:29 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:42:29 10.71.60.0 u103206212 close "/css/style.css" bytes read 0 written 10835
+Dec 25 04:42:29 10.71.60.0 u103206212 [10.71.60.0|put|0|10835|0|0|0|2f6373732f7374796c652e637373|]
+Dec 25 04:42:30 10.71.60.0 u103206212 mkdir name "/images" mode 0777
+Dec 25 04:42:30 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f696d61676573|]
+Dec 25 04:42:32 10.71.60.0 u103206212 open "/images/1.png" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:42:32 10.71.60.0 u103206212 open "/images/1.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:42:33 10.71.60.0 u103206212 close "/images/1.png" bytes read 0 written 52892
+Dec 25 04:42:33 10.71.60.0 u103206212 [10.71.60.0|put|1|52892|0|0|0|2f696d616765732f312e706e67|]
+Dec 25 04:42:33 10.71.60.0 u103206212 close "/images/1.jpg" bytes read 0 written 61666
+Dec 25 04:42:33 10.71.60.0 u103206212 [10.71.60.0|put|1|61666|0|0|0|2f696d616765732f312e6a7067|]
+Dec 25 04:42:33 10.71.60.0 u103206212 open "/images/1bg.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:42:33 10.71.60.0 u103206212 open "/images/2.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:42:39 10.71.60.0 u103206212 close "/images/2.jpg" bytes read 0 written 1732229
+Dec 25 04:42:39 10.71.60.0 u103206212 [10.71.60.0|put|6|1732229|0|0|0|2f696d616765732f322e6a7067|]
+Dec 25 04:42:39 10.71.60.0 u103206212 open "/images/2.png" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:42:40 10.71.60.0 u103206212 close "/images/2.png" bytes read 0 written 40881
+Dec 25 04:42:40 10.71.60.0 u103206212 [10.71.60.0|put|1|40881|0|0|0|2f696d616765732f322e706e67|]
+Dec 25 04:42:40 10.71.60.0 u103206212 open "/images/3.png" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:42:41 10.71.60.0 u103206212 close "/images/3.png" bytes read 0 written 54449
+Dec 25 04:42:41 10.71.60.0 u103206212 [10.71.60.0|put|1|54449|0|0|0|2f696d616765732f332e706e67|]
+Dec 25 04:42:41 10.71.60.0 u103206212 open "/images/Ars.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:42:42 10.71.60.0 u103206212 close "/images/Ars.jpg" bytes read 0 written 38241
+Dec 25 04:42:42 10.71.60.0 u103206212 [10.71.60.0|put|1|38241|0|0|0|2f696d616765732f4172732e6a7067|]
+Dec 25 04:42:42 10.71.60.0 u103206212 open "/images/art2.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:42:43 10.71.60.0 u103206212 close "/images/art2.jpg" bytes read 0 written 257992
+Dec 25 04:42:43 10.71.60.0 u103206212 [10.71.60.0|put|1|257992|0|0|0|2f696d616765732f617274322e6a7067|]
+Dec 25 04:42:44 10.71.60.0 u103206212 open "/images/blue-bg.png" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:42:44 10.71.60.0 u103206212 close "/images/blue-bg.png" bytes read 0 written 39968
+Dec 25 04:42:44 10.71.60.0 u103206212 [10.71.60.0|put|0|39968|0|0|0|2f696d616765732f626c75652d62672e706e67|]
+Dec 25 04:42:44 10.71.60.0 u103206212 open "/images/brand-1-216x1021.png" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:42:45 10.71.60.0 u103206212 close "/images/1bg.jpg" bytes read 0 written 1182598
+Dec 25 04:42:45 10.71.60.0 u103206212 [10.71.60.0|put|12|1182598|0|0|0|2f696d616765732f3162672e6a7067|]
+Dec 25 04:42:45 10.71.60.0 u103206212 close "/images/brand-1-216x1021.png" bytes read 0 written 6103
+Dec 25 04:42:45 10.71.60.0 u103206212 [10.71.60.0|put|1|6103|0|0|0|2f696d616765732f6272616e642d312d32313678313032312e706e67|]
+Dec 25 04:42:45 10.71.60.0 u103206212 open "/images/brand-1-216x10211.png" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:42:45 10.71.60.0 u103206212 open "/images/brand-1-216x102111.png" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:42:46 10.71.60.0 u103206212 close "/images/brand-1-216x10211.png" bytes read 0 written 6638
+Dec 25 04:42:46 10.71.60.0 u103206212 [10.71.60.0|put|1|6638|0|0|0|2f696d616765732f6272616e642d312d3231367831303231312e706e67|]
+Dec 25 04:42:46 10.71.60.0 u103206212 close "/images/brand-1-216x102111.png" bytes read 0 written 13040
+Dec 25 04:42:46 10.71.60.0 u103206212 [10.71.60.0|put|1|13040|0|0|0|2f696d616765732f6272616e642d312d323136783130323131312e706e67|]
+Dec 25 04:42:46 10.71.60.0 u103206212 open "/images/Charity.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:42:46 10.71.60.0 u103206212 open "/images/colibribg.png" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:42:47 10.71.60.0 u103206212 close "/images/Charity.jpg" bytes read 0 written 46333
+Dec 25 04:42:47 10.71.60.0 u103206212 [10.71.60.0|put|1|46333|0|0|0|2f696d616765732f436861726974792e6a7067|]
+Dec 25 04:42:47 10.71.60.0 u103206212 open "/images/debug.log.png" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:42:47 10.71.60.0 u103206212 close "/images/debug.log.png" bytes read 0 written 6761
+Dec 25 04:42:47 10.71.60.0 u103206212 [10.71.60.0|put|0|6761|0|0|0|2f696d616765732f64656275672e6c6f672e706e67|]
+Dec 25 04:42:48 10.71.60.0 u103206212 open "/images/imagegallery7.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:42:49 10.71.60.0 u103206212 close "/images/colibribg.png" bytes read 0 written 399432
+Dec 25 04:42:49 10.71.60.0 u103206212 [10.71.60.0|put|3|399432|0|0|0|2f696d616765732f636f6c6962726962672e706e67|]
+Dec 25 04:42:49 10.71.60.0 u103206212 close "/images/imagegallery7.jpg" bytes read 0 written 209341
+Dec 25 04:42:49 10.71.60.0 u103206212 [10.71.60.0|put|1|209341|0|0|0|2f696d616765732f696d61676567616c6c657279372e6a7067|]
+Dec 25 04:42:49 10.71.60.0 u103206212 open "/images/\320\237\321\200\321\217\320\274\320\276\321\203\320\263\320\276\320\273\321\214\320\275\320\270\320\272 4.png" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:42:49 10.71.60.0 u103206212 open "/images/\320\237\321\200\321\217\320\274\320\276\321\203\320\263\320\276\320\273\321\214\320\275\320\270\320\272 5.png" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:42:50 10.71.60.0 u103206212 close "/images/\320\237\321\200\321\217\320\274\320\276\321\203\320\263\320\276\320\273\321\214\320\275\320\270\320\272 4.png" bytes read 0 written 145
+Dec 25 04:42:50 10.71.60.0 u103206212 [10.71.60.0|put|1|145|0|0|0|2f696d616765732fd09fd180d18fd0bcd0bed183d0b3d0bed0bbd18cd0bdd0b8d0ba20342e706e67|]
+Dec 25 04:42:50 10.71.60.0 u103206212 close "/images/\320\237\321\200\321\217\320\274\320\276\321\203\320\263\320\276\320\273\321\214\320\275\320\270\320\272 5.png" bytes read 0 written 145
+Dec 25 04:42:50 10.71.60.0 u103206212 [10.71.60.0|put|1|145|0|0|0|2f696d616765732fd09fd180d18fd0bcd0bed183d0b3d0bed0bbd18cd0bdd0b8d0ba20352e706e67|]
+Dec 25 04:42:50 10.71.60.0 u103206212 open "/images/\320\237\321\200\321\217\320\274\320\276\321\203\320\263\320\276\320\273\321\214\320\275\320\270\320\272 6.png" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:42:50 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:42:50 10.71.60.0 u103206212 close "/images/\320\237\321\200\321\217\320\274\320\276\321\203\320\263\320\276\320\273\321\214\320\275\320\270\320\272 6.png" bytes read 0 written 145
+Dec 25 04:42:50 10.71.60.0 u103206212 [10.71.60.0|put|0|145|0|0|0|2f696d616765732fd09fd180d18fd0bcd0bed183d0b3d0bed0bbd18cd0bdd0b8d0ba20362e706e67|]
+Dec 25 04:42:51 10.71.60.0 u103206212 mkdir name "/php" mode 0777
+Dec 25 04:42:51 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f706870|]
+Dec 25 04:42:53 10.71.60.0 u103206212 open "/php/CompatInfo.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:42:53 10.71.60.0 u103206212 open "/php/deplister.exe" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:42:54 10.71.60.0 u103206212 close "/php/CompatInfo.php" bytes read 0 written 18869
+Dec 25 04:42:54 10.71.60.0 u103206212 [10.71.60.0|put|1|18869|0|0|0|2f7068702f436f6d706174496e666f2e706870|]
+Dec 25 04:42:54 10.71.60.0 u103206212 close "/php/deplister.exe" bytes read 0 written 130560
+Dec 25 04:42:54 10.71.60.0 u103206212 [10.71.60.0|put|1|130560|0|0|0|2f7068702f6465706c69737465722e657865|]
+Dec 25 04:42:54 10.71.60.0 u103206212 open "/php/glib-2.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:42:54 10.71.60.0 u103206212 open "/php/gmodule-2.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:42:55 10.71.60.0 u103206212 close "/php/gmodule-2.dll" bytes read 0 written 18432
+Dec 25 04:42:55 10.71.60.0 u103206212 [10.71.60.0|put|1|18432|0|0|0|2f7068702f676d6f64756c652d322e646c6c|]
+Dec 25 04:42:55 10.71.60.0 u103206212 open "/php/icudt63.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:42:57 10.71.60.0 u103206212 close "/php/glib-2.dll" bytes read 0 written 1374720
+Dec 25 04:42:57 10.71.60.0 u103206212 [10.71.60.0|put|3|1374720|0|0|0|2f7068702f676c69622d322e646c6c|]
+Dec 25 04:42:57 10.71.60.0 u103206212 open "/php/icuin63.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:43:04 10.71.60.0 u103206212 close "/php/icuin63.dll" bytes read 0 written 2386432
+Dec 25 04:43:04 10.71.60.0 u103206212 [10.71.60.0|put|7|2386432|0|0|0|2f7068702f696375696e36332e646c6c|]
+Dec 25 04:43:04 10.71.60.0 u103206212 open "/php/icuio63.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:43:05 10.71.60.0 u103206212 close "/php/icuio63.dll" bytes read 0 written 53760
+Dec 25 04:43:05 10.71.60.0 u103206212 [10.71.60.0|put|1|53760|0|0|0|2f7068702f696375696f36332e646c6c|]
+Dec 25 04:43:05 10.71.60.0 u103206212 open "/php/icuuc63.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:43:09 10.71.60.0 u103206212 close "/php/icuuc63.dll" bytes read 0 written 1598976
+Dec 25 04:43:09 10.71.60.0 u103206212 [10.71.60.0|put|4|1598976|0|0|0|2f7068702f696375756336332e646c6c|]
+Dec 25 04:43:09 10.71.60.0 u103206212 open "/php/install.txt" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:43:10 10.71.60.0 u103206212 close "/php/install.txt" bytes read 0 written 108
+Dec 25 04:43:10 10.71.60.0 u103206212 [10.71.60.0|put|0|108|0|0|0|2f7068702f696e7374616c6c2e747874|]
+Dec 25 04:43:10 10.71.60.0 u103206212 open "/php/libcrypto-1_1-x64.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:43:19 10.71.60.0 u103206212 close "/php/libcrypto-1_1-x64.dll" bytes read 0 written 3431424
+Dec 25 04:43:19 10.71.60.0 u103206212 [10.71.60.0|put|9|3431424|0|0|0|2f7068702f6c696263727970746f2d315f312d7836342e646c6c|]
+Dec 25 04:43:19 10.71.60.0 u103206212 open "/php/libenchant.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:43:19 10.71.60.0 u103206212 close "/php/libenchant.dll" bytes read 0 written 47616
+Dec 25 04:43:19 10.71.60.0 u103206212 [10.71.60.0|put|0|47616|0|0|0|2f7068702f6c6962656e6368616e742e646c6c|]
+Dec 25 04:43:20 10.71.60.0 u103206212 open "/php/libpq.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:43:21 10.71.60.0 u103206212 close "/php/libpq.dll" bytes read 0 written 189952
+Dec 25 04:43:21 10.71.60.0 u103206212 [10.71.60.0|put|1|189952|0|0|0|2f7068702f6c696270712e646c6c|]
+Dec 25 04:43:21 10.71.60.0 u103206212 open "/php/libsasl.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:43:23 10.71.60.0 u103206212 close "/php/libsasl.dll" bytes read 0 written 108544
+Dec 25 04:43:23 10.71.60.0 u103206212 [10.71.60.0|put|2|108544|0|0|0|2f7068702f6c69627361736c2e646c6c|]
+Dec 25 04:43:23 10.71.60.0 u103206212 open "/php/libsodium.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:43:25 10.71.60.0 u103206212 close "/php/libsodium.dll" bytes read 0 written 300544
+Dec 25 04:43:25 10.71.60.0 u103206212 [10.71.60.0|put|2|300544|0|0|0|2f7068702f6c6962736f6469756d2e646c6c|]
+Dec 25 04:43:25 10.71.60.0 u103206212 open "/php/libssh2.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:43:26 10.71.60.0 u103206212 close "/php/libssh2.dll" bytes read 0 written 223744
+Dec 25 04:43:26 10.71.60.0 u103206212 [10.71.60.0|put|1|223744|0|0|0|2f7068702f6c6962737368322e646c6c|]
+Dec 25 04:43:27 10.71.60.0 u103206212 open "/php/libssl-1_1-x64.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:43:28 10.71.60.0 u103206212 close "/php/libssl-1_1-x64.dll" bytes read 0 written 680960
+Dec 25 04:43:28 10.71.60.0 u103206212 [10.71.60.0|put|1|680960|0|0|0|2f7068702f6c696273736c2d315f312d7836342e646c6c|]
+Dec 25 04:43:29 10.71.60.0 u103206212 open "/php/license.txt" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:43:29 10.71.60.0 u103206212 close "/php/license.txt" bytes read 0 written 3272
+Dec 25 04:43:29 10.71.60.0 u103206212 [10.71.60.0|put|0|3272|0|0|0|2f7068702f6c6963656e73652e747874|]
+Dec 25 04:43:30 10.71.60.0 u103206212 open "/php/news.txt" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:43:30 10.71.60.0 u103206212 close "/php/news.txt" bytes read 0 written 60300
+Dec 25 04:43:30 10.71.60.0 u103206212 [10.71.60.0|put|0|60300|0|0|0|2f7068702f6e6577732e747874|]
+Dec 25 04:43:30 10.71.60.0 u103206212 close "/php/icudt63.dll" bytes read 0 written 27182592
+Dec 25 04:43:30 10.71.60.0 u103206212 [10.71.60.0|put|35|27182592|0|0|0|2f7068702f696375647436332e646c6c|]
+Dec 25 04:43:30 10.71.60.0 u103206212 open "/php/nghttp2.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:43:31 10.71.60.0 u103206212 open "/php/pci" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:43:31 10.71.60.0 u103206212 close "/php/pci" bytes read 0 written 527
+Dec 25 04:43:31 10.71.60.0 u103206212 [10.71.60.0|put|0|527|0|0|0|2f7068702f706369|]
+Dec 25 04:43:31 10.71.60.0 u103206212 close "/php/nghttp2.dll" bytes read 0 written 197120
+Dec 25 04:43:31 10.71.60.0 u103206212 [10.71.60.0|put|1|197120|0|0|0|2f7068702f6e6768747470322e646c6c|]
+Dec 25 04:43:31 10.71.60.0 u103206212 open "/php/pci.bat" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:43:32 10.71.60.0 u103206212 open "/php/pci.css" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:43:32 10.71.60.0 u103206212 close "/php/pci.bat" bytes read 0 written 568
+Dec 25 04:43:32 10.71.60.0 u103206212 [10.71.60.0|put|1|568|0|0|0|2f7068702f7063692e626174|]
+Dec 25 04:43:32 10.71.60.0 u103206212 close "/php/pci.css" bytes read 0 written 1260
+Dec 25 04:43:32 10.71.60.0 u103206212 [10.71.60.0|put|0|1260|0|0|0|2f7068702f7063692e637373|]
+Dec 25 04:43:32 10.71.60.0 u103206212 open "/php/pciconf" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:43:33 10.71.60.0 u103206212 open "/php/pciconf.bat" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:43:33 10.71.60.0 u103206212 close "/php/pciconf" bytes read 0 written 17506
+Dec 25 04:43:33 10.71.60.0 u103206212 [10.71.60.0|put|1|17506|0|0|0|2f7068702f706369636f6e66|]
+Dec 25 04:43:33 10.71.60.0 u103206212 close "/php/pciconf.bat" bytes read 0 written 561
+Dec 25 04:43:33 10.71.60.0 u103206212 [10.71.60.0|put|0|561|0|0|0|2f7068702f706369636f6e662e626174|]
+Dec 25 04:43:33 10.71.60.0 u103206212 open "/php/pear.bat" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:43:33 10.71.60.0 u103206212 open "/php/peardev.bat" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:43:34 10.71.60.0 u103206212 close "/php/pear.bat" bytes read 0 written 4359
+Dec 25 04:43:34 10.71.60.0 u103206212 [10.71.60.0|put|1|4359|0|0|0|2f7068702f706561722e626174|]
+Dec 25 04:43:34 10.71.60.0 u103206212 close "/php/peardev.bat" bytes read 0 written 4725
+Dec 25 04:43:34 10.71.60.0 u103206212 [10.71.60.0|put|1|4725|0|0|0|2f7068702f706561726465762e626174|]
+Dec 25 04:43:34 10.71.60.0 u103206212 open "/php/pecl.bat" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:43:34 10.71.60.0 u103206212 open "/php/phar.phar.bat" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:43:35 10.71.60.0 u103206212 close "/php/pecl.bat" bytes read 0 written 4655
+Dec 25 04:43:35 10.71.60.0 u103206212 [10.71.60.0|put|1|4655|0|0|0|2f7068702f7065636c2e626174|]
+Dec 25 04:43:35 10.71.60.0 u103206212 close "/php/phar.phar.bat" bytes read 0 written 43
+Dec 25 04:43:35 10.71.60.0 u103206212 [10.71.60.0|put|1|43|0|0|0|2f7068702f706861722e706861722e626174|]
+Dec 25 04:43:35 10.71.60.0 u103206212 open "/php/pharcommand.phar" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:43:35 10.71.60.0 u103206212 open "/php/php-cgi.exe" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:43:36 10.71.60.0 u103206212 close "/php/pharcommand.phar" bytes read 0 written 53227
+Dec 25 04:43:36 10.71.60.0 u103206212 [10.71.60.0|put|1|53227|0|0|0|2f7068702f70686172636f6d6d616e642e70686172|]
+Dec 25 04:43:36 10.71.60.0 u103206212 close "/php/php-cgi.exe" bytes read 0 written 73728
+Dec 25 04:43:36 10.71.60.0 u103206212 [10.71.60.0|put|1|73728|0|0|0|2f7068702f7068702d6367692e657865|]
+Dec 25 04:43:36 10.71.60.0 u103206212 open "/php/php-win.exe" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:43:36 10.71.60.0 u103206212 open "/php/php.exe" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:43:36 10.71.60.0 u103206212 close "/php/php-win.exe" bytes read 0 written 37376
+Dec 25 04:43:36 10.71.60.0 u103206212 [10.71.60.0|put|0|37376|0|0|0|2f7068702f7068702d77696e2e657865|]
+Dec 25 04:43:37 10.71.60.0 u103206212 open "/php/php.gif" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:43:37 10.71.60.0 u103206212 close "/php/php.gif" bytes read 0 written 2523
+Dec 25 04:43:37 10.71.60.0 u103206212 [10.71.60.0|put|0|2523|0|0|0|2f7068702f7068702e676966|]
+Dec 25 04:43:38 10.71.60.0 u103206212 open "/php/php.ini" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:43:38 10.71.60.0 u103206212 close "/php/php.exe" bytes read 0 written 126976
+Dec 25 04:43:38 10.71.60.0 u103206212 [10.71.60.0|put|2|126976|0|0|0|2f7068702f7068702e657865|]
+Dec 25 04:43:38 10.71.60.0 u103206212 close "/php/php.ini" bytes read 0 written 73986
+Dec 25 04:43:38 10.71.60.0 u103206212 [10.71.60.0|put|0|73986|0|0|0|2f7068702f7068702e696e69|]
+Dec 25 04:43:38 10.71.60.0 u103206212 open "/php/php.ini-development" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:43:39 10.71.60.0 u103206212 open "/php/php.ini-production" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:43:39 10.71.60.0 u103206212 close "/php/php.ini-production" bytes read 0 written 73123
+Dec 25 04:43:39 10.71.60.0 u103206212 [10.71.60.0|put|0|73123|0|0|0|2f7068702f7068702e696e692d70726f64756374696f6e|]
+Dec 25 04:43:40 10.71.60.0 u103206212 close "/php/php.ini-development" bytes read 0 written 72844
+Dec 25 04:43:40 10.71.60.0 u103206212 [10.71.60.0|put|2|72844|0|0|0|2f7068702f7068702e696e692d646576656c6f706d656e74|]
+Dec 25 04:43:40 10.71.60.0 u103206212 open "/php/php7apache2_4.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:43:40 10.71.60.0 u103206212 open "/php/php7embed.lib" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:43:40 10.71.60.0 u103206212 close "/php/php7apache2_4.dll" bytes read 0 written 36352
+Dec 25 04:43:40 10.71.60.0 u103206212 [10.71.60.0|put|0|36352|0|0|0|2f7068702f70687037617061636865325f342e646c6c|]
+Dec 25 04:43:41 10.71.60.0 u103206212 open "/php/php7phpdbg.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:43:42 10.71.60.0 u103206212 close "/php/php7embed.lib" bytes read 0 written 875370
+Dec 25 04:43:42 10.71.60.0 u103206212 [10.71.60.0|put|2|875370|0|0|0|2f7068702f70687037656d6265642e6c6962|]
+Dec 25 04:43:42 10.71.60.0 u103206212 close "/php/php7phpdbg.dll" bytes read 0 written 353280
+Dec 25 04:43:42 10.71.60.0 u103206212 [10.71.60.0|put|1|353280|0|0|0|2f7068702f706870377068706462672e646c6c|]
+Dec 25 04:43:43 10.71.60.0 u103206212 open "/php/php7ts.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:43:43 10.71.60.0 u103206212 open "/php/phpdbg.exe" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:43:45 10.71.60.0 u103206212 close "/php/phpdbg.exe" bytes read 0 written 355840
+Dec 25 04:43:45 10.71.60.0 u103206212 [10.71.60.0|put|2|355840|0|0|0|2f7068702f7068706462672e657865|]
+Dec 25 04:43:45 10.71.60.0 u103206212 open "/php/phpunit" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:43:45 10.71.60.0 u103206212 close "/php/phpunit" bytes read 0 written 2102
+Dec 25 04:43:45 10.71.60.0 u103206212 [10.71.60.0|put|0|2102|0|0|0|2f7068702f706870756e6974|]
+Dec 25 04:43:46 10.71.60.0 u103206212 open "/php/phpunit.bat" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:43:46 10.71.60.0 u103206212 close "/php/phpunit.bat" bytes read 0 written 1958
+Dec 25 04:43:46 10.71.60.0 u103206212 [10.71.60.0|put|0|1958|0|0|0|2f7068702f706870756e69742e626174|]
+Dec 25 04:43:47 10.71.60.0 u103206212 open "/php/readme-redist-bins.txt" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:43:47 10.71.60.0 u103206212 close "/php/readme-redist-bins.txt" bytes read 0 written 25289
+Dec 25 04:43:47 10.71.60.0 u103206212 [10.71.60.0|put|0|25289|0|0|0|2f7068702f726561646d652d7265646973742d62696e732e747874|]
+Dec 25 04:43:48 10.71.60.0 u103206212 open "/php/snapshot.txt" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:43:48 10.71.60.0 u103206212 close "/php/snapshot.txt" bytes read 0 written 2009
+Dec 25 04:43:48 10.71.60.0 u103206212 [10.71.60.0|put|0|2009|0|0|0|2f7068702f736e617073686f742e747874|]
+Dec 25 04:43:49 10.71.60.0 u103206212 open "/php/webdriver-test-example.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:43:49 10.71.60.0 u103206212 close "/php/webdriver-test-example.php" bytes read 0 written 1447
+Dec 25 04:43:49 10.71.60.0 u103206212 [10.71.60.0|put|0|1447|0|0|0|2f7068702f7765626472697665722d746573742d6578616d706c652e706870|]
+Dec 25 04:43:49 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:43:51 10.71.60.0 u103206212 mkdir name "/scripts" mode 0777
+Dec 25 04:43:51 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f73637269707473|]
+Dec 25 04:43:53 10.71.60.0 u103206212 open "/scripts/jquery.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:43:55 10.71.60.0 u103206212 close "/scripts/jquery.js" bytes read 0 written 293074
+Dec 25 04:43:55 10.71.60.0 u103206212 [10.71.60.0|put|2|293074|0|0|0|2f736372697074732f6a71756572792e6a73|]
+Dec 25 04:43:55 10.71.60.0 u103206212 close "/php/php7ts.dll" bytes read 0 written 9349120
+Dec 25 04:43:55 10.71.60.0 u103206212 [10.71.60.0|put|12|9349120|0|0|0|2f7068702f7068703774732e646c6c|]
+Dec 25 04:43:56 10.71.60.0 u103206212 open "/scripts/jquery.min.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:43:56 10.71.60.0 u103206212 close "/scripts/jquery.min.js" bytes read 0 written 86929
+Dec 25 04:43:56 10.71.60.0 u103206212 [10.71.60.0|put|0|86929|0|0|0|2f736372697074732f6a71756572792e6d696e2e6a73|]
+Dec 25 04:43:56 10.71.60.0 u103206212 open "/scripts/jquery.themepunch.revolution.min.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:43:57 10.71.60.0 u103206212 open "/scripts/jquery.themepunch.tools.min.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:43:57 10.71.60.0 u103206212 close "/scripts/jquery.themepunch.revolution.min.js" bytes read 0 written 103054
+Dec 25 04:43:57 10.71.60.0 u103206212 [10.71.60.0|put|1|103054|0|0|0|2f736372697074732f6a71756572792e7468656d6570756e63682e7265766f6c7574696f6e2e6d696e2e6a73|]
+Dec 25 04:43:57 10.71.60.0 u103206212 open "/scripts/main.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:43:58 10.71.60.0 u103206212 close "/scripts/jquery.themepunch.tools.min.js" bytes read 0 written 203568
+Dec 25 04:43:58 10.71.60.0 u103206212 [10.71.60.0|put|1|203568|0|0|0|2f736372697074732f6a71756572792e7468656d6570756e63682e746f6f6c732e6d696e2e6a73|]
+Dec 25 04:43:58 10.71.60.0 u103206212 close "/scripts/main.js" bytes read 0 written 3030
+Dec 25 04:43:58 10.71.60.0 u103206212 [10.71.60.0|put|1|3030|0|0|0|2f736372697074732f6d61696e2e6a73|]
+Dec 25 04:43:58 10.71.60.0 u103206212 open "/scripts/revolution.addon.particles.min.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:43:58 10.71.60.0 u103206212 open "/scripts/revolution.extension.actions.min.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:43:59 10.71.60.0 u103206212 close "/scripts/revolution.addon.particles.min.js" bytes read 0 written 39578
+Dec 25 04:43:59 10.71.60.0 u103206212 [10.71.60.0|put|1|39578|0|0|0|2f736372697074732f7265766f6c7574696f6e2e6164646f6e2e7061727469636c65732e6d696e2e6a73|]
+Dec 25 04:43:59 10.71.60.0 u103206212 close "/scripts/revolution.extension.actions.min.js" bytes read 0 written 13453
+Dec 25 04:43:59 10.71.60.0 u103206212 [10.71.60.0|put|1|13453|0|0|0|2f736372697074732f7265766f6c7574696f6e2e657874656e73696f6e2e616374696f6e732e6d696e2e6a73|]
+Dec 25 04:43:59 10.71.60.0 u103206212 open "/scripts/revolution.extension.carousel.min.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:43:59 10.71.60.0 u103206212 open "/scripts/revolution.extension.kenburn.min.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:43:59 10.71.60.0 u103206212 close "/scripts/revolution.extension.carousel.min.js" bytes read 0 written 11654
+Dec 25 04:43:59 10.71.60.0 u103206212 [10.71.60.0|put|0|11654|0|0|0|2f736372697074732f7265766f6c7574696f6e2e657874656e73696f6e2e6361726f7573656c2e6d696e2e6a73|]
+Dec 25 04:44:00 10.71.60.0 u103206212 close "/scripts/revolution.extension.kenburn.min.js" bytes read 0 written 6690
+Dec 25 04:44:00 10.71.60.0 u103206212 [10.71.60.0|put|1|6690|0|0|0|2f736372697074732f7265766f6c7574696f6e2e657874656e73696f6e2e6b656e6275726e2e6d696e2e6a73|]
+Dec 25 04:44:00 10.71.60.0 u103206212 open "/scripts/revolution.extension.layeranimation.min.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:00 10.71.60.0 u103206212 open "/scripts/revolution.extension.migration.min.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:00 10.71.60.0 u103206212 close "/scripts/revolution.extension.layeranimation.min.js" bytes read 0 written 91289
+Dec 25 04:44:00 10.71.60.0 u103206212 [10.71.60.0|put|0|91289|0|0|0|2f736372697074732f7265766f6c7574696f6e2e657874656e73696f6e2e6c61796572616e696d6174696f6e2e6d696e2e6a73|]
+Dec 25 04:44:00 10.71.60.0 u103206212 close "/scripts/revolution.extension.migration.min.js" bytes read 0 written 42120
+Dec 25 04:44:00 10.71.60.0 u103206212 [10.71.60.0|put|0|42120|0|0|0|2f736372697074732f7265766f6c7574696f6e2e657874656e73696f6e2e6d6967726174696f6e2e6d696e2e6a73|]
+Dec 25 04:44:01 10.71.60.0 u103206212 open "/scripts/revolution.extension.navigation.min.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:01 10.71.60.0 u103206212 open "/scripts/revolution.extension.parallax.min.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:01 10.71.60.0 u103206212 close "/scripts/revolution.extension.navigation.min.js" bytes read 0 written 42120
+Dec 25 04:44:01 10.71.60.0 u103206212 [10.71.60.0|put|0|42120|0|0|0|2f736372697074732f7265766f6c7574696f6e2e657874656e73696f6e2e6e617669676174696f6e2e6d696e2e6a73|]
+Dec 25 04:44:01 10.71.60.0 u103206212 close "/scripts/revolution.extension.parallax.min.js" bytes read 0 written 22648
+Dec 25 04:44:01 10.71.60.0 u103206212 [10.71.60.0|put|0|22648|0|0|0|2f736372697074732f7265766f6c7574696f6e2e657874656e73696f6e2e706172616c6c61782e6d696e2e6a73|]
+Dec 25 04:44:02 10.71.60.0 u103206212 open "/scripts/revolution.extension.slideanims.min.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:02 10.71.60.0 u103206212 open "/scripts/revolution.extension.video.min.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:02 10.71.60.0 u103206212 close "/scripts/revolution.extension.slideanims.min.js" bytes read 0 written 57639
+Dec 25 04:44:02 10.71.60.0 u103206212 [10.71.60.0|put|0|57639|0|0|0|2f736372697074732f7265766f6c7574696f6e2e657874656e73696f6e2e736c696465616e696d732e6d696e2e6a73|]
+Dec 25 04:44:02 10.71.60.0 u103206212 close "/scripts/revolution.extension.video.min.js" bytes read 0 written 42588
+Dec 25 04:44:02 10.71.60.0 u103206212 [10.71.60.0|put|0|42588|0|0|0|2f736372697074732f7265766f6c7574696f6e2e657874656e73696f6e2e766964656f2e6d696e2e6a73|]
+Dec 25 04:44:03 10.71.60.0 u103206212 open "/scripts/script.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:03 10.71.60.0 u103206212 open "/scripts/warning.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:03 10.71.60.0 u103206212 close "/scripts/warning.js" bytes read 0 written 2802
+Dec 25 04:44:03 10.71.60.0 u103206212 [10.71.60.0|put|0|2802|0|0|0|2f736372697074732f7761726e696e672e6a73|]
+Dec 25 04:44:03 10.71.60.0 u103206212 close "/scripts/script.js" bytes read 0 written 671
+Dec 25 04:44:03 10.71.60.0 u103206212 [10.71.60.0|put|0|671|0|0|0|2f736372697074732f7363726970742e6a73|]
+Dec 25 04:44:04 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:44:05 10.71.60.0 u103206212 mkdir name "/src" mode 0777
+Dec 25 04:44:05 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f737263|]
+Dec 25 04:44:07 10.71.60.0 u103206212 open "/src/Exception.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:07 10.71.60.0 u103206212 open "/src/OAuth.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:07 10.71.60.0 u103206212 close "/src/Exception.php" bytes read 0 written 1214
+Dec 25 04:44:07 10.71.60.0 u103206212 [10.71.60.0|put|0|1214|0|0|0|2f7372632f457863657074696f6e2e706870|]
+Dec 25 04:44:07 10.71.60.0 u103206212 close "/src/OAuth.php" bytes read 0 written 3745
+Dec 25 04:44:07 10.71.60.0 u103206212 [10.71.60.0|put|0|3745|0|0|0|2f7372632f4f417574682e706870|]
+Dec 25 04:44:08 10.71.60.0 u103206212 open "/src/PHPMailer.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:08 10.71.60.0 u103206212 open "/src/POP3.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:08 10.71.60.0 u103206212 close "/src/POP3.php" bytes read 0 written 11769
+Dec 25 04:44:08 10.71.60.0 u103206212 [10.71.60.0|put|0|11769|0|0|0|2f7372632f504f50332e706870|]
+Dec 25 04:44:09 10.71.60.0 u103206212 open "/src/SMTP.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:09 10.71.60.0 u103206212 close "/src/SMTP.php" bytes read 0 written 46145
+Dec 25 04:44:09 10.71.60.0 u103206212 [10.71.60.0|put|0|46145|0|0|0|2f7372632f534d54502e706870|]
+Dec 25 04:44:09 10.71.60.0 u103206212 close "/src/PHPMailer.php" bytes read 0 written 167338
+Dec 25 04:44:09 10.71.60.0 u103206212 [10.71.60.0|put|1|167338|0|0|0|2f7372632f5048504d61696c65722e706870|]
+Dec 25 04:44:09 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:44:10 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:44:10 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:44:12 10.71.60.0 u103206212 mkdir name "/assets" mode 0777
+Dec 25 04:44:12 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f617373657473|]
+Dec 25 04:44:13 10.71.60.0 u103206212 mkdir name "/assets/css" mode 0777
+Dec 25 04:44:13 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f6173736574732f637373|]
+Dec 25 04:44:15 10.71.60.0 u103206212 open "/assets/css/bootstrap.min.css" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:15 10.71.60.0 u103206212 open "/assets/css/animate.css" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:15 10.71.60.0 u103206212 close "/assets/css/animate.css" bytes read 0 written 18661
+Dec 25 04:44:15 10.71.60.0 u103206212 [10.71.60.0|put|0|18661|0|0|0|2f6173736574732f6373732f616e696d6174652e637373|]
+Dec 25 04:44:16 10.71.60.0 u103206212 open "/assets/css/css.css" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:16 10.71.60.0 u103206212 close "/assets/css/css.css" bytes read 0 written 5949
+Dec 25 04:44:16 10.71.60.0 u103206212 [10.71.60.0|put|0|5949|0|0|0|2f6173736574732f6373732f6373732e637373|]
+Dec 25 04:44:16 10.71.60.0 u103206212 close "/assets/css/bootstrap.min.css" bytes read 0 written 140942
+Dec 25 04:44:16 10.71.60.0 u103206212 [10.71.60.0|put|1|140942|0|0|0|2f6173736574732f6373732f626f6f7473747261702e6d696e2e637373|]
+Dec 25 04:44:17 10.71.60.0 u103206212 open "/assets/css/font-awesome.css" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:17 10.71.60.0 u103206212 open "/assets/css/icofont.min.css" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:17 10.71.60.0 u103206212 close "/assets/css/font-awesome.css" bytes read 0 written 43889
+Dec 25 04:44:17 10.71.60.0 u103206212 [10.71.60.0|put|0|43889|0|0|0|2f6173736574732f6373732f666f6e742d617765736f6d652e637373|]
+Dec 25 04:44:17 10.71.60.0 u103206212 close "/assets/css/icofont.min.css" bytes read 0 written 92214
+Dec 25 04:44:17 10.71.60.0 u103206212 [10.71.60.0|put|0|92214|0|0|0|2f6173736574732f6373732f69636f666f6e742e6d696e2e637373|]
+Dec 25 04:44:18 10.71.60.0 u103206212 open "/assets/css/jquery-ui.css" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:18 10.71.60.0 u103206212 open "/assets/css/magnific-popup.css" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:18 10.71.60.0 u103206212 close "/assets/css/jquery-ui.css" bytes read 0 written 38645
+Dec 25 04:44:18 10.71.60.0 u103206212 [10.71.60.0|put|0|38645|0|0|0|2f6173736574732f6373732f6a71756572792d75692e637373|]
+Dec 25 04:44:18 10.71.60.0 u103206212 close "/assets/css/magnific-popup.css" bytes read 0 written 6951
+Dec 25 04:44:18 10.71.60.0 u103206212 [10.71.60.0|put|0|6951|0|0|0|2f6173736574732f6373732f6d61676e696669632d706f7075702e637373|]
+Dec 25 04:44:19 10.71.60.0 u103206212 open "/assets/css/noneed.css" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:19 10.71.60.0 u103206212 open "/assets/css/owl.carousel.css" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:19 10.71.60.0 u103206212 close "/assets/css/noneed.css" bytes read 0 written 12297
+Dec 25 04:44:19 10.71.60.0 u103206212 [10.71.60.0|put|0|12297|0|0|0|2f6173736574732f6373732f6e6f6e6565642e637373|]
+Dec 25 04:44:19 10.71.60.0 u103206212 close "/assets/css/owl.carousel.css" bytes read 0 written 4615
+Dec 25 04:44:19 10.71.60.0 u103206212 [10.71.60.0|put|0|4615|0|0|0|2f6173736574732f6373732f6f776c2e6361726f7573656c2e637373|]
+Dec 25 04:44:20 10.71.60.0 u103206212 open "/assets/css/owl.video.play.html" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:20 10.71.60.0 u103206212 open "/assets/css/owl.theme.default.min.css" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:20 10.71.60.0 u103206212 close "/assets/css/owl.video.play.html" bytes read 0 written 1237
+Dec 25 04:44:20 10.71.60.0 u103206212 [10.71.60.0|put|0|1237|0|0|0|2f6173736574732f6373732f6f776c2e766964656f2e706c61792e68746d6c|]
+Dec 25 04:44:20 10.71.60.0 u103206212 close "/assets/css/owl.theme.default.min.css" bytes read 0 written 936
+Dec 25 04:44:20 10.71.60.0 u103206212 [10.71.60.0|put|0|936|0|0|0|2f6173736574732f6373732f6f776c2e7468656d652e64656661756c742e6d696e2e637373|]
+Dec 25 04:44:20 10.71.60.0 u103206212 open "/assets/css/pe-icon-7-stroke.css" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:20 10.71.60.0 u103206212 open "/assets/css/responsive.css" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:21 10.71.60.0 u103206212 close "/assets/css/pe-icon-7-stroke.css" bytes read 0 written 10374
+Dec 25 04:44:21 10.71.60.0 u103206212 [10.71.60.0|put|1|10374|0|0|0|2f6173736574732f6373732f70652d69636f6e2d372d7374726f6b652e637373|]
+Dec 25 04:44:21 10.71.60.0 u103206212 close "/assets/css/responsive.css" bytes read 0 written 5418
+Dec 25 04:44:21 10.71.60.0 u103206212 [10.71.60.0|put|1|5418|0|0|0|2f6173736574732f6373732f726573706f6e736976652e637373|]
+Dec 25 04:44:21 10.71.60.0 u103206212 open "/assets/css/revolution.addon.particles.css" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:21 10.71.60.0 u103206212 open "/assets/css/settings.css" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:22 10.71.60.0 u103206212 close "/assets/css/revolution.addon.particles.css" bytes read 0 written 668
+Dec 25 04:44:22 10.71.60.0 u103206212 [10.71.60.0|put|1|668|0|0|0|2f6173736574732f6373732f7265766f6c7574696f6e2e6164646f6e2e7061727469636c65732e637373|]
+Dec 25 04:44:22 10.71.60.0 u103206212 close "/assets/css/settings.css" bytes read 0 written 38548
+Dec 25 04:44:22 10.71.60.0 u103206212 [10.71.60.0|put|1|38548|0|0|0|2f6173736574732f6373732f73657474696e67732e637373|]
+Dec 25 04:44:22 10.71.60.0 u103206212 open "/assets/css/style.css" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:22 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:44:23 10.71.60.0 u103206212 close "/assets/css/style.css" bytes read 0 written 53901
+Dec 25 04:44:23 10.71.60.0 u103206212 [10.71.60.0|put|1|53901|0|0|0|2f6173736574732f6373732f7374796c652e637373|]
+Dec 25 04:44:23 10.71.60.0 u103206212 mkdir name "/assets/fonts" mode 0777
+Dec 25 04:44:23 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f6173736574732f666f6e7473|]
+Dec 25 04:44:26 10.71.60.0 u103206212 open "/assets/fonts/icofont.woff2" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:26 10.71.60.0 u103206212 open "/assets/fonts/icofont.woff" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:26 10.71.60.0 u103206212 close "/assets/fonts/icofont.woff" bytes read 0 written 1237
+Dec 25 04:44:26 10.71.60.0 u103206212 [10.71.60.0|put|0|1237|0|0|0|2f6173736574732f666f6e74732f69636f666f6e742e776f6666|]
+Dec 25 04:44:27 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:44:27 10.71.60.0 u103206212 close "/assets/fonts/icofont.woff2" bytes read 0 written 537868
+Dec 25 04:44:27 10.71.60.0 u103206212 [10.71.60.0|put|1|537868|0|0|0|2f6173736574732f666f6e74732f69636f666f6e742e776f666632|]
+Dec 25 04:44:28 10.71.60.0 u103206212 mkdir name "/assets/img" mode 0777
+Dec 25 04:44:28 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f6173736574732f696d67|]
+Dec 25 04:44:30 10.71.60.0 u103206212 open "/assets/img/banner_bg.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:30 10.71.60.0 u103206212 open "/assets/img/128980337_681084432795795_6954613913439662660_n.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:30 10.71.60.0 u103206212 close "/assets/img/banner_bg.jpg" bytes read 0 written 97238
+Dec 25 04:44:30 10.71.60.0 u103206212 [10.71.60.0|put|0|97238|0|0|0|2f6173736574732f696d672f62616e6e65725f62672e6a7067|]
+Dec 25 04:44:31 10.71.60.0 u103206212 open "/assets/img/body-bg.png" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:32 10.71.60.0 u103206212 close "/assets/img/body-bg.png" bytes read 0 written 514195
+Dec 25 04:44:32 10.71.60.0 u103206212 [10.71.60.0|put|1|514195|0|0|0|2f6173736574732f696d672f626f64792d62672e706e67|]
+Dec 25 04:44:33 10.71.60.0 u103206212 open "/assets/img/client-1.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:33 10.71.60.0 u103206212 close "/assets/img/128980337_681084432795795_6954613913439662660_n.jpg" bytes read 0 written 371317
+Dec 25 04:44:33 10.71.60.0 u103206212 [10.71.60.0|put|3|371317|0|0|0|2f6173736574732f696d672f3132383938303333375f3638313038343433323739353739355f363935343631333931333433393636323636305f6e2e6a7067|]
+Dec 25 04:44:33 10.71.60.0 u103206212 close "/assets/img/client-1.jpg" bytes read 0 written 27899
+Dec 25 04:44:33 10.71.60.0 u103206212 [10.71.60.0|put|0|27899|0|0|0|2f6173736574732f696d672f636c69656e742d312e6a7067|]
+Dec 25 04:44:33 10.71.60.0 u103206212 open "/assets/img/client-2.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:34 10.71.60.0 u103206212 open "/assets/img/contact-us.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:34 10.71.60.0 u103206212 close "/assets/img/client-2.jpg" bytes read 0 written 25822
+Dec 25 04:44:34 10.71.60.0 u103206212 [10.71.60.0|put|1|25822|0|0|0|2f6173736574732f696d672f636c69656e742d322e6a7067|]
+Dec 25 04:44:34 10.71.60.0 u103206212 open "/assets/img/contact-us.png" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:35 10.71.60.0 u103206212 close "/assets/img/contact-us.jpg" bytes read 0 written 388169
+Dec 25 04:44:35 10.71.60.0 u103206212 [10.71.60.0|put|1|388169|0|0|0|2f6173736574732f696d672f636f6e746163742d75732e6a7067|]
+Dec 25 04:44:35 10.71.60.0 u103206212 open "/assets/img/counter-bg.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:36 10.71.60.0 u103206212 close "/assets/img/counter-bg.jpg" bytes read 0 written 33132
+Dec 25 04:44:36 10.71.60.0 u103206212 [10.71.60.0|put|1|33132|0|0|0|2f6173736574732f696d672f636f756e7465722d62672e6a7067|]
+Dec 25 04:44:36 10.71.60.0 u103206212 open "/assets/img/logo-black.png" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:36 10.71.60.0 u103206212 close "/assets/img/logo-black.png" bytes read 0 written 21142
+Dec 25 04:44:36 10.71.60.0 u103206212 [10.71.60.0|put|0|21142|0|0|0|2f6173736574732f696d672f6c6f676f2d626c61636b2e706e67|]
+Dec 25 04:44:37 10.71.60.0 u103206212 open "/assets/img/logo.png" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:37 10.71.60.0 u103206212 close "/assets/img/logo.png" bytes read 0 written 21142
+Dec 25 04:44:37 10.71.60.0 u103206212 [10.71.60.0|put|0|21142|0|0|0|2f6173736574732f696d672f6c6f676f2e706e67|]
+Dec 25 04:44:38 10.71.60.0 u103206212 close "/assets/img/contact-us.png" bytes read 0 written 2120124
+Dec 25 04:44:38 10.71.60.0 u103206212 [10.71.60.0|put|4|2120124|0|0|0|2f6173736574732f696d672f636f6e746163742d75732e706e67|]
+Dec 25 04:44:38 10.71.60.0 u103206212 open "/assets/img/teacher-image.png" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:38 10.71.60.0 u103206212 open "/assets/img/testimonial-bg.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:39 10.71.60.0 u103206212 close "/assets/img/teacher-image.png" bytes read 0 written 153017
+Dec 25 04:44:39 10.71.60.0 u103206212 [10.71.60.0|put|1|153017|0|0|0|2f6173736574732f696d672f746561636865722d696d6167652e706e67|]
+Dec 25 04:44:39 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:44:40 10.71.60.0 u103206212 mkdir name "/assets/js" mode 0777
+Dec 25 04:44:40 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f6173736574732f6a73|]
+Dec 25 04:44:41 10.71.60.0 u103206212 close "/assets/img/testimonial-bg.jpg" bytes read 0 written 1281111
+Dec 25 04:44:41 10.71.60.0 u103206212 [10.71.60.0|put|3|1281111|0|0|0|2f6173736574732f696d672f74657374696d6f6e69616c2d62672e6a7067|]
+Dec 25 04:44:42 10.71.60.0 u103206212 open "/assets/js/bootstrap.min.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:42 10.71.60.0 u103206212 open "/assets/js/jquery-contact.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:43 10.71.60.0 u103206212 close "/assets/js/jquery-contact.js" bytes read 0 written 1464
+Dec 25 04:44:43 10.71.60.0 u103206212 [10.71.60.0|put|1|1464|0|0|0|2f6173736574732f6a732f6a71756572792d636f6e746163742e6a73|]
+Dec 25 04:44:43 10.71.60.0 u103206212 close "/assets/js/bootstrap.min.js" bytes read 0 written 51045
+Dec 25 04:44:43 10.71.60.0 u103206212 [10.71.60.0|put|1|51045|0|0|0|2f6173736574732f6a732f626f6f7473747261702e6d696e2e6a73|]
+Dec 25 04:44:43 10.71.60.0 u103206212 open "/assets/js/jquery-ui.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:43 10.71.60.0 u103206212 open "/assets/js/jquery.ajaxchimp.min.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:44 10.71.60.0 u103206212 close "/assets/js/jquery.ajaxchimp.min.js" bytes read 0 written 2381
+Dec 25 04:44:44 10.71.60.0 u103206212 [10.71.60.0|put|1|2381|0|0|0|2f6173736574732f6a732f6a71756572792e616a61786368696d702e6d696e2e6a73|]
+Dec 25 04:44:44 10.71.60.0 u103206212 open "/assets/js/jquery.counterup.min.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:44 10.71.60.0 u103206212 close "/assets/js/jquery-ui.js" bytes read 0 written 539419
+Dec 25 04:44:44 10.71.60.0 u103206212 [10.71.60.0|put|1|539419|0|0|0|2f6173736574732f6a732f6a71756572792d75692e6a73|]
+Dec 25 04:44:44 10.71.60.0 u103206212 close "/assets/js/jquery.counterup.min.js" bytes read 0 written 1074
+Dec 25 04:44:44 10.71.60.0 u103206212 [10.71.60.0|put|0|1074|0|0|0|2f6173736574732f6a732f6a71756572792e636f756e74657275702e6d696e2e6a73|]
+Dec 25 04:44:45 10.71.60.0 u103206212 open "/assets/js/jquery.easing.min.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:45 10.71.60.0 u103206212 open "/assets/js/jquery.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:45 10.71.60.0 u103206212 close "/assets/js/jquery.easing.min.js" bytes read 0 written 2532
+Dec 25 04:44:45 10.71.60.0 u103206212 [10.71.60.0|put|0|2532|0|0|0|2f6173736574732f6a732f6a71756572792e656173696e672e6d696e2e6a73|]
+Dec 25 04:44:46 10.71.60.0 u103206212 open "/assets/js/jquery.magnific-popup.min.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:46 10.71.60.0 u103206212 close "/assets/js/jquery.js" bytes read 0 written 293074
+Dec 25 04:44:46 10.71.60.0 u103206212 [10.71.60.0|put|1|293074|0|0|0|2f6173736574732f6a732f6a71756572792e6a73|]
+Dec 25 04:44:46 10.71.60.0 u103206212 close "/assets/js/jquery.magnific-popup.min.js" bytes read 0 written 20216
+Dec 25 04:44:46 10.71.60.0 u103206212 [10.71.60.0|put|0|20216|0|0|0|2f6173736574732f6a732f6a71756572792e6d61676e696669632d706f7075702e6d696e2e6a73|]
+Dec 25 04:44:47 10.71.60.0 u103206212 open "/assets/js/jquery.min.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:47 10.71.60.0 u103206212 open "/assets/js/jquery.mixitup.min.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:47 10.71.60.0 u103206212 close "/assets/js/jquery.min.js" bytes read 0 written 84361
+Dec 25 04:44:47 10.71.60.0 u103206212 [10.71.60.0|put|0|84361|0|0|0|2f6173736574732f6a732f6a71756572792e6d696e2e6a73|]
+Dec 25 04:44:47 10.71.60.0 u103206212 close "/assets/js/jquery.mixitup.min.js" bytes read 0 written 28948
+Dec 25 04:44:47 10.71.60.0 u103206212 [10.71.60.0|put|0|28948|0|0|0|2f6173736574732f6a732f6a71756572792e6d6978697475702e6d696e2e6a73|]
+Dec 25 04:44:47 10.71.60.0 u103206212 open "/assets/js/jquery.themepunch.revolution.min.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:48 10.71.60.0 u103206212 open "/assets/js/jquery.themepunch.tools.min.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:48 10.71.60.0 u103206212 close "/assets/js/jquery.themepunch.revolution.min.js" bytes read 0 written 103054
+Dec 25 04:44:48 10.71.60.0 u103206212 [10.71.60.0|put|1|103054|0|0|0|2f6173736574732f6a732f6a71756572792e7468656d6570756e63682e7265766f6c7574696f6e2e6d696e2e6a73|]
+Dec 25 04:44:48 10.71.60.0 u103206212 open "/assets/js/main.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:49 10.71.60.0 u103206212 close "/assets/js/jquery.themepunch.tools.min.js" bytes read 0 written 203568
+Dec 25 04:44:49 10.71.60.0 u103206212 [10.71.60.0|put|1|203568|0|0|0|2f6173736574732f6a732f6a71756572792e7468656d6570756e63682e746f6f6c732e6d696e2e6a73|]
+Dec 25 04:44:49 10.71.60.0 u103206212 close "/assets/js/main.js" bytes read 0 written 6646
+Dec 25 04:44:49 10.71.60.0 u103206212 [10.71.60.0|put|1|6646|0|0|0|2f6173736574732f6a732f6d61696e2e6a73|]
+Dec 25 04:44:49 10.71.60.0 u103206212 open "/assets/js/owl.carousel.min.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:49 10.71.60.0 u103206212 open "/assets/js/popper.min.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:50 10.71.60.0 u103206212 close "/assets/js/owl.carousel.min.js" bytes read 0 written 40401
+Dec 25 04:44:50 10.71.60.0 u103206212 [10.71.60.0|put|1|40401|0|0|0|2f6173736574732f6a732f6f776c2e6361726f7573656c2e6d696e2e6a73|]
+Dec 25 04:44:50 10.71.60.0 u103206212 close "/assets/js/popper.min.js" bytes read 0 written 20342
+Dec 25 04:44:50 10.71.60.0 u103206212 [10.71.60.0|put|1|20342|0|0|0|2f6173736574732f6a732f706f707065722e6d696e2e6a73|]
+Dec 25 04:44:50 10.71.60.0 u103206212 open "/assets/js/revolution.addon.particles.min.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:50 10.71.60.0 u103206212 open "/assets/js/revolution.extension.actions.min.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:51 10.71.60.0 u103206212 close "/assets/js/revolution.addon.particles.min.js" bytes read 0 written 39578
+Dec 25 04:44:51 10.71.60.0 u103206212 [10.71.60.0|put|1|39578|0|0|0|2f6173736574732f6a732f7265766f6c7574696f6e2e6164646f6e2e7061727469636c65732e6d696e2e6a73|]
+Dec 25 04:44:51 10.71.60.0 u103206212 close "/assets/js/revolution.extension.actions.min.js" bytes read 0 written 13453
+Dec 25 04:44:51 10.71.60.0 u103206212 [10.71.60.0|put|1|13453|0|0|0|2f6173736574732f6a732f7265766f6c7574696f6e2e657874656e73696f6e2e616374696f6e732e6d696e2e6a73|]
+Dec 25 04:44:51 10.71.60.0 u103206212 open "/assets/js/revolution.extension.carousel.min.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:51 10.71.60.0 u103206212 open "/assets/js/revolution.extension.kenburn.min.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:52 10.71.60.0 u103206212 close "/assets/js/revolution.extension.carousel.min.js" bytes read 0 written 11654
+Dec 25 04:44:52 10.71.60.0 u103206212 [10.71.60.0|put|1|11654|0|0|0|2f6173736574732f6a732f7265766f6c7574696f6e2e657874656e73696f6e2e6361726f7573656c2e6d696e2e6a73|]
+Dec 25 04:44:52 10.71.60.0 u103206212 close "/assets/js/revolution.extension.kenburn.min.js" bytes read 0 written 6690
+Dec 25 04:44:52 10.71.60.0 u103206212 [10.71.60.0|put|1|6690|0|0|0|2f6173736574732f6a732f7265766f6c7574696f6e2e657874656e73696f6e2e6b656e6275726e2e6d696e2e6a73|]
+Dec 25 04:44:52 10.71.60.0 u103206212 open "/assets/js/revolution.extension.layeranimation.min.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:52 10.71.60.0 u103206212 open "/assets/js/revolution.extension.migration.min.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:52 10.71.60.0 u103206212 close "/assets/js/revolution.extension.layeranimation.min.js" bytes read 0 written 91289
+Dec 25 04:44:52 10.71.60.0 u103206212 [10.71.60.0|put|0|91289|0|0|0|2f6173736574732f6a732f7265766f6c7574696f6e2e657874656e73696f6e2e6c61796572616e696d6174696f6e2e6d696e2e6a73|]
+Dec 25 04:44:52 10.71.60.0 u103206212 close "/assets/js/revolution.extension.migration.min.js" bytes read 0 written 42120
+Dec 25 04:44:52 10.71.60.0 u103206212 [10.71.60.0|put|0|42120|0|0|0|2f6173736574732f6a732f7265766f6c7574696f6e2e657874656e73696f6e2e6d6967726174696f6e2e6d696e2e6a73|]
+Dec 25 04:44:53 10.71.60.0 u103206212 open "/assets/js/revolution.extension.navigation.min.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:53 10.71.60.0 u103206212 open "/assets/js/revolution.extension.parallax.min.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:53 10.71.60.0 u103206212 close "/assets/js/revolution.extension.navigation.min.js" bytes read 0 written 42120
+Dec 25 04:44:53 10.71.60.0 u103206212 [10.71.60.0|put|0|42120|0|0|0|2f6173736574732f6a732f7265766f6c7574696f6e2e657874656e73696f6e2e6e617669676174696f6e2e6d696e2e6a73|]
+Dec 25 04:44:53 10.71.60.0 u103206212 close "/assets/js/revolution.extension.parallax.min.js" bytes read 0 written 22648
+Dec 25 04:44:53 10.71.60.0 u103206212 [10.71.60.0|put|0|22648|0|0|0|2f6173736574732f6a732f7265766f6c7574696f6e2e657874656e73696f6e2e706172616c6c61782e6d696e2e6a73|]
+Dec 25 04:44:54 10.71.60.0 u103206212 open "/assets/js/revolution.extension.slideanims.min.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:54 10.71.60.0 u103206212 open "/assets/js/revolution.extension.video.min.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:54 10.71.60.0 u103206212 close "/assets/js/revolution.extension.slideanims.min.js" bytes read 0 written 57639
+Dec 25 04:44:54 10.71.60.0 u103206212 [10.71.60.0|put|0|57639|0|0|0|2f6173736574732f6a732f7265766f6c7574696f6e2e657874656e73696f6e2e736c696465616e696d732e6d696e2e6a73|]
+Dec 25 04:44:54 10.71.60.0 u103206212 close "/assets/js/revolution.extension.video.min.js" bytes read 0 written 42588
+Dec 25 04:44:54 10.71.60.0 u103206212 [10.71.60.0|put|0|42588|0|0|0|2f6173736574732f6a732f7265766f6c7574696f6e2e657874656e73696f6e2e766964656f2e6d696e2e6a73|]
+Dec 25 04:44:55 10.71.60.0 u103206212 open "/assets/js/scrollreveal.min.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:55 10.71.60.0 u103206212 open "/assets/js/warning.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:55 10.71.60.0 u103206212 close "/assets/js/scrollreveal.min.js" bytes read 0 written 9095
+Dec 25 04:44:55 10.71.60.0 u103206212 [10.71.60.0|put|0|9095|0|0|0|2f6173736574732f6a732f7363726f6c6c72657665616c2e6d696e2e6a73|]
+Dec 25 04:44:55 10.71.60.0 u103206212 close "/assets/js/warning.js" bytes read 0 written 2802
+Dec 25 04:44:55 10.71.60.0 u103206212 [10.71.60.0|put|0|2802|0|0|0|2f6173736574732f6a732f7761726e696e672e6a73|]
+Dec 25 04:44:56 10.71.60.0 u103206212 open "/assets/js/waypoints.min.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:56 10.71.60.0 u103206212 open "/assets/js/wow.min.js" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:44:56 10.71.60.0 u103206212 close "/assets/js/waypoints.min.js" bytes read 0 written 8051
+Dec 25 04:44:56 10.71.60.0 u103206212 [10.71.60.0|put|0|8051|0|0|0|2f6173736574732f6a732f776179706f696e74732e6d696e2e6a73|]
+Dec 25 04:44:56 10.71.60.0 u103206212 close "/assets/js/wow.min.js" bytes read 0 written 8416
+Dec 25 04:44:56 10.71.60.0 u103206212 [10.71.60.0|put|0|8416|0|0|0|2f6173736574732f6a732f776f772e6d696e2e6a73|]
+Dec 25 04:44:56 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:44:57 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:44:57 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:44:59 10.71.60.0 u103206212 mkdir name "/fonts" mode 0777
+Dec 25 04:44:59 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f666f6e7473|]
+Dec 25 04:45:00 10.71.60.0 u103206212 mkdir name "/fonts/roboto-slab" mode 0777
+Dec 25 04:45:00 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f666f6e74732f726f626f746f2d736c6162|]
+Dec 25 04:45:02 10.71.60.0 u103206212 open "/fonts/roboto-slab/roboto-slab-v7-latin-300.eot" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:02 10.71.60.0 u103206212 open "/fonts/roboto-slab/roboto-slab-v7-latin-300.svg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:02 10.71.60.0 u103206212 close "/fonts/roboto-slab/roboto-slab-v7-latin-300.eot" bytes read 0 written 20132
+Dec 25 04:45:02 10.71.60.0 u103206212 [10.71.60.0|put|0|20132|0|0|0|2f666f6e74732f726f626f746f2d736c61622f726f626f746f2d736c61622d76372d6c6174696e2d3330302e656f74|]
+Dec 25 04:45:02 10.71.60.0 u103206212 close "/fonts/roboto-slab/roboto-slab-v7-latin-300.svg" bytes read 0 written 56958
+Dec 25 04:45:02 10.71.60.0 u103206212 [10.71.60.0|put|0|56958|0|0|0|2f666f6e74732f726f626f746f2d736c61622f726f626f746f2d736c61622d76372d6c6174696e2d3330302e737667|]
+Dec 25 04:45:03 10.71.60.0 u103206212 open "/fonts/roboto-slab/roboto-slab-v7-latin-300.ttf" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:03 10.71.60.0 u103206212 open "/fonts/roboto-slab/roboto-slab-v7-latin-300.woff" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:03 10.71.60.0 u103206212 close "/fonts/roboto-slab/roboto-slab-v7-latin-300.ttf" bytes read 0 written 37712
+Dec 25 04:45:03 10.71.60.0 u103206212 [10.71.60.0|put|0|37712|0|0|0|2f666f6e74732f726f626f746f2d736c61622f726f626f746f2d736c61622d76372d6c6174696e2d3330302e747466|]
+Dec 25 04:45:03 10.71.60.0 u103206212 close "/fonts/roboto-slab/roboto-slab-v7-latin-300.woff" bytes read 0 written 22212
+Dec 25 04:45:03 10.71.60.0 u103206212 [10.71.60.0|put|0|22212|0|0|0|2f666f6e74732f726f626f746f2d736c61622f726f626f746f2d736c61622d76372d6c6174696e2d3330302e776f6666|]
+Dec 25 04:45:04 10.71.60.0 u103206212 open "/fonts/roboto-slab/roboto-slab-v7-latin-300.woff2" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:04 10.71.60.0 u103206212 open "/fonts/roboto-slab/roboto-slab-v7-latin-300d41d.eot" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:04 10.71.60.0 u103206212 close "/fonts/roboto-slab/roboto-slab-v7-latin-300.woff2" bytes read 0 written 17836
+Dec 25 04:45:04 10.71.60.0 u103206212 [10.71.60.0|put|0|17836|0|0|0|2f666f6e74732f726f626f746f2d736c61622f726f626f746f2d736c61622d76372d6c6174696e2d3330302e776f666632|]
+Dec 25 04:45:04 10.71.60.0 u103206212 close "/fonts/roboto-slab/roboto-slab-v7-latin-300d41d.eot" bytes read 0 written 20132
+Dec 25 04:45:04 10.71.60.0 u103206212 [10.71.60.0|put|0|20132|0|0|0|2f666f6e74732f726f626f746f2d736c61622f726f626f746f2d736c61622d76372d6c6174696e2d333030643431642e656f74|]
+Dec 25 04:45:05 10.71.60.0 u103206212 open "/fonts/roboto-slab/roboto-slab-v7-latin-700.eot" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:05 10.71.60.0 u103206212 open "/fonts/roboto-slab/roboto-slab-v7-latin-700.svg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:05 10.71.60.0 u103206212 close "/fonts/roboto-slab/roboto-slab-v7-latin-700.eot" bytes read 0 written 19774
+Dec 25 04:45:05 10.71.60.0 u103206212 [10.71.60.0|put|0|19774|0|0|0|2f666f6e74732f726f626f746f2d736c61622f726f626f746f2d736c61622d76372d6c6174696e2d3730302e656f74|]
+Dec 25 04:45:05 10.71.60.0 u103206212 close "/fonts/roboto-slab/roboto-slab-v7-latin-700.svg" bytes read 0 written 57005
+Dec 25 04:45:05 10.71.60.0 u103206212 [10.71.60.0|put|0|57005|0|0|0|2f666f6e74732f726f626f746f2d736c61622f726f626f746f2d736c61622d76372d6c6174696e2d3730302e737667|]
+Dec 25 04:45:05 10.71.60.0 u103206212 open "/fonts/roboto-slab/roboto-slab-v7-latin-700.ttf" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:06 10.71.60.0 u103206212 open "/fonts/roboto-slab/roboto-slab-v7-latin-700.woff" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:06 10.71.60.0 u103206212 close "/fonts/roboto-slab/roboto-slab-v7-latin-700.ttf" bytes read 0 written 36448
+Dec 25 04:45:06 10.71.60.0 u103206212 [10.71.60.0|put|1|36448|0|0|0|2f666f6e74732f726f626f746f2d736c61622f726f626f746f2d736c61622d76372d6c6174696e2d3730302e747466|]
+Dec 25 04:45:06 10.71.60.0 u103206212 close "/fonts/roboto-slab/roboto-slab-v7-latin-700.woff" bytes read 0 written 21868
+Dec 25 04:45:06 10.71.60.0 u103206212 [10.71.60.0|put|0|21868|0|0|0|2f666f6e74732f726f626f746f2d736c61622f726f626f746f2d736c61622d76372d6c6174696e2d3730302e776f6666|]
+Dec 25 04:45:06 10.71.60.0 u103206212 open "/fonts/roboto-slab/roboto-slab-v7-latin-700.woff2" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:07 10.71.60.0 u103206212 open "/fonts/roboto-slab/roboto-slab-v7-latin-700d41d.eot" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:07 10.71.60.0 u103206212 close "/fonts/roboto-slab/roboto-slab-v7-latin-700.woff2" bytes read 0 written 17532
+Dec 25 04:45:07 10.71.60.0 u103206212 [10.71.60.0|put|1|17532|0|0|0|2f666f6e74732f726f626f746f2d736c61622f726f626f746f2d736c61622d76372d6c6174696e2d3730302e776f666632|]
+Dec 25 04:45:07 10.71.60.0 u103206212 close "/fonts/roboto-slab/roboto-slab-v7-latin-700d41d.eot" bytes read 0 written 19774
+Dec 25 04:45:07 10.71.60.0 u103206212 [10.71.60.0|put|0|19774|0|0|0|2f666f6e74732f726f626f746f2d736c61622f726f626f746f2d736c61622d76372d6c6174696e2d373030643431642e656f74|]
+Dec 25 04:45:07 10.71.60.0 u103206212 open "/fonts/roboto-slab/roboto-slab-v7-latin-regular.eot" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:07 10.71.60.0 u103206212 open "/fonts/roboto-slab/roboto-slab-v7-latin-regular.svg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:08 10.71.60.0 u103206212 close "/fonts/roboto-slab/roboto-slab-v7-latin-regular.eot" bytes read 0 written 19559
+Dec 25 04:45:08 10.71.60.0 u103206212 [10.71.60.0|put|1|19559|0|0|0|2f666f6e74732f726f626f746f2d736c61622f726f626f746f2d736c61622d76372d6c6174696e2d726567756c61722e656f74|]
+Dec 25 04:45:08 10.71.60.0 u103206212 close "/fonts/roboto-slab/roboto-slab-v7-latin-regular.svg" bytes read 0 written 57071
+Dec 25 04:45:08 10.71.60.0 u103206212 [10.71.60.0|put|1|57071|0|0|0|2f666f6e74732f726f626f746f2d736c61622f726f626f746f2d736c61622d76372d6c6174696e2d726567756c61722e737667|]
+Dec 25 04:45:08 10.71.60.0 u103206212 open "/fonts/roboto-slab/roboto-slab-v7-latin-regular.ttf" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:08 10.71.60.0 u103206212 open "/fonts/roboto-slab/roboto-slab-v7-latin-regular.woff" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:09 10.71.60.0 u103206212 close "/fonts/roboto-slab/roboto-slab-v7-latin-regular.ttf" bytes read 0 written 36112
+Dec 25 04:45:09 10.71.60.0 u103206212 [10.71.60.0|put|1|36112|0|0|0|2f666f6e74732f726f626f746f2d736c61622f726f626f746f2d736c61622d76372d6c6174696e2d726567756c61722e747466|]
+Dec 25 04:45:09 10.71.60.0 u103206212 close "/fonts/roboto-slab/roboto-slab-v7-latin-regular.woff" bytes read 0 written 21700
+Dec 25 04:45:09 10.71.60.0 u103206212 [10.71.60.0|put|1|21700|0|0|0|2f666f6e74732f726f626f746f2d736c61622f726f626f746f2d736c61622d76372d6c6174696e2d726567756c61722e776f6666|]
+Dec 25 04:45:09 10.71.60.0 u103206212 open "/fonts/roboto-slab/roboto-slab-v7-latin-regular.woff2" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:09 10.71.60.0 u103206212 open "/fonts/roboto-slab/roboto-slab-v7-latin-regulard41d.eot" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:09 10.71.60.0 u103206212 close "/fonts/roboto-slab/roboto-slab-v7-latin-regular.woff2" bytes read 0 written 17424
+Dec 25 04:45:09 10.71.60.0 u103206212 [10.71.60.0|put|0|17424|0|0|0|2f666f6e74732f726f626f746f2d736c61622f726f626f746f2d736c61622d76372d6c6174696e2d726567756c61722e776f666632|]
+Dec 25 04:45:10 10.71.60.0 u103206212 close "/fonts/roboto-slab/roboto-slab-v7-latin-regulard41d.eot" bytes read 0 written 19559
+Dec 25 04:45:10 10.71.60.0 u103206212 [10.71.60.0|put|1|19559|0|0|0|2f666f6e74732f726f626f746f2d736c61622f726f626f746f2d736c61622d76372d6c6174696e2d726567756c6172643431642e656f74|]
+Dec 25 04:45:10 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:45:11 10.71.60.0 u103206212 mkdir name "/images/img" mode 0777
+Dec 25 04:45:11 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f696d616765732f696d67|]
+Dec 25 04:45:13 10.71.60.0 u103206212 open "/images/img/1.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:13 10.71.60.0 u103206212 open "/images/img/Alisa.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:17 10.71.60.0 u103206212 close "/images/img/Alisa.jpg" bytes read 0 written 314607
+Dec 25 04:45:17 10.71.60.0 u103206212 [10.71.60.0|put|4|314607|0|0|0|2f696d616765732f696d672f416c6973612e6a7067|]
+Dec 25 04:45:17 10.71.60.0 u103206212 open "/images/img/Andranik.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:18 10.71.60.0 u103206212 close "/images/img/Andranik.jpg" bytes read 0 written 204290
+Dec 25 04:45:18 10.71.60.0 u103206212 [10.71.60.0|put|1|204290|0|0|0|2f696d616765732f696d672f416e6472616e696b2e6a7067|]
+Dec 25 04:45:18 10.71.60.0 u103206212 close "/images/img/1.jpg" bytes read 0 written 1198645
+Dec 25 04:45:18 10.71.60.0 u103206212 [10.71.60.0|put|5|1198645|0|0|0|2f696d616765732f696d672f312e6a7067|]
+Dec 25 04:45:19 10.71.60.0 u103206212 open "/images/img/Artboard1.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:19 10.71.60.0 u103206212 open "/images/img/Gagik.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:20 10.71.60.0 u103206212 close "/images/img/Gagik.jpg" bytes read 0 written 251734
+Dec 25 04:45:20 10.71.60.0 u103206212 [10.71.60.0|put|1|251734|0|0|0|2f696d616765732f696d672f476167696b2e6a7067|]
+Dec 25 04:45:20 10.71.60.0 u103206212 open "/images/img/hovo.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:21 10.71.60.0 u103206212 close "/images/img/hovo.jpg" bytes read 0 written 95296
+Dec 25 04:45:21 10.71.60.0 u103206212 [10.71.60.0|put|1|95296|0|0|0|2f696d616765732f696d672f686f766f2e6a7067|]
+Dec 25 04:45:21 10.71.60.0 u103206212 open "/images/img/hripsime.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:22 10.71.60.0 u103206212 close "/images/img/hripsime.jpg" bytes read 0 written 57557
+Dec 25 04:45:22 10.71.60.0 u103206212 [10.71.60.0|put|1|57557|0|0|0|2f696d616765732f696d672f6872697073696d652e6a7067|]
+Dec 25 04:45:22 10.71.60.0 u103206212 close "/images/img/Artboard1.jpg" bytes read 0 written 1185443
+Dec 25 04:45:22 10.71.60.0 u103206212 [10.71.60.0|put|3|1185443|0|0|0|2f696d616765732f696d672f417274626f617264312e6a7067|]
+Dec 25 04:45:22 10.71.60.0 u103206212 open "/images/img/hummingbird-bird-birds-349758.jpeg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:22 10.71.60.0 u103206212 open "/images/img/image.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:23 10.71.60.0 u103206212 close "/images/img/hummingbird-bird-birds-349758.jpeg" bytes read 0 written 100691
+Dec 25 04:45:23 10.71.60.0 u103206212 [10.71.60.0|put|1|100691|0|0|0|2f696d616765732f696d672f68756d6d696e67626972642d626972642d62697264732d3334393735382e6a706567|]
+Dec 25 04:45:23 10.71.60.0 u103206212 open "/images/img/levon.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:23 10.71.60.0 u103206212 close "/images/img/image.jpg" bytes read 0 written 180596
+Dec 25 04:45:23 10.71.60.0 u103206212 [10.71.60.0|put|1|180596|0|0|0|2f696d616765732f696d672f696d6167652e6a7067|]
+Dec 25 04:45:24 10.71.60.0 u103206212 open "/images/img/logo.png" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:24 10.71.60.0 u103206212 close "/images/img/logo.png" bytes read 0 written 21234
+Dec 25 04:45:24 10.71.60.0 u103206212 [10.71.60.0|put|0|21234|0|0|0|2f696d616765732f696d672f6c6f676f2e706e67|]
+Dec 25 04:45:25 10.71.60.0 u103206212 open "/images/img/narek.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:25 10.71.60.0 u103206212 close "/images/img/levon.jpg" bytes read 0 written 207992
+Dec 25 04:45:25 10.71.60.0 u103206212 [10.71.60.0|put|2|207992|0|0|0|2f696d616765732f696d672f6c65766f6e2e6a7067|]
+Dec 25 04:45:25 10.71.60.0 u103206212 close "/images/img/narek.jpg" bytes read 0 written 89959
+Dec 25 04:45:25 10.71.60.0 u103206212 [10.71.60.0|put|0|89959|0|0|0|2f696d616765732f696d672f6e6172656b2e6a7067|]
+Dec 25 04:45:25 10.71.60.0 u103206212 open "/images/img/NE.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:26 10.71.60.0 u103206212 open "/images/img/preloader-img.png" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:26 10.71.60.0 u103206212 close "/images/img/NE.jpg" bytes read 0 written 21338
+Dec 25 04:45:26 10.71.60.0 u103206212 [10.71.60.0|put|1|21338|0|0|0|2f696d616765732f696d672f4e452e6a7067|]
+Dec 25 04:45:26 10.71.60.0 u103206212 close "/images/img/preloader-img.png" bytes read 0 written 7739
+Dec 25 04:45:26 10.71.60.0 u103206212 [10.71.60.0|put|0|7739|0|0|0|2f696d616765732f696d672f7072656c6f616465722d696d672e706e67|]
+Dec 25 04:45:26 10.71.60.0 u103206212 open "/images/img/_AR_7643.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:27 10.71.60.0 u103206212 mkdir name "/php/cfg" mode 0777
+Dec 25 04:45:27 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f636667|]
+Dec 25 04:45:28 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:45:28 10.71.60.0 u103206212 close "/images/img/_AR_7643.jpg" bytes read 0 written 416701
+Dec 25 04:45:28 10.71.60.0 u103206212 [10.71.60.0|put|2|416701|0|0|0|2f696d616765732f696d672f5f41525f373634332e6a7067|]
+Dec 25 04:45:29 10.71.60.0 u103206212 mkdir name "/php/CompatInfo" mode 0777
+Dec 25 04:45:29 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f436f6d706174496e666f|]
+Dec 25 04:45:31 10.71.60.0 u103206212 open "/php/CompatInfo/bcmath_func_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:31 10.71.60.0 u103206212 open "/php/CompatInfo/apache2handler_sapi_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:31 10.71.60.0 u103206212 close "/php/CompatInfo/bcmath_func_array.php" bytes read 0 written 1606
+Dec 25 04:45:31 10.71.60.0 u103206212 [10.71.60.0|put|0|1606|0|0|0|2f7068702f436f6d706174496e666f2f62636d6174685f66756e635f61727261792e706870|]
+Dec 25 04:45:31 10.71.60.0 u103206212 close "/php/CompatInfo/apache2handler_sapi_array.php" bytes read 0 written 2073
+Dec 25 04:45:31 10.71.60.0 u103206212 [10.71.60.0|put|0|2073|0|0|0|2f7068702f436f6d706174496e666f2f6170616368653268616e646c65725f736170695f61727261792e706870|]
+Dec 25 04:45:32 10.71.60.0 u103206212 open "/php/CompatInfo/bz2_func_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:32 10.71.60.0 u103206212 open "/php/CompatInfo/calendar_const_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:32 10.71.60.0 u103206212 close "/php/CompatInfo/bz2_func_array.php" bytes read 0 written 1587
+Dec 25 04:45:32 10.71.60.0 u103206212 [10.71.60.0|put|0|1587|0|0|0|2f7068702f436f6d706174496e666f2f627a325f66756e635f61727261792e706870|]
+Dec 25 04:45:32 10.71.60.0 u103206212 close "/php/CompatInfo/calendar_const_array.php" bytes read 0 written 2798
+Dec 25 04:45:32 10.71.60.0 u103206212 [10.71.60.0|put|0|2798|0|0|0|2f7068702f436f6d706174496e666f2f63616c656e6461725f636f6e73745f61727261792e706870|]
+Dec 25 04:45:33 10.71.60.0 u103206212 open "/php/CompatInfo/calendar_func_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:33 10.71.60.0 u103206212 open "/php/CompatInfo/cgi_sapi_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:33 10.71.60.0 u103206212 close "/php/CompatInfo/calendar_func_array.php" bytes read 0 written 2550
+Dec 25 04:45:33 10.71.60.0 u103206212 [10.71.60.0|put|0|2550|0|0|0|2f7068702f436f6d706174496e666f2f63616c656e6461725f66756e635f61727261792e706870|]
+Dec 25 04:45:33 10.71.60.0 u103206212 close "/php/CompatInfo/cgi_sapi_array.php" bytes read 0 written 697
+Dec 25 04:45:33 10.71.60.0 u103206212 [10.71.60.0|put|0|697|0|0|0|2f7068702f436f6d706174496e666f2f6367695f736170695f61727261792e706870|]
+Dec 25 04:45:34 10.71.60.0 u103206212 open "/php/CompatInfo/class_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:34 10.71.60.0 u103206212 open "/php/CompatInfo/Cli.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:34 10.71.60.0 u103206212 close "/php/CompatInfo/class_array.php" bytes read 0 written 2359
+Dec 25 04:45:34 10.71.60.0 u103206212 [10.71.60.0|put|0|2359|0|0|0|2f7068702f436f6d706174496e666f2f636c6173735f61727261792e706870|]
+Dec 25 04:45:34 10.71.60.0 u103206212 close "/php/CompatInfo/Cli.php" bytes read 0 written 24154
+Dec 25 04:45:34 10.71.60.0 u103206212 [10.71.60.0|put|0|24154|0|0|0|2f7068702f436f6d706174496e666f2f436c692e706870|]
+Dec 25 04:45:34 10.71.60.0 u103206212 open "/php/CompatInfo/cli_sapi_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:35 10.71.60.0 u103206212 open "/php/CompatInfo/com_dotnet_class_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:35 10.71.60.0 u103206212 close "/php/CompatInfo/cli_sapi_array.php" bytes read 0 written 697
+Dec 25 04:45:35 10.71.60.0 u103206212 [10.71.60.0|put|1|697|0|0|0|2f7068702f436f6d706174496e666f2f636c695f736170695f61727261792e706870|]
+Dec 25 04:45:35 10.71.60.0 u103206212 close "/php/CompatInfo/com_dotnet_class_array.php" bytes read 0 written 1448
+Dec 25 04:45:35 10.71.60.0 u103206212 [10.71.60.0|put|0|1448|0|0|0|2f7068702f436f6d706174496e666f2f636f6d5f646f746e65745f636c6173735f61727261792e706870|]
+Dec 25 04:45:35 10.71.60.0 u103206212 open "/php/CompatInfo/com_dotnet_const_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:35 10.71.60.0 u103206212 open "/php/CompatInfo/com_dotnet_func_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:36 10.71.60.0 u103206212 close "/php/CompatInfo/com_dotnet_const_array.php" bytes read 0 written 5053
+Dec 25 04:45:36 10.71.60.0 u103206212 [10.71.60.0|put|1|5053|0|0|0|2f7068702f436f6d706174496e666f2f636f6d5f646f746e65745f636f6e73745f61727261792e706870|]
+Dec 25 04:45:36 10.71.60.0 u103206212 close "/php/CompatInfo/com_dotnet_func_array.php" bytes read 0 written 4230
+Dec 25 04:45:36 10.71.60.0 u103206212 [10.71.60.0|put|1|4230|0|0|0|2f7068702f436f6d706174496e666f2f636f6d5f646f746e65745f66756e635f61727261792e706870|]
+Dec 25 04:45:36 10.71.60.0 u103206212 open "/php/CompatInfo/const_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:36 10.71.60.0 u103206212 open "/php/CompatInfo/ctype_func_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:37 10.71.60.0 u103206212 close "/php/CompatInfo/const_array.php" bytes read 0 written 2842
+Dec 25 04:45:37 10.71.60.0 u103206212 [10.71.60.0|put|1|2842|0|0|0|2f7068702f436f6d706174496e666f2f636f6e73745f61727261792e706870|]
+Dec 25 04:45:37 10.71.60.0 u103206212 close "/php/CompatInfo/ctype_func_array.php" bytes read 0 written 1753
+Dec 25 04:45:37 10.71.60.0 u103206212 [10.71.60.0|put|1|1753|0|0|0|2f7068702f436f6d706174496e666f2f63747970655f66756e635f61727261792e706870|]
+Dec 25 04:45:37 10.71.60.0 u103206212 open "/php/CompatInfo/date_class_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:37 10.71.60.0 u103206212 open "/php/CompatInfo/date_const_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:38 10.71.60.0 u103206212 close "/php/CompatInfo/date_class_array.php" bytes read 0 written 848
+Dec 25 04:45:38 10.71.60.0 u103206212 [10.71.60.0|put|1|848|0|0|0|2f7068702f436f6d706174496e666f2f646174655f636c6173735f61727261792e706870|]
+Dec 25 04:45:38 10.71.60.0 u103206212 close "/php/CompatInfo/date_const_array.php" bytes read 0 written 1973
+Dec 25 04:45:38 10.71.60.0 u103206212 [10.71.60.0|put|1|1973|0|0|0|2f7068702f436f6d706174496e666f2f646174655f636f6e73745f61727261792e706870|]
+Dec 25 04:45:38 10.71.60.0 u103206212 open "/php/CompatInfo/date_func_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:38 10.71.60.0 u103206212 open "/php/CompatInfo/dom_class_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:38 10.71.60.0 u103206212 close "/php/CompatInfo/date_func_array.php" bytes read 0 written 11308
+Dec 25 04:45:38 10.71.60.0 u103206212 [10.71.60.0|put|0|11308|0|0|0|2f7068702f436f6d706174496e666f2f646174655f66756e635f61727261792e706870|]
+Dec 25 04:45:39 10.71.60.0 u103206212 close "/php/CompatInfo/dom_class_array.php" bytes read 0 written 4895
+Dec 25 04:45:39 10.71.60.0 u103206212 [10.71.60.0|put|1|4895|0|0|0|2f7068702f436f6d706174496e666f2f646f6d5f636c6173735f61727261792e706870|]
+Dec 25 04:45:39 10.71.60.0 u103206212 open "/php/CompatInfo/dom_const_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:39 10.71.60.0 u103206212 open "/php/CompatInfo/dom_func_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:39 10.71.60.0 u103206212 close "/php/CompatInfo/dom_const_array.php" bytes read 0 written 5459
+Dec 25 04:45:39 10.71.60.0 u103206212 [10.71.60.0|put|0|5459|0|0|0|2f7068702f436f6d706174496e666f2f646f6d5f636f6e73745f61727261792e706870|]
+Dec 25 04:45:40 10.71.60.0 u103206212 close "/php/CompatInfo/dom_func_array.php" bytes read 0 written 1907
+Dec 25 04:45:40 10.71.60.0 u103206212 [10.71.60.0|put|1|1907|0|0|0|2f7068702f436f6d706174496e666f2f646f6d5f66756e635f61727261792e706870|]
+Dec 25 04:45:40 10.71.60.0 u103206212 open "/php/CompatInfo/filter_const_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:40 10.71.60.0 u103206212 open "/php/CompatInfo/filter_func_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:40 10.71.60.0 u103206212 close "/php/CompatInfo/filter_const_array.php" bytes read 0 written 6279
+Dec 25 04:45:40 10.71.60.0 u103206212 [10.71.60.0|put|0|6279|0|0|0|2f7068702f436f6d706174496e666f2f66696c7465725f636f6e73745f61727261792e706870|]
+Dec 25 04:45:40 10.71.60.0 u103206212 close "/php/CompatInfo/filter_func_array.php" bytes read 0 written 1351
+Dec 25 04:45:40 10.71.60.0 u103206212 [10.71.60.0|put|0|1351|0|0|0|2f7068702f436f6d706174496e666f2f66696c7465725f66756e635f61727261792e706870|]
+Dec 25 04:45:41 10.71.60.0 u103206212 open "/php/CompatInfo/ftp_const_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:41 10.71.60.0 u103206212 open "/php/CompatInfo/ftp_func_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:41 10.71.60.0 u103206212 close "/php/CompatInfo/ftp_const_array.php" bytes read 0 written 1494
+Dec 25 04:45:41 10.71.60.0 u103206212 [10.71.60.0|put|0|1494|0|0|0|2f7068702f436f6d706174496e666f2f6674705f636f6e73745f61727261792e706870|]
+Dec 25 04:45:41 10.71.60.0 u103206212 close "/php/CompatInfo/ftp_func_array.php" bytes read 0 written 4067
+Dec 25 04:45:41 10.71.60.0 u103206212 [10.71.60.0|put|0|4067|0|0|0|2f7068702f436f6d706174496e666f2f6674705f66756e635f61727261792e706870|]
+Dec 25 04:45:41 10.71.60.0 u103206212 open "/php/CompatInfo/func_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:42 10.71.60.0 u103206212 open "/php/CompatInfo/gd_const_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:42 10.71.60.0 u103206212 close "/php/CompatInfo/func_array.php" bytes read 0 written 3439
+Dec 25 04:45:42 10.71.60.0 u103206212 [10.71.60.0|put|1|3439|0|0|0|2f7068702f436f6d706174496e666f2f66756e635f61727261792e706870|]
+Dec 25 04:45:42 10.71.60.0 u103206212 close "/php/CompatInfo/gd_const_array.php" bytes read 0 written 5181
+Dec 25 04:45:42 10.71.60.0 u103206212 [10.71.60.0|put|0|5181|0|0|0|2f7068702f436f6d706174496e666f2f67645f636f6e73745f61727261792e706870|]
+Dec 25 04:45:42 10.71.60.0 u103206212 open "/php/CompatInfo/gd_func_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:43 10.71.60.0 u103206212 open "/php/CompatInfo/gettext_func_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:43 10.71.60.0 u103206212 close "/php/CompatInfo/gd_func_array.php" bytes read 0 written 11539
+Dec 25 04:45:43 10.71.60.0 u103206212 [10.71.60.0|put|1|11539|0|0|0|2f7068702f436f6d706174496e666f2f67645f66756e635f61727261792e706870|]
+Dec 25 04:45:43 10.71.60.0 u103206212 close "/php/CompatInfo/gettext_func_array.php" bytes read 0 written 1659
+Dec 25 04:45:43 10.71.60.0 u103206212 [10.71.60.0|put|0|1659|0|0|0|2f7068702f436f6d706174496e666f2f676574746578745f66756e635f61727261792e706870|]
+Dec 25 04:45:43 10.71.60.0 u103206212 open "/php/CompatInfo/gmp_const_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:44 10.71.60.0 u103206212 open "/php/CompatInfo/gmp_func_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:44 10.71.60.0 u103206212 close "/php/CompatInfo/gmp_const_array.php" bytes read 0 written 978
+Dec 25 04:45:44 10.71.60.0 u103206212 [10.71.60.0|put|1|978|0|0|0|2f7068702f436f6d706174496e666f2f676d705f636f6e73745f61727261792e706870|]
+Dec 25 04:45:44 10.71.60.0 u103206212 open "/php/CompatInfo/hash_const_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:44 10.71.60.0 u103206212 close "/php/CompatInfo/gmp_func_array.php" bytes read 0 written 4666
+Dec 25 04:45:44 10.71.60.0 u103206212 [10.71.60.0|put|0|4666|0|0|0|2f7068702f436f6d706174496e666f2f676d705f66756e635f61727261792e706870|]
+Dec 25 04:45:44 10.71.60.0 u103206212 close "/php/CompatInfo/hash_const_array.php" bytes read 0 written 673
+Dec 25 04:45:44 10.71.60.0 u103206212 [10.71.60.0|put|0|673|0|0|0|2f7068702f436f6d706174496e666f2f686173685f636f6e73745f61727261792e706870|]
+Dec 25 04:45:45 10.71.60.0 u103206212 open "/php/CompatInfo/hash_func_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:45 10.71.60.0 u103206212 open "/php/CompatInfo/iconv_const_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:45 10.71.60.0 u103206212 close "/php/CompatInfo/hash_func_array.php" bytes read 0 written 2033
+Dec 25 04:45:45 10.71.60.0 u103206212 [10.71.60.0|put|0|2033|0|0|0|2f7068702f436f6d706174496e666f2f686173685f66756e635f61727261792e706870|]
+Dec 25 04:45:45 10.71.60.0 u103206212 close "/php/CompatInfo/iconv_const_array.php" bytes read 0 written 1032
+Dec 25 04:45:45 10.71.60.0 u103206212 [10.71.60.0|put|0|1032|0|0|0|2f7068702f436f6d706174496e666f2f69636f6e765f636f6e73745f61727261792e706870|]
+Dec 25 04:45:45 10.71.60.0 u103206212 open "/php/CompatInfo/iconv_func_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:46 10.71.60.0 u103206212 open "/php/CompatInfo/imap_const_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:46 10.71.60.0 u103206212 close "/php/CompatInfo/iconv_func_array.php" bytes read 0 written 1820
+Dec 25 04:45:46 10.71.60.0 u103206212 [10.71.60.0|put|1|1820|0|0|0|2f7068702f436f6d706174496e666f2f69636f6e765f66756e635f61727261792e706870|]
+Dec 25 04:45:46 10.71.60.0 u103206212 close "/php/CompatInfo/imap_const_array.php" bytes read 0 written 6463
+Dec 25 04:45:46 10.71.60.0 u103206212 [10.71.60.0|put|0|6463|0|0|0|2f7068702f436f6d706174496e666f2f696d61705f636f6e73745f61727261792e706870|]
+Dec 25 04:45:46 10.71.60.0 u103206212 open "/php/CompatInfo/imap_func_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:47 10.71.60.0 u103206212 open "/php/CompatInfo/internal_const_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:47 10.71.60.0 u103206212 close "/php/CompatInfo/imap_func_array.php" bytes read 0 written 8129
+Dec 25 04:45:47 10.71.60.0 u103206212 [10.71.60.0|put|1|8129|0|0|0|2f7068702f436f6d706174496e666f2f696d61705f66756e635f61727261792e706870|]
+Dec 25 04:45:47 10.71.60.0 u103206212 close "/php/CompatInfo/internal_const_array.php" bytes read 0 written 6659
+Dec 25 04:45:47 10.71.60.0 u103206212 [10.71.60.0|put|0|6659|0|0|0|2f7068702f436f6d706174496e666f2f696e7465726e616c5f636f6e73745f61727261792e706870|]
+Dec 25 04:45:47 10.71.60.0 u103206212 open "/php/CompatInfo/json_func_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:48 10.71.60.0 u103206212 open "/php/CompatInfo/libxml_class_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:48 10.71.60.0 u103206212 close "/php/CompatInfo/json_func_array.php" bytes read 0 written 905
+Dec 25 04:45:48 10.71.60.0 u103206212 [10.71.60.0|put|1|905|0|0|0|2f7068702f436f6d706174496e666f2f6a736f6e5f66756e635f61727261792e706870|]
+Dec 25 04:45:48 10.71.60.0 u103206212 close "/php/CompatInfo/libxml_class_array.php" bytes read 0 written 725
+Dec 25 04:45:48 10.71.60.0 u103206212 [10.71.60.0|put|0|725|0|0|0|2f7068702f436f6d706174496e666f2f6c6962786d6c5f636c6173735f61727261792e706870|]
+Dec 25 04:45:48 10.71.60.0 u103206212 open "/php/CompatInfo/libxml_const_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:48 10.71.60.0 u103206212 open "/php/CompatInfo/libxml_func_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:49 10.71.60.0 u103206212 close "/php/CompatInfo/libxml_const_array.php" bytes read 0 written 2575
+Dec 25 04:45:49 10.71.60.0 u103206212 [10.71.60.0|put|1|2575|0|0|0|2f7068702f436f6d706174496e666f2f6c6962786d6c5f636f6e73745f61727261792e706870|]
+Dec 25 04:45:49 10.71.60.0 u103206212 close "/php/CompatInfo/libxml_func_array.php" bytes read 0 written 1178
+Dec 25 04:45:49 10.71.60.0 u103206212 [10.71.60.0|put|1|1178|0|0|0|2f7068702f436f6d706174496e666f2f6c6962786d6c5f66756e635f61727261792e706870|]
+Dec 25 04:45:49 10.71.60.0 u103206212 open "/php/CompatInfo/mbstring_const_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:49 10.71.60.0 u103206212 open "/php/CompatInfo/mbstring_func_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:50 10.71.60.0 u103206212 close "/php/CompatInfo/mbstring_const_array.php" bytes read 0 written 1197
+Dec 25 04:45:50 10.71.60.0 u103206212 [10.71.60.0|put|1|1197|0|0|0|2f7068702f436f6d706174496e666f2f6d62737472696e675f636f6e73745f61727261792e706870|]
+Dec 25 04:45:50 10.71.60.0 u103206212 close "/php/CompatInfo/mbstring_func_array.php" bytes read 0 written 8926
+Dec 25 04:45:50 10.71.60.0 u103206212 [10.71.60.0|put|1|8926|0|0|0|2f7068702f436f6d706174496e666f2f6d62737472696e675f66756e635f61727261792e706870|]
+Dec 25 04:45:50 10.71.60.0 u103206212 open "/php/CompatInfo/ming_class_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:50 10.71.60.0 u103206212 open "/php/CompatInfo/ming_const_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:50 10.71.60.0 u103206212 close "/php/CompatInfo/ming_class_array.php" bytes read 0 written 2998
+Dec 25 04:45:50 10.71.60.0 u103206212 [10.71.60.0|put|0|2998|0|0|0|2f7068702f436f6d706174496e666f2f6d696e675f636c6173735f61727261792e706870|]
+Dec 25 04:45:51 10.71.60.0 u103206212 close "/php/CompatInfo/ming_const_array.php" bytes read 0 written 6279
+Dec 25 04:45:51 10.71.60.0 u103206212 [10.71.60.0|put|1|6279|0|0|0|2f7068702f436f6d706174496e666f2f6d696e675f636f6e73745f61727261792e706870|]
+Dec 25 04:45:51 10.71.60.0 u103206212 open "/php/CompatInfo/ming_func_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:51 10.71.60.0 u103206212 open "/php/CompatInfo/mysqli_class_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:51 10.71.60.0 u103206212 close "/php/CompatInfo/ming_func_array.php" bytes read 0 written 1252
+Dec 25 04:45:51 10.71.60.0 u103206212 [10.71.60.0|put|0|1252|0|0|0|2f7068702f436f6d706174496e666f2f6d696e675f66756e635f61727261792e706870|]
+Dec 25 04:45:52 10.71.60.0 u103206212 close "/php/CompatInfo/mysqli_class_array.php" bytes read 0 written 1438
+Dec 25 04:45:52 10.71.60.0 u103206212 [10.71.60.0|put|1|1438|0|0|0|2f7068702f436f6d706174496e666f2f6d7973716c695f636c6173735f61727261792e706870|]
+Dec 25 04:45:52 10.71.60.0 u103206212 open "/php/CompatInfo/mysqli_const_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:52 10.71.60.0 u103206212 open "/php/CompatInfo/mysqli_func_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:52 10.71.60.0 u103206212 close "/php/CompatInfo/mysqli_const_array.php" bytes read 0 written 8927
+Dec 25 04:45:52 10.71.60.0 u103206212 [10.71.60.0|put|0|8927|0|0|0|2f7068702f436f6d706174496e666f2f6d7973716c695f636f6e73745f61727261792e706870|]
+Dec 25 04:45:52 10.71.60.0 u103206212 close "/php/CompatInfo/mysqli_func_array.php" bytes read 0 written 13762
+Dec 25 04:45:52 10.71.60.0 u103206212 [10.71.60.0|put|0|13762|0|0|0|2f7068702f436f6d706174496e666f2f6d7973716c695f66756e635f61727261792e706870|]
+Dec 25 04:45:53 10.71.60.0 u103206212 open "/php/CompatInfo/mysql_const_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:53 10.71.60.0 u103206212 open "/php/CompatInfo/mysql_func_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:53 10.71.60.0 u103206212 close "/php/CompatInfo/mysql_const_array.php" bytes read 0 written 1310
+Dec 25 04:45:53 10.71.60.0 u103206212 [10.71.60.0|put|0|1310|0|0|0|2f7068702f436f6d706174496e666f2f6d7973716c5f636f6e73745f61727261792e706870|]
+Dec 25 04:45:53 10.71.60.0 u103206212 close "/php/CompatInfo/mysql_func_array.php" bytes read 0 written 7894
+Dec 25 04:45:53 10.71.60.0 u103206212 [10.71.60.0|put|0|7894|0|0|0|2f7068702f436f6d706174496e666f2f6d7973716c5f66756e635f61727261792e706870|]
+Dec 25 04:45:54 10.71.60.0 u103206212 open "/php/CompatInfo/odbc_func_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:54 10.71.60.0 u103206212 open "/php/CompatInfo/odbc_const_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:54 10.71.60.0 u103206212 close "/php/CompatInfo/odbc_func_array.php" bytes read 0 written 8101
+Dec 25 04:45:54 10.71.60.0 u103206212 [10.71.60.0|put|0|8101|0|0|0|2f7068702f436f6d706174496e666f2f6f6462635f66756e635f61727261792e706870|]
+Dec 25 04:45:54 10.71.60.0 u103206212 close "/php/CompatInfo/odbc_const_array.php" bytes read 0 written 4521
+Dec 25 04:45:54 10.71.60.0 u103206212 [10.71.60.0|put|0|4521|0|0|0|2f7068702f436f6d706174496e666f2f6f6462635f636f6e73745f61727261792e706870|]
+Dec 25 04:45:55 10.71.60.0 u103206212 open "/php/CompatInfo/openssl_const_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:55 10.71.60.0 u103206212 open "/php/CompatInfo/openssl_func_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:55 10.71.60.0 u103206212 close "/php/CompatInfo/openssl_const_array.php" bytes read 0 written 4430
+Dec 25 04:45:55 10.71.60.0 u103206212 [10.71.60.0|put|0|4430|0|0|0|2f7068702f436f6d706174496e666f2f6f70656e73736c5f636f6e73745f61727261792e706870|]
+Dec 25 04:45:55 10.71.60.0 u103206212 close "/php/CompatInfo/openssl_func_array.php" bytes read 0 written 5559
+Dec 25 04:45:55 10.71.60.0 u103206212 [10.71.60.0|put|0|5559|0|0|0|2f7068702f436f6d706174496e666f2f6f70656e73736c5f66756e635f61727261792e706870|]
+Dec 25 04:45:56 10.71.60.0 u103206212 open "/php/CompatInfo/Parser.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:56 10.71.60.0 u103206212 open "/php/CompatInfo/pcre_const_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:56 10.71.60.0 u103206212 close "/php/CompatInfo/Parser.php" bytes read 0 written 71205
+Dec 25 04:45:56 10.71.60.0 u103206212 close "/php/CompatInfo/pcre_const_array.php" bytes read 0 written 2117
+Dec 25 04:45:56 10.71.60.0 u103206212 [10.71.60.0|put|0|71205|0|0|0|2f7068702f436f6d706174496e666f2f5061727365722e706870|]
+Dec 25 04:45:56 10.71.60.0 u103206212 [10.71.60.0|put|0|2117|0|0|0|2f7068702f436f6d706174496e666f2f706372655f636f6e73745f61727261792e706870|]
+Dec 25 04:45:57 10.71.60.0 u103206212 open "/php/CompatInfo/pcre_func_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:57 10.71.60.0 u103206212 open "/php/CompatInfo/PDO_class_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:57 10.71.60.0 u103206212 close "/php/CompatInfo/pcre_func_array.php" bytes read 0 written 1436
+Dec 25 04:45:57 10.71.60.0 u103206212 [10.71.60.0|put|0|1436|0|0|0|2f7068702f436f6d706174496e666f2f706372655f66756e635f61727261792e706870|]
+Dec 25 04:45:57 10.71.60.0 u103206212 close "/php/CompatInfo/PDO_class_array.php" bytes read 0 written 1093
+Dec 25 04:45:57 10.71.60.0 u103206212 [10.71.60.0|put|0|1093|0|0|0|2f7068702f436f6d706174496e666f2f50444f5f636c6173735f61727261792e706870|]
+Dec 25 04:45:57 10.71.60.0 u103206212 open "/php/CompatInfo/PDO_func_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:58 10.71.60.0 u103206212 open "/php/CompatInfo/pgsql_const_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:58 10.71.60.0 u103206212 close "/php/CompatInfo/PDO_func_array.php" bytes read 0 written 685
+Dec 25 04:45:58 10.71.60.0 u103206212 [10.71.60.0|put|1|685|0|0|0|2f7068702f436f6d706174496e666f2f50444f5f66756e635f61727261792e706870|]
+Dec 25 04:45:58 10.71.60.0 u103206212 close "/php/CompatInfo/pgsql_const_array.php" bytes read 0 written 5598
+Dec 25 04:45:58 10.71.60.0 u103206212 [10.71.60.0|put|0|5598|0|0|0|2f7068702f436f6d706174496e666f2f706773716c5f636f6e73745f61727261792e706870|]
+Dec 25 04:45:58 10.71.60.0 u103206212 open "/php/CompatInfo/pgsql_func_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:58 10.71.60.0 u103206212 open "/php/CompatInfo/Reflection_class_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:59 10.71.60.0 u103206212 close "/php/CompatInfo/pgsql_func_array.php" bytes read 0 written 12243
+Dec 25 04:45:59 10.71.60.0 u103206212 [10.71.60.0|put|1|12243|0|0|0|2f7068702f436f6d706174496e666f2f706773716c5f66756e635f61727261792e706870|]
+Dec 25 04:45:59 10.71.60.0 u103206212 close "/php/CompatInfo/Reflection_class_array.php" bytes read 0 written 2279
+Dec 25 04:45:59 10.71.60.0 u103206212 [10.71.60.0|put|1|2279|0|0|0|2f7068702f436f6d706174496e666f2f5265666c656374696f6e5f636c6173735f61727261792e706870|]
+Dec 25 04:45:59 10.71.60.0 u103206212 open "/php/CompatInfo/Renderer.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:45:59 10.71.60.0 u103206212 open "/php/CompatInfo/sapi_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:00 10.71.60.0 u103206212 close "/php/CompatInfo/Renderer.php" bytes read 0 written 14200
+Dec 25 04:46:00 10.71.60.0 u103206212 [10.71.60.0|put|1|14200|0|0|0|2f7068702f436f6d706174496e666f2f52656e64657265722e706870|]
+Dec 25 04:46:00 10.71.60.0 u103206212 close "/php/CompatInfo/sapi_array.php" bytes read 0 written 831
+Dec 25 04:46:00 10.71.60.0 u103206212 [10.71.60.0|put|1|831|0|0|0|2f7068702f436f6d706174496e666f2f736170695f61727261792e706870|]
+Dec 25 04:46:00 10.71.60.0 u103206212 open "/php/CompatInfo/session_func_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:00 10.71.60.0 u103206212 open "/php/CompatInfo/SimpleXML_class_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:01 10.71.60.0 u103206212 close "/php/CompatInfo/session_func_array.php" bytes read 0 written 2883
+Dec 25 04:46:01 10.71.60.0 u103206212 [10.71.60.0|put|1|2883|0|0|0|2f7068702f436f6d706174496e666f2f73657373696f6e5f66756e635f61727261792e706870|]
+Dec 25 04:46:01 10.71.60.0 u103206212 close "/php/CompatInfo/SimpleXML_class_array.php" bytes read 0 written 747
+Dec 25 04:46:01 10.71.60.0 u103206212 [10.71.60.0|put|1|747|0|0|0|2f7068702f436f6d706174496e666f2f53696d706c65584d4c5f636c6173735f61727261792e706870|]
+Dec 25 04:46:01 10.71.60.0 u103206212 open "/php/CompatInfo/SimpleXML_func_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:01 10.71.60.0 u103206212 open "/php/CompatInfo/snmp_const_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:02 10.71.60.0 u103206212 close "/php/CompatInfo/SimpleXML_func_array.php" bytes read 0 written 955
+Dec 25 04:46:02 10.71.60.0 u103206212 [10.71.60.0|put|0|955|0|0|0|2f7068702f436f6d706174496e666f2f53696d706c65584d4c5f66756e635f61727261792e706870|]
+Dec 25 04:46:02 10.71.60.0 u103206212 close "/php/CompatInfo/snmp_const_array.php" bytes read 0 written 2041
+Dec 25 04:46:02 10.71.60.0 u103206212 [10.71.60.0|put|1|2041|0|0|0|2f7068702f436f6d706174496e666f2f736e6d705f636f6e73745f61727261792e706870|]
+Dec 25 04:46:02 10.71.60.0 u103206212 open "/php/CompatInfo/snmp_func_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:02 10.71.60.0 u103206212 open "/php/CompatInfo/SPL_class_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:02 10.71.60.0 u103206212 close "/php/CompatInfo/snmp_func_array.php" bytes read 0 written 3177
+Dec 25 04:46:02 10.71.60.0 u103206212 [10.71.60.0|put|0|3177|0|0|0|2f7068702f436f6d706174496e666f2f736e6d705f66756e635f61727261792e706870|]
+Dec 25 04:46:03 10.71.60.0 u103206212 close "/php/CompatInfo/SPL_class_array.php" bytes read 0 written 6833
+Dec 25 04:46:03 10.71.60.0 u103206212 [10.71.60.0|put|1|6833|0|0|0|2f7068702f436f6d706174496e666f2f53504c5f636c6173735f61727261792e706870|]
+Dec 25 04:46:03 10.71.60.0 u103206212 open "/php/CompatInfo/SPL_func_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:03 10.71.60.0 u103206212 open "/php/CompatInfo/SQLite_class_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:03 10.71.60.0 u103206212 close "/php/CompatInfo/SPL_func_array.php" bytes read 0 written 2007
+Dec 25 04:46:03 10.71.60.0 u103206212 [10.71.60.0|put|0|2007|0|0|0|2f7068702f436f6d706174496e666f2f53504c5f66756e635f61727261792e706870|]
+Dec 25 04:46:04 10.71.60.0 u103206212 close "/php/CompatInfo/SQLite_class_array.php" bytes read 0 written 1166
+Dec 25 04:46:04 10.71.60.0 u103206212 [10.71.60.0|put|0|1166|0|0|0|2f7068702f436f6d706174496e666f2f53514c6974655f636c6173735f61727261792e706870|]
+Dec 25 04:46:04 10.71.60.0 u103206212 open "/php/CompatInfo/SQLite_const_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:04 10.71.60.0 u103206212 open "/php/CompatInfo/SQLite_func_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:04 10.71.60.0 u103206212 close "/php/CompatInfo/SQLite_const_array.php" bytes read 0 written 3549
+Dec 25 04:46:04 10.71.60.0 u103206212 [10.71.60.0|put|0|3549|0|0|0|2f7068702f436f6d706174496e666f2f53514c6974655f636f6e73745f61727261792e706870|]
+Dec 25 04:46:04 10.71.60.0 u103206212 close "/php/CompatInfo/SQLite_func_array.php" bytes read 0 written 5673
+Dec 25 04:46:04 10.71.60.0 u103206212 [10.71.60.0|put|0|5673|0|0|0|2f7068702f436f6d706174496e666f2f53514c6974655f66756e635f61727261792e706870|]
+Dec 25 04:46:05 10.71.60.0 u103206212 open "/php/CompatInfo/standard_class_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:05 10.71.60.0 u103206212 open "/php/CompatInfo/standard_const_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:05 10.71.60.0 u103206212 close "/php/CompatInfo/standard_class_array.php" bytes read 0 written 1077
+Dec 25 04:46:05 10.71.60.0 u103206212 [10.71.60.0|put|0|1077|0|0|0|2f7068702f436f6d706174496e666f2f7374616e646172645f636c6173735f61727261792e706870|]
+Dec 25 04:46:05 10.71.60.0 u103206212 close "/php/CompatInfo/standard_const_array.php" bytes read 0 written 23424
+Dec 25 04:46:05 10.71.60.0 u103206212 [10.71.60.0|put|0|23424|0|0|0|2f7068702f436f6d706174496e666f2f7374616e646172645f636f6e73745f61727261792e706870|]
+Dec 25 04:46:06 10.71.60.0 u103206212 open "/php/CompatInfo/standard_func_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:06 10.71.60.0 u103206212 open "/php/CompatInfo/tokenizer_const_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:06 10.71.60.0 u103206212 close "/php/CompatInfo/tokenizer_const_array.php" bytes read 0 written 11414
+Dec 25 04:46:06 10.71.60.0 u103206212 [10.71.60.0|put|0|11414|0|0|0|2f7068702f436f6d706174496e666f2f746f6b656e697a65725f636f6e73745f61727261792e706870|]
+Dec 25 04:46:07 10.71.60.0 u103206212 open "/php/CompatInfo/tokenizer_func_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:07 10.71.60.0 u103206212 close "/php/CompatInfo/tokenizer_func_array.php" bytes read 0 written 819
+Dec 25 04:46:07 10.71.60.0 u103206212 [10.71.60.0|put|0|819|0|0|0|2f7068702f436f6d706174496e666f2f746f6b656e697a65725f66756e635f61727261792e706870|]
+Dec 25 04:46:08 10.71.60.0 u103206212 open "/php/CompatInfo/wddx_func_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:08 10.71.60.0 u103206212 close "/php/CompatInfo/standard_func_array.php" bytes read 0 written 201397
+Dec 25 04:46:08 10.71.60.0 u103206212 [10.71.60.0|put|2|201397|0|0|0|2f7068702f436f6d706174496e666f2f7374616e646172645f66756e635f61727261792e706870|]
+Dec 25 04:46:08 10.71.60.0 u103206212 close "/php/CompatInfo/wddx_func_array.php" bytes read 0 written 1247
+Dec 25 04:46:08 10.71.60.0 u103206212 [10.71.60.0|put|0|1247|0|0|0|2f7068702f436f6d706174496e666f2f776464785f66756e635f61727261792e706870|]
+Dec 25 04:46:08 10.71.60.0 u103206212 open "/php/CompatInfo/xdebug_const_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:09 10.71.60.0 u103206212 open "/php/CompatInfo/xdebug_func_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:09 10.71.60.0 u103206212 close "/php/CompatInfo/xdebug_const_array.php" bytes read 0 written 1133
+Dec 25 04:46:09 10.71.60.0 u103206212 [10.71.60.0|put|1|1133|0|0|0|2f7068702f436f6d706174496e666f2f7864656275675f636f6e73745f61727261792e706870|]
+Dec 25 04:46:09 10.71.60.0 u103206212 close "/php/CompatInfo/xdebug_func_array.php" bytes read 0 written 5765
+Dec 25 04:46:09 10.71.60.0 u103206212 [10.71.60.0|put|0|5765|0|0|0|2f7068702f436f6d706174496e666f2f7864656275675f66756e635f61727261792e706870|]
+Dec 25 04:46:09 10.71.60.0 u103206212 open "/php/CompatInfo/xmlreader_class_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:10 10.71.60.0 u103206212 close "/php/CompatInfo/xmlreader_class_array.php" bytes read 0 written 733
+Dec 25 04:46:10 10.71.60.0 u103206212 [10.71.60.0|put|1|733|0|0|0|2f7068702f436f6d706174496e666f2f786d6c7265616465725f636c6173735f61727261792e706870|]
+Dec 25 04:46:10 10.71.60.0 u103206212 open "/php/CompatInfo/xmlwriter_class_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:10 10.71.60.0 u103206212 open "/php/CompatInfo/xmlwriter_func_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:10 10.71.60.0 u103206212 close "/php/CompatInfo/xmlwriter_class_array.php" bytes read 0 written 733
+Dec 25 04:46:10 10.71.60.0 u103206212 [10.71.60.0|put|0|733|0|0|0|2f7068702f436f6d706174496e666f2f786d6c7772697465725f636c6173735f61727261792e706870|]
+Dec 25 04:46:10 10.71.60.0 u103206212 close "/php/CompatInfo/xmlwriter_func_array.php" bytes read 0 written 5702
+Dec 25 04:46:10 10.71.60.0 u103206212 [10.71.60.0|put|0|5702|0|0|0|2f7068702f436f6d706174496e666f2f786d6c7772697465725f66756e635f61727261792e706870|]
+Dec 25 04:46:10 10.71.60.0 u103206212 open "/php/CompatInfo/xml_const_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:11 10.71.60.0 u103206212 open "/php/CompatInfo/xml_func_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:11 10.71.60.0 u103206212 close "/php/CompatInfo/xml_const_array.php" bytes read 0 written 3804
+Dec 25 04:46:11 10.71.60.0 u103206212 [10.71.60.0|put|1|3804|0|0|0|2f7068702f436f6d706174496e666f2f786d6c5f636f6e73745f61727261792e706870|]
+Dec 25 04:46:11 10.71.60.0 u103206212 close "/php/CompatInfo/xml_func_array.php" bytes read 0 written 3372
+Dec 25 04:46:11 10.71.60.0 u103206212 [10.71.60.0|put|0|3372|0|0|0|2f7068702f436f6d706174496e666f2f786d6c5f66756e635f61727261792e706870|]
+Dec 25 04:46:11 10.71.60.0 u103206212 open "/php/CompatInfo/xsl_class_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:12 10.71.60.0 u103206212 open "/php/CompatInfo/xsl_const_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:12 10.71.60.0 u103206212 close "/php/CompatInfo/xsl_class_array.php" bytes read 0 written 715
+Dec 25 04:46:12 10.71.60.0 u103206212 [10.71.60.0|put|1|715|0|0|0|2f7068702f436f6d706174496e666f2f78736c5f636c6173735f61727261792e706870|]
+Dec 25 04:46:12 10.71.60.0 u103206212 close "/php/CompatInfo/xsl_const_array.php" bytes read 0 written 1305
+Dec 25 04:46:12 10.71.60.0 u103206212 [10.71.60.0|put|0|1305|0|0|0|2f7068702f436f6d706174496e666f2f78736c5f636f6e73745f61727261792e706870|]
+Dec 25 04:46:12 10.71.60.0 u103206212 open "/php/CompatInfo/zip_class_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:13 10.71.60.0 u103206212 open "/php/CompatInfo/zip_func_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:13 10.71.60.0 u103206212 close "/php/CompatInfo/zip_class_array.php" bytes read 0 written 712
+Dec 25 04:46:13 10.71.60.0 u103206212 [10.71.60.0|put|1|712|0|0|0|2f7068702f436f6d706174496e666f2f7a69705f636c6173735f61727261792e706870|]
+Dec 25 04:46:13 10.71.60.0 u103206212 close "/php/CompatInfo/zip_func_array.php" bytes read 0 written 4881
+Dec 25 04:46:13 10.71.60.0 u103206212 [10.71.60.0|put|0|4881|0|0|0|2f7068702f436f6d706174496e666f2f7a69705f66756e635f61727261792e706870|]
+Dec 25 04:46:13 10.71.60.0 u103206212 open "/php/CompatInfo/zlib_const_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:14 10.71.60.0 u103206212 open "/php/CompatInfo/zlib_func_array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:14 10.71.60.0 u103206212 close "/php/CompatInfo/zlib_const_array.php" bytes read 0 written 771
+Dec 25 04:46:14 10.71.60.0 u103206212 [10.71.60.0|put|1|771|0|0|0|2f7068702f436f6d706174496e666f2f7a6c69625f636f6e73745f61727261792e706870|]
+Dec 25 04:46:14 10.71.60.0 u103206212 close "/php/CompatInfo/zlib_func_array.php" bytes read 0 written 2833
+Dec 25 04:46:14 10.71.60.0 u103206212 [10.71.60.0|put|0|2833|0|0|0|2f7068702f436f6d706174496e666f2f7a6c69625f66756e635f61727261792e706870|]
+Dec 25 04:46:14 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:46:14 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:46:15 10.71.60.0 u103206212 mkdir name "/php/dev" mode 0777
+Dec 25 04:46:15 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f646576|]
+Dec 25 04:46:16 10.71.60.0 u103206212 mkdir name "/php/ext" mode 0777
+Dec 25 04:46:16 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f657874|]
+Dec 25 04:46:18 10.71.60.0 u103206212 open "/php/dev/php7ts.lib" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:18 10.71.60.0 u103206212 open "/php/ext/php_bz2.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:20 10.71.60.0 u103206212 close "/php/ext/php_bz2.dll" bytes read 0 written 86528
+Dec 25 04:46:20 10.71.60.0 u103206212 [10.71.60.0|put|2|86528|0|0|0|2f7068702f6578742f7068705f627a322e646c6c|]
+Dec 25 04:46:20 10.71.60.0 u103206212 open "/php/ext/php_com_dotnet.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:21 10.71.60.0 u103206212 close "/php/dev/php7ts.lib" bytes read 0 written 841860
+Dec 25 04:46:21 10.71.60.0 u103206212 [10.71.60.0|put|3|841860|0|0|0|2f7068702f6465762f7068703774732e6c6962|]
+Dec 25 04:46:22 10.71.60.0 u103206212 close "/php/ext/php_com_dotnet.dll" bytes read 0 written 88576
+Dec 25 04:46:22 10.71.60.0 u103206212 [10.71.60.0|put|2|88576|0|0|0|2f7068702f6578742f7068705f636f6d5f646f746e65742e646c6c|]
+Dec 25 04:46:22 10.71.60.0 u103206212 open "/php/ext/php_curl.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:22 10.71.60.0 u103206212 open "/php/ext/php_dba.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:23 10.71.60.0 u103206212 close "/php/ext/php_dba.dll" bytes read 0 written 147968
+Dec 25 04:46:23 10.71.60.0 u103206212 [10.71.60.0|put|1|147968|0|0|0|2f7068702f6578742f7068705f6462612e646c6c|]
+Dec 25 04:46:24 10.71.60.0 u103206212 open "/php/ext/php_enchant.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:24 10.71.60.0 u103206212 close "/php/ext/php_enchant.dll" bytes read 0 written 25088
+Dec 25 04:46:24 10.71.60.0 u103206212 [10.71.60.0|put|0|25088|0|0|0|2f7068702f6578742f7068705f656e6368616e742e646c6c|]
+Dec 25 04:46:24 10.71.60.0 u103206212 close "/php/ext/php_curl.dll" bytes read 0 written 542208
+Dec 25 04:46:24 10.71.60.0 u103206212 [10.71.60.0|put|2|542208|0|0|0|2f7068702f6578742f7068705f6375726c2e646c6c|]
+Dec 25 04:46:25 10.71.60.0 u103206212 open "/php/ext/php_exif.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:25 10.71.60.0 u103206212 open "/php/ext/php_fileinfo.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:25 10.71.60.0 u103206212 close "/php/ext/php_exif.dll" bytes read 0 written 69632
+Dec 25 04:46:25 10.71.60.0 u103206212 [10.71.60.0|put|0|69632|0|0|0|2f7068702f6578742f7068705f657869662e646c6c|]
+Dec 25 04:46:26 10.71.60.0 u103206212 open "/php/ext/php_ftp.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:26 10.71.60.0 u103206212 close "/php/ext/php_ftp.dll" bytes read 0 written 54272
+Dec 25 04:46:26 10.71.60.0 u103206212 [10.71.60.0|put|0|54272|0|0|0|2f7068702f6578742f7068705f6674702e646c6c|]
+Dec 25 04:46:27 10.71.60.0 u103206212 open "/php/ext/php_gd2.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:29 10.71.60.0 u103206212 close "/php/ext/php_gd2.dll" bytes read 0 written 1683968
+Dec 25 04:46:29 10.71.60.0 u103206212 [10.71.60.0|put|2|1683968|0|0|0|2f7068702f6578742f7068705f6764322e646c6c|]
+Dec 25 04:46:29 10.71.60.0 u103206212 open "/php/ext/php_gettext.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:29 10.71.60.0 u103206212 close "/php/ext/php_gettext.dll" bytes read 0 written 54272
+Dec 25 04:46:29 10.71.60.0 u103206212 [10.71.60.0|put|0|54272|0|0|0|2f7068702f6578742f7068705f676574746578742e646c6c|]
+Dec 25 04:46:30 10.71.60.0 u103206212 open "/php/ext/php_gmp.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:32 10.71.60.0 u103206212 close "/php/ext/php_gmp.dll" bytes read 0 written 344064
+Dec 25 04:46:32 10.71.60.0 u103206212 [10.71.60.0|put|2|344064|0|0|0|2f7068702f6578742f7068705f676d702e646c6c|]
+Dec 25 04:46:33 10.71.60.0 u103206212 open "/php/ext/php_imagick.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:33 10.71.60.0 u103206212 close "/php/ext/php_imagick.dll" bytes read 0 written 310784
+Dec 25 04:46:33 10.71.60.0 u103206212 [10.71.60.0|put|1|310784|0|0|0|2f7068702f6578742f7068705f696d616769636b2e646c6c|]
+Dec 25 04:46:34 10.71.60.0 u103206212 open "/php/ext/php_imap.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:36 10.71.60.0 u103206212 close "/php/ext/php_imap.dll" bytes read 0 written 914432
+Dec 25 04:46:36 10.71.60.0 u103206212 [10.71.60.0|put|2|914432|0|0|0|2f7068702f6578742f7068705f696d61702e646c6c|]
+Dec 25 04:46:36 10.71.60.0 u103206212 open "/php/ext/php_interbase.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:37 10.71.60.0 u103206212 close "/php/ext/php_interbase.dll" bytes read 0 written 78848
+Dec 25 04:46:37 10.71.60.0 u103206212 [10.71.60.0|put|1|78848|0|0|0|2f7068702f6578742f7068705f696e746572626173652e646c6c|]
+Dec 25 04:46:37 10.71.60.0 u103206212 open "/php/ext/php_intl.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:37 10.71.60.0 u103206212 close "/php/ext/php_fileinfo.dll" bytes read 0 written 5395456
+Dec 25 04:46:37 10.71.60.0 u103206212 [10.71.60.0|put|12|5395456|0|0|0|2f7068702f6578742f7068705f66696c65696e666f2e646c6c|]
+Dec 25 04:46:38 10.71.60.0 u103206212 open "/php/ext/php_ldap.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:38 10.71.60.0 u103206212 close "/php/ext/php_intl.dll" bytes read 0 written 390656
+Dec 25 04:46:38 10.71.60.0 u103206212 [10.71.60.0|put|1|390656|0|0|0|2f7068702f6578742f7068705f696e746c2e646c6c|]
+Dec 25 04:46:39 10.71.60.0 u103206212 open "/php/ext/php_mbstring.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:39 10.71.60.0 u103206212 close "/php/ext/php_ldap.dll" bytes read 0 written 254464
+Dec 25 04:46:39 10.71.60.0 u103206212 [10.71.60.0|put|1|254464|0|0|0|2f7068702f6578742f7068705f6c6461702e646c6c|]
+Dec 25 04:46:39 10.71.60.0 u103206212 open "/php/ext/php_mysqli.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:40 10.71.60.0 u103206212 close "/php/ext/php_mysqli.dll" bytes read 0 written 110592
+Dec 25 04:46:40 10.71.60.0 u103206212 [10.71.60.0|put|1|110592|0|0|0|2f7068702f6578742f7068705f6d7973716c692e646c6c|]
+Dec 25 04:46:40 10.71.60.0 u103206212 open "/php/ext/php_oci8_12c.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:41 10.71.60.0 u103206212 close "/php/ext/php_oci8_12c.dll" bytes read 0 written 154112
+Dec 25 04:46:41 10.71.60.0 u103206212 [10.71.60.0|put|1|154112|0|0|0|2f7068702f6578742f7068705f6f6369385f3132632e646c6c|]
+Dec 25 04:46:42 10.71.60.0 u103206212 open "/php/ext/php_odbc.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:42 10.71.60.0 u103206212 close "/php/ext/php_mbstring.dll" bytes read 0 written 1397760
+Dec 25 04:46:42 10.71.60.0 u103206212 [10.71.60.0|put|3|1397760|0|0|0|2f7068702f6578742f7068705f6d62737472696e672e646c6c|]
+Dec 25 04:46:42 10.71.60.0 u103206212 close "/php/ext/php_odbc.dll" bytes read 0 written 63488
+Dec 25 04:46:42 10.71.60.0 u103206212 [10.71.60.0|put|0|63488|0|0|0|2f7068702f6578742f7068705f6f6462632e646c6c|]
+Dec 25 04:46:42 10.71.60.0 u103206212 open "/php/ext/php_opcache.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:42 10.71.60.0 u103206212 open "/php/ext/php_openssl.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:44 10.71.60.0 u103206212 close "/php/ext/php_opcache.dll" bytes read 0 written 468480
+Dec 25 04:46:44 10.71.60.0 u103206212 [10.71.60.0|put|2|468480|0|0|0|2f7068702f6578742f7068705f6f7063616368652e646c6c|]
+Dec 25 04:46:44 10.71.60.0 u103206212 open "/php/ext/php_pdo_firebird.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:44 10.71.60.0 u103206212 close "/php/ext/php_openssl.dll" bytes read 0 written 122880
+Dec 25 04:46:44 10.71.60.0 u103206212 [10.71.60.0|put|2|122880|0|0|0|2f7068702f6578742f7068705f6f70656e73736c2e646c6c|]
+Dec 25 04:46:45 10.71.60.0 u103206212 close "/php/ext/php_pdo_firebird.dll" bytes read 0 written 28672
+Dec 25 04:46:45 10.71.60.0 u103206212 [10.71.60.0|put|1|28672|0|0|0|2f7068702f6578742f7068705f70646f5f66697265626972642e646c6c|]
+Dec 25 04:46:45 10.71.60.0 u103206212 open "/php/ext/php_pdo_mysql.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:45 10.71.60.0 u103206212 open "/php/ext/php_pdo_oci.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:45 10.71.60.0 u103206212 close "/php/ext/php_pdo_oci.dll" bytes read 0 written 33280
+Dec 25 04:46:45 10.71.60.0 u103206212 [10.71.60.0|put|0|33280|0|0|0|2f7068702f6578742f7068705f70646f5f6f63692e646c6c|]
+Dec 25 04:46:46 10.71.60.0 u103206212 close "/php/ext/php_pdo_mysql.dll" bytes read 0 written 30720
+Dec 25 04:46:46 10.71.60.0 u103206212 [10.71.60.0|put|1|30720|0|0|0|2f7068702f6578742f7068705f70646f5f6d7973716c2e646c6c|]
+Dec 25 04:46:46 10.71.60.0 u103206212 open "/php/ext/php_pdo_odbc.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:46 10.71.60.0 u103206212 open "/php/ext/php_pdo_pgsql.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:46 10.71.60.0 u103206212 close "/php/ext/php_pdo_odbc.dll" bytes read 0 written 27136
+Dec 25 04:46:46 10.71.60.0 u103206212 [10.71.60.0|put|0|27136|0|0|0|2f7068702f6578742f7068705f70646f5f6f6462632e646c6c|]
+Dec 25 04:46:47 10.71.60.0 u103206212 open "/php/ext/php_pdo_sqlite.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:47 10.71.60.0 u103206212 close "/php/ext/php_pdo_pgsql.dll" bytes read 0 written 39424
+Dec 25 04:46:47 10.71.60.0 u103206212 [10.71.60.0|put|1|39424|0|0|0|2f7068702f6578742f7068705f70646f5f706773716c2e646c6c|]
+Dec 25 04:46:47 10.71.60.0 u103206212 open "/php/ext/php_pgsql.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:48 10.71.60.0 u103206212 close "/php/ext/php_pgsql.dll" bytes read 0 written 107520
+Dec 25 04:46:48 10.71.60.0 u103206212 [10.71.60.0|put|1|107520|0|0|0|2f7068702f6578742f7068705f706773716c2e646c6c|]
+Dec 25 04:46:48 10.71.60.0 u103206212 open "/php/ext/php_phpdbg_webhelper.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:48 10.71.60.0 u103206212 close "/php/ext/php_pdo_sqlite.dll" bytes read 0 written 851456
+Dec 25 04:46:48 10.71.60.0 u103206212 [10.71.60.0|put|1|851456|0|0|0|2f7068702f6578742f7068705f70646f5f73716c6974652e646c6c|]
+Dec 25 04:46:49 10.71.60.0 u103206212 close "/php/ext/php_phpdbg_webhelper.dll" bytes read 0 written 17408
+Dec 25 04:46:49 10.71.60.0 u103206212 [10.71.60.0|put|1|17408|0|0|0|2f7068702f6578742f7068705f7068706462675f77656268656c7065722e646c6c|]
+Dec 25 04:46:49 10.71.60.0 u103206212 open "/php/ext/php_shmop.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:49 10.71.60.0 u103206212 open "/php/ext/php_snmp.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:49 10.71.60.0 u103206212 close "/php/ext/php_shmop.dll" bytes read 0 written 16896
+Dec 25 04:46:49 10.71.60.0 u103206212 [10.71.60.0|put|0|16896|0|0|0|2f7068702f6578742f7068705f73686d6f702e646c6c|]
+Dec 25 04:46:50 10.71.60.0 u103206212 open "/php/ext/php_soap.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:50 10.71.60.0 u103206212 close "/php/ext/php_snmp.dll" bytes read 0 written 421376
+Dec 25 04:46:50 10.71.60.0 u103206212 [10.71.60.0|put|1|421376|0|0|0|2f7068702f6578742f7068705f736e6d702e646c6c|]
+Dec 25 04:46:51 10.71.60.0 u103206212 close "/php/ext/php_soap.dll" bytes read 0 written 247808
+Dec 25 04:46:51 10.71.60.0 u103206212 [10.71.60.0|put|1|247808|0|0|0|2f7068702f6578742f7068705f736f61702e646c6c|]
+Dec 25 04:46:51 10.71.60.0 u103206212 open "/php/ext/php_sockets.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:51 10.71.60.0 u103206212 open "/php/ext/php_sodium.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:51 10.71.60.0 u103206212 close "/php/ext/php_sockets.dll" bytes read 0 written 75776
+Dec 25 04:46:51 10.71.60.0 u103206212 [10.71.60.0|put|0|75776|0|0|0|2f7068702f6578742f7068705f736f636b6574732e646c6c|]
+Dec 25 04:46:52 10.71.60.0 u103206212 close "/php/ext/php_sodium.dll" bytes read 0 written 71680
+Dec 25 04:46:52 10.71.60.0 u103206212 [10.71.60.0|put|1|71680|0|0|0|2f7068702f6578742f7068705f736f6469756d2e646c6c|]
+Dec 25 04:46:52 10.71.60.0 u103206212 open "/php/ext/php_sqlite3.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:52 10.71.60.0 u103206212 open "/php/ext/php_sysvshm.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:52 10.71.60.0 u103206212 close "/php/ext/php_sysvshm.dll" bytes read 0 written 17408
+Dec 25 04:46:52 10.71.60.0 u103206212 [10.71.60.0|put|0|17408|0|0|0|2f7068702f6578742f7068705f7379737673686d2e646c6c|]
+Dec 25 04:46:53 10.71.60.0 u103206212 open "/php/ext/php_tidy.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:54 10.71.60.0 u103206212 close "/php/ext/php_tidy.dll" bytes read 0 written 569856
+Dec 25 04:46:54 10.71.60.0 u103206212 [10.71.60.0|put|1|569856|0|0|0|2f7068702f6578742f7068705f746964792e646c6c|]
+Dec 25 04:46:55 10.71.60.0 u103206212 open "/php/ext/php_xdebug.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:56 10.71.60.0 u103206212 close "/php/ext/php_sqlite3.dll" bytes read 0 written 775680
+Dec 25 04:46:56 10.71.60.0 u103206212 [10.71.60.0|put|4|775680|0|0|0|2f7068702f6578742f7068705f73716c697465332e646c6c|]
+Dec 25 04:46:56 10.71.60.0 u103206212 close "/php/ext/php_xdebug.dll" bytes read 0 written 259584
+Dec 25 04:46:56 10.71.60.0 u103206212 [10.71.60.0|put|1|259584|0|0|0|2f7068702f6578742f7068705f7864656275672e646c6c|]
+Dec 25 04:46:56 10.71.60.0 u103206212 open "/php/ext/php_xmlrpc.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:56 10.71.60.0 u103206212 open "/php/ext/php_xsl.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:57 10.71.60.0 u103206212 close "/php/ext/php_xmlrpc.dll" bytes read 0 written 82944
+Dec 25 04:46:57 10.71.60.0 u103206212 [10.71.60.0|put|1|82944|0|0|0|2f7068702f6578742f7068705f786d6c7270632e646c6c|]
+Dec 25 04:46:57 10.71.60.0 u103206212 open "/php/ext/php_zend_test.dll" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:46:58 10.71.60.0 u103206212 close "/php/ext/php_zend_test.dll" bytes read 0 written 16384
+Dec 25 04:46:58 10.71.60.0 u103206212 [10.71.60.0|put|1|16384|0|0|0|2f7068702f6578742f7068705f7a656e645f746573742e646c6c|]
+Dec 25 04:46:58 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:46:59 10.71.60.0 u103206212 mkdir name "/php/extras" mode 0777
+Dec 25 04:46:59 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f657874726173|]
+Dec 25 04:46:59 10.71.60.0 u103206212 close "/php/ext/php_xsl.dll" bytes read 0 written 288768
+Dec 25 04:46:59 10.71.60.0 u103206212 [10.71.60.0|put|3|288768|0|0|0|2f7068702f6578742f7068705f78736c2e646c6c|]
+Dec 25 04:47:00 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:47:01 10.71.60.0 u103206212 mkdir name "/assets/css/images" mode 0777
+Dec 25 04:47:01 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f6173736574732f6373732f696d61676573|]
+Dec 25 04:47:01 10.71.60.0 u103206212 open "/php/extras/browscap.ini" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:47:03 10.71.60.0 u103206212 close "/php/extras/browscap.ini" bytes read 0 written 341319
+Dec 25 04:47:03 10.71.60.0 u103206212 [10.71.60.0|put|2|341319|0|0|0|2f7068702f6578747261732f62726f77736361702e696e69|]
+Dec 25 04:47:03 10.71.60.0 u103206212 open "/assets/css/images/ui-icons_444444_256x240.html" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:47:03 10.71.60.0 u103206212 close "/assets/css/images/ui-icons_444444_256x240.html" bytes read 0 written 1237
+Dec 25 04:47:03 10.71.60.0 u103206212 [10.71.60.0|put|0|1237|0|0|0|2f6173736574732f6373732f696d616765732f75692d69636f6e735f3434343434345f323536783234302e68746d6c|]
+Dec 25 04:47:04 10.71.60.0 u103206212 open "/assets/css/images/ui-icons_555555_256x240.html" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:47:04 10.71.60.0 u103206212 open "/assets/css/images/ui-icons_777620_256x240.html" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:47:04 10.71.60.0 u103206212 close "/assets/css/images/ui-icons_555555_256x240.html" bytes read 0 written 1237
+Dec 25 04:47:04 10.71.60.0 u103206212 [10.71.60.0|put|0|1237|0|0|0|2f6173736574732f6373732f696d616765732f75692d69636f6e735f3535353535355f323536783234302e68746d6c|]
+Dec 25 04:47:04 10.71.60.0 u103206212 close "/assets/css/images/ui-icons_777620_256x240.html" bytes read 0 written 1237
+Dec 25 04:47:04 10.71.60.0 u103206212 [10.71.60.0|put|0|1237|0|0|0|2f6173736574732f6373732f696d616765732f75692d69636f6e735f3737373632305f323536783234302e68746d6c|]
+Dec 25 04:47:05 10.71.60.0 u103206212 open "/assets/css/images/ui-icons_777777_256x240.html" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:47:05 10.71.60.0 u103206212 open "/assets/css/images/ui-icons_cc0000_256x240.html" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:47:05 10.71.60.0 u103206212 close "/assets/css/images/ui-icons_777777_256x240.html" bytes read 0 written 1237
+Dec 25 04:47:05 10.71.60.0 u103206212 [10.71.60.0|put|0|1237|0|0|0|2f6173736574732f6373732f696d616765732f75692d69636f6e735f3737373737375f323536783234302e68746d6c|]
+Dec 25 04:47:05 10.71.60.0 u103206212 close "/assets/css/images/ui-icons_cc0000_256x240.html" bytes read 0 written 1237
+Dec 25 04:47:05 10.71.60.0 u103206212 [10.71.60.0|put|0|1237|0|0|0|2f6173736574732f6373732f696d616765732f75692d69636f6e735f6363303030305f323536783234302e68746d6c|]
+Dec 25 04:47:05 10.71.60.0 u103206212 open "/assets/css/images/ui-icons_ffffff_256x240.html" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:47:06 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:47:06 10.71.60.0 u103206212 close "/assets/css/images/ui-icons_ffffff_256x240.html" bytes read 0 written 1237
+Dec 25 04:47:06 10.71.60.0 u103206212 [10.71.60.0|put|1|1237|0|0|0|2f6173736574732f6373732f696d616765732f75692d69636f6e735f6666666666665f323536783234302e68746d6c|]
+Dec 25 04:47:07 10.71.60.0 u103206212 mkdir name "/assets/img/blog" mode 0777
+Dec 25 04:47:07 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f6173736574732f696d672f626c6f67|]
+Dec 25 04:47:09 10.71.60.0 u103206212 open "/assets/img/blog/img-1.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:47:09 10.71.60.0 u103206212 open "/assets/img/blog/img-2.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:47:09 10.71.60.0 u103206212 close "/assets/img/blog/img-1.jpg" bytes read 0 written 36680
+Dec 25 04:47:09 10.71.60.0 u103206212 [10.71.60.0|put|0|36680|0|0|0|2f6173736574732f696d672f626c6f672f696d672d312e6a7067|]
+Dec 25 04:47:09 10.71.60.0 u103206212 close "/assets/img/blog/img-2.jpg" bytes read 0 written 33944
+Dec 25 04:47:09 10.71.60.0 u103206212 [10.71.60.0|put|0|33944|0|0|0|2f6173736574732f696d672f626c6f672f696d672d322e6a7067|]
+Dec 25 04:47:10 10.71.60.0 u103206212 open "/assets/img/blog/img-3.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:47:10 10.71.60.0 u103206212 open "/assets/img/blog/img-4.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:47:10 10.71.60.0 u103206212 close "/assets/img/blog/img-3.jpg" bytes read 0 written 25690
+Dec 25 04:47:10 10.71.60.0 u103206212 [10.71.60.0|put|0|25690|0|0|0|2f6173736574732f696d672f626c6f672f696d672d332e6a7067|]
+Dec 25 04:47:10 10.71.60.0 u103206212 close "/assets/img/blog/img-4.jpg" bytes read 0 written 47413
+Dec 25 04:47:10 10.71.60.0 u103206212 [10.71.60.0|put|0|47413|0|0|0|2f6173736574732f696d672f626c6f672f696d672d342e6a7067|]
+Dec 25 04:47:11 10.71.60.0 u103206212 open "/assets/img/blog/img-5.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:47:11 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:47:11 10.71.60.0 u103206212 close "/assets/img/blog/img-5.jpg" bytes read 0 written 21266
+Dec 25 04:47:11 10.71.60.0 u103206212 [10.71.60.0|put|0|21266|0|0|0|2f6173736574732f696d672f626c6f672f696d672d352e6a7067|]
+Dec 25 04:47:12 10.71.60.0 u103206212 mkdir name "/assets/img/course" mode 0777
+Dec 25 04:47:12 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f6173736574732f696d672f636f75727365|]
+Dec 25 04:47:14 10.71.60.0 u103206212 open "/assets/img/course/course-img-2.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:47:14 10.71.60.0 u103206212 open "/assets/img/course/course-img-1.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:47:20 10.71.60.0 u103206212 close "/assets/img/course/course-img-1.jpg" bytes read 0 written 1722588
+Dec 25 04:47:20 10.71.60.0 u103206212 [10.71.60.0|put|6|1722588|0|0|0|2f6173736574732f696d672f636f757273652f636f757273652d696d672d312e6a7067|]
+Dec 25 04:47:20 10.71.60.0 u103206212 open "/assets/img/course/course-img-3.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:47:22 10.71.60.0 u103206212 close "/assets/img/course/course-img-3.jpg" bytes read 0 written 465702
+Dec 25 04:47:22 10.71.60.0 u103206212 [10.71.60.0|put|2|465702|0|0|0|2f6173736574732f696d672f636f757273652f636f757273652d696d672d332e6a7067|]
+Dec 25 04:47:22 10.71.60.0 u103206212 open "/assets/img/course/course-img-4.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:47:23 10.71.60.0 u103206212 close "/assets/img/course/course-img-4.jpg" bytes read 0 written 96012
+Dec 25 04:47:23 10.71.60.0 u103206212 [10.71.60.0|put|1|96012|0|0|0|2f6173736574732f696d672f636f757273652f636f757273652d696d672d342e6a7067|]
+Dec 25 04:47:23 10.71.60.0 u103206212 open "/assets/img/course/course-img-5.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:47:23 10.71.60.0 u103206212 close "/assets/img/course/course-img-2.jpg" bytes read 0 written 2103933
+Dec 25 04:47:23 10.71.60.0 u103206212 [10.71.60.0|put|9|2103933|0|0|0|2f6173736574732f696d672f636f757273652f636f757273652d696d672d322e6a7067|]
+Dec 25 04:47:24 10.71.60.0 u103206212 close "/assets/img/course/course-img-5.jpg" bytes read 0 written 68594
+Dec 25 04:47:24 10.71.60.0 u103206212 [10.71.60.0|put|1|68594|0|0|0|2f6173736574732f696d672f636f757273652f636f757273652d696d672d352e6a7067|]
+Dec 25 04:47:24 10.71.60.0 u103206212 open "/assets/img/course/course-img-6.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:47:24 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:47:24 10.71.60.0 u103206212 close "/assets/img/course/course-img-6.jpg" bytes read 0 written 77385
+Dec 25 04:47:24 10.71.60.0 u103206212 [10.71.60.0|put|0|77385|0|0|0|2f6173736574732f696d672f636f757273652f636f757273652d696d672d362e6a7067|]
+Dec 25 04:47:25 10.71.60.0 u103206212 mkdir name "/assets/img/icons" mode 0777
+Dec 25 04:47:25 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f6173736574732f696d672f69636f6e73|]
+Dec 25 04:47:27 10.71.60.0 u103206212 open "/assets/img/icons/grab.png" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:47:27 10.71.60.0 u103206212 open "/assets/img/icons/favicon.html" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:47:28 10.71.60.0 u103206212 close "/assets/img/icons/grab.png" bytes read 0 written 189
+Dec 25 04:47:28 10.71.60.0 u103206212 [10.71.60.0|put|1|189|0|0|0|2f6173736574732f696d672f69636f6e732f677261622e706e67|]
+Dec 25 04:47:28 10.71.60.0 u103206212 close "/assets/img/icons/favicon.html" bytes read 0 written 1237
+Dec 25 04:47:28 10.71.60.0 u103206212 [10.71.60.0|put|1|1237|0|0|0|2f6173736574732f696d672f69636f6e732f66617669636f6e2e68746d6c|]
+Dec 25 04:47:28 10.71.60.0 u103206212 open "/assets/img/icons/logo-top-1.png" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:47:28 10.71.60.0 u103206212 open "/assets/img/icons/logo-top-2.png" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:47:29 10.71.60.0 u103206212 close "/assets/img/icons/logo-top-1.png" bytes read 0 written 17254
+Dec 25 04:47:29 10.71.60.0 u103206212 [10.71.60.0|put|1|17254|0|0|0|2f6173736574732f696d672f69636f6e732f6c6f676f2d746f702d312e706e67|]
+Dec 25 04:47:29 10.71.60.0 u103206212 close "/assets/img/icons/logo-top-2.png" bytes read 0 written 17445
+Dec 25 04:47:29 10.71.60.0 u103206212 [10.71.60.0|put|1|17445|0|0|0|2f6173736574732f696d672f69636f6e732f6c6f676f2d746f702d322e706e67|]
+Dec 25 04:47:29 10.71.60.0 u103206212 open "/assets/img/icons/logo-top-3.png" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:47:29 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:47:30 10.71.60.0 u103206212 close "/assets/img/icons/logo-top-3.png" bytes read 0 written 15420
+Dec 25 04:47:30 10.71.60.0 u103206212 [10.71.60.0|put|1|15420|0|0|0|2f6173736574732f696d672f69636f6e732f6c6f676f2d746f702d332e706e67|]
+Dec 25 04:47:30 10.71.60.0 u103206212 mkdir name "/assets/img/teachers" mode 0777
+Dec 25 04:47:30 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f6173736574732f696d672f7465616368657273|]
+Dec 25 04:47:32 10.71.60.0 u103206212 open "/assets/img/teachers/teacher-image-2.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:47:32 10.71.60.0 u103206212 open "/assets/img/teachers/teacher-image-1.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:47:33 10.71.60.0 u103206212 close "/assets/img/teachers/teacher-image-2.jpg" bytes read 0 written 53061
+Dec 25 04:47:33 10.71.60.0 u103206212 [10.71.60.0|put|1|53061|0|0|0|2f6173736574732f696d672f74656163686572732f746561636865722d696d6167652d322e6a7067|]
+Dec 25 04:47:33 10.71.60.0 u103206212 open "/assets/img/teachers/teacher-image-3.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:47:34 10.71.60.0 u103206212 close "/assets/img/teachers/teacher-image-3.jpg" bytes read 0 written 105664
+Dec 25 04:47:34 10.71.60.0 u103206212 [10.71.60.0|put|1|105664|0|0|0|2f6173736574732f696d672f74656163686572732f746561636865722d696d6167652d332e6a7067|]
+Dec 25 04:47:34 10.71.60.0 u103206212 close "/assets/img/teachers/teacher-image-1.jpg" bytes read 0 written 113459
+Dec 25 04:47:34 10.71.60.0 u103206212 [10.71.60.0|put|2|113459|0|0|0|2f6173736574732f696d672f74656163686572732f746561636865722d696d6167652d312e6a7067|]
+Dec 25 04:47:34 10.71.60.0 u103206212 open "/assets/img/teachers/teacher-image-4.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:47:35 10.71.60.0 u103206212 open "/assets/img/teachers/teacher-image-5.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:47:35 10.71.60.0 u103206212 close "/assets/img/teachers/teacher-image-4.jpg" bytes read 0 written 26986
+Dec 25 04:47:35 10.71.60.0 u103206212 [10.71.60.0|put|1|26986|0|0|0|2f6173736574732f696d672f74656163686572732f746561636865722d696d6167652d342e6a7067|]
+Dec 25 04:47:35 10.71.60.0 u103206212 open "/assets/img/teachers/teacher-image-6.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:47:36 10.71.60.0 u103206212 close "/assets/img/teachers/teacher-image-5.jpg" bytes read 0 written 66733
+Dec 25 04:47:36 10.71.60.0 u103206212 [10.71.60.0|put|1|66733|0|0|0|2f6173736574732f696d672f74656163686572732f746561636865722d696d6167652d352e6a7067|]
+Dec 25 04:47:36 10.71.60.0 u103206212 open "/assets/img/teachers/teacher-image-7.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:47:37 10.71.60.0 u103206212 close "/assets/img/teachers/teacher-image-7.jpg" bytes read 0 written 125261
+Dec 25 04:47:37 10.71.60.0 u103206212 [10.71.60.0|put|1|125261|0|0|0|2f6173736574732f696d672f74656163686572732f746561636865722d696d6167652d372e6a7067|]
+Dec 25 04:47:37 10.71.60.0 u103206212 close "/assets/img/teachers/teacher-image-6.jpg" bytes read 0 written 132876
+Dec 25 04:47:37 10.71.60.0 u103206212 [10.71.60.0|put|2|132876|0|0|0|2f6173736574732f696d672f74656163686572732f746561636865722d696d6167652d362e6a7067|]
+Dec 25 04:47:37 10.71.60.0 u103206212 open "/assets/img/teachers/teacher-image-8.jpg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:47:37 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:47:38 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:47:38 10.71.60.0 u103206212 close "/assets/img/teachers/teacher-image-8.jpg" bytes read 0 written 40481
+Dec 25 04:47:38 10.71.60.0 u103206212 [10.71.60.0|put|1|40481|0|0|0|2f6173736574732f696d672f74656163686572732f746561636865722d696d6167652d382e6a7067|]
+Dec 25 04:47:38 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:47:38 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:47:39 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:47:39 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:47:39 10.71.60.0 u103206212 mkdir name "/fonts/material-icon" mode 0777
+Dec 25 04:47:39 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f666f6e74732f6d6174657269616c2d69636f6e|]
+Dec 25 04:47:40 10.71.60.0 u103206212 mkdir name "/fonts/material-icon" mode 0777
+Dec 25 04:47:40 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|17|2f666f6e74732f6d6174657269616c2d69636f6e|]
+Dec 25 04:47:40 10.71.60.0 u103206212 sent status Failure
+Dec 25 04:47:40 10.71.60.0 u103206212 mkdir name "/fonts/material-icon/css" mode 0777
+Dec 25 04:47:40 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f666f6e74732f6d6174657269616c2d69636f6e2f637373|]
+Dec 25 04:47:41 10.71.60.0 u103206212 mkdir name "/fonts/material-icon/fonts" mode 0777
+Dec 25 04:47:41 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f666f6e74732f6d6174657269616c2d69636f6e2f666f6e7473|]
+Dec 25 04:47:43 10.71.60.0 u103206212 open "/fonts/material-icon/css/material-design-iconic-font.min.css" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:47:43 10.71.60.0 u103206212 open "/fonts/material-icon/fonts/Material-Design-Iconic-Fontd1f1.ttf" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:47:43 10.71.60.0 u103206212 close "/fonts/material-icon/fonts/Material-Design-Iconic-Fontd1f1.ttf" bytes read 0 written 99212
+Dec 25 04:47:43 10.71.60.0 u103206212 [10.71.60.0|put|0|99212|0|0|0|2f666f6e74732f6d6174657269616c2d69636f6e2f666f6e74732f4d6174657269616c2d44657369676e2d49636f6e69632d466f6e74643166312e747466|]
+Dec 25 04:47:44 10.71.60.0 u103206212 close "/fonts/material-icon/css/material-design-iconic-font.min.css" bytes read 0 written 70827
+Dec 25 04:47:44 10.71.60.0 u103206212 [10.71.60.0|put|1|70827|0|0|0|2f666f6e74732f6d6174657269616c2d69636f6e2f6373732f6d6174657269616c2d64657369676e2d69636f6e69632d666f6e742e6d696e2e637373|]
+Dec 25 04:47:44 10.71.60.0 u103206212 open "/fonts/material-icon/fonts/Material-Design-Iconic-Fontd1f1.woff" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:47:44 10.71.60.0 u103206212 close "/fonts/material-icon/fonts/Material-Design-Iconic-Fontd1f1.woff" bytes read 0 written 50312
+Dec 25 04:47:44 10.71.60.0 u103206212 [10.71.60.0|put|0|50312|0|0|0|2f666f6e74732f6d6174657269616c2d69636f6e2f666f6e74732f4d6174657269616c2d44657369676e2d49636f6e69632d466f6e74643166312e776f6666|]
+Dec 25 04:47:45 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:47:45 10.71.60.0 u103206212 open "/fonts/material-icon/fonts/Material-Design-Iconic-Fontd1f1.woff2" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:47:45 10.71.60.0 u103206212 close "/fonts/material-icon/fonts/Material-Design-Iconic-Fontd1f1.woff2" bytes read 0 written 38384
+Dec 25 04:47:45 10.71.60.0 u103206212 [10.71.60.0|put|0|38384|0|0|0|2f666f6e74732f6d6174657269616c2d69636f6e2f666f6e74732f4d6174657269616c2d44657369676e2d49636f6e69632d466f6e74643166312e776f666632|]
+Dec 25 04:47:46 10.71.60.0 u103206212 mkdir name "/php/CompatInfo/Renderer" mode 0777
+Dec 25 04:47:46 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f436f6d706174496e666f2f52656e6465726572|]
+Dec 25 04:47:48 10.71.60.0 u103206212 open "/php/CompatInfo/Renderer/Csv.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:47:48 10.71.60.0 u103206212 open "/php/CompatInfo/Renderer/Array.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:47:48 10.71.60.0 u103206212 close "/php/CompatInfo/Renderer/Csv.php" bytes read 0 written 10149
+Dec 25 04:47:48 10.71.60.0 u103206212 [10.71.60.0|put|0|10149|0|0|0|2f7068702f436f6d706174496e666f2f52656e64657265722f4373762e706870|]
+Dec 25 04:47:48 10.71.60.0 u103206212 close "/php/CompatInfo/Renderer/Array.php" bytes read 0 written 9266
+Dec 25 04:47:48 10.71.60.0 u103206212 [10.71.60.0|put|0|9266|0|0|0|2f7068702f436f6d706174496e666f2f52656e64657265722f41727261792e706870|]
+Dec 25 04:47:49 10.71.60.0 u103206212 open "/php/CompatInfo/Renderer/Html.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:47:49 10.71.60.0 u103206212 open "/php/CompatInfo/Renderer/Null.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:47:49 10.71.60.0 u103206212 close "/php/CompatInfo/Renderer/Html.php" bytes read 0 written 14923
+Dec 25 04:47:49 10.71.60.0 u103206212 [10.71.60.0|put|0|14923|0|0|0|2f7068702f436f6d706174496e666f2f52656e64657265722f48746d6c2e706870|]
+Dec 25 04:47:49 10.71.60.0 u103206212 close "/php/CompatInfo/Renderer/Null.php" bytes read 0 written 3715
+Dec 25 04:47:49 10.71.60.0 u103206212 [10.71.60.0|put|0|3715|0|0|0|2f7068702f436f6d706174496e666f2f52656e64657265722f4e756c6c2e706870|]
+Dec 25 04:47:50 10.71.60.0 u103206212 open "/php/CompatInfo/Renderer/Text.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:47:50 10.71.60.0 u103206212 open "/php/CompatInfo/Renderer/Xml.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:47:50 10.71.60.0 u103206212 close "/php/CompatInfo/Renderer/Text.php" bytes read 0 written 16899
+Dec 25 04:47:50 10.71.60.0 u103206212 [10.71.60.0|put|0|16899|0|0|0|2f7068702f436f6d706174496e666f2f52656e64657265722f546578742e706870|]
+Dec 25 04:47:50 10.71.60.0 u103206212 close "/php/CompatInfo/Renderer/Xml.php" bytes read 0 written 18064
+Dec 25 04:47:50 10.71.60.0 u103206212 [10.71.60.0|put|0|18064|0|0|0|2f7068702f436f6d706174496e666f2f52656e64657265722f586d6c2e706870|]
+Dec 25 04:47:50 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:47:51 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:47:51 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:47:52 10.71.60.0 u103206212 mkdir name "/php/data" mode 0777
+Dec 25 04:47:52 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f64617461|]
+Dec 25 04:47:53 10.71.60.0 u103206212 mkdir name "/php/data/PEAR" mode 0777
+Dec 25 04:47:53 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f646174612f50454152|]
+Dec 25 04:47:56 10.71.60.0 u103206212 open "/php/data/PEAR/package.dtd" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:47:56 10.71.60.0 u103206212 open "/php/data/PEAR/template.spec" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:47:56 10.71.60.0 u103206212 close "/php/data/PEAR/package.dtd" bytes read 0 written 3391
+Dec 25 04:47:56 10.71.60.0 u103206212 [10.71.60.0|put|0|3391|0|0|0|2f7068702f646174612f504541522f7061636b6167652e647464|]
+Dec 25 04:47:56 10.71.60.0 u103206212 close "/php/data/PEAR/template.spec" bytes read 0 written 2005
+Dec 25 04:47:56 10.71.60.0 u103206212 [10.71.60.0|put|0|2005|0|0|0|2f7068702f646174612f504541522f74656d706c6174652e73706563|]
+Dec 25 04:47:56 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:47:57 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:47:57 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:47:58 10.71.60.0 u103206212 mkdir name "/php/docs" mode 0777
+Dec 25 04:47:58 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f646f6373|]
+Dec 25 04:47:59 10.71.60.0 u103206212 mkdir name "/php/docs/examples" mode 0777
+Dec 25 04:47:59 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f646f63732f6578616d706c6573|]
+Dec 25 04:48:01 10.71.60.0 u103206212 open "/php/docs/examples/checkConstants.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:48:01 10.71.60.0 u103206212 open "/php/docs/examples/checkExtensions.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:48:02 10.71.60.0 u103206212 close "/php/docs/examples/checkConstants.php" bytes read 0 written 790
+Dec 25 04:48:02 10.71.60.0 u103206212 [10.71.60.0|put|1|790|0|0|0|2f7068702f646f63732f6578616d706c65732f636865636b436f6e7374616e74732e706870|]
+Dec 25 04:48:02 10.71.60.0 u103206212 close "/php/docs/examples/checkExtensions.php" bytes read 0 written 1204
+Dec 25 04:48:02 10.71.60.0 u103206212 [10.71.60.0|put|1|1204|0|0|0|2f7068702f646f63732f6578616d706c65732f636865636b457874656e73696f6e732e706870|]
+Dec 25 04:48:02 10.71.60.0 u103206212 open "/php/docs/examples/checkPHP5.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:48:02 10.71.60.0 u103206212 open "/php/docs/examples/ci_frontend.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:48:03 10.71.60.0 u103206212 close "/php/docs/examples/checkPHP5.php" bytes read 0 written 2290
+Dec 25 04:48:03 10.71.60.0 u103206212 [10.71.60.0|put|1|2290|0|0|0|2f7068702f646f63732f6578616d706c65732f636865636b504850352e706870|]
+Dec 25 04:48:03 10.71.60.0 u103206212 close "/php/docs/examples/ci_frontend.php" bytes read 0 written 7640
+Dec 25 04:48:03 10.71.60.0 u103206212 [10.71.60.0|put|1|7640|0|0|0|2f7068702f646f63732f6578616d706c65732f63695f66726f6e74656e642e706870|]
+Dec 25 04:48:03 10.71.60.0 u103206212 open "/php/docs/examples/cliCustom.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:48:03 10.71.60.0 u103206212 open "/php/docs/examples/cliOutput.txt" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:48:03 10.71.60.0 u103206212 close "/php/docs/examples/cliCustom.php" bytes read 0 written 642
+Dec 25 04:48:03 10.71.60.0 u103206212 [10.71.60.0|put|0|642|0|0|0|2f7068702f646f63732f6578616d706c65732f636c69437573746f6d2e706870|]
+Dec 25 04:48:04 10.71.60.0 u103206212 close "/php/docs/examples/cliOutput.txt" bytes read 0 written 1616
+Dec 25 04:48:04 10.71.60.0 u103206212 [10.71.60.0|put|1|1616|0|0|0|2f7068702f646f63732f6578616d706c65732f636c694f75747075742e747874|]
+Dec 25 04:48:04 10.71.60.0 u103206212 open "/php/docs/examples/ignorePHP5implements.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:48:04 10.71.60.0 u103206212 open "/php/docs/examples/parseArray.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:48:04 10.71.60.0 u103206212 close "/php/docs/examples/ignorePHP5implements.php" bytes read 0 written 967
+Dec 25 04:48:04 10.71.60.0 u103206212 [10.71.60.0|put|0|967|0|0|0|2f7068702f646f63732f6578616d706c65732f69676e6f726550485035696d706c656d656e74732e706870|]
+Dec 25 04:48:04 10.71.60.0 u103206212 close "/php/docs/examples/parseArray.php" bytes read 0 written 898
+Dec 25 04:48:04 10.71.60.0 u103206212 [10.71.60.0|put|0|898|0|0|0|2f7068702f646f63732f6578616d706c65732f706172736541727261792e706870|]
+Dec 25 04:48:05 10.71.60.0 u103206212 open "/php/docs/examples/parseDir.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:48:05 10.71.60.0 u103206212 open "/php/docs/examples/parseDir_withCustomProgressBar.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:48:05 10.71.60.0 u103206212 close "/php/docs/examples/parseDir.php" bytes read 0 written 874
+Dec 25 04:48:05 10.71.60.0 u103206212 [10.71.60.0|put|0|874|0|0|0|2f7068702f646f63732f6578616d706c65732f70617273654469722e706870|]
+Dec 25 04:48:05 10.71.60.0 u103206212 close "/php/docs/examples/parseDir_withCustomProgressBar.php" bytes read 0 written 1576
+Dec 25 04:48:05 10.71.60.0 u103206212 [10.71.60.0|put|0|1576|0|0|0|2f7068702f646f63732f6578616d706c65732f70617273654469725f77697468437573746f6d50726f67726573734261722e706870|]
+Dec 25 04:48:06 10.71.60.0 u103206212 open "/php/docs/examples/parseFile.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:48:06 10.71.60.0 u103206212 open "/php/docs/examples/parseString.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:48:06 10.71.60.0 u103206212 close "/php/docs/examples/parseFile.php" bytes read 0 written 704
+Dec 25 04:48:06 10.71.60.0 u103206212 [10.71.60.0|put|0|704|0|0|0|2f7068702f646f63732f6578616d706c65732f706172736546696c652e706870|]
+Dec 25 04:48:06 10.71.60.0 u103206212 close "/php/docs/examples/parseString.php" bytes read 0 written 758
+Dec 25 04:48:06 10.71.60.0 u103206212 [10.71.60.0|put|0|758|0|0|0|2f7068702f646f63732f6578616d706c65732f7061727365537472696e672e706870|]
+Dec 25 04:48:07 10.71.60.0 u103206212 open "/php/docs/examples/pci180_loadversion.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:48:07 10.71.60.0 u103206212 open "/php/docs/examples/pci180_parsearray_files.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:48:07 10.71.60.0 u103206212 close "/php/docs/examples/pci180_loadversion.php" bytes read 0 written 756
+Dec 25 04:48:07 10.71.60.0 u103206212 [10.71.60.0|put|0|756|0|0|0|2f7068702f646f63732f6578616d706c65732f7063693138305f6c6f616476657273696f6e2e706870|]
+Dec 25 04:48:07 10.71.60.0 u103206212 close "/php/docs/examples/pci180_parsearray_files.php" bytes read 0 written 1916
+Dec 25 04:48:07 10.71.60.0 u103206212 [10.71.60.0|put|0|1916|0|0|0|2f7068702f646f63732f6578616d706c65732f7063693138305f706172736561727261795f66696c65732e706870|]
+Dec 25 04:48:07 10.71.60.0 u103206212 open "/php/docs/examples/pci180_parsearray_strings.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:48:08 10.71.60.0 u103206212 open "/php/docs/examples/pci180_parsedata_toxml.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:48:08 10.71.60.0 u103206212 close "/php/docs/examples/pci180_parsearray_strings.php" bytes read 0 written 2660
+Dec 25 04:48:08 10.71.60.0 u103206212 [10.71.60.0|put|1|2660|0|0|0|2f7068702f646f63732f6578616d706c65732f7063693138305f706172736561727261795f737472696e67732e706870|]
+Dec 25 04:48:08 10.71.60.0 u103206212 close "/php/docs/examples/pci180_parsedata_toxml.php" bytes read 0 written 1361
+Dec 25 04:48:08 10.71.60.0 u103206212 [10.71.60.0|put|0|1361|0|0|0|2f7068702f646f63732f6578616d706c65732f7063693138305f7061727365646174615f746f786d6c2e706870|]
+Dec 25 04:48:08 10.71.60.0 u103206212 open "/php/docs/examples/pci180_parsedir_tohtml.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:48:09 10.71.60.0 u103206212 open "/php/docs/examples/pci180_parsefile.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:48:09 10.71.60.0 u103206212 close "/php/docs/examples/pci180_parsedir_tohtml.php" bytes read 0 written 3647
+Dec 25 04:48:09 10.71.60.0 u103206212 [10.71.60.0|put|1|3647|0|0|0|2f7068702f646f63732f6578616d706c65732f7063693138305f70617273656469725f746f68746d6c2e706870|]
+Dec 25 04:48:09 10.71.60.0 u103206212 close "/php/docs/examples/pci180_parsefile.php" bytes read 0 written 1891
+Dec 25 04:48:09 10.71.60.0 u103206212 [10.71.60.0|put|0|1891|0|0|0|2f7068702f646f63732f6578616d706c65732f7063693138305f706172736566696c652e706870|]
+Dec 25 04:48:09 10.71.60.0 u103206212 open "/php/docs/examples/pci180_parsefolder.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:48:09 10.71.60.0 u103206212 open "/php/docs/examples/pci180_parsefolder_tohtml.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:48:10 10.71.60.0 u103206212 close "/php/docs/examples/pci180_parsefolder.php" bytes read 0 written 1914
+Dec 25 04:48:10 10.71.60.0 u103206212 [10.71.60.0|put|1|1914|0|0|0|2f7068702f646f63732f6578616d706c65732f7063693138305f7061727365666f6c6465722e706870|]
+Dec 25 04:48:10 10.71.60.0 u103206212 close "/php/docs/examples/pci180_parsefolder_tohtml.php" bytes read 0 written 3597
+Dec 25 04:48:10 10.71.60.0 u103206212 [10.71.60.0|put|1|3597|0|0|0|2f7068702f646f63732f6578616d706c65732f7063693138305f7061727365666f6c6465725f746f68746d6c2e706870|]
+Dec 25 04:48:10 10.71.60.0 u103206212 open "/php/docs/examples/pci180_parsestring.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:48:10 10.71.60.0 u103206212 open "/php/docs/examples/pci180_parsestring_toxml.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:48:10 10.71.60.0 u103206212 close "/php/docs/examples/pci180_parsestring.php" bytes read 0 written 2075
+Dec 25 04:48:10 10.71.60.0 u103206212 [10.71.60.0|put|0|2075|0|0|0|2f7068702f646f63732f6578616d706c65732f7063693138305f7061727365737472696e672e706870|]
+Dec 25 04:48:11 10.71.60.0 u103206212 close "/php/docs/examples/pci180_parsestring_toxml.php" bytes read 0 written 3113
+Dec 25 04:48:11 10.71.60.0 u103206212 [10.71.60.0|put|1|3113|0|0|0|2f7068702f646f63732f6578616d706c65732f7063693138305f7061727365737472696e675f746f786d6c2e706870|]
+Dec 25 04:48:11 10.71.60.0 u103206212 open "/php/docs/examples/yoursite.css" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:48:11 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:48:11 10.71.60.0 u103206212 close "/php/docs/examples/yoursite.css" bytes read 0 written 844
+Dec 25 04:48:11 10.71.60.0 u103206212 [10.71.60.0|put|0|844|0|0|0|2f7068702f646f63732f6578616d706c65732f796f7572736974652e637373|]
+Dec 25 04:48:12 10.71.60.0 u103206212 mkdir name "/php/docs/PEAR" mode 0777
+Dec 25 04:48:12 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f646f63732f50454152|]
+Dec 25 04:48:15 10.71.60.0 u103206212 open "/php/docs/PEAR/LICENSE" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:48:15 10.71.60.0 u103206212 open "/php/docs/PEAR/INSTALL" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:48:15 10.71.60.0 u103206212 close "/php/docs/PEAR/LICENSE" bytes read 0 written 1477
+Dec 25 04:48:15 10.71.60.0 u103206212 [10.71.60.0|put|0|1477|0|0|0|2f7068702f646f63732f504541522f4c4943454e5345|]
+Dec 25 04:48:15 10.71.60.0 u103206212 close "/php/docs/PEAR/INSTALL" bytes read 0 written 2168
+Dec 25 04:48:15 10.71.60.0 u103206212 [10.71.60.0|put|0|2168|0|0|0|2f7068702f646f63732f504541522f494e5354414c4c|]
+Dec 25 04:48:15 10.71.60.0 u103206212 open "/php/docs/PEAR/README.rst" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:48:16 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:48:16 10.71.60.0 u103206212 close "/php/docs/PEAR/README.rst" bytes read 0 written 2695
+Dec 25 04:48:16 10.71.60.0 u103206212 [10.71.60.0|put|1|2695|0|0|0|2f7068702f646f63732f504541522f524541444d452e727374|]
+Dec 25 04:48:16 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:48:17 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:48:17 10.71.60.0 u103206212 mkdir name "/php/docs/Structures_Graph" mode 0777
+Dec 25 04:48:17 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f646f63732f537472756374757265735f4772617068|]
+Dec 25 04:48:17 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:48:18 10.71.60.0 u103206212 mkdir name "/php/data/phpdocref" mode 0777
+Dec 25 04:48:18 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f646174612f706870646f63726566|]
+Dec 25 04:48:19 10.71.60.0 u103206212 open "/php/docs/Structures_Graph/LICENSE" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:48:19 10.71.60.0 u103206212 mkdir name "/php/data/phpdocref/apache" mode 0777
+Dec 25 04:48:19 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f646174612f706870646f637265662f617061636865|]
+Dec 25 04:48:19 10.71.60.0 u103206212 close "/php/docs/Structures_Graph/LICENSE" bytes read 0 written 7637
+Dec 25 04:48:19 10.71.60.0 u103206212 [10.71.60.0|put|0|7637|0|0|0|2f7068702f646f63732f537472756374757265735f47726170682f4c4943454e5345|]
+Dec 25 04:48:20 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:48:21 10.71.60.0 u103206212 mkdir name "/php/data/phpdocref/apc" mode 0777
+Dec 25 04:48:21 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f646174612f706870646f637265662f617063|]
+Dec 25 04:48:21 10.71.60.0 u103206212 open "/php/data/phpdocref/apache/versions.xml" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:48:22 10.71.60.0 u103206212 close "/php/data/phpdocref/apache/versions.xml" bytes read 0 written 1351
+Dec 25 04:48:22 10.71.60.0 u103206212 [10.71.60.0|put|1|1351|0|0|0|2f7068702f646174612f706870646f637265662f6170616368652f76657273696f6e732e786d6c|]
+Dec 25 04:48:22 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:48:23 10.71.60.0 u103206212 open "/php/data/phpdocref/apc/versions.xml" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:48:23 10.71.60.0 u103206212 mkdir name "/php/data/phpdocref/apd" mode 0777
+Dec 25 04:48:23 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f646174612f706870646f637265662f617064|]
+Dec 25 04:48:24 10.71.60.0 u103206212 close "/php/data/phpdocref/apc/versions.xml" bytes read 0 written 1199
+Dec 25 04:48:24 10.71.60.0 u103206212 [10.71.60.0|put|1|1199|0|0|0|2f7068702f646174612f706870646f637265662f6170632f76657273696f6e732e786d6c|]
+Dec 25 04:48:24 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:48:25 10.71.60.0 u103206212 mkdir name "/php/data/phpdocref/bcmath" mode 0777
+Dec 25 04:48:25 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f646174612f706870646f637265662f62636d617468|]
+Dec 25 04:48:25 10.71.60.0 u103206212 open "/php/data/phpdocref/apd/versions.xml" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:48:26 10.71.60.0 u103206212 close "/php/data/phpdocref/apd/versions.xml" bytes read 0 written 1714
+Dec 25 04:48:26 10.71.60.0 u103206212 [10.71.60.0|put|1|1714|0|0|0|2f7068702f646174612f706870646f637265662f6170642f76657273696f6e732e786d6c|]
+Dec 25 04:48:26 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:48:27 10.71.60.0 u103206212 mkdir name "/php/data/phpdocref/bzip2" mode 0777
+Dec 25 04:48:27 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f646174612f706870646f637265662f627a697032|]
+Dec 25 04:48:27 10.71.60.0 u103206212 open "/php/data/phpdocref/bcmath/versions.xml" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:48:28 10.71.60.0 u103206212 close "/php/data/phpdocref/bcmath/versions.xml" bytes read 0 written 1037
+Dec 25 04:48:28 10.71.60.0 u103206212 [10.71.60.0|put|1|1037|0|0|0|2f7068702f646174612f706870646f637265662f62636d6174682f76657273696f6e732e786d6c|]
+Dec 25 04:48:28 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:48:29 10.71.60.0 u103206212 mkdir name "/php/data/phpdocref/com" mode 0777
+Dec 25 04:48:29 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f646174612f706870646f637265662f636f6d|]
+Dec 25 04:48:29 10.71.60.0 u103206212 open "/php/data/phpdocref/bzip2/versions.xml" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:48:30 10.71.60.0 u103206212 close "/php/data/phpdocref/bzip2/versions.xml" bytes read 0 written 1221
+Dec 25 04:48:30 10.71.60.0 u103206212 [10.71.60.0|put|1|1221|0|0|0|2f7068702f646174612f706870646f637265662f627a6970322f76657273696f6e732e786d6c|]
+Dec 25 04:48:30 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:48:31 10.71.60.0 u103206212 mkdir name "/php/data/phpdocref/ctype" mode 0777
+Dec 25 04:48:31 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f646174612f706870646f637265662f6374797065|]
+Dec 25 04:48:32 10.71.60.0 u103206212 open "/php/data/phpdocref/com/versions.xml" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:48:32 10.71.60.0 u103206212 close "/php/data/phpdocref/com/versions.xml" bytes read 0 written 1488
+Dec 25 04:48:32 10.71.60.0 u103206212 [10.71.60.0|put|0|1488|0|0|0|2f7068702f646174612f706870646f637265662f636f6d2f76657273696f6e732e786d6c|]
+Dec 25 04:48:32 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:48:34 10.71.60.0 u103206212 open "/php/data/phpdocref/ctype/versions.xml" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:48:34 10.71.60.0 u103206212 mkdir name "/php/data/phpdocref/datetime" mode 0777
+Dec 25 04:48:34 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f646174612f706870646f637265662f6461746574696d65|]
+Dec 25 04:48:34 10.71.60.0 u103206212 close "/php/data/phpdocref/ctype/versions.xml" bytes read 0 written 1282
+Dec 25 04:48:34 10.71.60.0 u103206212 [10.71.60.0|put|0|1282|0|0|0|2f7068702f646174612f706870646f637265662f63747970652f76657273696f6e732e786d6c|]
+Dec 25 04:48:34 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:48:36 10.71.60.0 u103206212 mkdir name "/php/data/phpdocref/dom" mode 0777
+Dec 25 04:48:36 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f646174612f706870646f637265662f646f6d|]
+Dec 25 04:48:36 10.71.60.0 u103206212 open "/php/data/phpdocref/datetime/versions.xml" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:48:36 10.71.60.0 u103206212 close "/php/data/phpdocref/datetime/versions.xml" bytes read 0 written 5094
+Dec 25 04:48:36 10.71.60.0 u103206212 [10.71.60.0|put|0|5094|0|0|0|2f7068702f646174612f706870646f637265662f6461746574696d652f76657273696f6e732e786d6c|]
+Dec 25 04:48:37 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:48:38 10.71.60.0 u103206212 open "/php/data/phpdocref/dom/versions.xml" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:48:38 10.71.60.0 u103206212 mkdir name "/php/data/phpdocref/filter" mode 0777
+Dec 25 04:48:38 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f646174612f706870646f637265662f66696c746572|]
+Dec 25 04:48:38 10.71.60.0 u103206212 close "/php/data/phpdocref/dom/versions.xml" bytes read 0 written 8050
+Dec 25 04:48:38 10.71.60.0 u103206212 [10.71.60.0|put|0|8050|0|0|0|2f7068702f646174612f706870646f637265662f646f6d2f76657273696f6e732e786d6c|]
+Dec 25 04:48:39 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:48:40 10.71.60.0 u103206212 mkdir name "/php/data/phpdocref/ftp" mode 0777
+Dec 25 04:48:40 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f646174612f706870646f637265662f667470|]
+Dec 25 04:48:40 10.71.60.0 u103206212 open "/php/data/phpdocref/filter/versions.xml" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:48:40 10.71.60.0 u103206212 close "/php/data/phpdocref/filter/versions.xml" bytes read 0 written 1075
+Dec 25 04:48:40 10.71.60.0 u103206212 [10.71.60.0|put|0|1075|0|0|0|2f7068702f646174612f706870646f637265662f66696c7465722f76657273696f6e732e786d6c|]
+Dec 25 04:48:41 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:48:42 10.71.60.0 u103206212 open "/php/data/phpdocref/ftp/versions.xml" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:48:42 10.71.60.0 u103206212 mkdir name "/php/data/phpdocref/gmp" mode 0777
+Dec 25 04:48:42 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f646174612f706870646f637265662f676d70|]
+Dec 25 04:48:42 10.71.60.0 u103206212 close "/php/data/phpdocref/ftp/versions.xml" bytes read 0 written 2395
+Dec 25 04:48:42 10.71.60.0 u103206212 [10.71.60.0|put|0|2395|0|0|0|2f7068702f646174612f706870646f637265662f6674702f76657273696f6e732e786d6c|]
+Dec 25 04:48:43 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:48:44 10.71.60.0 u103206212 mkdir name "/php/data/phpdocref/hash" mode 0777
+Dec 25 04:48:44 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f646174612f706870646f637265662f68617368|]
+Dec 25 04:48:44 10.71.60.0 u103206212 open "/php/data/phpdocref/gmp/versions.xml" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:48:45 10.71.60.0 u103206212 close "/php/data/phpdocref/gmp/versions.xml" bytes read 0 written 3113
+Dec 25 04:48:45 10.71.60.0 u103206212 [10.71.60.0|put|1|3113|0|0|0|2f7068702f646174612f706870646f637265662f676d702f76657273696f6e732e786d6c|]
+Dec 25 04:48:45 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:48:46 10.71.60.0 u103206212 open "/php/data/phpdocref/hash/versions.xml" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:48:46 10.71.60.0 u103206212 close "/php/data/phpdocref/hash/versions.xml" bytes read 0 written 1357
+Dec 25 04:48:46 10.71.60.0 u103206212 [10.71.60.0|put|0|1357|0|0|0|2f7068702f646174612f706870646f637265662f686173682f76657273696f6e732e786d6c|]
+Dec 25 04:48:46 10.71.60.0 u103206212 mkdir name "/php/data/phpdocref/iconv" mode 0777
+Dec 25 04:48:46 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f646174612f706870646f637265662f69636f6e76|]
+Dec 25 04:48:47 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:48:48 10.71.60.0 u103206212 mkdir name "/php/data/phpdocref/image" mode 0777
+Dec 25 04:48:48 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f646174612f706870646f637265662f696d616765|]
+Dec 25 04:48:48 10.71.60.0 u103206212 open "/php/data/phpdocref/iconv/versions.xml" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:48:49 10.71.60.0 u103206212 close "/php/data/phpdocref/iconv/versions.xml" bytes read 0 written 1123
+Dec 25 04:48:49 10.71.60.0 u103206212 [10.71.60.0|put|1|1123|0|0|0|2f7068702f646174612f706870646f637265662f69636f6e762f76657273696f6e732e786d6c|]
+Dec 25 04:48:49 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:48:50 10.71.60.0 u103206212 open "/php/data/phpdocref/image/versions.xml" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:48:50 10.71.60.0 u103206212 close "/php/data/phpdocref/image/versions.xml" bytes read 0 written 6460
+Dec 25 04:48:50 10.71.60.0 u103206212 [10.71.60.0|put|0|6460|0|0|0|2f7068702f646174612f706870646f637265662f696d6167652f76657273696f6e732e786d6c|]
+Dec 25 04:48:50 10.71.60.0 u103206212 mkdir name "/php/data/phpdocref/json" mode 0777
+Dec 25 04:48:50 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f646174612f706870646f637265662f6a736f6e|]
+Dec 25 04:48:51 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:48:52 10.71.60.0 u103206212 mkdir name "/php/data/phpdocref/mbstring" mode 0777
+Dec 25 04:48:52 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f646174612f706870646f637265662f6d62737472696e67|]
+Dec 25 04:48:53 10.71.60.0 u103206212 open "/php/data/phpdocref/json/versions.xml" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:48:53 10.71.60.0 u103206212 close "/php/data/phpdocref/json/versions.xml" bytes read 0 written 828
+Dec 25 04:48:53 10.71.60.0 u103206212 [10.71.60.0|put|0|828|0|0|0|2f7068702f646174612f706870646f637265662f6a736f6e2f76657273696f6e732e786d6c|]
+Dec 25 04:48:54 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:48:54 10.71.60.0 u103206212 open "/php/data/phpdocref/mbstring/versions.xml" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:48:54 10.71.60.0 u103206212 close "/php/data/phpdocref/mbstring/versions.xml" bytes read 0 written 5483
+Dec 25 04:48:54 10.71.60.0 u103206212 [10.71.60.0|put|0|5483|0|0|0|2f7068702f646174612f706870646f637265662f6d62737472696e672f76657273696f6e732e786d6c|]
+Dec 25 04:48:55 10.71.60.0 u103206212 mkdir name "/php/data/phpdocref/mysql" mode 0777
+Dec 25 04:48:55 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f646174612f706870646f637265662f6d7973716c|]
+Dec 25 04:48:55 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:48:56 10.71.60.0 u103206212 mkdir name "/php/data/phpdocref/mysqli" mode 0777
+Dec 25 04:48:56 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f646174612f706870646f637265662f6d7973716c69|]
+Dec 25 04:48:57 10.71.60.0 u103206212 open "/php/data/phpdocref/mysql/versions.xml" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:48:57 10.71.60.0 u103206212 close "/php/data/phpdocref/mysql/versions.xml" bytes read 0 written 4677
+Dec 25 04:48:57 10.71.60.0 u103206212 [10.71.60.0|put|0|4677|0|0|0|2f7068702f646174612f706870646f637265662f6d7973716c2f76657273696f6e732e786d6c|]
+Dec 25 04:48:58 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:48:58 10.71.60.0 u103206212 open "/php/data/phpdocref/mysqli/versions.xml" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:48:58 10.71.60.0 u103206212 close "/php/data/phpdocref/mysqli/versions.xml" bytes read 0 written 6847
+Dec 25 04:48:58 10.71.60.0 u103206212 [10.71.60.0|put|0|6847|0|0|0|2f7068702f646174612f706870646f637265662f6d7973716c692f76657273696f6e732e786d6c|]
+Dec 25 04:48:59 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:48:59 10.71.60.0 u103206212 mkdir name "/php/data/phpdocref/openssl" mode 0777
+Dec 25 04:48:59 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f646174612f706870646f637265662f6f70656e73736c|]
+Dec 25 04:49:00 10.71.60.0 u103206212 mkdir name "/php/data/phpdocref/pcre" mode 0777
+Dec 25 04:49:00 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f646174612f706870646f637265662f70637265|]
+Dec 25 04:49:01 10.71.60.0 u103206212 open "/php/data/phpdocref/openssl/versions.xml" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:49:02 10.71.60.0 u103206212 close "/php/data/phpdocref/openssl/versions.xml" bytes read 0 written 3660
+Dec 25 04:49:02 10.71.60.0 u103206212 [10.71.60.0|put|1|3660|0|0|0|2f7068702f646174612f706870646f637265662f6f70656e73736c2f76657273696f6e732e786d6c|]
+Dec 25 04:49:02 10.71.60.0 u103206212 open "/php/data/phpdocref/pcre/versions.xml" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:49:02 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:49:03 10.71.60.0 u103206212 close "/php/data/phpdocref/pcre/versions.xml" bytes read 0 written 1058
+Dec 25 04:49:03 10.71.60.0 u103206212 [10.71.60.0|put|1|1058|0|0|0|2f7068702f646174612f706870646f637265662f706372652f76657273696f6e732e786d6c|]
+Dec 25 04:49:03 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:49:03 10.71.60.0 u103206212 mkdir name "/php/data/phpdocref/pdo" mode 0777
+Dec 25 04:49:03 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f646174612f706870646f637265662f70646f|]
+Dec 25 04:49:04 10.71.60.0 u103206212 mkdir name "/php/data/phpdocref/pgsql" mode 0777
+Dec 25 04:49:04 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f646174612f706870646f637265662f706773716c|]
+Dec 25 04:49:05 10.71.60.0 u103206212 open "/php/data/phpdocref/pdo/versions.xml" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:49:06 10.71.60.0 u103206212 close "/php/data/phpdocref/pdo/versions.xml" bytes read 0 written 4521
+Dec 25 04:49:06 10.71.60.0 u103206212 [10.71.60.0|put|1|4521|0|0|0|2f7068702f646174612f706870646f637265662f70646f2f76657273696f6e732e786d6c|]
+Dec 25 04:49:06 10.71.60.0 u103206212 open "/php/data/phpdocref/pgsql/versions.xml" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:49:06 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:49:07 10.71.60.0 u103206212 close "/php/data/phpdocref/pgsql/versions.xml" bytes read 0 written 7297
+Dec 25 04:49:07 10.71.60.0 u103206212 [10.71.60.0|put|1|7297|0|0|0|2f7068702f646174612f706870646f637265662f706773716c2f76657273696f6e732e786d6c|]
+Dec 25 04:49:07 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:49:07 10.71.60.0 u103206212 mkdir name "/php/data/phpdocref/posix" mode 0777
+Dec 25 04:49:07 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f646174612f706870646f637265662f706f736978|]
+Dec 25 04:49:08 10.71.60.0 u103206212 mkdir name "/php/data/phpdocref/session" mode 0777
+Dec 25 04:49:08 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f646174612f706870646f637265662f73657373696f6e|]
+Dec 25 04:49:10 10.71.60.0 u103206212 open "/php/data/phpdocref/posix/versions.xml" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:49:10 10.71.60.0 u103206212 close "/php/data/phpdocref/posix/versions.xml" bytes read 0 written 2657
+Dec 25 04:49:10 10.71.60.0 u103206212 [10.71.60.0|put|0|2657|0|0|0|2f7068702f646174612f706870646f637265662f706f7369782f76657273696f6e732e786d6c|]
+Dec 25 04:49:10 10.71.60.0 u103206212 open "/php/data/phpdocref/session/versions.xml" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:49:11 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:49:11 10.71.60.0 u103206212 close "/php/data/phpdocref/session/versions.xml" bytes read 0 written 1855
+Dec 25 04:49:11 10.71.60.0 u103206212 [10.71.60.0|put|1|1855|0|0|0|2f7068702f646174612f706870646f637265662f73657373696f6e2f76657273696f6e732e786d6c|]
+Dec 25 04:49:11 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:49:12 10.71.60.0 u103206212 mkdir name "/php/data/phpdocref/simplexml" mode 0777
+Dec 25 04:49:12 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f646174612f706870646f637265662f73696d706c65786d6c|]
+Dec 25 04:49:12 10.71.60.0 u103206212 mkdir name "/php/data/phpdocref/spl" mode 0777
+Dec 25 04:49:12 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f646174612f706870646f637265662f73706c|]
+Dec 25 04:49:14 10.71.60.0 u103206212 open "/php/data/phpdocref/simplexml/versions.xml" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:49:14 10.71.60.0 u103206212 open "/php/data/phpdocref/spl/versions.xml" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:49:14 10.71.60.0 u103206212 close "/php/data/phpdocref/simplexml/versions.xml" bytes read 0 written 2109
+Dec 25 04:49:14 10.71.60.0 u103206212 [10.71.60.0|put|0|2109|0|0|0|2f7068702f646174612f706870646f637265662f73696d706c65786d6c2f76657273696f6e732e786d6c|]
+Dec 25 04:49:15 10.71.60.0 u103206212 close "/php/data/phpdocref/spl/versions.xml" bytes read 0 written 8460
+Dec 25 04:49:15 10.71.60.0 u103206212 [10.71.60.0|put|1|8460|0|0|0|2f7068702f646174612f706870646f637265662f73706c2f76657273696f6e732e786d6c|]
+Dec 25 04:49:15 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:49:15 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:49:16 10.71.60.0 u103206212 mkdir name "/php/data/phpdocref/ssh2" mode 0777
+Dec 25 04:49:16 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f646174612f706870646f637265662f73736832|]
+Dec 25 04:49:16 10.71.60.0 u103206212 mkdir name "/php/data/phpdocref/tidy" mode 0777
+Dec 25 04:49:16 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f646174612f706870646f637265662f74696479|]
+Dec 25 04:49:18 10.71.60.0 u103206212 open "/php/data/phpdocref/ssh2/versions.xml" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:49:18 10.71.60.0 u103206212 open "/php/data/phpdocref/tidy/versions.xml" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:49:19 10.71.60.0 u103206212 close "/php/data/phpdocref/ssh2/versions.xml" bytes read 0 written 2608
+Dec 25 04:49:19 10.71.60.0 u103206212 [10.71.60.0|put|1|2608|0|0|0|2f7068702f646174612f706870646f637265662f737368322f76657273696f6e732e786d6c|]
+Dec 25 04:49:19 10.71.60.0 u103206212 close "/php/data/phpdocref/tidy/versions.xml" bytes read 0 written 5352
+Dec 25 04:49:19 10.71.60.0 u103206212 [10.71.60.0|put|1|5352|0|0|0|2f7068702f646174612f706870646f637265662f746964792f76657273696f6e732e786d6c|]
+Dec 25 04:49:19 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:49:19 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:49:20 10.71.60.0 u103206212 mkdir name "/php/data/phpdocref/wddx" mode 0777
+Dec 25 04:49:20 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f646174612f706870646f637265662f77646478|]
+Dec 25 04:49:20 10.71.60.0 u103206212 mkdir name "/php/data/phpdocref/xml" mode 0777
+Dec 25 04:49:20 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f646174612f706870646f637265662f786d6c|]
+Dec 25 04:49:22 10.71.60.0 u103206212 open "/php/data/phpdocref/wddx/versions.xml" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:49:23 10.71.60.0 u103206212 open "/php/data/phpdocref/xml/versions.xml" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:49:23 10.71.60.0 u103206212 close "/php/data/phpdocref/wddx/versions.xml" bytes read 0 written 895
+Dec 25 04:49:23 10.71.60.0 u103206212 [10.71.60.0|put|1|895|0|0|0|2f7068702f646174612f706870646f637265662f776464782f76657273696f6e732e786d6c|]
+Dec 25 04:49:23 10.71.60.0 u103206212 close "/php/data/phpdocref/xml/versions.xml" bytes read 0 written 2102
+Dec 25 04:49:23 10.71.60.0 u103206212 [10.71.60.0|put|0|2102|0|0|0|2f7068702f646174612f706870646f637265662f786d6c2f76657273696f6e732e786d6c|]
+Dec 25 04:49:23 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:49:23 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:49:24 10.71.60.0 u103206212 mkdir name "/php/data/phpdocref/xmlwriter" mode 0777
+Dec 25 04:49:24 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f646174612f706870646f637265662f786d6c777269746572|]
+Dec 25 04:49:24 10.71.60.0 u103206212 mkdir name "/php/data/phpdocref/xmlreader" mode 0777
+Dec 25 04:49:24 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f646174612f706870646f637265662f786d6c726561646572|]
+Dec 25 04:49:27 10.71.60.0 u103206212 open "/php/data/phpdocref/xmlwriter/versions.xml" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:49:27 10.71.60.0 u103206212 open "/php/data/phpdocref/xmlreader/versions.xml" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:49:27 10.71.60.0 u103206212 close "/php/data/phpdocref/xmlwriter/versions.xml" bytes read 0 written 4727
+Dec 25 04:49:27 10.71.60.0 u103206212 [10.71.60.0|put|0|4727|0|0|0|2f7068702f646174612f706870646f637265662f786d6c7772697465722f76657273696f6e732e786d6c|]
+Dec 25 04:49:27 10.71.60.0 u103206212 close "/php/data/phpdocref/xmlreader/versions.xml" bytes read 0 written 2358
+Dec 25 04:49:27 10.71.60.0 u103206212 [10.71.60.0|put|0|2358|0|0|0|2f7068702f646174612f706870646f637265662f786d6c7265616465722f76657273696f6e732e786d6c|]
+Dec 25 04:49:27 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:49:28 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:49:29 10.71.60.0 u103206212 mkdir name "/php/data/phpdocref/xsl" mode 0777
+Dec 25 04:49:29 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f646174612f706870646f637265662f78736c|]
+Dec 25 04:49:29 10.71.60.0 u103206212 mkdir name "/php/data/phpdocref/xslt" mode 0777
+Dec 25 04:49:29 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f646174612f706870646f637265662f78736c74|]
+Dec 25 04:49:31 10.71.60.0 u103206212 open "/php/data/phpdocref/xsl/versions.xml" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:49:31 10.71.60.0 u103206212 open "/php/data/phpdocref/xslt/versions.xml" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:49:31 10.71.60.0 u103206212 close "/php/data/phpdocref/xsl/versions.xml" bytes read 0 written 1290
+Dec 25 04:49:31 10.71.60.0 u103206212 [10.71.60.0|put|0|1290|0|0|0|2f7068702f646174612f706870646f637265662f78736c2f76657273696f6e732e786d6c|]
+Dec 25 04:49:31 10.71.60.0 u103206212 close "/php/data/phpdocref/xslt/versions.xml" bytes read 0 written 2305
+Dec 25 04:49:31 10.71.60.0 u103206212 [10.71.60.0|put|0|2305|0|0|0|2f7068702f646174612f706870646f637265662f78736c742f76657273696f6e732e786d6c|]
+Dec 25 04:49:32 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:49:32 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:49:33 10.71.60.0 u103206212 mkdir name "/php/data/phpdocref/zip" mode 0777
+Dec 25 04:49:33 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f646174612f706870646f637265662f7a6970|]
+Dec 25 04:49:33 10.71.60.0 u103206212 mkdir name "/php/data/phpdocref/zlib" mode 0777
+Dec 25 04:49:33 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f646174612f706870646f637265662f7a6c6962|]
+Dec 25 04:49:35 10.71.60.0 u103206212 open "/php/data/phpdocref/zip/versions.xml" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:49:35 10.71.60.0 u103206212 open "/php/data/phpdocref/zlib/versions.xml" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:49:35 10.71.60.0 u103206212 close "/php/data/phpdocref/zip/versions.xml" bytes read 0 written 1837
+Dec 25 04:49:35 10.71.60.0 u103206212 [10.71.60.0|put|0|1837|0|0|0|2f7068702f646174612f706870646f637265662f7a69702f76657273696f6e732e786d6c|]
+Dec 25 04:49:35 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:49:36 10.71.60.0 u103206212 close "/php/data/phpdocref/zlib/versions.xml" bytes read 0 written 1629
+Dec 25 04:49:36 10.71.60.0 u103206212 [10.71.60.0|put|1|1629|0|0|0|2f7068702f646174612f706870646f637265662f7a6c69622f76657273696f6e732e786d6c|]
+Dec 25 04:49:36 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:49:36 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:49:36 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:49:36 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:49:37 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:49:37 10.71.60.0 u103206212 mkdir name "/php/docs/Archive_Tar" mode 0777
+Dec 25 04:49:37 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f646f63732f417263686976655f546172|]
+Dec 25 04:49:38 10.71.60.0 u103206212 mkdir name "/php/docs/XML_Util" mode 0777
+Dec 25 04:49:38 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f646f63732f584d4c5f5574696c|]
+Dec 25 04:49:38 10.71.60.0 u103206212 mkdir name "/php/docs/Archive_Tar/docs" mode 0777
+Dec 25 04:49:38 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f646f63732f417263686976655f5461722f646f6373|]
+Dec 25 04:49:39 10.71.60.0 u103206212 mkdir name "/php/docs/XML_Util/examples" mode 0777
+Dec 25 04:49:39 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f646f63732f584d4c5f5574696c2f6578616d706c6573|]
+Dec 25 04:49:41 10.71.60.0 u103206212 open "/php/docs/Archive_Tar/docs/Archive_Tar.txt" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:49:41 10.71.60.0 u103206212 close "/php/docs/Archive_Tar/docs/Archive_Tar.txt" bytes read 0 written 19110
+Dec 25 04:49:41 10.71.60.0 u103206212 [10.71.60.0|put|0|19110|0|0|0|2f7068702f646f63732f417263686976655f5461722f646f63732f417263686976655f5461722e747874|]
+Dec 25 04:49:41 10.71.60.0 u103206212 open "/php/docs/XML_Util/examples/example.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:49:42 10.71.60.0 u103206212 close "/php/docs/XML_Util/examples/example.php" bytes read 0 written 9160
+Dec 25 04:49:42 10.71.60.0 u103206212 [10.71.60.0|put|1|9160|0|0|0|2f7068702f646f63732f584d4c5f5574696c2f6578616d706c65732f6578616d706c652e706870|]
+Dec 25 04:49:42 10.71.60.0 u103206212 open "/php/docs/XML_Util/examples/example2.php" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:49:42 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:49:42 10.71.60.0 u103206212 close "/php/docs/XML_Util/examples/example2.php" bytes read 0 written 4843
+Dec 25 04:49:42 10.71.60.0 u103206212 [10.71.60.0|put|0|4843|0|0|0|2f7068702f646f63732f584d4c5f5574696c2f6578616d706c65732f6578616d706c65322e706870|]
+Dec 25 04:49:43 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:49:43 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:49:43 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:49:43 10.71.60.0 u103206212 mkdir name "/php/extras/fonts" mode 0777
+Dec 25 04:49:43 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f6578747261732f666f6e7473|]
+Dec 25 04:49:43 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:49:44 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:49:44 10.71.60.0 u103206212 sent status No such file
+Dec 25 04:49:44 10.71.60.0 u103206212 mkdir name "/php/extras/fonts/fdb" mode 0777
+Dec 25 04:49:44 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f6578747261732f666f6e74732f666462|]
+Dec 25 04:49:45 10.71.60.0 u103206212 mkdir name "/php/docs/Structures_Graph/docs" mode 0777
+Dec 25 04:49:45 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f646f63732f537472756374757265735f47726170682f646f6373|]
+Dec 25 04:49:46 10.71.60.0 u103206212 mkdir name "/php/docs/Structures_Graph/docs/tutorials" mode 0777
+Dec 25 04:49:46 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f646f63732f537472756374757265735f47726170682f646f63732f7475746f7269616c73|]
+Dec 25 04:49:47 10.71.60.0 u103206212 mkdir name "/php/docs/Structures_Graph/docs/tutorials/Structures_Graph" mode 0777
+Dec 25 04:49:47 10.71.60.0 u103206212 [10.71.60.0|mkdir|0|0|511|0|0|2f7068702f646f63732f537472756374757265735f47726170682f646f63732f7475746f7269616c732f537472756374757265735f4772617068|]
+Dec 25 04:49:50 10.71.60.0 u103206212 open "/php/docs/Structures_Graph/docs/tutorials/Structures_Graph/Structures_Graph.pkg" flags WRITE,CREATE,TRUNCATE mode 0666
+Dec 25 04:49:50 10.71.60.0 u103206212 close "/php/docs/Structures_Graph/docs/tutorials/Structures_Graph/Structures_Graph.pkg" bytes read 0 written 4044
+Dec 25 04:49:50 10.71.60.0 u103206212 [10.71.60.0|put|0|4044|0|0|0|2f7068702f646f63732f537472756374757265735f47726170682f646f63732f7475746f7269616c732f537472756374757265735f47726170682f537472756374757265735f47726170682e706b67|]
+Dec 25 04:50:44 10.71.60.0 u103206212 session closed for local user u103206212 from [10.71.60.0]
+Dec 25 04:50:45 10.71.60.0 u103206212 Connection closed by 10.71.60.0 port 30524
+Dec 25 04:50:50 10.71.60.0 u103206212 session closed for local user u103206212 from [10.71.60.0]
+Dec 25 04:50:50 10.71.60.0 u103206212 Connection closed by 10.71.60.0 port 30532
+Dec 25 04:56:17 - u103206212 rename old "/index.php" new "/index.html"
+Dec 25 04:56:17 - u103206212 [10.71.60.105|rename|0|0|0|0|0|2f696e6465782e706870|2f696e6465782e68746d6c]
+Dec 25 04:56:41 - u103206212 rename old "/index.html" new "/index.php"
+Dec 25 04:56:41 - u103206212 [10.71.60.105|rename|0|0|0|0|0|2f696e6465782e68746d6c|2f696e6465782e706870]
+Dec 25 04:58:01 10.71.61.0 tmp103206212-665 session closed for local user tmp103206212-665 from [10.71.61.0]
+Dec 25 05:00:27 10.71.60.0 u103206212 Connection from 10.71.60.0 port 26542 on 74.208.56.25 port 22
+Dec 25 05:00:29 10.71.60.0 u103206212 Accepted password for u103206212 from 10.71.60.0 port 26542 ssh2
+Dec 25 05:00:27 10.71.60.0 u103206212 Connection from 10.71.60.0 port 26544 on 74.208.56.25 port 22
+Dec 25 05:00:29 10.71.60.0 u103206212 Accepted password for u103206212 from 10.71.60.0 port 26544 ssh2
+Dec 25 05:00:29 10.71.60.0 u103206212 Starting session: subsystem 'sftp' for u103206212 from 10.71.60.0 port 26542 id 0
+Dec 25 05:00:29 10.71.60.0 u103206212 session opened for local user u103206212 from [10.71.60.0]
+Dec 25 05:00:29 10.71.60.0 u103206212 Starting session: subsystem 'sftp' for u103206212 from 10.71.60.0 port 26544 id 0
+Dec 25 05:00:29 10.71.60.0 u103206212 session opened for local user u103206212 from [10.71.60.0]
+Dec 25 05:00:30 - u103206212 sent status No such file
+Dec 25 05:00:31 10.71.60.0 u103206212 open "/logs/access.log.52.5" flags READ mode 0666
+Dec 25 05:00:31 10.71.60.0 u103206212 open "/logs/sftp.log" flags READ mode 0666
