@@ -4,7 +4,8 @@
 // ini_set('display_errors', 1);
 // ini_set('display_startup_errors', 1);
 // error_reporting(E_ALL);
-include('register_lang.php');
+//include('register_lang.php');
+$LANG=file_get_contents('../session.php');
 include('model.php');
 $model=new Model;
 

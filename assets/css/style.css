@@ -2499,3 +2499,13 @@ font-size: 14px;
 border-radius: 50%;
 margin-right: 10px;
 }
+
+.dropdown-menu.d-menu.show {
+    transition: none !important;
+}
+
+.ui-tabs .ui-tabs-nav {
+    display: flex;
+    justify-content: center;
+    font-size: 15px;
+}

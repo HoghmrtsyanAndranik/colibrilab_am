@@ -219,17 +219,13 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+    $("#tabs").tabs({
+        show: function(event, ui) {
+            if (ui.index == 2) {
+                $("fieldset[id^='tabs-']").removeClass('ui-tabs-hide');
+                $("fieldset[id='tabs-2']").addClass('ui-tabs-hide');
+            }
+        }
+    });
 
 }(jQuery));

@@ -1,15 +1,7 @@
 <!doctype html>
+<html lang="en">
 <?php
-
-
-
-
 include('language.php');
-// $conn=mysqli_connect('localhost','root',"","colibrilab_site");
-// $query="select * from students";
-
-// $res=mysqli_query($conn,$query);
-// print_r(mysqli_fetch_all($res,MYSQLI_ASSOC));
 if($LANG=='ARM'){
    $is_arm='chosen';
    $is_eng='';
@@ -20,9 +12,6 @@ elseif($LANG=='ENG'){
 }
 
 ?>
-
-<html lang="en">
-
 
 
 <head>
@@ -80,6 +69,9 @@ elseif($LANG=='ENG'){
     <link rel="stylesheet" href="assets/css/style.css">
     <!-- Responsive CSS -->
     <link rel="stylesheet" href="assets/css/responsive.css">
+    <style>
+        .dropdown-menu{x-placement:none;} 
+    </style>
 </head>
 
 <body>
@@ -1383,19 +1375,40 @@ elseif($LANG=='ENG'){
 <p>Մենք կօգնենք քեզ ունենալ պրոֆեսիոնալ և<br> ներկայանալի ռեզյումե:<br>
 <span>Ռեզյումեն ստեղծելու համար խնդրում ենք մուտք գործել</span></p>
 </div>
-<div class="reg_form">
-<div class="reg">
-<h1>Ստեղծել Հաշիվ</h1>
-<p>Քո CV-ն կտեղադրվի colibrilab.am/cv/name-surname էջում</p>
-<input type="email" id="cv_email" placeholder="Էլ․հասցե">
-<input type="password" id="cv_pass1" placeholder="Գաղտնաբառ">
-<input type="password" id="cv_pass2" placeholder="Գաղտնաբառ">
-<div class="but">
-<button class="btn cv_send"> ՍՏԵՂԾԵԼ </button></div>
-<span id="cv_error_text"style="color:red"></span>
-<span>Ունե՞ք արդեն հաշիվ․ <a href="#">Մուտք գործեք</a></span>
-</div>
-</div>
+
+    <div class="reg_form" id="tabs">
+        <div class="reg">
+            <ul class="tabs-1">
+                <li><a href="#tabs-1">Ստեղծել Հաշիվ</a></li>
+                <li><a href="#tabs-2">Մուտք գործեք </a></li>
+            </ul>
+<!--            <h1>Ստեղծել Հաշիվ</h1>-->
+            <fieldset id="tabs-1">
+                <p>Քո CV-ն կտեղադրվի colibrilab.am/cv/name-surname էջում</p>
+                <!-- <form action="" method="post"> -->
+                    <input type="email" id="cv_email"  placeholder="Էլ․հասցե">
+                    <input type="password" id="cv_pass1"  placeholder="Գաղտնաբառ">
+                    <input type="password" id="cv_pass2"  placeholder="Գաղտնաբառ">
+                    <div class="but">
+                        <button class="btn cv_send"> ՍՏԵՂԾԵԼ </button>
+                    </div>
+              <!--   </form> -->
+                <span id="cv_error_text"style="color:red"></span>
+<!--                    <span>Ունե՞ք արդեն հաշիվ․ <a href="#">Մուտք գործեք</a></span>-->
+            </fieldset>
+            <fieldset id="tabs-2">
+                <p>Մուտք</p>
+                
+                    <input type="text" id="cv_email_login" placeholder="email">
+                    <input type="password" id="cv_pass_login" placeholder="Password">
+                    <div class="but">
+                        <button class="btn cv_login" >Մուտք</button>
+                    </div>
+                <span id="cv_error_text1"style="color:red"></span>
+            </fieldset>
+        </div>
+    </div>
+
 </div>
 </div>
 
@@ -1662,7 +1675,7 @@ CV END
 <p class="dropdown-toggle drop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 Աջակիցներ
 </p>
-<div class="dropdown-menu d-menu">
+<div class="dropdown-menu d-menu" x-placement="">
 <div class="drop-content">
 <div>
 <img src="user.jpg" width="50">
@@ -1745,6 +1758,12 @@ CV END
      <script src="scripts/script.js"></script>
     <script>
    $(document).ready(function(){
+    $('.dropdown-toggle').click(function(){
+
+         $('.dropdown-menu').attr('x-placement','');
+
+
+    })
 
 $('.send').click(function(){
 
@@ -1801,35 +1820,61 @@ $('.send').click(function(){
 
 $('.cv_send').click(function(){
 
-  
    let email=$('#cv_email').val();
    let pass1=$('#cv_pass1').val();
    let pass2=$('#cv_pass2').val();
 
  $.ajax({
-    url:'do_login_cv_student.php',
+    url:'cv/register.php',
     type:'post',
     dataType:'JSON',
     data:{
         pass1:pass1,pass2:pass2,email:email
     },
     success:function(d){
-
+console.log(d)
        if(d.success==true){
-         window.location.href = "http://localhost/colibrilab_am/cv_form.php?id="+d.message;
+         window.location.href = "http://localhost/colibrilab_am/cv/form?id="+d.message;
        }
         else
          $("#cv_error_text").html(d.message); 
+    }
+ })
+})
+
+
+                    
+
+
+
+$('.cv_login').click(function(){
+
+   let email=$('#cv_email_login').val();
+   let pass=$('#cv_pass_login').val();
+ $.ajax({
+    url:'cv/login.php',
+    type:'post',
+  dataType:'JSON',
+    data:{
+        pass:pass,email:email
+    },
+    success:function(d){
+console.log(d)
+       if(d.success==true){
+       
+         window.location.href = "http://localhost/colibrilab_am/cv/form?id="+d.message;
+       }
+        else
+         $("#cv_error_text1").html(d.message); 
       
     }
 
 
 
 
- })
+  })
 
 })
-
 
 
 

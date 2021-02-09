@@ -35,37 +35,8 @@ class Model{
          return json_encode(['message'=>$message,'success'=>$flag]);
     }
 
-    public function register_student($name,$age,$phone,$course_type,$confirm_type,$email,$all_terms,$comment){
-         $query="INSERT INTO students (fullname,age,phone,course_type,confirm_type,email,agree_term,`comment`)
-              VALUES('$name','$age','$phone','$course_type','$confirm_type','$email','$all_terms','$comment')";
-             $res=mysqli_query($this->conn,$query);
-             if($res)
-             	return(mysqli_insert_id($this->conn));
-             else
-              return false;
-    }
-    public function update_student($id){
-       $query="UPDATE students set mail_sended=1 where id=$id";
-        mysqli_query($this->conn,$query);
-    }
-    public function add_subscriber($email){
-         $query="INSERT INTO subscribe (email) 	VALUES ('$email')";
-         mysqli_query($this->conn,$query);
-
-    }
-    public function check_admin($login,$pass){
-        $query="SELECT * FROM admin WHERE login='$login' and password='$pass'";
-        $res=mysqli_query($this->conn,$query);
-        return mysqli_num_rows($res);
-
-
-    }
-    public function get_students(){
-       $query="SELECT * FROM students";
-       $res=mysqli_query($this->conn,$query);
-        return mysqli_fetch_all($res,MYSQLI_ASSOC);
-    }
-
+   
+    
     public function register_cv_student($email,$pass){
       $query="INSERT INTO cv_students (email,`password`)
               VALUES('$email','$pass')";
@@ -75,6 +46,14 @@ class Model{
              else
               return false;
     }
+ public function check_cv_student($email,$pass){
+        $query="SELECT id FROM cv_students where email='$email' and password='$pass'";
+        $res=mysqli_query($this->conn,$query);
+        if(mysqli_num_rows($res)>0)
+          return mysqli_fetch_assoc($res)['id'];
+        return false;
+ } 
+   
 public function add_skill($user_id,$lang,$percent){
      $query="SELECT * FROM skills where cv_students_id='$user_id' and language='$lang'";
      $res=mysqli_query($this->conn,$query);
