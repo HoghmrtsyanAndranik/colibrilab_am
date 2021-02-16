@@ -106,7 +106,27 @@ http://www.templatemo.com/tm-467-easy-profile
 
 </head>
 <body data-spy="scroll" data-target=".navbar-collapse">
+<?php
+ include('model.php');
+session_start();
+if(isset($_GET['id']))
+	file_put_contents('usersession.php',$_GET['id']);
 
+$model=new Model;
+$user_id=file_get_contents('usersession.php');
+$user=$model->get_main_data($user_id); 
+if(!empty($user['image']))
+   $src='cv_images/'.$user['image'];
+else
+$src='cv_images/camera.png';
+
+$connections=$model->get_connections($user_id);
+
+
+//$name=$main_data['name'];
+//print_r($main_data)
+
+?>
 <!-- preloader section -->
 <div class="preloader">
 	<div class="sk-spinner sk-spinner-wordpress">
@@ -119,10 +139,10 @@ http://www.templatemo.com/tm-467-easy-profile
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 col-sm-12">
-				<img src="img/tm-easy-profile.jpg" class="img-responsive img-circle tm-border" alt="templatemo easy profile">
+				<img src="<?=$src?>" class="img-responsive img-circle tm-border" alt="templatemo easy profile">
 				<hr>
-				<h1 class="tm-title bold shadow">Hi, I am Julia</h1>
-				<h1 class="white bold shadow">Creative Director</h1>
+				<h1 class="tm-title bold shadow">Hi,I am <?=$user['name']?></h1>
+				<h1 class="white bold shadow"><?=$user['profession']?></h1>
 			</div>
 		</div>
 	</div>
@@ -134,16 +154,51 @@ http://www.templatemo.com/tm-467-easy-profile
 		<div class="col-md-6 col-sm-12">
 			<div class="about">
 				<h3 class="accent">Easy Profile</h3>
-				<h2>Bootstrap v3.3.5</h2>
-				<p>This easy HTML profile is brought to you by templatemo website. There are 4 color themes, <a href="index-green.html">Green</a>, <a href="index.html">Blue</a>, <a href="index-gray.html">Gray</a>, and <a href="index-orange.html">Orange</a>. Sed vitae dui in neque mySlides fadeentum tempor eu id risus. Phasellus sed facilisis lacus, et venenatis augue.</p>
+			
+				<p><?=$user['about_me']?></p>
 			</div>
 		</div>
 		<div class="col-md-6 col-sm-12">
+        
 			<div class="skills">
 				<h2 class="white">Skills</h2>
 
 				<div class="content">
-				<div class = "mySlides fade">
+        <?php
+         $skills=$model->get_skills($user_id);
+        $page=count($skills)/3;
+        if(count($skills)%3)
+           $page++;
+
+
+          $index=0;
+       $language=['','PHP','LARAVEL','JAVASCRIPT'];
+
+
+           for($i=0;$i<$page;$i++){
+              echo'<div class = "mySlides fade">';
+              for($k=0;$k<3;$k++)
+              	if(isset($skills[$index])){
+              	?>
+              	<strong><?=$language[$skills[$index]['language']]?></strong>
+					<span class="pull-right"><?=$skills[$index]['percent']?>%</span>
+						<div class="progress">
+							<div class="progress-bar progress-bar-primary" role="progressbar" 
+	                        aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+			                  </div>
+			<?php
+
+					
+
+               $index++;
+              }
+
+            echo '</div>'; 
+          }
+        ?>
+
+
+				<!-- <div class = "mySlides fade">
 					<strong>PHP MySQL</strong>
 					<span class="pull-right">70%</span>
 						<div class="progress">
@@ -162,8 +217,8 @@ http://www.templatemo.com/tm-467-easy-profile
 							<div class="progress-bar progress-bar-primary" role="progressbar" 
 	                        aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
 						</div>
-				</div>
-				<div class = "mySlides fade">
+				</div> -->
+				<!-- <div class = "mySlides fade">
 					<strong>HTML</strong>
 					<span class="pull-right">70%</span>
 						<div class="progress">
@@ -182,9 +237,9 @@ http://www.templatemo.com/tm-467-easy-profile
 							<div class="progress-bar progress-bar-primary" role="progressbar" 
 	                        aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
 						</div>
-				</div>
+				</div> -->
 
-				<div class = "mySlides fade">
+				<!-- <div class = "mySlides fade">
 					<strong>Python</strong>
 					<span class="pull-right">70%</span>
 						<div class="progress">
@@ -197,7 +252,7 @@ http://www.templatemo.com/tm-467-easy-profile
 							<div class="progress-bar progress-bar-primary" role="progressbar" 
 	                        aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
 						</div>
-				</div>
+				</div> -->
 
 			</div>
 			</div>
@@ -215,18 +270,30 @@ http://www.templatemo.com/tm-467-easy-profile
 		<div class="col-md-8 col-sm-12">
 			<div class="slider slider-content">
 					<div class="education">
-				<div class="slider-item fade">
-						<h2 class="white">Education1</h2>
+
+<?php
+$educations=$model->get_educations($user_id);
+foreach($educations as $ed){
+?>
+
+
+             
+			 <div class="slider-item fade">
+						<h2 class="white">EDUCATION</h2>
 							<div class="education-content">
-								<h4 class="education-title accent">New Web Design</h4>
+								<h4 class="education-title accent"><?=$ed['specialization']?></h4>
 									<div class="education-school">
-										<h5>School of Media</h5><span></span>
-										<h5>2030 January - 2034 December</h5>
+										<h5><?=$ed['education']?></h5><span></span>
+										<h5><?=$ed['begin_year']?> <?=$ed['begin_month']?> - <?=$ed['end_year']?> <?=$ed['end_month']?></h5>
 									</div>
-								<p class="education-description">In lacinia leo sed quam feugiat, ac efficitur dui tristique. Ut venenatis, odio quis cursus egestas, nulla sem volutpat diam, ac dapibus nisl ipsum ut ipsum. Nunc tincidunt libero non magna placerat mySlides fadeentum.</p>
+								<p class="education-description"><?=$ed['description']?></p>
 							</div>
-				</div>
-				<div class="slider-item fade">
+				</div> 
+<?php
+}
+?>
+
+				<!--  <div class="slider-item fade">
 						<h2 class="white">Education2</h2>
 							<div class="education-content">
 								<h4 class="education-title accent">New Web Design</h4>
@@ -236,8 +303,8 @@ http://www.templatemo.com/tm-467-easy-profile
 									</div>
 								<p class="education-description">In lacinia leo sed quam feugiat, ac efficitur dui tristique. Ut venenatis, odio quis cursus egestas, nulla sem volutpat diam, ac dapibus nisl ipsum ut ipsum. Nunc tincidunt libero non magna placerat mySlides fadeentum.</p>
 							</div>
-				</div>
-				<div class="slider-item fade">
+				</div>  -->
+				<!-- <div class="slider-item fade">
 						<h2 class="white">Education3</h2>
 							<div class="education-content">
 								<h4 class="education-title accent">New Web Design</h4>
@@ -247,7 +314,7 @@ http://www.templatemo.com/tm-467-easy-profile
 									</div>
 								<p class="education-description">In lacinia leo sed quam feugiat, ac efficitur dui tristique. Ut venenatis, odio quis cursus egestas, nulla sem volutpat diam, ac dapibus nisl ipsum ut ipsum. Nunc tincidunt libero non magna placerat mySlides fadeentum.</p>
 							</div>
-					</div>
+					</div> -->
 				</div>
 			</div>
 
@@ -258,10 +325,13 @@ http://www.templatemo.com/tm-467-easy-profile
 			<div class="languages">
 				<h2>Languages</h2>
 					<ul>
-						<li>Myanmar / Thai</li>
-						<li>English / Spanish</li>
-						<li>Chinese / Japanese</li>
-						<li>Arabic / Hebrew</li>
+                        <?php
+                          $languages=$model->get_languages($user_id);
+                           foreach($languages as $lang){
+                           	$l=$lang['language'];
+                           	echo "<li>$l</li>";
+                           }     
+                        ?>
 					</ul>
 			</div>
 		</div>
@@ -274,25 +344,35 @@ http://www.templatemo.com/tm-467-easy-profile
 		<div class="col-md-4 col-sm-12">
 			<div class="contact">
 				<h2>Contact</h2>
-					<p><i class="fa fa-map-marker"></i> 123 Rama IX Road, Bangkok</p>
-					<p><i class="fa fa-phone"></i> 010-020-0890</p>
-					<p><i class="fa fa-envelope"></i> easy@company.com</p>
-					<p><i class="fa fa-globe"></i> www.company.com</p>
+					<p><i class="fa fa-map-marker"></i><?=$user['address']?></p>
+					<p><i class="fa fa-phone"></i><?=$user['phon']?></p>
+					<p><i class="fa fa-envelope"></i><?=$user['email']?></p>
+					<p><i class="fa fa-globe"></i>what?</p>
 			</div>
 		</div>
 		<div class="col-md-8 col-sm-12">
 			<div class="experience">
-
-				<div class="slider-item-third fade">
+        <?php
+           $expeiances=$model->get_experiances($user_id);
+           foreach($expeiances as $exp){
+       ?>
+			 <div class="slider-item-third fade">
 				<h2 class="white">Experiences1</h2>
 					<div class="experience-content">
-						<h4 class="experience-title accent">Website Development</h4>
-						<h5>New Media Company</h5><span></span>
-						<h5>2035 January - 2036 April</h5>
-						<p class="education-description">Cras porta tincidunt sem, in sollicitudin lorem efficitur ut. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+						<h4 class="experience-title accent"><?=$exp['job_title']?></h4>
+						<h5><?=$exp['company']?></h5><span></span>
+						<h5><?=$exp['start_year']?> <?=$exp['start_month']?> - <?=$exp['end_year']?> <?=$exp['end_month']?></h5>
+						<p class="education-description"><?=$exp['description']?></p>
 					</div>
-				</div>
-				<div class="slider-item-third fade">
+				</div> 
+<?php
+}
+
+?>
+
+
+
+				<!-- <div class="slider-item-third fade">
 				<h2 class="white">Experiences2</h2>
 					<div class="experience-content">
 						<h4 class="experience-title accent">Website Development</h4>
@@ -300,8 +380,8 @@ http://www.templatemo.com/tm-467-easy-profile
 						<h5>2035 January - 2036 April</h5>
 						<p class="education-description">Cras porta tincidunt sem, in sollicitudin lorem efficitur ut. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
 					</div>
-				</div>
-				<div class="slider-item-third fade">
+				</div> -->
+				<!-- <div class="slider-item-third fade">
 				<h2 class="white">Experiences3</h2>
 					<div class="experience-content">
 						<h4 class="experience-title accent">Website Development</h4>
@@ -309,7 +389,7 @@ http://www.templatemo.com/tm-467-easy-profile
 						<h5>2035 January - 2036 April</h5>
 						<p class="education-description">Cras porta tincidunt sem, in sollicitudin lorem efficitur ut. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
 					</div>
-				</div>
+				</div> -->
 			</div>
 
 <a class="prev-third" onclick="plusSlidesT(-1)">&#10094;</a>
@@ -325,12 +405,13 @@ http://www.templatemo.com/tm-467-easy-profile
 			<div class="col-md-12 col-sm-12">
 				<p>Copyright &copy; 2084 Your Easy Profile</p>
 				<ul class="social-icons">
-					<li><a href="#" class="fa fa-facebook"></a></li>
-                    <li><a href="#" class="fa fa-google-plus"></a></li>
-					<li><a href="#" class="fa fa-twitter"></a></li>
-					<li><a href="#" class="fa fa-dribbble"></a></li>
-					<li><a href="#" class="fa fa-github"></a></li>
-					<li><a href="#" class="fa fa-behance"></a></li>
+
+					<li><a href="<?=$connections['facebook']?>" class="fa fa-facebook"></a></li>
+                    <li><a href="<?=$connections['linkedIn']?>" class="fa fa-linkedin"></a></li>
+					<li><a href="<?=$connections['twitter']?>" class="fa fa-twitter"></a></li>
+					<li><a href="<?=$connections['dribble']?>" class="fa fa-dribbble"></a></li>
+					<li><a href="<?=$connections['github']?>" class="fa fa-github"></a></li>
+					<li><a href="<?=$connections['behance']?>" class="fa fa-behance"></a></li>
 				</ul>
 			</div>
 		</div>

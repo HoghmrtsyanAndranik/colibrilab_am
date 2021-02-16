@@ -6,59 +6,9 @@ let numFive = 0
 let numSix = 0
 
 $(".x").click(function(){
-
-     let index = $(".x").index(this);
-	if($(this).hasClass( "skills" )){
-	     $.ajax({
-         url:'add_cv.php',
-         type:'post',
-         data:{lang:index,action:'del_skill'},
-         success:function(d){
-           location.reload();
-         }
-     })
-    }
-    if($(this).hasClass( "education" )){
-	     let id = $(this).parents('.line-first').attr('id')
-	  
-	     $.ajax({
-         url:'add_cv.php',
-         type:'post',
-         data:{id:id,action:'del_education'},
-         success:function(d){
-         	
-         }
-     })
-    }
-
-    if($(this).hasClass( "del_lang" )){
-	     let id = $(this).parents('.line-first').attr('id')
-	  
-	     $.ajax({
-         url:'add_cv.php',
-         type:'post',
-         data:{id:id,action:'del_lang'},
-         success:function(d){
-         	location.reload();
-         }
-     })
-    }
-     if($(this).hasClass( "exp_del" )){
-	     let id = $(this).parents('.line-first').attr('id')
-	    $.ajax({
-         url:'add_cv.php',
-         type:'post',
-         data:{id:id,action:'del_exp'},
-         success:function(d){
-            location.reload();
-         }
-     })
-    }
-
-
-
-	 $(".line-first").eq(index).hide();
-	 numOne-=1
+	let index = $(".x").index(this);
+	$(".line-first").eq(index).hide();
+	numOne-=1
 })
 
 document.querySelector(".skill-plus-first").onclick = newLine
@@ -71,24 +21,12 @@ function newLine(){
 document.querySelector(".check").onclick = ()=>{
 	let prc = document.querySelector(".selector").value
 	let sldr = document.querySelector(".slider").value
-    $.ajax({
-         url:'add_cv.php',
-         type:'post',
-         data:{lang:prc,percent:sldr,action:'skills'},
-         success:function(d){
-         	
-         }
-    })
-
-
 	if(prc == 1){
-		
 		document.querySelector(".l-one").style.display = "block"
 		document.querySelector(".percent").innerHTML = `${sldr}%`
 		document.querySelector(".charge").style.width = `${sldr}%`
 		numOne+=1
 		document.querySelector(".first").innerHTML = 'Skills'
-
 	}
 	else if (prc == 2){
 		document.querySelector(".l-sec").style.display = "block"
@@ -135,7 +73,6 @@ function previewImage() {
 	if (file.length > 0) {
 		let fileReader = new FileReader();
 		fileReader.onload = function (event) {
-			//let src=document.querySelector(".in-img").value
 			document.querySelector(".preview").setAttribute("src", event.target.result);
 		};
 		fileReader.readAsDataURL(file[0]);
@@ -158,7 +95,6 @@ let button = document.querySelector('.skill-plus-th');
 let input  = document.querySelector('.inLng');
 
 function add() {
-
 	if(input.value === "") return;
 
 	let newMessage = document.createElement('div');
@@ -182,7 +118,6 @@ function add() {
 	newMessageT.innerHTML = "<i class='fa fa-times-circle x' aria-hidden='true' style = 'margin-left:40px;'></i><i class='fa fa-pencil pencil' style = 'display:none;'aria-hidden='true'></i><i class='fa fa fa-bars handleS' aria-hidden='true'></i>"
 	
 	$(".x").click(function(){
-		
 		let index = $(".x").index(this);
 		$(".line-first").eq(index).hide();
 		numThree -=1
@@ -202,7 +137,6 @@ function add() {
 
 
 document.querySelector(".check-second").onclick = addS;
-
 
 
 let outputS = document.querySelector('.body-mini-sec');
@@ -236,7 +170,6 @@ function addS() {
 	descT.style.border = "1px solid #EDEDED"
 	let lineSec = document.createElement('div');
 	lineSec.classList.add('line-first');
-	lineSec.classList.add("edu")
 	let flexCol = document.createElement('div');
 	flexCol.classList.add('flex-col');
 	let flexSec = document.createElement('div');
@@ -277,6 +210,7 @@ function addS() {
 	let ccc = document.querySelectorAll(".close-secondd")
 	for(let c=0;c<fff.length;c++){
 		fff[c].onclick = ()=>{
+			alert(555)
 			// document.querySelectorAll(".new-body")[c].classList.toggle('new-body-none')
 			$(".new-body").eq(c).slideToggle();	
 				document.querySelectorAll(".line-first")[c+3].classList.toggle("line-first-toggle")
@@ -320,7 +254,6 @@ function addS() {
 	$(".yearS").val("2021");
 
 	$(".x").click(function(){
-	
 		let index = $(".x").index(this);
 		$(".line-first").eq(index).remove();
 		numTwo -=1
@@ -453,7 +386,6 @@ function addT() {
 
 	
 	$(".x").click(function(){
-		
 		let index = $(".x").index(this);
 		$(".line-first").eq(index).hide();
 		numFour-=1
@@ -488,7 +420,6 @@ document.querySelector(".close-third").onclick = ()=>{
 	inputLng.value = ""
 	inputComp.value = ""
 	textareaT.value = ""
-	showSecond.style.display = "none"
 }
 
 
@@ -498,38 +429,16 @@ document.querySelector(".close-four").onclick = ()=>{
 }
 
 let show = document.querySelector(".show-hide")
-
 let showSecond = document.querySelector(".show-hide-second")
 let showThird = document.querySelector(".show-hide-third")
 
 document.querySelector(".skill-plus-sec").onclick = ()=>{
-
-	show[1].style.display = "block"
-  // $('#specialization').val("");
-  // $('#education').val("");
-  // $('.month').val('January');
-  // $('.year').val(2021);
-  // $('.monthS').val('January');
-  // $('.yearS').val(2021);
-  // $('#edu_description').val('');    
-  // $('.edu_id').attr('id',0);
-
-	
+	show.style.display = "block"
 }
 document.querySelector(".close-second").onclick = () =>{
 	show.style.display = "none"
 }
 document.querySelector(".skill-plus").onclick = ()=>{
-$('#jobtitle').val('');
- $('#input-comp').val('');
- $(".month-s").val('January');
- $(".year-s").val('2020');
- $(".monthS-s").val('January');
- $(".yearS-s").val('2021');
- $('#exper_desciption').val('');
- $('.exp_id').attr('id',0);
-
-
 	showSecond.style.display = "block"
 }
 document.querySelector(".skill-plus-th").onclick = ()=>{
@@ -543,40 +452,6 @@ let endLinks = document.querySelectorAll(".end-links")
 
 document.querySelector(".done").onclick = ()=>{
 
-
-	///////////////skills
-        if(!$(".l-one").is(":visible")&&!$(".l-th").is(":visible")&&!$(".l-sec").is(":visible")){
-           document.querySelector(".first").innerHTML = 'Skills <span style = "color:red;">(Minimum one skill required)</span>'
-			document.querySelector(".callout").style.animation = "move 1s forwards"
-			setTimeout(()=>{
-				document.querySelector(".callout").style.animation = ""
-			},3000)
-        }
-//////////////////////education
-     
-        
-if(!$('.line-first').hasClass('edu')){
-	
-  document.querySelector(".second").innerHTML = 'Education <span style = "color:red;">(Minimum one Education required)</span>'
-			document.querySelector(".callout").style.animation = "move 1s forwards"
-			setTimeout(()=>{
-				document.querySelector(".callout").style.animation = ""
-			},3000)
-  
-
-}
-
-///////////////////////
-if(!$('.line-first').hasClass('lan')){
-	document.querySelector(".third").innerHTML = 'Languages <span style = "color:red;">(Minimum one Language required)</span>'
-			document.querySelector(".callout").style.animation = "move 1s forwards"
-			setTimeout(()=>{
-				document.querySelector(".callout").style.animation = ""
-			},3000)
-   
-
-}
-/////////////////////////////////
 	for(let k=0;k<vl.length;k++){
 		if(!vl[k].value){
 			vl[k].style.border = "1px solid red"
@@ -586,48 +461,48 @@ if(!$('.line-first').hasClass('lan')){
 				document.querySelector(".callout").style.animation = ""
 			},3000)
 		}
-		// if(!vlImg.value){
-		// 	document.querySelector(".add-photo").style.border = "1px solid red"
-		// 	document.querySelector(".callout").style.animation = "move 1s forwards"
-		// 	setTimeout(()=>{
-		// 		document.querySelector(".callout").style.animation = ""
-		// 	},3000)
-		// }
-		// vlImg.oninput= ()=>{
-		// 	document.querySelector(".add-photo").style.border = "1px solid #AFAFAF"
-		// 	numFive +=1
-		// }
+		if(!vlImg.value){
+			document.querySelector(".add-photo").style.border = "1px solid red"
+			document.querySelector(".callout").style.animation = "move 1s forwards"
+			setTimeout(()=>{
+				document.querySelector(".callout").style.animation = ""
+			},3000)
+		}
+		vlImg.oninput= ()=>{
+			document.querySelector(".add-photo").style.border = "1px solid #AFAFAF"
+			numFive +=1
+		}
 		vl[k].oninput = ()=>{
 			vl[k].style.border = "1px solid #AFAFAF"
 			numSix =1
 		}
 		if(numOne==0){
-			// document.querySelector(".first").innerHTML = 'Skills <span style = "color:red;">(Minimum one skill required)</span>'
-			// document.querySelector(".callout").style.animation = "move 1s forwards"
-			// setTimeout(()=>{
-			// 	document.querySelector(".callout").style.animation = ""
-			// },3000)
+			document.querySelector(".first").innerHTML = 'Skills <span style = "color:red;">(Minimum one skill required)</span>'
+			document.querySelector(".callout").style.animation = "move 1s forwards"
+			setTimeout(()=>{
+				document.querySelector(".callout").style.animation = ""
+			},3000)
 		}
 		if(numTwo==0){
-			// document.querySelector(".second").innerHTML = 'Education <span style = "color:red;">(Minimum one Education required)</span>'
-			// document.querySelector(".callout").style.animation = "move 1s forwards"
-			// setTimeout(()=>{
-			// 	document.querySelector(".callout").style.animation = ""
-			// },3000)
+			document.querySelector(".second").innerHTML = 'Education <span style = "color:red;">(Minimum one Education required)</span>'
+			document.querySelector(".callout").style.animation = "move 1s forwards"
+			setTimeout(()=>{
+				document.querySelector(".callout").style.animation = ""
+			},3000)
 		}
 		if(numThree==0){
-			// document.querySelector(".third").innerHTML = 'Languages <span style = "color:red;">(Minimum one Language required)</span>'
-			// document.querySelector(".callout").style.animation = "move 1s forwards"
-			// setTimeout(()=>{
-			// 	document.querySelector(".callout").style.animation = ""
-			// },3000)
+			document.querySelector(".third").innerHTML = 'Languages <span style = "color:red;">(Minimum one Language required)</span>'
+			document.querySelector(".callout").style.animation = "move 1s forwards"
+			setTimeout(()=>{
+				document.querySelector(".callout").style.animation = ""
+			},3000)
 		}
 		if(numFour==0){
-			// document.querySelector(".four").innerHTML = 'Experiences <span style = "color:red;">(Minimum one Experience required)</span>'
-			// document.querySelector(".callout").style.animation = "move 1s forwards"
-			// setTimeout(()=>{
-			// 	document.querySelector(".callout").style.animation = ""
-			// },3000)
+			document.querySelector(".four").innerHTML = 'Experiences <span style = "color:red;">(Minimum one Experience required)</span>'
+			document.querySelector(".callout").style.animation = "move 1s forwards"
+			setTimeout(()=>{
+				document.querySelector(".callout").style.animation = ""
+			},3000)
 		}
 		for(m=0;m<endLinks.length;m++){
 			
@@ -646,199 +521,3 @@ if(!$('.line-first').hasClass('lan')){
 	}
 	
 }
-
-$(document).ready(function(){
-
-$('.edit_education').click(function(){
-	show.style.display = "block";
-	let self=$(this).parents('.edu');
-	let id=self.attr('id');
-    let spec=self.find('.th-of-ec').text()
-	$('#specialization').val(spec);
-    let education=self.find('.education_none').text();
-    $('#education').val(education);
-    let description=self.find('.description_none').text();edu_description
-    $('#edu_description').val(description);
-    let edu_begin_month=self.find('.edu_begin_month').text();
-    $('.month').val(edu_begin_month);
-	let edu_begin_year=self.find('.edu_begin_year').text(); 
-	$('.year').val(edu_begin_year);
-	let edu_end_year=self.find('.edu_end_year').text();
-    $('.yearS').val(edu_end_year);
-	let edu_end_month=self.find('.edu_end_month').text(); 
-    $('.monthS').val(edu_end_month);
-    $('.edu_id').attr('id', id);
-})
-
-    $('.edu_save').click(function(){
-      let specialization=$('#specialization').val();
-      let education=$('#education').val();
-      let begin_month=$('.month').val();
-      let begin_year=$('.year').val();
-      let end_month=$('.monthS').val();
-      let end_year=$('.yearS').val();
-      let description=$('#edu_description').val();
-      let id=$('.edu_id').attr('id');
-
-      $.ajax({
-         url:'add_cv.php',
-         type:'post',
-         data:{
-         	id:id,
-         	specialization:specialization,
-         	education:education,
-         	description:description,
-         	begin_month:begin_month,
-            begin_year:begin_year,
-            end_month:end_month,
-            end_year:end_year,
-         	action:'add_update_education'},
-         success:function(d){
-
-         	console.log(d);
-         location.reload();
-         }
-    })
-    })
-$('.lang_save').click(function(){
-	let lang=$('#inLng').val();
-  $.ajax({
-         url:'add_cv.php',
-         type:'post',
-         data:{lang:lang,action:'add_language'},
-         success:function(d){
-         	location.reload();
-         }
-    })  
-
-
-
-})
-
-$('.edit_experiance').click(function(){
-	showSecond.style.display = "block"
-	let self=$(this).parents('.exper');
-	let id=self.attr('id');
-	let title=self.find('.th-of-ec-S').text();
-	let desc=self.find('.exp_desc').text();
-	let company=self.find('.exp_comp').text();
-	let begin_year=self.find('.exp_begin_year').text();
-	let begin_month=self.find('.exp_begin_month').text();
-	let end_year=self.find('.exp_end_year').text();
-	let end_month=self.find('.exp_end_month').text();
-	$('.exp_id').attr('id', id);
-	//alert(title+desc+company+begin_year+begin_month+end_year+end_month)
- //    let spec=self.find('.th-of-ec').text()
- $('#jobtitle').val(title);
- $('.input-comp').val(company);
- $(".month-s").val(begin_month);
- $(".year-s").val(begin_year);
- $(".monthS-s").val(end_month);
- $(".yearS-s").val(end_year);
- $('#exper_desciption').val(desc);
-
-})
-
-
-
-$('.exper_save').click(function(){
-	let title=$("#jobtitle").val();
-	let company=$(".input-comp").val();
-	let start_month=$(".month-s").val();
-	let start_year=$(".year-s").val();
-	let end_month=$(".monthS-s").val();
-	let end_year=$(".yearS-s").val();
-    let description=$('#exper_desciption').val();
-	let id=$('.exp_id').attr('id');
-  $.ajax({
-         url:'add_cv.php',
-         type:'post',
-         data:{
-         	id:id,
-         	title:title,
-            company:company,
-            start_month:start_month,
-            start_year:start_year,
-            end_month:end_month,
-            end_year:end_year,
-            description:description,
-         	action:'add_experiance'},
-         success:function(d){
-         	console.log(d)
-         	//location.reload();
-         }
-    })  
-})
-
-$('.main-save').click(function(){
-
-	let name=$('.input-name').val();
-	let profession=$('.prof').val();
-	let about_me=$('.about-me').val();
-	let address=$('.input-adress').val();
-	let phon=$('.input-numb').val();
-	let cv_email=$('.input-email').val();
-    let check=$('.checkbox').val();
-    let facebook=$('#facebook').val();
-    let twitter=$('#twitter').val();
-    let dribble=$('#dribble').val();
-    let github=$('#github').val();
-    let behance=$('#behance').val();
-    let linkedin=$('#linkedin').val();
-
-    $.ajax({
-        url:'add_cv.php',
-        type:'post',
-        data:{
-         	name:name,
-            profession:profession,
-            about_me:about_me,
-            address:address,
-            phon:phon,
-            cv_email:cv_email,
-            check:check,
-            facebook:facebook,
-            twitter:twitter,
-            dribble:dribble,
-            github:github,
-            behance:behance,
-            linkedin:linkedin,
-         	action:'main'},
-         success:function(d){
-         	//alert(d)
-         	console.log(d)
-         	//location.reload();
-         }
-    })  
-
-})
-
-})
-/////////////////////
-$('.foto').click(function(){
-
-  parentTR=$(this).parents('tr');
- 
-
-});
-$(':file').on('change', function() {
-
-   $('#new_image').trigger( "click" );
-   });
-  $('#new_image').on('click', function() {
-    $.ajax({
-        url:'add_cv.php',
-        type: 'POST',
-        data: new FormData($('form')[0]),
-        cache: false,
-        contentType: false,
-        processData: false,
-        success:function(d){
-        	location.reload();
-        }
-    });
-
-
-
-});
-

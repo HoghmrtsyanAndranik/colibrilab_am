@@ -163,7 +163,7 @@ elseif($LANG=='ENG'){
                                 data-param3="" data-param4="" data-param5="" data-param6="" data-param7=""
                                 data-param8="" data-param9="" data-param10="" data-description="">
                                 <!-- MAIN IMAGE -->
-                                <img src="../../assets/images/transparent.png" data-bgcolor='#ffffff'' style='
+                                <img src="assets/img/transparent.png" data-bgcolor='#ffffff'' style='
                                     background:#ffffff' alt="" data-bgposition="center center" data-bgfit="cover"
                                     data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
                                 <!-- LAYERS -->
@@ -179,7 +179,7 @@ elseif($LANG=='ENG'){
                                     data-textAlign="['inherit','inherit','inherit','inherit']"
                                     data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
                                     data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-blendmode="screen"
-                                    style="z-index: 5;"><img src="images/1bg.jpg" alt=""
+                                    style="z-index: 5;"><img src="assets/img/1bg.jpg" alt=""
                                         data-ww="['full-proportional','full-proportional','full-proportional','full-proportional']"
                                         data-hh="['full-proportional','full-proportional','full-proportional','full-proportional']"
                                         width="1920" height="1281" data-no-retina  id="bg_img" "> </div>
@@ -224,7 +224,7 @@ elseif($LANG=='ENG'){
                                 data-param3="" data-param4="" data-param5="" data-param6="" data-param7=""
                                 data-param8="" data-param9="" data-param10="" data-description="">
                                 <!-- MAIN IMAGE -->
-                                <img src="../../assets/images/transparent.png" data-bgcolor='#ffffff' style='
+                                <img src="assets/img/transparent.png" data-bgcolor='#ffffff' style='
                                     background:#ffffff' alt="" data-bgposition="center center" data-bgfit="cover"
                                     data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
                                 <!-- LAYERS -->
@@ -243,7 +243,7 @@ elseif($LANG=='ENG'){
                                     data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
                                     data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-blendmode="screen"
                                     data-autoplay="on" style="z-index: 5;">
-                                    <img src="images/2.jpg" alt=""
+                                    <img src="assets/img/2.jpg" alt=""
                                         data-ww="['full-proportional','full-proportional','full-proportional','full-proportional']"
                                         data-hh="['full-proportional','full-proportional','full-proportional','full-proportional']"
                                         width="1920" height="1281" data-no-retina id="bg_img1">
@@ -605,7 +605,7 @@ elseif($LANG=='ENG'){
                                 <div class="row">
                                     <div class="col-lg-6 col-md-12 ">
                                         <div class="tabs_item_img">
-                                        <img src="images/html.png" alt="Course">
+                                        <img src="assets/img/html.png" alt="Course">
                                         </div>
                                     </div>
 
@@ -654,7 +654,7 @@ elseif($LANG=='ENG'){
                                 <div class="row">
                                     <div class="col-lg-6 col-md-12">
                                         <div class="tabs_item_img">
-                                        <img src="images/bootstrap.png" alt="Course">
+                                        <img src="assets/img/bootstrap.png" alt="Course">
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-12">
@@ -700,7 +700,7 @@ elseif($LANG=='ENG'){
                                 <div class="row">
                                     <div class="col-lg-6 col-md-12">
                                         <div class="tabs_item_img">
-                                            <img src="images/js.png" alt="Course">
+                                            <img src="assets/img/js.png" alt="Course">
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-12">
@@ -753,7 +753,7 @@ elseif($LANG=='ENG'){
                                 <div class="row">
                                     <div class="col-lg-6 col-md-12">
                                         <div class="tabs_item_img">
-                                            <img src="images/js.png" alt="Course">
+                                            <img src="assets/img/js.png" alt="Course">
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-12">
@@ -801,7 +801,7 @@ elseif($LANG=='ENG'){
                                 <div class="row">
                                     <div class="col-lg-6 col-md-12">
                                         <div class="tabs_item_img">
-                                            <img src="images/react.png" alt="Course">
+                                            <img src="assets/img/react.png" alt="Course">
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-12">
@@ -849,7 +849,7 @@ elseif($LANG=='ENG'){
                                 <div class="row">
                                     <div class="col-lg-6 col-md-12">
                                         <div class="tabs_item_img">
-                                            <img src="images/php.png" alt="Course">
+                                            <img src="assets/img/php.png" alt="Course">
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-12">
@@ -895,7 +895,7 @@ elseif($LANG=='ENG'){
                                 <div class="row">
                                     <div class="col-lg-6 col-md-12">
                                         <div class="tabs_item_img">
-                                            <img src="images/Laravel.png" alt="Course">
+                                            <img src="assets/img/Laravel.png" alt="Course">
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-12">
@@ -1119,7 +1119,7 @@ elseif($LANG=='ENG'){
         <div class="news-grids blog-slider reveal-bottom-fade mt-5">
             <div class="grid">
                 <div class="entry-media">
-                    <img src="images/usanoxneri_ashxatanq_img/a.PNG" alt>
+                    <img src="assets/img/usanoxneri_ashxatanq_img/a.PNG" alt>
                 </div>
                 <div class="entry-details">
                     <ul>
@@ -1132,7 +1132,7 @@ elseif($LANG=='ENG'){
             </div>
             <div class="grid blog-mt-30">
                 <div class="entry-media">
-                    <img src="images/usanoxneri_ashxatanq_img/a2.PNG" alt>
+                    <img src="assets/img/usanoxneri_ashxatanq_img/a2.PNG" alt>
                 </div>
                 <div class="entry-details">
                     <ul>
@@ -1144,7 +1144,7 @@ elseif($LANG=='ENG'){
             </div>
             <div class="grid">
                 <div class="entry-media">
-                    <img src="images/usanoxneri_ashxatanq_img/a3.PNG" alt>
+                    <img src="assets/img/usanoxneri_ashxatanq_img/a3.PNG" alt>
                 </div>
                 <div class="entry-details">
                     <ul>
@@ -1158,7 +1158,7 @@ elseif($LANG=='ENG'){
             </div>
             <div class="grid blog-mt-30">
                 <div class="entry-media">
-                    <img src="images/usanoxneri_ashxatanq_img/a4.PNG" alt>
+                    <img src="assets/img/usanoxneri_ashxatanq_img/a4.PNG" alt>
                 </div>
                 <div class="entry-details">
                     <ul>
@@ -1171,7 +1171,7 @@ elseif($LANG=='ENG'){
             </div>
             <div class="grid">
                 <div class="entry-media">
-                    <img src="images/usanoxneri_ashxatanq_img/a5.PNG" alt>
+                    <img src="assets/img/usanoxneri_ashxatanq_img/a5.PNG" alt>
                 </div>
                 <div class="entry-details">
                     <ul>
@@ -1183,7 +1183,7 @@ elseif($LANG=='ENG'){
             </div>
             <div class="grid blog-mt-30">
                 <div class="entry-media">
-                    <img src="images/usanoxneri_ashxatanq_img/a6.PNG" alt>
+                    <img src="assets/img/usanoxneri_ashxatanq_img/a6.PNG" alt>
                 </div>
                 <div class="entry-details">
                     <ul>
@@ -1197,7 +1197,7 @@ elseif($LANG=='ENG'){
             </div>
             <div class="grid blog-mt">
                 <div class="entry-media">
-                    <img src="images/usanoxneri_ashxatanq_img/a7.PNG" alt>
+                    <img src="assets/img/usanoxneri_ashxatanq_img/a7.PNG" alt>
                 </div>
                 <div class="entry-details">
                     <ul>
@@ -1211,7 +1211,7 @@ elseif($LANG=='ENG'){
             </div>
             <div class="grid blog-mt blog-mt-30">
                 <div class="entry-media">
-                    <img src="images/usanoxneri_ashxatanq_img/a8.PNG" alt>
+                    <img src="assets/img/usanoxneri_ashxatanq_img/a8.PNG" alt>
                 </div>
                 <div class="entry-details">
                     <ul>
@@ -1225,7 +1225,7 @@ elseif($LANG=='ENG'){
             </div>
             <div class="grid blog-mt ">
                 <div class="entry-media">
-                    <img src="images/usanoxneri_ashxatanq_img/a9.PNG" alt>
+                    <img src="assets/img/usanoxneri_ashxatanq_img/a9.PNG" alt>
                 </div>
                 <div class="entry-details">
                     <ul>
@@ -1239,7 +1239,7 @@ elseif($LANG=='ENG'){
             </div>
             <div class="grid blog-mt blog-mt-30">
                 <div class="entry-media">
-                    <img src="images/usanoxneri_ashxatanq_img/a11.PNG" alt>
+                    <img src="assets/img/usanoxneri_ashxatanq_img/a11.PNG" alt>
                 </div>
                 <div class="entry-details">
                     <ul>
@@ -1254,7 +1254,7 @@ elseif($LANG=='ENG'){
 
             <div class="grid blog-mt ">
                 <div class="entry-media">
-                    <img src="images/usanoxneri_ashxatanq_img/a10.PNG" alt>
+                    <img src="assets/img/usanoxneri_ashxatanq_img/a10.PNG" alt>
                 </div>
                 <div class="entry-details">
                     <ul>
@@ -1282,7 +1282,7 @@ elseif($LANG=='ENG'){
             <div class="row align-items-center teacher-img-text">
                      <div class="col-lg-3 col-md-6 text-center wow flipInY" data-wow-delay="0.6s">
                     <div class="teacher teacher-member">
-                        <img src="images/img/1.jpg" class="img-fluid" alt="teacher-member">
+                        <img src="assets/img/1.jpg" class="img-fluid" alt="teacher-member">
                         <div class="overlay">
                             <div class="text">
                                 <div>
@@ -1303,7 +1303,7 @@ elseif($LANG=='ENG'){
                 </div>
                 <div class="col-lg-3 col-md-6 text-center wow flipInY">
                     <div class="teacher teacher-member">
-                        <img src="images/img/Artboard1.jpg" class="img-fluid" alt="teacher-member">
+                        <img src="assets/img/Artboard1.jpg" class="img-fluid" alt="teacher-member">
                         <div class="overlay">
                             <div class="text">
                                 <div>
@@ -1323,7 +1323,7 @@ elseif($LANG=='ENG'){
                 </div>
                 <div class="col-lg-3 col-md-6 text-center wow flipInY" data-wow-delay="0.2s">
                     <div class="teacher teacher-member">
-                        <img src="images/img/Andranik.jpg" class="img-fluid" alt="teacher-member">
+                        <img src="assets/img/Andranik.jpg" class="img-fluid" alt="teacher-member">
                         <div class="overlay">
                             <div class="text">
                                 <div>
@@ -1343,7 +1343,7 @@ elseif($LANG=='ENG'){
                 </div>
                 <div class="col-lg-3 col-md-6 text-center wow flipInY" data-wow-delay="0.4s">
                     <div class="teacher teacher-member">
-                        <img src="images/img/image.jpg" class="img-fluid" alt="teacher-member">
+                        <img src="assets/img/image.jpg" class="img-fluid" alt="teacher-member">
                         <div class="overlay">
                             <div class="text">
                                 <div>
@@ -1368,41 +1368,45 @@ elseif($LANG=='ENG'){
     <!--End Our teacher -->
     <!-- CV start-->
 
+
+
 <div class="container-fluid cv-block">
 <div class="container form-registr">
 <div class="text_form">
-<h1>Ստեղծիր քո <span>օնլայն CV-ն</span> <br> մի քանի րոպեում</h1>
-<p>Մենք կօգնենք քեզ ունենալ պրոֆեսիոնալ և<br> ներկայանալի ռեզյումե:<br>
-<span>Ռեզյումեն ստեղծելու համար խնդրում ենք մուտք գործել</span></p>
+<h1 style="color:red"><?=$create_your?><span><?=$online_cv?></span> <br><?=$few_min?></h1>
+<p><?=$we_help?><br><?=$good_cv?><br>
+<span><?=$please_sign?></span></p>
 </div>
 
     <div class="reg_form" id="tabs">
         <div class="reg">
             <ul class="tabs-1">
-                <li><a href="#tabs-1">Ստեղծել Հաշիվ</a></li>
-                <li><a href="#tabs-2">Մուտք գործեք </a></li>
+
+                <li><a href="#tabs-1"><?=$create_account?></a></li>
+                <li><a href="#tabs-2"><?=$log_in?></a></li>
             </ul>
 <!--            <h1>Ստեղծել Հաշիվ</h1>-->
             <fieldset id="tabs-1">
-                <p>Քո CV-ն կտեղադրվի colibrilab.am/cv/name-surname էջում</p>
+                <p><?=$your_cv?></p>
                 <!-- <form action="" method="post"> -->
-                    <input type="email" id="cv_email"  placeholder="Էլ․հասցե">
-                    <input type="password" id="cv_pass1"  placeholder="Գաղտնաբառ">
-                    <input type="password" id="cv_pass2"  placeholder="Գաղտնաբառ">
+                    <input type="email" id="cv_email"  placeholder="<?=$email?>">
+
+                    <input type="password" id="cv_pass1"  placeholder="<?=$password?>">
+                    <input type="password" id="cv_pass2"  placeholder="<?=$password?>">
                     <div class="but">
-                        <button class="btn cv_send"> ՍՏԵՂԾԵԼ </button>
+                        <button class="btn cv_send"> <?=$create?> </button>
                     </div>
               <!--   </form> -->
                 <span id="cv_error_text"style="color:red"></span>
 <!--                    <span>Ունե՞ք արդեն հաշիվ․ <a href="#">Մուտք գործեք</a></span>-->
             </fieldset>
             <fieldset id="tabs-2">
-                <p>Մուտք</p>
+                <p><?=$log_in?></p>
                 
-                    <input type="text" id="cv_email_login" placeholder="email">
-                    <input type="password" id="cv_pass_login" placeholder="Password">
+                    <input type="text" id="cv_email_login" placeholder="<?=$email?>">
+                    <input type="password" id="cv_pass_login" placeholder="<?=$password?>">
                     <div class="but">
-                        <button class="btn cv_login" >Մուտք</button>
+                        <button class="btn cv_login" ><?=$log_in?></button>
                     </div>
                 <span id="cv_error_text1"style="color:red"></span>
             </fieldset>
@@ -1435,7 +1439,7 @@ CV END
                         <div class="testimonial-carousel owl-carousel ">
 
                             <div class="testimonial-single">
-                                <img src="images/img/Alisa.jpg" alt="">
+                                <img src="assets/img/Alisa.jpg" alt="">
                                 <h5><?=$alisa?></h5>
                                 <h6>Web <?=$developer?></h6>
                                 <p><?=$alisatext?>:
@@ -1443,7 +1447,7 @@ CV END
                             </div>
 
                             <div class="testimonial-single">
-                                <img src="images/img/narek.jpg" alt="">
+                                <img src="assets/img/narek.jpg" alt="">
                                 <h5><?=$nareksardaryan?></h5>
                                 <h6>Web <?=$developer?></h6>
                                 <p><?=$nareksardaryantext?>
@@ -1451,7 +1455,7 @@ CV END
                             </div>
 
                             <div class="testimonial-single">
-                                <img src="images/img/NE.jpg" alt="">
+                                <img src="assets/img/NE.jpg" alt="">
                                 <h5><?=$narekyazeryan?></h5>
                                 <h6>Web <?=$developer?></h6>
                                 <p><?=$narekyazeryantext?>
@@ -1459,7 +1463,7 @@ CV END
                             </div>
 
                             <div class="testimonial-single">
-                                <img src="images/img/levon.jpg" alt="">
+                                <img src="assets/img/levon.jpg" alt="">
                                 <h5><?=$levonhakhyan?></h5>
                                 <h6>Web <?=$developer?></h6>
                                 <p><?=$levonhakhyantext?>
@@ -1467,14 +1471,14 @@ CV END
                             </div>
 
                             <div class="testimonial-single">
-                                <img src="images/img/hripsime.jpg" alt="">
+                                <img src="assets/img/hripsime.jpg" alt="">
                                 <h5><?=$hripsimemanukyan?></h5>
                                 <h6>Web <?=$developer?></h6>
                                 <p><?=$hripsimemanukyantext?> 👍👍
                                 </p>
                             </div>
                             <div class="testimonial-single">
-                                <img src="images/img/hovo.jpg" alt="">
+                                <img src="assets/img/hovo.jpg" alt="">
                                 <h5><?=$hovhanneskhachatryan?></h5>
                                 <h6>Web <?=$developer?></h6>
                                 <p><?=$hovhanneskhachatryantext?>
@@ -1493,19 +1497,19 @@ CV END
         <div class="row">
             <div class="col-lg-4 col-md-6">
                 <div class="contact-box1">
-                    <img src="images/Ars.jpg" alt="">
+                    <img src="assets/img/Ars.jpg" alt="">
                 </div>
             </div>
 
             <div class="col-lg-4 col-md-6">
                 <div class="contact-box1">
-                    <img src="images/Charity.jpg" alt="">
+                    <img src="assets/img/Charity.jpg" alt="">
                 </div>
             </div>
 
             <div class="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
                 <div class="contact-box1">
-                    <img src="images/1.jpg" alt="">
+                    <img src="assets/img/1.jpg" alt="">
                 </div>
             </div>
 
@@ -1678,7 +1682,7 @@ CV END
 <div class="dropdown-menu d-menu" x-placement="">
 <div class="drop-content">
 <div>
-<img src="user.jpg" width="50">
+<img src="assets/img/user.jpg" width="50">
 </div>
 <div>
 <p>Անուն Ազգանուն</p>
@@ -1688,7 +1692,7 @@ CV END
 </div>
 <div class="drop-content">
 <div>
-<img src="user.jpg" width="50">
+<img src="assets/img/user.jpg" width="50">
 </div>
 <div>
 <p>Անուն Ազգանուն</p>
@@ -1698,7 +1702,7 @@ CV END
 </div>
 <div class="drop-content">
 <div>
-<img src="user.jpg" width="50">
+<img src="assets/img/user.jpg" width="50">
 </div>
 <div>
 <p>Անուն Ազգանուն</p>
@@ -1708,7 +1712,7 @@ CV END
 </div>
 <div class="drop-content">
 <div>
-<img src="user.jpg" width="50">
+<img src="assets/img/user.jpg" width="50">
 </div>
 <div>
 <p>Անուն Ազգանուն</p>
@@ -1755,7 +1759,7 @@ CV END
     <script src="assets/js/scrollreveal.min.js"></script>
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
-     <script src="scripts/script.js"></script>
+     <script src="assets/js/script.js"></script>
     <script>
    $(document).ready(function(){
     $('.dropdown-toggle').click(function(){

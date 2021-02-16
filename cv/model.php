@@ -95,7 +95,9 @@ public function add_update_education($user_id,$id,$specialization,$education,$de
 }
 
 public function get_educations($user_id){
+
       $query="SELECT * FROM education where cv_student_id='$user_id'";
+      
       $res=mysqli_query($this->conn,$query);
       return mysqli_fetch_all($res,MYSQLI_ASSOC);
 }

@@ -633,7 +633,7 @@ button {
     /* padding-top: 80px; */
     position: relative;
     top: -190px;
-    background-image: url(../../images/1.png);
+    background-image: url(../img/1.png);
     background-repeat: no-repeat;
     background-size: 100%;
 
@@ -2385,7 +2385,7 @@ justify-content: center;
 .reg_form{
 max-width: 502px;
 width: 100%;
-background-image: url(../../bg-cv.png);
+background-image: url(../img/bg-cv.png);
 background-repeat: no-repeat;
 background-size: contain;
 padding: 55px;
@@ -2433,14 +2433,14 @@ outline-color: #4482F9;
 padding-left: 60px;
 }
 .reg input[type=text]{
-background-image: url(../../email.png);
+background-image: url(../img/email.png);
 background-repeat: no-repeat;
 background-size: contain;
 background-size: 22px;
 background-position:20px center;
 }
 .reg input[type=password]{
-background-image: url(../../lock.png);
+background-image: url(../img/lock.png);
 background-repeat: no-repeat;
 background-size: contain;
 background-size: 22px;

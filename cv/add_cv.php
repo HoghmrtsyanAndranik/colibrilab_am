@@ -24,7 +24,7 @@ if($action=='main'){
     $github=$_POST['github'];
     $linkedin=$_POST['linkedin'];
      $behance=$_POST['behance'];
-  echo  $model->add_main_data($user_id,$name,$profession,$about_me,$address,
+    $model->add_main_data($user_id,$name,$profession,$about_me,$address,
    	   $phon,$cv_email,$check,$facebook,$twitter,$dribble,$github,$linkedin,$behance);
 
 }

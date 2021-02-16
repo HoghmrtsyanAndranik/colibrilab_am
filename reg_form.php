@@ -9,10 +9,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title> ColibriLab</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="icon" href="images/logo.png">
+  <link rel="icon" href="assets_new/img/logo.png">
   <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="assets_new/css/form_style.css">
 </head>
 
 <body>
@@ -161,7 +161,7 @@ $course_type=$_GET['course']??false;
 <div id='kkkk'></div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <!-- <script src="scripts/jquery.min.js"></script> -->
-  <script src="scripts/main.js"></script>
+  <script src="assets_new/js/main_form.js"></script>
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
 <script>
