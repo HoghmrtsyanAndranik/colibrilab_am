@@ -223,6 +223,37 @@ function getSelectValue()
 	let monthS  = document.querySelector('.monthS').value
 	let yearS  = document.querySelector('.yearS').value
 }
+
+let fff = document.querySelectorAll(".fff")
+let ccc = document.querySelectorAll(".close-secondd")
+for(let c=0;c<fff.length;c++){
+	fff[c].onclick = ()=>{
+		// document.querySelectorAll(".new-body")[c].classList.toggle('new-body-none')
+		$(".new-body").eq(c).slideToggle();
+		document.querySelectorAll(".line-first")[c+3].classList.toggle("line-first-toggle")
+	}
+	ccc[c].onclick = ()=>{
+		document.querySelectorAll(".line-first")[c+3].remove()
+	}
+
+	document.querySelectorAll(".check-secondd")[c].onclick=()=>{
+		document.querySelectorAll(".th-of-ec")[c].innerText = document.querySelectorAll(".desc-ss")[c].value
+
+		let monthh  = document.querySelectorAll('.month-nn')[c].value
+		let yearr  = document.querySelectorAll('.yearr')[c].value
+		let monthSS  = document.querySelectorAll('.monthSS-nn')[c].value
+		let yearSS  = document.querySelectorAll('.yearS-nn')[c].value
+		let interval = document.querySelectorAll(".interval")
+		interval[c].textContent = `${yearr} ${monthh} - ${yearSS} ${monthSS}`
+
+		document.querySelectorAll(".line-first")[c+3].classList.toggle("line-first-toggle")
+
+		$(".hides").eq(c).slideToggle();
+
+
+	}
+}
+
 function addS() {
 	if(inputS.value === "" || descT.value === ""){
 		inputS.style.border = "1px solid red"
@@ -272,36 +303,6 @@ function addS() {
 	lineSec.appendChild(thatbody);
 
 	flexSec.innerHTML = "<i class='fa fa-times-circle x' aria-hidden='true'></i><i class='fa fa-pencil pencil pen-one fff' aria-hidden='true'></i><i class='fa fa fa-bars handleT' aria-hidden='true'></i>"
-
-	let fff = document.querySelectorAll(".fff")
-	let ccc = document.querySelectorAll(".close-secondd")
-	for(let c=0;c<fff.length;c++){
-		fff[c].onclick = ()=>{
-			// document.querySelectorAll(".new-body")[c].classList.toggle('new-body-none')
-			$(".new-body").eq(c).slideToggle();	
-				document.querySelectorAll(".line-first")[c+3].classList.toggle("line-first-toggle")
-		}
-		ccc[c].onclick = ()=>{
-			document.querySelectorAll(".line-first")[c+3].remove()
-		}
-				
-				document.querySelectorAll(".check-secondd")[c].onclick=()=>{
-				document.querySelectorAll(".th-of-ec")[c].innerText = document.querySelectorAll(".desc-ss")[c].value
-					
-					let monthh  = document.querySelectorAll('.month-nn')[c].value
-					let yearr  = document.querySelectorAll('.yearr')[c].value
-					let monthSS  = document.querySelectorAll('.monthSS-nn')[c].value
-					let yearSS  = document.querySelectorAll('.yearS-nn')[c].value
-					let interval = document.querySelectorAll(".interval")
-					interval[c].textContent = `${yearr} ${monthh} - ${yearSS} ${monthSS}`
-
-				document.querySelectorAll(".line-first")[c+3].classList.toggle("line-first-toggle")
-
-				$(".hides").eq(c).slideToggle();
-
-
-			}
-	}
 	let cbn = document.querySelectorAll('.month-nn')
 		for(let gg = 0; gg<cbn.length;gg++){
 					document.querySelectorAll('.month-nn')[gg].value = document.querySelector(".month").value
@@ -497,14 +498,13 @@ document.querySelector(".close-four").onclick = ()=>{
 	input.value = ""
 }
 
-let show = document.querySelector(".show-hide")
+let show = document.querySelector(".s")
 
 let showSecond = document.querySelector(".show-hide-second")
 let showThird = document.querySelector(".show-hide-third")
 
 document.querySelector(".skill-plus-sec").onclick = ()=>{
-
-	show[1].style.display = "block"
+	show.style.display = "block"
   // $('#specialization').val("");
   // $('#education').val("");
   // $('.month').val('January');

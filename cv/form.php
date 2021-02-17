@@ -324,7 +324,7 @@ case 3:
 }
 ?>
 </div>
-		<div class = "body-sec show-hide">
+		<div class = "body-sec show-hide s">
 			<div class = "content">
 				<p class = "title-input">Specialization*</p>
 				<input type = "text" class = "desc-s" placeholder="e.g.Web Design">
