@@ -6,18 +6,16 @@ $user_id=file_get_contents('usersession.php');
 $action=$_POST['action']??false;
 
 if($action=='main'){
-	
+
     $name=$_POST['name'];
     $profession=$_POST['profession'];
     $about_me=$_POST['about_me'];
     $address=$_POST['address'];
     $phon=$_POST['phon'];
     $cv_email=$_POST['cv_email'];
-
     $check=0;
-    if(isset($_POST['check']))
+    if($check=$_POST['check']>0);
        $check=1;
-
     $facebook=$_POST['facebook'];
     $twitter=$_POST['twitter'];
     $dribble=$_POST['dribble'];
@@ -76,6 +74,18 @@ if($action=='add_experiance'){
    $description=$_POST['description'];
    $model->add_experiance($user_id,$title,$company,$description,$start_month,$start_year,$end_month,$end_year);
 }
+if($action=='update_experiance'){
+   $title=$_POST['title'];
+   $company=$_POST['company'];
+   $start_year=$_POST['begin_year'];
+   $start_month=$_POST['begin_month'];
+   $end_year=$_POST['end_year'];
+   $end_month=$_POST['end_month'];
+   $description=$_POST['description'];
+   $id=$_POST['id'];
+   echo $model->update_experiance($id,$title,$company,$description,$start_month,$start_year,$end_month,$end_year);
+ }
+
 if($action=='del_exp'){
 
    $model->delete_experiance($_POST['id']);
