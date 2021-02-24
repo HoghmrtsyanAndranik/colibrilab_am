@@ -127,6 +127,23 @@ public function add_experiance($user_id,$title,$company,$description,$start_mont
     $query="INSERT INTO experiences VALUES(null,'$user_id','$title','$company','$description','$start_month','$start_year','$end_month','$end_year')";
      $res=mysqli_query($this->conn,$query);
 }
+public function update_experiance($id,$title,$company,$description,$start_month,$start_year,$end_month,$end_year){
+    $query="UPDATE experiences
+             SET job_title='$title',
+                 company='$company',
+                 description='$description',
+                 start_month='$start_month',  
+                 end_month='$end_month',
+                 start_year='$start_year',  
+                 end_year='$end_year'
+              WHERE  id='$id'";
+      $res=mysqli_query($this->conn,$query);
+
+
+
+}
+
+
 public function delete_experiance($id){
     $query="DELETE FROM experiences where id='$id'";
        mysqli_query($this->conn,$query);

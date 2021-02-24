@@ -7,7 +7,7 @@ if(isset($_GET['id']))
 
 $model=new Model;
 $user_id=file_get_contents('usersession.php');
-echo $user_id;
+
 $main_data=$model->get_main_data($user_id); 
 if(!empty($main_data['image']))
    $src='cv_images/'.$main_data['image'];
@@ -15,6 +15,10 @@ else
 $src='cv_images/camera.png';
 $expeiances=$model->get_experiances($user_id);
 $connections=$model->get_connections($user_id);
+$months=["January","February","March","April","May","June",
+               "July","August","September","October","November","December"];
+               for($i=2021;$i>=1950;$i--)
+                   $years[]=$i;
 ?>
 
 
@@ -52,23 +56,38 @@ $connections=$model->get_connections($user_id);
 					<form action="">
 		<div class = "body">
 			<div class = "gluing">
-				<div class = "add-photo">					<i class="fa fa-camera" class = "add-ph" aria-hidden="true"></i>
-					<p class = "add-ph">Add photo</p>
-						<input type="file" required name="file" id="file" accept="image/*" onchange="previewImage();"class = "in-img">
-						<img class="preview"src="data:image/gif;base64,R0lGODlhAQABAAD/ACwAAAAAAQABAAACADs=">
-					</div>
+				<div class = "add-photo">
+				    <form enctype="multipart/form-data">	
+				 				<!-- 	<i class="fa fa-camera" class = "add-ph" aria-hidden="true"></i> -->
+				 		<?php
+				           if(!empty($main_data['image'])){
+                               $src='cv_images/'.$main_data['image'];
+                               $width='width="120px"';
+                           }
+                           else{
+                               $src='cv_images/camera.png';
+                               $width='width="80px"';
+                               echo '<p class = "add-ph">Add photo</p>';
+                               }
+                        ?>				
+						<input name="img" type="file" id="file1" style="display:none"/>
+						<input type="button" id="new_image" class="foto" style="display:none"/>
+						<label id="image" for="file1"><img  id="new_img" src="<?=$src?>" <?=$width?> height="120px" style = "border-radius: 100%;"></label>
+				    </form>
+					
 				</div>
+			</div>
 				<div class = "column">
 					<p class = "aboutinput-f">Name*</p>
-					<input type="text" required class = "input-name input vl">
+					<input type="text" required class = "input-name input vl" value="<?=$main_data['name']?>">
 					<p class = "aboutinput">Profession*</p>
-					<input  type="text" required class = "dev input vl" placeholder="e.g.Developer">
+					<input  type="text" required class = "dev input vl" placeholder="e.g.Developer"value="<?=$main_data['profession']?>">
 				</div>
 			</div>
 			<div class = "foot">
 				<div class = "column">
 					<p class = "about">A little about me*</p>
-					<textarea class = "textarea input vl"placeholder="Introduce yourself" required></textarea>
+					<textarea class = "textarea input vl about-me"placeholder="Introduce yourself" required ><?=$main_data['about_me']?></textarea>
 					<div class = "empty"></div>
 				</div>
 			</div>
@@ -93,7 +112,7 @@ $skills=$model->get_skills($user_id);
 $phpstyle='none';
 $php_percent=50;
 $laravelstyle='none';
-$laravel_percent=70;
+$laravel_percent=50;
 $javastyle='none';
 $java_percent=50;
 if($skills){
@@ -133,7 +152,7 @@ case 3:
 							</div>
 						</div>
 						<div class = "no-flex">
-							<div class = "chargeline"><div class = "charge"></div>
+							<div class = "chargeline"><div class = "charge" style="width:<?=$php_percent?>% !important"></div>
 						</div>
 					</div>
 					<div class = "empty"></div>
@@ -151,11 +170,10 @@ case 3:
 						</div>
 					</div>
 					<div class = "no-flex">
-						<div class = "chargeline-sec"><div class = "charge-sec"></div>
+						<div class = "chargeline-sec"><div class = "charge-sec" style="width:<?=$laravel_percent?>% !important"></div>
 					</div>
 				</div>
 				<div class = "empty"></div>
-			</div>
 			<div class = "line-first handle l-th" style="display:<?=$javastyle?>;">
 				<div class = "gluing">
 					<div class = "flex">
@@ -169,8 +187,9 @@ case 3:
 					</div>
 				</div>
 				<div class = "no-flex">
-					<div class = "chargeline-th"><div class = "charge-th"></div>
+					<div class = "chargeline-th"><div class = "charge-th" style="width:<?=$java_percent?>% !important"></div>
 				</div>
+			</div>
 			</div>
 			<div class = "empty"></div>
 		</div>
@@ -236,20 +255,22 @@ case 3:
                $spec=$ed['specialization'];
                $educ=$ed['education'];
                $desc=$ed['description'];
+
+               
              ?>
 <!-- /////////////////////////////// -->
-<div class="line-first edu">
+<div class="line-first edu" id="<?=$id?>">
      <div class="flex-col">
      	<p class="th-of-ec"><?=$spec?></p>
      	<div class="interval"><?=$begin_year?> <?=$begin_month?>  - <?=$end_year?>  <?=$end_month?> </div>
      </div>
      <div class="flex-sec">
-     	<i class="fa fa-times-circle x" aria-hidden="true"></i>
+     	<i class="fa fa-times-circle x education" aria-hidden="true"></i>
      	<i class="fa fa-pencil pencil pen-one fff" aria-hidden="true"></i>
      	<i class="fa fa fa-bars handleT" aria-hidden="true"></i>
      </div>
      <div class="new-body" style="display: none;">
-     	<div class="body-sec show-hide hides" style="background-color:#eaeaea;display:block;">
+     	<div class="body-sec show-hide hides update_education"  style="background-color:#eaeaea;display:block;">
      		<div class="content">
      			<p class="title-input">Specialization*</p>
      			<input type="text" class="desc-ss" value="<?=$spec?>" placeholder="e.g.Web Design">
@@ -260,54 +281,68 @@ case 3:
      		</div>
      		<div class="content" style="display: flex;">
      			<div class="part-one" style="margin-right: 22px;">
-     				<p class="title-input">Start Date</p>
-     				<div class="flex-content">
-     					<select class="month-nn">
-     						<option value="January">January</option>
-     						<option value="February">February</option>
-     						<option value="March">March</option>
-     						<option value="April">April</option>
-     						<option value="May">May</option>
-     						<option value="June">June</option>
-     						<option value="July">July</option>
-     						<option value="August">August</option>
-     						<option value="September">September</option>
-     						<option value="October">October</option>
-     						<option value="November">November</option>
-     						<option value="December">December</option>
-     					</select>
-     					<select class="yearr" style="margin-left: 10px;">
-     						<option value="2021">2021</option>
-     						<option value="2020">2020</option>
+     				<p class="title-input">Start Date</p>     				<div class="flex-content">
+     					<select class="month-nn"  >
+     						<?php
+                             for($i=0;$i<12;$i++)
+                                 if($months[$i]==$begin_month)
+                                 	echo "<option value='$begin_month' selected>$begin_month</option>";
+                              
+                                  else
+                                 	 echo  "<option value='$months[$i]'>$months[$i]</option>";
+                            
+                             	?>
+                        </select>
+     					<select class="yearr" style="margin-left: 10px;" value="<?=$begin_year?>">
+     						<?php
+							for($i=0;$i<=71;$i++)
+								if($years[$i]==$begin_year)
+							        echo "<option value='$years[$i]' selected>$years[$i]</option>";
+							    else
+							    	echo "<option value='$years[$i]'>$years[$i]</option>";
+
+						     ?>
      					</select>
      				</div>
      			</div>
      			<div class="part-two">
      				<p class="title-input">End Date</p>
      				<div class="flex-content">
-     					<select class="monthSS-nn">
-     						<option value="January">January</option>
-     						<option value="February">February</option>
-     						<option value="March">March</option>
-     						<option value="April">April</option>
+     					<select class="monthSS-nn" value="<?=$end_month?>">
+     						<?php
+     						for($i=0;$i<12;$i++)
+                                 if($months[$i]==$end_month)
+                                 	echo "<option value='$end_month' selected>$end_month</option>";
+                              
+                                  else
+                                 	 echo  "<option value='$months[$i]'>$months[$i]</option>";
+                            ?>
      					</select>
-     					 <select class="yearS-nn" style="margin-left: 10px;">
-     					 	<option value="2021">2021</option>
-     					 	<option value="2020">2020</option>
-     					 	<option value="2019">2019</option>
+     					 <select class="yearS-nn" style="margin-left: 10px;"value="<?=$end_year?>">
+     					 
+							<?php
+							for($i=0;$i<=71;$i++)
+								if($years[$i]==$end_year)
+							        echo "<option value='$years[$i]' selected>$years[$i]</option>";
+							    else
+							    	echo "<option value='$years[$i]'>$years[$i]</option>";
+
+						     ?>
+						  
      					 </select>
      					</div>
      				</div>
      			</div>
      			<div class="content" style="padding-bottom:30px;">
      				<p class="title-input">Description</p>
-     				<textarea class="textarea-ss" type="text" placeholder="Write your text..." style="margin-top: 7px;height:67px;">ddddd</textarea>
+     				<textarea class="textarea-ss" type="text" placeholder="Write your text..." style="margin-top: 7px;height:67px;"><?=$desc?></textarea>
+     				<input type="hidden" class="edu_id" value="<?=$id?>">
      				<div class="close-secondd">
      					<i class="fa fa-trash" aria-hidden="true"></i>
      					<span class="del">Delete</span>
-     				</div><div class="check-secondd">
+     				</div><div class="check-secondd save_edu" >
      					<i class="fa fa-save" aria-hidden="true"></i>
-     					<span class="save">Save</span>
+     					<span class="save ">Save</span>
      				</div>
      			</div>
      		</div>
@@ -327,33 +362,25 @@ case 3:
 		<div class = "body-sec show-hide s">
 			<div class = "content">
 				<p class = "title-input">Specialization*</p>
-				<input type = "text" class = "desc-s" placeholder="e.g.Web Design">
+				<input type = "text" id="specialization" class = "desc-s" placeholder="e.g.Web Design">
 			</div>
 			<div class = "content">
-				<p class = "title-input">Education*</p>
-				<input type = "text" class = "desc-t"placeholder="e.g.Armenian State University">
+				<p class = "title-input" >Education*</p>
+				<input type = "text" id="education" class = "desc-t"placeholder="e.g.Armenian State University">
 			</div>
 			<div class = "content" style = "display: flex;">
 				<div class = "part-one" style="margin-right: 22px;">
 					<p class = "title-input">Start Date</p>
 					<div class = "flex-content">
 						<select class="month">
-							<option value="January">January</option>
-							<option value="February">February</option>
-							<option value="March">March</option>
-							<option value="April">April</option>
-							<option value="May">May</option>
-							<option value="June">June</option>
-							<option value="July">July</option>
-							<option value="August">August</option>
-							<option value="September">September</option>
-							<option value="October">October</option>
-							<option value="November">November</option>
-							<option value="December">December</option>
+							<?php
+     						for($i=0;$i<12;$i++)
+                               echo  "<option value='$months[$i]'>$months[$i]</option>";
+                            ?>
 						</select> 
 						<select class="year" style = "margin-left: 10px;">
 							<?php
-							for($i=1950;$i<2022;$i++)
+							for($i=2021;$i>=1950;$i--)
 							echo "<option value=$i>$i</option>";
 						     ?>
 						</select>
@@ -363,22 +390,14 @@ case 3:
 					<p class = "title-input">End Date</p>
 					<div class = "flex-content">
 						<select class="monthS">
-							<option value="January">January</option>
-							<option value="February">February</option>
-							<option value="March">March</option>
-							<option value="April">April</option>
-							<option value="May">May</option>
-							<option value="June">June</option>
-							<option value="July">July</option>
-							<option value="August">August</option>
-							<option value="September">September</option>
-							<option value="October">October</option>
-							<option value="November">November</option>
-							<option value="December">December</option>
+							<?php
+     						for($i=0;$i<12;$i++)
+                               echo  "<option value='$months[$i]'>$months[$i]</option>";
+                            ?>
 						</select> 
 						<select class="yearS" style = "margin-left: 10px;">
 							<?php
-							for($i=1950;$i<2022;$i++)
+							for($i=2021;$i>=1950;$i--)
 							echo "<option value=$i>$i</option>";
 						     ?>
 						</select>
@@ -387,10 +406,10 @@ case 3:
 			</div>
 			<div class = "content" style="padding-bottom:30px;">
 				<p class = "title-input">Description</p>
-				<textarea class = "textarea-s" type = "text" placeholder="Write your text..." style="margin-top: 7px;height:67px;"></textarea>
+				<textarea class = "textarea-s" type = "text" placeholder="Write your text..." style="margin-top: 7px;height:67px;" id="edu_description"></textarea>
 				
 				<div class = "close-second"><i class="fa fa-trash" aria-hidden="true"></i><span class = "del">Delete</span></div>
-				<div class = "check-second"><i class="fa fa-save" aria-hidden="true"></i><span class = "save">Save</span></div>
+				<div class = "check-second"><i class="fa fa-save" aria-hidden="true"></i><span class = "save edu_save">Save</span></div>
 	
 			</div>
 		</div>
@@ -414,15 +433,27 @@ case 3:
 	</div>
 	<div class = "all-body-first">
 		<div class = "body-mini">
-			<!-- <div class = "line-first">
-				<p class = "lang">Armenian
-					<div class = "flex-sq">
-						<i class="fa fa-times-circle x" aria-hidden="true"></i>
-						<i class="fa fa-pencil pencil pen-one" aria-hidden="true"></i>
-						<i class="fa fa-bars handleS" aria-hidden="true"></i>
-					</div>
-				</p>
-			</div> -->
+          <?php
+             $languages=$model->get_languages($user_id);
+             foreach($languages as $lang){
+	           $id=$lang['id'];
+	           $language=$lang['language'];
+	      ?>
+
+
+			<div class="line-first-lng" id="<?=$id?>">
+	            <p class="lang"><?=$language?></p>
+	            <div class="flex-sq">
+		           <i class="fa fa-times-circle x del_lang" aria-hidden="true" style="margin-left:40px;"></i>
+		           <i class="fa fa-pencil pencil" style="display:none;" aria-hidden="true"></i>
+		           <i class="fa fa fa-bars handleS" aria-hidden="true"></i>
+	            </div>
+            </div>
+
+          <?php
+      }
+      ?>
+
 		</div>
 		<div class = "body show-hide-third" style = "flex-direction: column;">
 			<div class = "center-sec">
@@ -433,15 +464,17 @@ case 3:
 			<div class = "input-lng">
 				<input type="text" name="" class = "inLng" id = "inLng" maxlength="15" placeholder="e.g. English">
 				
-				<div class = "close-four"><i class="fa fa-trash" aria-hidden="true"></i><span class = "del">Delete</span></div>
+				<div class = "close-four"><i class="fa fa-trash" aria-hidden="true"></i><span class = "del ">Delete</span></div>
 				<div class = "check-four"><i class="fa fa-save" aria-hidden="true"></i><span class = "save">Save</span></div>
      		 </div>
-			</div>
+		</div>
+
 			<div class = "skill-plus-th"><i class="fa fa-plus-circle" aria-hidden="true"></i><p class = 'new-lng'>Add another language</p></div>
 			<div class = "empty" style = "padding: 8px;"></div>
 		</div>
 	</div>
 </div>
+<!-- ////experiences -->
 <div class = "container">
 	<div class = "top">
 		<div class = "gluing">
@@ -454,18 +487,123 @@ case 3:
 	</div>
 	<div class = "all-body-first">
 		<div class ="body-mini-th">
-			<div class = "line-first">
-				<div class = "flex-col">
-					<p class = "th-of-ec-S">Developer</p>
-					<div class ="intervalS">New Media Company, 2013 June - 2017 September</div>
+        <?php
+			foreach($expeiances as $exp){
+                $id=$exp['id'];
+               $job_title=$exp['job_title'];
+               $company=$exp['company'];
+               $begin_month=$exp['start_month'];
+               $begin_year=$exp['start_year'];
+               $end_month=$exp['end_month'];
+               $end_year=$exp['end_year'];
+               $description=$exp['description'];
+           
+		?>
+
+           <div class="line-first" id="<?=$id?>" >
+	<div class="flex-col">
+		<p class="th-of-ec"><?=$job_title?></p>
+		<div class="interval"><?=$company?>, <?=$begin_year?> <?=$begin_month?> - <?=$end_year?> <?=$end_month?></div>
+	</div>
+	<div class="flex-sec">
+		<i class="fa fa-times-circle x exp_del" aria-hidden="true"></i>
+		<i class="fa fa-pencil pencil pen-one fff" aria-hidden="true"></i>
+		<i class="fa fa fa-bars handleF" aria-hidden="true"></i>
+	</div>
+	<div class="new-body">
+		<div class="body-sec show-hide hides" style="background-color:#eaeaea;display:block;">
+			<div class="content">
+				<p class="title-input">Job Title*</p>
+				<input type="text" class="desc-ss" value="<?=$job_title?>" placeholder="e.g.Web Design">
+				
+			
+				
+			</div>
+			<div class="content">
+				<p class="title-input">Company*</p>
+				<input type="text" class="desc-tt" value="<?=$company?>" placeholder="e.g.Armenian State University">
+			</div>
+			<div class="content" style="display: flex;">
+				<div class="part-one" style="margin-right: 22px;">
+					<p class="title-input">Start Date</p>
+					<div class="flex-content">
+						<select class="month-nn">
+								<?php
+                                 for($i=0;$i<12;$i++)
+                                 if($months[$i]==$begin_month)
+                                 	echo "<option value='$begin_month' selected>$begin_month</option>";
+                              
+                                  else
+                                 	 echo  "<option value='$months[$i]'>$months[$i]</option>";
+                            
+                             	?>
+						</select>
+						<select class="yearr" style="margin-left: 10px;">
+							<?php
+							for($i=0;$i<=71;$i++)
+								if($years[$i]==$begin_year)
+							        echo "<option value='$years[$i]' selected>$years[$i]</option>";
+							    else
+							    	echo "<option value='$years[$i]'>$years[$i]</option>";
+
+						     ?>
+						</select>
+					</div>
 				</div>
-				<div class = "flex-sec">
-					<i class="fa fa-times-circle x" aria-hidden="true"></i>
-					<i class="fa fa-pencil pencil pen-one " aria-hidden="true"></i>
-					<i class="fa fa-bars handleS" aria-hidden="true"></i>
+				<div class="part-two">
+					<p class="title-input">End Date</p>
+					<div class="flex-content">
+						<select class="monthSS-nn">
+								<?php
+                             for($i=0;$i<12;$i++)
+                                 if($months[$i]==$end_month)
+                                 	echo "<option value='$begin_month' selected>$end_month</option>";
+                              
+                                  else
+                                 	 echo  "<option value='$months[$i]'>$months[$i]</option>";
+                            
+                             	?>
+                             		
+                             	</select>
+							<select class="yearS-nn" style="margin-left: 10px;">
+								<?php
+							for($i=0;$i<=71;$i++)
+								if($years[$i]==$end_year)
+							        echo "<option value='$years[$i]' selected>$years[$i]</option>";
+							    else
+							    	echo "<option value='$years[$i]'>$years[$i]</option>";
+
+						     ?>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="content" style="padding-bottom:30px;">
+					<p class="title-input">Description</p>
+					<textarea id="<?=$id?>" class="textarea-ss" type="text" placeholder="Write your text..." style="margin-top: 7px;height:67px;"value="<?=$description?>"><?=$description?></textarea>
+                    <!-- <input type="hidden" id="exper_id" value="<?=$id?>"> -->
+					<div class="close-secondd">
+						<i class="fa fa-trash" aria-hidden="true"></i>
+						<span class="del">Delete</span>
+					</div>
+					
+					<div class="check-secondd save_exp">
+						<i class="fa fa-save" aria-hidden="true"></i>
+						<span class="save">Save</span>
+					</div>
 				</div>
 			</div>
 		</div>
+	</div>
+
+ 
+
+<?php } ?>
+		</div>
+
+
+
+
 		<div class = "body-sec show-hide-second">
 			<div class = "content">
 				<p class = "title-input">Job Title*</p>
@@ -480,23 +618,15 @@ case 3:
 					<p class = "title-input">Start Date</p>
 					<div class = "flex-content">
 						<select class="month-s">
-							<option value="January">January</option>
-							<option value="February">February</option>
-							<option value="March">March</option>
-							<option value="April">April</option>
-							<option value="May">May</option>
-							<option value="June">June</option>
-							<option value="July">July</option>
-							<option value="August">August</option>
-							<option value="September">September</option>
-							<option value="October">October</option>
-							<option value="November">November</option>
-							<option value="December">December</option>
+							<?php
+                             for($i=0;$i<12;$i++)
+                            	echo "<option value='$month[$i]' >$month[$i]</option>";
+                            ?>
 						</select> 
 						<select class="year-s" style = "margin-left: 10px;">
 
 							<?php
-							for($i=1950;$i<2022;$i++)
+							for($i=2021;$i>=1950;$i--)
 							echo "<option value=$i>$i</option>";
 						     ?>
 							
@@ -507,18 +637,10 @@ case 3:
 					<p class = "title-input">End Date</p>
 					<div class = "flex-content">
 						<select class="monthS-s">
-							<option value="January">January</option>
-							<option value="February">February</option>
-							<option value="March">March</option>
-							<option value="April">April</option>
-							<option value="May">May</option>
-							<option value="June">June</option>
-							<option value="July">July</option>
-							<option value="August">August</option>
-							<option value="September">September</option>
-							<option value="October">October</option>
-							<option value="November">November</option>
-							<option value="December">December</option>
+							<?php
+                             for($i=0;$i<12;$i++)
+                            	echo "<option value='$month[$i]' >$month[$i]</option>";
+                            ?>
 						</select> 
 						<select class="yearS-s" style = "margin-left: 10px;">
 							<?php
@@ -555,19 +677,19 @@ case 3:
 	<div class = "all-body-first">
 		<div class = "content">
 			<p class = "title-input">Adress*</p>
-			<input type = "text" placeholder="" required class = "input-adress input vl">
+			<input type = "text" placeholder="" required class = "input-adress input vl" value="<?=$main_data['address']?>">
 		</div>
 		<div class = "content" style = "display: flex;">
 			<div class = "part-first">
 				<p class = "title-input" style = "margin-left: 0px;">Phone Number*</p>
 				<div class = "flex-content"style="margin-top: 5px;">
-					<input type="text" required placeholder = "+374 960000" class = "input-numb input vl">
+					<input type="text" required placeholder = "+374 960000" class = "input-numb input vl" value="<?=$main_data['phon']?>">
 				</div>
 			</div>
 			<div class = "part-sec">
-				<p class = "title-input"style = "margin-left: 0px;">E-mail*</p>
+				<p class = "title-input"style = "margin-left: 0px;">E-mail*<span id="wrong_email"></span></p>
 				<div class = "flex-content" style="margin-top: 5px;">
-					<input type="email" required class = "input-email input vl">
+					<input type="email" required class = "input-email input vl" value="<?=$main_data['email']?>">
 				</div>
 			</div>
 		</div>
@@ -587,32 +709,32 @@ case 3:
 		<div class="first-label">
 			<img src="img/facebook.svg" class = "linkIcon">
 			<p class="link-title">Facebook link</p>
-			<input type="url" name="" class = "end-links" required>
+			<input type="url" name="" class = "end-links facebook" value="<?=$connections['facebook']?>"required>
 		</div>
 		<div class="first-label">
 			<img src="img/linkedin .svg" class = "linkIcon">
 			<p class="link-title">LinkedIn link</p>
-			<input type="url" name="" class = "end-links" style="margin-left: 30px;" required>
+			<input type="url" name="" class = "end-links linkedin" style="margin-left: 30px;" value="<?=$connections['linkedIn']?>"required>
 		</div>
 		<div class="first-label">
 			<img src="img/twitter .svg" class = "linkIcon">
 			<p class="link-title">Twitter link</p>
-			<input type="url" name="" class = "end-links"style="margin-left: 41px;" required>
+			<input type="url" name="" class = "end-links twitter"style="margin-left: 41px;" value="<?=$connections['twitter']?>" required>
 		</div>
 		<div class="first-label">
 			<img src="img/Dribble.svg" class = "linkIcon">
 			<p class="link-title">Dribble link</p>
-			<input type="url" name="" class = "end-links" style="margin-left: 39px;" required>
+			<input type="url" name="" class = "end-links dribble" style="margin-left: 39px;" value="<?=$connections['dribble']?>" required>
 		</div>
 		<div class="first-label">
 			<img src="img/Github.svg" class = "linkIcon">
 			<p class="link-title">Github link</p>
-			<input type="url" name="" class = "end-links" style="margin-left: 41px;" required>
+			<input type="url" name="" class = "end-links github" style="margin-left: 41px;" value="<?=$connections['github']?>" required>
 		</div>
 		<div class="first-label">
 			<img src="img/behance-logo.svg" class = "linkIcon">
 			<p class="link-title">Behance link</p>
-			<input type="url" name="" class = "end-links" style="margin-left: 29px;" required>
+			<input type="url" name="" class = "end-links behance" style="margin-left: 29px;" value="<?=$connections['behance']?>" required>
 		</div>
 
 	</div>

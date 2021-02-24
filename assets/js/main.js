@@ -30,7 +30,7 @@
         $(window).on('scroll',function() {
             if ($(this).scrollTop() > 20){  
                 $('.navbar-expand-lg').addClass("color-set");
-                $('.navbar-brand img').attr('src', 'assets/img/logo-black.png');
+                $('.navbar-brand img').attr('src', 'assets/img/logo.png');
             }
             else{
                 $('.navbar-expand-lg').removeClass("color-set");

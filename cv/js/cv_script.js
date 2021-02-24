@@ -6,21 +6,24 @@ let numFive = 0
 let numSix = 0
 
 $(".x").click(function(){
+	// alert($(this).parents('.line-first'))
 
-     let index = $(".x").index(this);
+   let index = $(".x").index(this);
+ //     alert(index)
 	if($(this).hasClass( "skills" )){
+		$(this).parent().parent().next().remove();
 	     $.ajax({
          url:'add_cv.php',
          type:'post',
          data:{lang:index,action:'del_skill'},
          success:function(d){
-           location.reload();
+           //location.reload();
          }
      })
     }
     if($(this).hasClass( "education" )){
 	     let id = $(this).parents('.line-first').attr('id')
-	  
+	   
 	     $.ajax({
          url:'add_cv.php',
          type:'post',
@@ -32,7 +35,7 @@ $(".x").click(function(){
     }
 
     if($(this).hasClass( "del_lang" )){
-	     let id = $(this).parents('.line-first').attr('id')
+	     let id = $(this).parents('.line-first-lng').attr('id')
 	  
 	     $.ajax({
          url:'add_cv.php',
@@ -50,14 +53,14 @@ $(".x").click(function(){
          type:'post',
          data:{id:id,action:'del_exp'},
          success:function(d){
-            location.reload();
+            //location.reload();
          }
      })
     }
+//alert(666);
+$(this).parent().parent().remove()
 
-
-
-	 $(".line-first").eq(index).hide();
+	 // $(".line-first").eq(index).hide();
 	 numOne-=1
 })
 
@@ -69,8 +72,10 @@ function newLine(){
  document.querySelector(".sfone").style.display = "block"
 }
 document.querySelector(".check").onclick = ()=>{
+	
 	let prc = document.querySelector(".selector").value
 	let sldr = document.querySelector(".slider").value
+
     $.ajax({
          url:'add_cv.php',
          type:'post',
@@ -82,26 +87,27 @@ document.querySelector(".check").onclick = ()=>{
 
 
 	if(prc == 1){
-		
-		document.querySelector(".l-one").style.display = "block"
-		document.querySelector(".percent").innerHTML = `${sldr}%`
-		document.querySelector(".charge").style.width = `${sldr}%`
-		numOne+=1
-		document.querySelector(".first").innerHTML = 'Skills'
+		$(".l-one").css("display", "block");
+		 document.querySelector(".l-one").style.display = "block"
+		 document.querySelector(".percent").innerHTML = `${sldr}%`
+		 document.querySelector(".charge").style.width = `${sldr}%`
+		// numOne+=1
+		 document.querySelector(".first").innerHTML = 'Skills'
 
 	}
 	else if (prc == 2){
-		document.querySelector(".l-sec").style.display = "block"
-		document.querySelector(".percent-sec").innerHTML = `${sldr}%`
-		document.querySelector(".charge-sec").style.width = `${sldr}%`
-		numOne+=1
-		document.querySelector(".first").innerHTML = 'Skills'
-	}
+		 document.querySelector(".l-sec").style.display = "block"
+		 document.querySelector(".percent-sec").innerHTML = `${sldr}%`
+	 document.querySelector(".charge-sec").style.width = `${sldr}%`
+		// numOne+=1
+		 document.querySelector(".first").innerHTML = 'Skills'
+ }
 	else if (prc == 3){
-		document.querySelector(".l-th").style.display = "block"
-		document.querySelector(".percent-th").innerHTML = `${sldr}%`
-		document.querySelector(".charge-th").style.width = `${sldr}%`
-		numOne+=1
+		
+		 document.querySelector(".l-th").style.display = "block"
+	document.querySelector(".percent-th").innerHTML = `${sldr}%`
+		 document.querySelector(".charge-th").style.width = `${sldr}%`
+		// numOne+=1
 		document.querySelector(".first").innerHTML = 'Skills'
 	}
 
@@ -160,6 +166,18 @@ let input  = document.querySelector('.inLng');
 function add() {
 
 	if(input.value === "") return;
+	///////add to database
+		let lang=$('#inLng').val();
+
+       $.ajax({
+         url:'add_cv.php',
+         type:'post',
+         data:{lang:lang,action:'add_language'},
+         success:function(d){
+         	// location.reload();
+         }
+    })  
+///////////////////////
 
 	let newMessage = document.createElement('div');
 	newMessage.classList.add('line-first-lng');
@@ -228,29 +246,105 @@ let fff = document.querySelectorAll(".fff")
 let ccc = document.querySelectorAll(".close-secondd")
 for(let c=0;c<fff.length;c++){
 	fff[c].onclick = ()=>{
-		// document.querySelectorAll(".new-body")[c].classList.toggle('new-body-none')
+		 document.querySelectorAll(".new-body")[c].classList.toggle('new-body-none')
 		$(".new-body").eq(c).slideToggle();
 		document.querySelectorAll(".line-first")[c+3].classList.toggle("line-first-toggle")
 	}
 	ccc[c].onclick = ()=>{
+
 		document.querySelectorAll(".line-first")[c+3].remove()
 	}
 
+// $('.save_exp1').click(function(){
+
+  
+
+// })
 	document.querySelectorAll(".check-secondd")[c].onclick=()=>{
-		document.querySelectorAll(".th-of-ec")[c].innerText = document.querySelectorAll(".desc-ss")[c].value
+		
 
-		let monthh  = document.querySelectorAll('.month-nn')[c].value
-		let yearr  = document.querySelectorAll('.yearr')[c].value
-		let monthSS  = document.querySelectorAll('.monthSS-nn')[c].value
-		let yearSS  = document.querySelectorAll('.yearS-nn')[c].value
-		let interval = document.querySelectorAll(".interval")
-		interval[c].textContent = `${yearr} ${monthh} - ${yearSS} ${monthSS}`
-
-		document.querySelectorAll(".line-first")[c+3].classList.toggle("line-first-toggle")
-
-		$(".hides").eq(c).slideToggle();
+		let check_exp=document.querySelectorAll(".check-secondd")[c].classList.contains('save_exp')
+		let check_edu=document.querySelectorAll(".check-secondd")[c].classList.contains('save_edu')
 
 
+		if(check_exp){
+
+           let title=document.querySelectorAll('.desc-ss')[c].value
+           let company=document.querySelectorAll('.desc-tt')[c].value
+
+           if(title=== "" || company=== ""){
+		       document.querySelectorAll('.desc-ss')[c].style.border = "1px solid red"
+		       document.querySelectorAll('.desc-tt')[c].style.border = "1px solid red"
+		      return;
+	        }
+
+            let begin_month=document.querySelectorAll('.month-nn')[c].value
+            let begin_year=document.querySelectorAll('.yearr')[c].value
+            let end_month=document.querySelectorAll('.monthSS-nn')[c].value
+            let end_year=document.querySelectorAll('.yearS-nn')[c].value
+            let description=document.querySelectorAll('.textarea-ss')[c].value
+            let id = document.querySelectorAll(".textarea-ss")[c].id;
+            // let id=document.querySelectorAll('.exper_id')[c].value
+           
+              $.ajax({
+            url:'add_cv.php',
+            type:'post',
+            data:{
+         	   id:id,  
+         	   title:title,
+         	   company:company,
+         	   description:description,
+         	   begin_month:begin_month,
+               begin_year:begin_year,
+               end_month:end_month,
+               end_year:end_year,
+         	   action:'update_experiance'},
+            success:function(d){
+               //alert(d)
+          console.log(d);
+            // location.reload();
+            }
+        })
+
+        }
+
+		if(check_edu){
+
+		 let begin_month  = document.querySelectorAll('.month-nn')[c].value
+		 let begin_year  = document.querySelectorAll('.yearr')[c].value
+		 let end_month  = document.querySelectorAll('.monthSS-nn')[c].value
+		 let end_year  = document.querySelectorAll('.yearS-nn')[c].value
+		 specialization=document.querySelectorAll('.desc-ss')[c].value
+		
+         let education  = document.querySelectorAll('.desc-tt')[c].value
+         let description  = document.querySelectorAll('.textarea-ss')[c].value
+         let id  = document.querySelectorAll('.edu_id')[c].value;
+		
+         $.ajax({
+            url:'add_cv.php',
+            type:'post',
+            data:{
+         	   id:id,  
+         	   specialization:specialization,
+         	   education:education,
+         	   description:description,
+         	   begin_month:begin_month,
+               begin_year:begin_year,
+               end_month:end_month,
+               end_year:end_year,
+         	   action:'add_update_education'},
+            success:function(d){
+
+         	// console.log(d);
+            // location.reload();
+            }
+        })
+
+        }
+
+
+		 document.querySelectorAll(".line-first")[c+3].classList.toggle("line-first-toggle")
+		 $(".hides").eq(c).slideToggle();
 	}
 }
 
@@ -373,6 +467,36 @@ function addT() {
 		inputComp.style.border = "1px solid red"
 		return
 	}
+
+// adding	new experiance
+	let job_title=$('.input-lng-s').val();
+	let company=$('.input-comp').val();
+	let start_month=$('.month-s').val();
+	let start_year=$('.year-s').val();
+	let end_month=$('.monthS-s').val();
+	let end_year=$('.yearS-s').val();
+	let description=$('.textarea-t').val();
+
+    $.ajax({
+         url:'add_cv.php',
+         type:'post',
+         data:{
+         
+         	title:job_title,
+            company:company,
+            start_month:start_month,
+            start_year:start_year,
+            end_month:end_month,
+            end_year:end_year,
+            description:description,
+         	action:'add_experiance'},
+         success:function(d){
+         	console.log(d)
+         	//location.reload();
+         }
+    })      
+
+// end adding	new experiance
 	numFour+=1
 	document.querySelector(".four").innerHTML = 'Experiences'
 		
@@ -434,6 +558,7 @@ function addT() {
 					let intervalS = document.querySelectorAll(".interval")
 					intervalS[c].textContent += `${yearr} ${month_sh} - ${yearSS} ${month_sSS}`
 
+  
 				document.querySelectorAll(".line-first")[c+3].classList.toggle("line-first-toggle")
 
 				$(".hides").eq(c).slideToggle();
@@ -476,6 +601,7 @@ function addT() {
 	})
 	showSecond.style.display = "none"
 
+    
 }
 
 document.querySelector(".close-second").onclick = ()=>{
@@ -486,6 +612,7 @@ document.querySelector(".close-second").onclick = ()=>{
 
 
 document.querySelector(".close-third").onclick = ()=>{
+
 	inputLng.value = ""
 	inputComp.value = ""
 	textareaT.value = ""
@@ -533,6 +660,7 @@ $('#jobtitle').val('');
 	showSecond.style.display = "block"
 }
 document.querySelector(".skill-plus-th").onclick = ()=>{
+
 	showThird.style.display = "block"
 }
 
@@ -543,7 +671,31 @@ let endLinks = document.querySelectorAll(".end-links")
 
 document.querySelector(".done").onclick = ()=>{
 
+//////////////////////////////email
+$('#wrong_email').html('');
+let email=$('.input-email').val();
+let	emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
+	if(!emailReg.test(email)) {
+		$('#wrong_email').css("color","red");
+		$('#wrong_email').html(' Invalid Email');
+            document.querySelector(".callout").style.animation = "move 1s forwards"
+			setTimeout(()=>{
+				document.querySelector(".callout").style.animation = ""
+			},3000)
+        }
 
+/////////////////////////image///////////////   
+     if($('#new_img').attr('src')=='cv_images/camera.png'){
+     	   document.querySelector(".add-photo").style.border = "1px solid red"
+			document.querySelector(".callout").style.animation = "move 1s forwards"
+			setTimeout(()=>{
+				document.querySelector(".callout").style.animation = ""
+			},3000)
+		}
+		// vlImg.oninput= ()=>{
+		// 	document.querySelector(".add-photo").style.border = "1px solid #AFAFAF"
+		// 	numFive +=1
+		// }
 	///////////////skills
         if(!$(".l-one").is(":visible")&&!$(".l-th").is(":visible")&&!$(".l-sec").is(":visible")){
            document.querySelector(".first").innerHTML = 'Skills <span style = "color:red;">(Minimum one skill required)</span>'
@@ -566,8 +718,9 @@ if(!$('.line-first').hasClass('edu')){
 
 }
 
-///////////////////////
-if(!$('.line-first').hasClass('lan')){
+///////////////////////languages
+
+if($('.line-first-lng').length<1){
 	document.querySelector(".third").innerHTML = 'Languages <span style = "color:red;">(Minimum one Language required)</span>'
 			document.querySelector(".callout").style.animation = "move 1s forwards"
 			setTimeout(()=>{
@@ -593,42 +746,14 @@ if(!$('.line-first').hasClass('lan')){
 		// 		document.querySelector(".callout").style.animation = ""
 		// 	},3000)
 		// }
-		// vlImg.oninput= ()=>{
-		// 	document.querySelector(".add-photo").style.border = "1px solid #AFAFAF"
-		// 	numFive +=1
-		// }
+		
 		vl[k].oninput = ()=>{
 			vl[k].style.border = "1px solid #AFAFAF"
 			numSix =1
 		}
-		if(numOne==0){
-			// document.querySelector(".first").innerHTML = 'Skills <span style = "color:red;">(Minimum one skill required)</span>'
-			// document.querySelector(".callout").style.animation = "move 1s forwards"
-			// setTimeout(()=>{
-			// 	document.querySelector(".callout").style.animation = ""
-			// },3000)
-		}
-		if(numTwo==0){
-			// document.querySelector(".second").innerHTML = 'Education <span style = "color:red;">(Minimum one Education required)</span>'
-			// document.querySelector(".callout").style.animation = "move 1s forwards"
-			// setTimeout(()=>{
-			// 	document.querySelector(".callout").style.animation = ""
-			// },3000)
-		}
-		if(numThree==0){
-			// document.querySelector(".third").innerHTML = 'Languages <span style = "color:red;">(Minimum one Language required)</span>'
-			// document.querySelector(".callout").style.animation = "move 1s forwards"
-			// setTimeout(()=>{
-			// 	document.querySelector(".callout").style.animation = ""
-			// },3000)
-		}
-		if(numFour==0){
-			// document.querySelector(".four").innerHTML = 'Experiences <span style = "color:red;">(Minimum one Experience required)</span>'
-			// document.querySelector(".callout").style.animation = "move 1s forwards"
-			// setTimeout(()=>{
-			// 	document.querySelector(".callout").style.animation = ""
-			// },3000)
-		}
+		
+
+	///////links	
 		for(m=0;m<endLinks.length;m++){
 			
 			if(!endLinks[0].value || !endLinks[1].value || !endLinks[2].value  || !endLinks[3].value || !endLinks[4].value || !endLinks[5].value){
@@ -644,147 +769,22 @@ if(!$('.line-first').hasClass('lan')){
 			}
 		}
 	}
-	
-}
 
-$(document).ready(function(){
-
-$('.edit_education').click(function(){
-	show.style.display = "block";
-	let self=$(this).parents('.edu');
-	let id=self.attr('id');
-    let spec=self.find('.th-of-ec').text()
-	$('#specialization').val(spec);
-    let education=self.find('.education_none').text();
-    $('#education').val(education);
-    let description=self.find('.description_none').text();edu_description
-    $('#edu_description').val(description);
-    let edu_begin_month=self.find('.edu_begin_month').text();
-    $('.month').val(edu_begin_month);
-	let edu_begin_year=self.find('.edu_begin_year').text(); 
-	$('.year').val(edu_begin_year);
-	let edu_end_year=self.find('.edu_end_year').text();
-    $('.yearS').val(edu_end_year);
-	let edu_end_month=self.find('.edu_end_month').text(); 
-    $('.monthS').val(edu_end_month);
-    $('.edu_id').attr('id', id);
-})
-
-    $('.edu_save').click(function(){
-      let specialization=$('#specialization').val();
-      let education=$('#education').val();
-      let begin_month=$('.month').val();
-      let begin_year=$('.year').val();
-      let end_month=$('.monthS').val();
-      let end_year=$('.yearS').val();
-      let description=$('#edu_description').val();
-      let id=$('.edu_id').attr('id');
-
-      $.ajax({
-         url:'add_cv.php',
-         type:'post',
-         data:{
-         	id:id,
-         	specialization:specialization,
-         	education:education,
-         	description:description,
-         	begin_month:begin_month,
-            begin_year:begin_year,
-            end_month:end_month,
-            end_year:end_year,
-         	action:'add_update_education'},
-         success:function(d){
-
-         	console.log(d);
-         location.reload();
-         }
-    })
-    })
-$('.lang_save').click(function(){
-	let lang=$('#inLng').val();
-  $.ajax({
-         url:'add_cv.php',
-         type:'post',
-         data:{lang:lang,action:'add_language'},
-         success:function(d){
-         	location.reload();
-         }
-    })  
-
-
-
-})
-
-$('.edit_experiance').click(function(){
-	showSecond.style.display = "block"
-	let self=$(this).parents('.exper');
-	let id=self.attr('id');
-	let title=self.find('.th-of-ec-S').text();
-	let desc=self.find('.exp_desc').text();
-	let company=self.find('.exp_comp').text();
-	let begin_year=self.find('.exp_begin_year').text();
-	let begin_month=self.find('.exp_begin_month').text();
-	let end_year=self.find('.exp_end_year').text();
-	let end_month=self.find('.exp_end_month').text();
-	$('.exp_id').attr('id', id);
-	//alert(title+desc+company+begin_year+begin_month+end_year+end_month)
- //    let spec=self.find('.th-of-ec').text()
- $('#jobtitle').val(title);
- $('.input-comp').val(company);
- $(".month-s").val(begin_month);
- $(".year-s").val(begin_year);
- $(".monthS-s").val(end_month);
- $(".yearS-s").val(end_year);
- $('#exper_desciption').val(desc);
-
-})
-
-
-
-$('.exper_save').click(function(){
-	let title=$("#jobtitle").val();
-	let company=$(".input-comp").val();
-	let start_month=$(".month-s").val();
-	let start_year=$(".year-s").val();
-	let end_month=$(".monthS-s").val();
-	let end_year=$(".yearS-s").val();
-    let description=$('#exper_desciption').val();
-	let id=$('.exp_id').attr('id');
-  $.ajax({
-         url:'add_cv.php',
-         type:'post',
-         data:{
-         	id:id,
-         	title:title,
-            company:company,
-            start_month:start_month,
-            start_year:start_year,
-            end_month:end_month,
-            end_year:end_year,
-            description:description,
-         	action:'add_experiance'},
-         success:function(d){
-         	console.log(d)
-         	//location.reload();
-         }
-    })  
-})
-
-$('.main-save').click(function(){
-
-	let name=$('.input-name').val();
-	let profession=$('.prof').val();
+///////////////////////////////////
+let name=$('.input-name').val();
+	let profession=$('.dev').val();
 	let about_me=$('.about-me').val();
 	let address=$('.input-adress').val();
 	let phon=$('.input-numb').val();
 	let cv_email=$('.input-email').val();
-    let check=$('.checkbox').val();
-    let facebook=$('#facebook').val();
-    let twitter=$('#twitter').val();
-    let dribble=$('#dribble').val();
-    let github=$('#github').val();
-    let behance=$('#behance').val();
-    let linkedin=$('#linkedin').val();
+    let check=$('.checkbox').is(":checked")
+    let facebook=$('.facebook').val();
+    let twitter=$('.twitter').val();
+    let dribble=$('.dribble').val();
+    let github=$('.github').val();
+    let behance=$('.behance').val();
+    let linkedin=$('.linkedin').val();
+
 
     $.ajax({
         url:'add_cv.php',
@@ -811,21 +811,161 @@ $('.main-save').click(function(){
          }
     })  
 
-})
 
-})
+
+
+
+
+	
+}
+
+$(document).ready(function(){
+
+
+    // $('.edu_save').click(function(){
+    //   let specialization=$('#specialization').val();
+    //   let education=$('#education').val();
+    //   let begin_month=$('.month').val();
+    //   let begin_year=$('.year').val();
+    //   let end_month=$('.monthS').val();
+    //   let end_year=$('.yearS').val();
+    //   let description=$('#edu_description').val();
+    //   let id=$('.edu_id').attr('id');
+
+    //   $.ajax({
+    //      url:'add_cv.php',
+    //      type:'post',
+    //      data:{
+    //      	id:id,
+    //      	specialization:specialization,
+    //      	education:education,
+    //      	description:description,
+    //      	begin_month:begin_month,
+    //         begin_year:begin_year,
+    //         end_month:end_month,
+    //         end_year:end_year,
+    //      	action:'add_update_education'},
+    //      success:function(d){
+
+    //      	console.log(d);
+    //      location.reload();
+    //      }
+    // })
+    // })
+
+
+// $('.edit_experiance').click(function(){
+// 	showSecond.style.display = "block"
+// 	let self=$(this).parents('.exper');
+// 	let id=self.attr('id');
+// 	let title=self.find('.th-of-ec-S').text();
+// 	let desc=self.find('.exp_desc').text();
+// 	let company=self.find('.exp_comp').text();
+// 	let begin_year=self.find('.exp_begin_year').text();
+// 	let begin_month=self.find('.exp_begin_month').text();
+// 	let end_year=self.find('.exp_end_year').text();
+// 	let end_month=self.find('.exp_end_month').text();
+// 	$('.exp_id').attr('id', id);
+//  $('#jobtitle').val(title);
+//  $('.input-comp').val(company);
+//  $(".month-s").val(begin_month);
+//  $(".year-s").val(begin_year);
+//  $(".monthS-s").val(end_month);
+//  $(".yearS-s").val(end_year);
+//  $('#exper_desciption').val(desc);
+
+// })
+
+
+
+// $('.exper_save').click(function(){
+// 	let title=$("#jobtitle").val();
+// 	let company=$(".input-comp").val();
+// 	let start_month=$(".month-s").val();
+// 	let start_year=$(".year-s").val();
+// 	let end_month=$(".monthS-s").val();
+// 	let end_year=$(".yearS-s").val();
+//     let description=$('#exper_desciption').val();
+// 	let id=$('.exp_id').attr('id');
+//   $.ajax({
+//          url:'add_cv.php',
+//          type:'post',
+//          data:{
+//          	id:id,
+//          	title:title,
+//             company:company,
+//             start_month:start_month,
+//             start_year:start_year,
+//             end_month:end_month,
+//             end_year:end_year,
+//             description:description,
+//          	action:'add_experiance'},
+//          success:function(d){
+//          	console.log(d)
+//          	//location.reload();
+//          }
+//     })  
+// })
+
+// $('.main-save').click(function(){
+
+// 	let name=$('.input-name').val();
+// 	let profession=$('.prof').val();
+// 	let about_me=$('.about-me').val();
+// 	let address=$('.input-adress').val();
+// 	let phon=$('.input-numb').val();
+// 	let cv_email=$('.input-email').val();
+//     let check=$('.checkbox').val();
+//     let facebook=$('#facebook').val();
+//     let twitter=$('#twitter').val();
+//     let dribble=$('#dribble').val();
+//     let github=$('#github').val();
+//     let behance=$('#behance').val();
+//     let linkedin=$('#linkedin').val();
+
+//     $.ajax({
+//         url:'add_cv.php',
+//         type:'post',
+//         data:{
+//          	name:name,
+//             profession:profession,
+//             about_me:about_me,
+//             address:address,
+//             phon:phon,
+//             cv_email:cv_email,
+//             check:check,
+//             facebook:facebook,
+//             twitter:twitter,
+//             dribble:dribble,
+//             github:github,
+//             behance:behance,
+//             linkedin:linkedin,
+//          	action:'main'},
+//          success:function(d){
+//          	//alert(d)
+//          	console.log(d)
+//          	//location.reload();
+//          }
+//     })  
+
+// })
+
+// })
 /////////////////////
-$('.foto').click(function(){
+// $('.foto').click(function(){
 
-  parentTR=$(this).parents('tr');
+//   parentTR=$(this).parents('tr');
  
 
-});
+// });
+
 $(':file').on('change', function() {
 
    $('#new_image').trigger( "click" );
    });
+
   $('#new_image').on('click', function() {
+ 
     $.ajax({
         url:'add_cv.php',
         type: 'POST',
@@ -842,3 +982,4 @@ $(':file').on('change', function() {
 
 });
 
+});
