@@ -119,7 +119,9 @@ function add() {
 	
 	$(".x").click(function(){
 		let index = $(".x").index(this);
-		$(".line-first").eq(index).hide();
+		// $(".line-first").eq(index).hide();
+		// $(".line-first-lng").eq(index).hide();
+		$(this).parent().parent().remove();
 		numThree -=1
 	})
 	input.value = ""
