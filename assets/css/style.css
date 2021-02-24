@@ -775,6 +775,20 @@ button {
     color: #fff;
 }
 
+svg.svg-inline--fa.fa-react.fa-w-16, svg.svg-inline--fa.fa-laravel.fa-w-16 {
+    fill: #ff8559;
+}
+
+.tabs li a:hover svg.svg-inline--fa.fa-react.fa-w-16,
+.tabs li a:hover svg.svg-inline--fa.fa-laravel.fa-w-16 {
+    fill: #fff;
+}
+
+.tabs li.current a svg.svg-inline--fa.fa-react.fa-w-16,
+.tabs li.current a svg.svg-inline--fa.fa-laravel.fa-w-16 {
+    fill: #fff;
+}
+
 .tabs li a i {
     color: #ff8559;
     font-size: 40px;
