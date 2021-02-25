@@ -1860,9 +1860,10 @@ $('.cv_send').click(function(){
         pass1:pass1,pass2:pass2,email:email
     },
     success:function(d){
-console.log(d)
+
        if(d.success==true){
-         window.location.href = "http://localhost/colibrilab_am/cv/form?id="+d.message;
+        alert("Դուք հաջողությամբ գրանցվել եք");
+        //window.location.href = "http://localhost/colibrilab_am/cv/form?id="+d.message;
        }
         else
          $("#cv_error_text").html(d.message); 
@@ -1887,10 +1888,10 @@ $('.cv_login').click(function(){
         pass:pass,email:email
     },
     success:function(d){
-console.log(d)
+
        if(d.success==true){
-       
-         window.location.href = "http://localhost/colibrilab_am/cv/form?id="+d.message;
+      alert("Էջը ժամանակավորապես անհասանելի է");
+        // window.location.href = "http://localhost/colibrilab_am/cv/form?id="+d.message;
        }
         else
          $("#cv_error_text1").html(d.message); 

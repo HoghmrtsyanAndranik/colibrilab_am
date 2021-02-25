@@ -834,6 +834,24 @@ let name=$('.input-name').val();
 
 $(document).ready(function(){
 
+$('.select-first').change(function(){
+  let lang=$(this).val();
+   $.ajax({
+        url:'change_language.php',
+        type: 'POST',
+        data: {lang:lang},
+        success:function(d){
+        	location.reload();
+        }
+    });
+
+
+
+
+
+})
+ 
+
 
     $('.edu_save').click(function(){
       let specialization=$('#specialization').val();
@@ -859,7 +877,6 @@ $(document).ready(function(){
             end_year:end_year,
          	action:'add_update_education'},
          success:function(d){
-
          	console.log(d);
          location.reload();
          }
