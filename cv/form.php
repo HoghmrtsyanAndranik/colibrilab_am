@@ -15,6 +15,7 @@ else
 $src='cv_images/camera.png';
 $expeiances=$model->get_experiances($user_id);
 $connections=$model->get_connections($user_id);
+
 if($LANG=='ARM')
     $months=["Հունվար","Փետրվար","Մարտ","Ապրիլ","Մայիս","Հունիս",
                "Հուլիս","Օգոստոս","Սեպտեմբեր","Հոկտեմբեր","Նոյեմբեր","Դեկտեմբեր"];
@@ -24,6 +25,11 @@ elseif($LANG=='ENG')
 
 for($i=2021;$i>=1950;$i--)
     $years[]=$i;
+$months=["January","February","March","April","May","June",
+               "July","August","September","October","November","December"];
+               for($i=2021;$i>=1950;$i--)
+                   $years[]=$i;
+
 ?>
 
 
@@ -153,62 +159,63 @@ case 3:
 }
 ?>
 
-				<div class = "body-nn" style = "flex-direction: column;">
-					<div class = "line-first handle l-one " style="display:<?=$phpstyle?>;" >
-						<div class = "gluing">
-							<div class = "flex">
-								<p class = "phplaravel">PHP</p>
-								<div class ="percent"><?=$php_percent?>%</div>
-							</div>
-							<div class = "flex-sec fl" style="left: 166px;top:0px;">
-								<i class="fa fa-times-circle skills x" aria-hidden="true" style="margin-left: 40px;"></i>
-								<i class="fa fa-pencil pen-one" aria-hidden="true" style="display: none;"></i>
-								<i class="fa fa-bars handle" aria-hidden="true"></i>
-							</div>
-						</div>
-						<div class = "no-flex">
-							<div class = "chargeline"><div class = "charge" style="width:<?=$php_percent?>% !important"></div>
-						</div>
-					</div>
-					<div class = "empty"></div>
-				</div>
-				<div class = "line-first handle l-sec" style="display:<?=$laravelstyle?>;">
-					<div class = "gluing">
-						<div class = "flex">
-							<p class = "phplaravel-sec">Laravel</p>
-							<div class ="percent-sec"><?=$laravel_percent?>%</div>
-						</div>
-						<div class = "flex-sec fl" style="left: 166px;top:0px;">
-							<i class="fa fa-times-circle skills x" aria-hidden="true"style="margin-left: 40px;"></i>
-							<i class="fa fa-pencil pen-one" aria-hidden="true" style="display: none;"></i>
-							<i class="fa fa-bars" aria-hidden="true"></i>
-						</div>
-					</div>
-					<div class = "no-flex">
-						<div class = "chargeline-sec"><div class = "charge-sec" style="width:<?=$laravel_percent?>% !important"></div>
-					</div>
-				</div>
-				<div class = "empty"></div>
-			<div class = "line-first handle l-th" style="display:<?=$javastyle?>;">
-				<div class = "gluing">
-					<div class = "flex">
-						<p class = "phplaravel-th">Javascript</p>
-						<div class ="percent-th"><?=$java_percent?>%</div>
-					</div>
-					<div class = "flex-sec fl" style="left: 166px;top:0px;">
-						<i class="fa fa-times-circle skills x" aria-hidden="true" style="margin-left: 40px;"></i>
-						<i class="fa fa-pencil pen-one" aria-hidden="true" style="display: none;"></i>
-						<i class="fa fa-bars" aria-hidden="true"></i>
-					</div>
-				</div>
-				<div class = "no-flex">
-					<div class = "chargeline-th"><div class = "charge-th" style="width:<?=$java_percent?>% !important"></div>
-				</div>
-			</div>
-			</div>
-			<div class = "empty"></div>
-		</div>
-	</div>
+    <div class = "body-nn" style="flex-direction: column;">
+        <div class = "line-first handle l-one" style="display:<?=$phpstyle?>;" >
+            <div class = "gluing">
+                <div class = "flex">
+                    <p class = "phplaravel">PHP</p>
+                    <div class ="percent"><?=$php_percent?>%</div>
+                </div>
+                <div class = "flex-sec fl" style="left: 166px;top:0px;">
+                    <i class="fa fa-times-circle skills x" aria-hidden="true" style="margin-left: 40px;"></i>
+                    <i class="fa fa-pencil pen-one" aria-hidden="true" style="display: none;"></i>
+                    <i class="fa fa-bars handle" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class = "no-flex">
+                <div class = "chargeline"><div class = "charge" style="width:<?=$php_percent?>% !important"></div>
+            </div>
+        </div>
+            <div class = "empty"></div>
+        </div>
+        <div class = "line-first handle l-sec" style="display:<?=$laravelstyle?>;">
+            <div class = "gluing">
+                <div class = "flex">
+                    <p class = "phplaravel-sec">Laravel</p>
+                    <div class ="percent-sec"><?=$laravel_percent?>%</div>
+                </div>
+                <div class = "flex-sec fl" style="left: 166px;top:0px;">
+                    <i class="fa fa-times-circle skills x" aria-hidden="true"style="margin-left: 40px;"></i>
+                    <i class="fa fa-pencil pen-one" aria-hidden="true" style="display: none;"></i>
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class = "no-flex">
+                <div class = "chargeline-sec"><div class = "charge-sec" style="width:<?=$laravel_percent?>% !important"></div>
+            </div>
+        </div>
+            <div class = "empty"></div>
+        </div>
+        <div class = "line-first handle l-th" style="display:<?=$javastyle?>;">
+            <div class = "gluing">
+                <div class = "flex">
+                    <p class = "phplaravel-th">Javascript</p>
+                    <div class ="percent-th"><?=$java_percent?>%</div>
+                </div>
+                <div class = "flex-sec fl" style="left: 166px;top:0px;">
+                    <i class="fa fa-times-circle skills x" aria-hidden="true" style="margin-left: 40px;"></i>
+                    <i class="fa fa-pencil pen-one" aria-hidden="true" style="display: none;"></i>
+                    <i class="fa fa-bars" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div class = "no-flex">
+                <div class = "chargeline-th"><div class = "charge-th" style="width:<?=$java_percent?>% !important"></div>
+                </div>
+            </div>
+            <div class = "empty"></div>
+        </div>
+    </div>
+
 	<div class = "section-first sfone">
 		<div class = "flex-th">
 			<div class = "left">
@@ -519,7 +526,7 @@ case 3:
            <div class="line-first" id="<?=$id?>" >
 	<div class="flex-col">
 		<p class="th-of-ec"><?=$job_title?></p>
-		<div class="interval"><?=$company?>, <?=$begin_year?> <?=$begin_month?> - <?=$end_year?> <?=$end_month?></div>
+		<div class="interval"><?=$begin_year?> <?=$begin_month?> - <?=$end_year?> <?=$end_month?></div>
 	</div>
 	<div class="flex-sec">
 		<i class="fa fa-times-circle x exp_del" aria-hidden="true"></i>
