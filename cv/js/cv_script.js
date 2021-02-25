@@ -11,8 +11,9 @@ $(".x").click(function(){
    let index = $(".x").index(this);
  //     alert(index)
 	if($(this).hasClass( "skills" )){
-		$(this).parent().parent().next().remove();
-	     $.ajax({
+		// $(this).parent().parent().next().remove();
+		$(this).parent().parent().next().hide()
+		$.ajax({
          url:'add_cv.php',
          type:'post',
          data:{lang:index,action:'del_skill'},
@@ -20,7 +21,7 @@ $(".x").click(function(){
            //location.reload();
          }
      })
-    }
+	}
     if($(this).hasClass( "education" )){
 	     let id = $(this).parents('.line-first').attr('id')
 	   
@@ -58,7 +59,8 @@ $(".x").click(function(){
      })
     }
 //alert(666);
-$(this).parent().parent().remove()
+// $(this).parent().parent().remove()
+$(this).parent().parent().hide()
 
 	 // $(".line-first").eq(index).hide();
 	 numOne-=1
@@ -89,6 +91,8 @@ document.querySelector(".check").onclick = ()=>{
 	if(prc == 1){
 		$(".l-one").css("display", "block");
 		 document.querySelector(".l-one").style.display = "block"
+		$('.l-one').find('.gluing').css('display','flex')
+		$('.l-one').find('.no-flex').css('display','block')
 		 document.querySelector(".percent").innerHTML = `${sldr}%`
 		 document.querySelector(".charge").style.width = `${sldr}%`
 		// numOne+=1
@@ -97,6 +101,8 @@ document.querySelector(".check").onclick = ()=>{
 	}
 	else if (prc == 2){
 		 document.querySelector(".l-sec").style.display = "block"
+		$(".l-sec").find('.gluing').css('display','flex')
+		$(".l-sec").find('.no-flex').css('display','block')
 		 document.querySelector(".percent-sec").innerHTML = `${sldr}%`
 	 document.querySelector(".charge-sec").style.width = `${sldr}%`
 		// numOne+=1
@@ -105,6 +111,8 @@ document.querySelector(".check").onclick = ()=>{
 	else if (prc == 3){
 		
 		 document.querySelector(".l-th").style.display = "block"
+		$('.l-th').find('.gluing').css('display','flex')
+		$('.l-th').find('.no-flex').css('display','block')
 	document.querySelector(".percent-th").innerHTML = `${sldr}%`
 		 document.querySelector(".charge-th").style.width = `${sldr}%`
 		// numOne+=1
@@ -246,7 +254,7 @@ let fff = document.querySelectorAll(".fff")
 let ccc = document.querySelectorAll(".close-secondd")
 for(let c=0;c<fff.length;c++){
 	fff[c].onclick = ()=>{
-		 document.querySelectorAll(".new-body")[c].classList.toggle('new-body-none')
+		 // document.querySelectorAll(".new-body")[c].classList.toggle('new-body-none')
 		$(".new-body").eq(c).slideToggle();
 		document.querySelectorAll(".line-first")[c+3].classList.toggle("line-first-toggle")
 	}
@@ -268,6 +276,7 @@ for(let c=0;c<fff.length;c++){
 
 
 		if(check_exp){
+			document.querySelectorAll(".th-of-ec")[c].innerText = document.querySelectorAll(".desc-ss")[c].value
 
            let title=document.querySelectorAll('.desc-ss')[c].value
            let company=document.querySelectorAll('.desc-tt')[c].value
@@ -285,7 +294,8 @@ for(let c=0;c<fff.length;c++){
             let description=document.querySelectorAll('.textarea-ss')[c].value
             let id = document.querySelectorAll(".textarea-ss")[c].id;
             // let id=document.querySelectorAll('.exper_id')[c].value
-           
+			let intervalS = document.querySelectorAll(".interval")
+			intervalS[c].textContent = `${begin_year} ${begin_month} - ${end_year} ${end_month}`
               $.ajax({
             url:'add_cv.php',
             type:'post',
@@ -309,6 +319,7 @@ for(let c=0;c<fff.length;c++){
         }
 
 		if(check_edu){
+		document.querySelectorAll(".th-of-ec")[c].innerText = document.querySelectorAll(".desc-ss")[c].value
 
 		 let begin_month  = document.querySelectorAll('.month-nn')[c].value
 		 let begin_year  = document.querySelectorAll('.yearr')[c].value
@@ -319,7 +330,8 @@ for(let c=0;c<fff.length;c++){
          let education  = document.querySelectorAll('.desc-tt')[c].value
          let description  = document.querySelectorAll('.textarea-ss')[c].value
          let id  = document.querySelectorAll('.edu_id')[c].value;
-		
+		 let intervalS = document.querySelectorAll(".interval")
+		 intervalS[c].textContent = `${begin_year} ${begin_month} - ${end_year} ${end_month}`
          $.ajax({
             url:'add_cv.php',
             type:'post',
@@ -344,7 +356,8 @@ for(let c=0;c<fff.length;c++){
 
 
 		 document.querySelectorAll(".line-first")[c+3].classList.toggle("line-first-toggle")
-		 $(".hides").eq(c).slideToggle();
+		 $(".new-body").eq(c).slideToggle();
+
 	}
 }
 
@@ -822,36 +835,36 @@ let name=$('.input-name').val();
 $(document).ready(function(){
 
 
-    // $('.edu_save').click(function(){
-    //   let specialization=$('#specialization').val();
-    //   let education=$('#education').val();
-    //   let begin_month=$('.month').val();
-    //   let begin_year=$('.year').val();
-    //   let end_month=$('.monthS').val();
-    //   let end_year=$('.yearS').val();
-    //   let description=$('#edu_description').val();
-    //   let id=$('.edu_id').attr('id');
+    $('.edu_save').click(function(){
+      let specialization=$('#specialization').val();
+      let education=$('#education').val();
+      let begin_month=$('.month').val();
+      let begin_year=$('.year').val();
+      let end_month=$('.monthS').val();
+      let end_year=$('.yearS').val();
+      let description=$('#edu_description').val();
+      let id=$('.edu_id').attr('id');
 
-    //   $.ajax({
-    //      url:'add_cv.php',
-    //      type:'post',
-    //      data:{
-    //      	id:id,
-    //      	specialization:specialization,
-    //      	education:education,
-    //      	description:description,
-    //      	begin_month:begin_month,
-    //         begin_year:begin_year,
-    //         end_month:end_month,
-    //         end_year:end_year,
-    //      	action:'add_update_education'},
-    //      success:function(d){
+      $.ajax({
+         url:'add_cv.php',
+         type:'post',
+         data:{
+         	id:id,
+         	specialization:specialization,
+         	education:education,
+         	description:description,
+         	begin_month:begin_month,
+            begin_year:begin_year,
+            end_month:end_month,
+            end_year:end_year,
+         	action:'add_update_education'},
+         success:function(d){
 
-    //      	console.log(d);
-    //      location.reload();
-    //      }
-    // })
-    // })
+         	console.log(d);
+         location.reload();
+         }
+    })
+    })
 
 
 // $('.edit_experiance').click(function(){
