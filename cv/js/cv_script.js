@@ -821,37 +821,52 @@ let name=$('.input-name').val();
 
 $(document).ready(function(){
 
+$('.select-first').change(function(){
+  let lang=$(this).val();
+   $.ajax({
+        url:'change_language.php',
+        type: 'POST',
+        data: {lang:lang},
+        success:function(d){
+        	location.reload();
+        }
+    });
 
-    // $('.edu_save').click(function(){
-    //   let specialization=$('#specialization').val();
-    //   let education=$('#education').val();
-    //   let begin_month=$('.month').val();
-    //   let begin_year=$('.year').val();
-    //   let end_month=$('.monthS').val();
-    //   let end_year=$('.yearS').val();
-    //   let description=$('#edu_description').val();
-    //   let id=$('.edu_id').attr('id');
 
-    //   $.ajax({
-    //      url:'add_cv.php',
-    //      type:'post',
-    //      data:{
-    //      	id:id,
-    //      	specialization:specialization,
-    //      	education:education,
-    //      	description:description,
-    //      	begin_month:begin_month,
-    //         begin_year:begin_year,
-    //         end_month:end_month,
-    //         end_year:end_year,
-    //      	action:'add_update_education'},
-    //      success:function(d){
 
-    //      	console.log(d);
-    //      location.reload();
-    //      }
-    // })
-    // })
+
+
+})
+    $('.edu_save').click(function(){
+      let specialization=$('#specialization').val();
+      let education=$('#education').val();
+      let begin_month=$('.month').val();
+      let begin_year=$('.year').val();
+      let end_month=$('.monthS').val();
+      let end_year=$('.yearS').val();
+      let description=$('#edu_description').val();
+      let id=$('.edu_id').attr('id');
+
+      $.ajax({
+         url:'add_cv.php',
+         type:'post',
+         data:{
+         	id:id,
+         	specialization:specialization,
+         	education:education,
+         	description:description,
+         	begin_month:begin_month,
+            begin_year:begin_year,
+            end_month:end_month,
+            end_year:end_year,
+         	action:'add_update_education'},
+         success:function(d){
+
+         	console.log(d);
+         location.reload();
+         }
+    })
+    })
 
 
 // $('.edit_experiance').click(function(){

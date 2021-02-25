@@ -1,7 +1,7 @@
 <?php
 include('model.php');
 include('form_language.php');
-session_start();
+
 if(isset($_GET['id']))
 	file_put_contents('usersession.php',$_GET['id']);
 
@@ -15,10 +15,15 @@ else
 $src='cv_images/camera.png';
 $expeiances=$model->get_experiances($user_id);
 $connections=$model->get_connections($user_id);
-$months=["January","February","March","April","May","June",
-               "July","August","September","October","November","December"];
-               for($i=2021;$i>=1950;$i--)
-                   $years[]=$i;
+if($LANG=='ARM')
+    $months=["Հունվար","Փետրվար","Մարտ","Ապրիլ","Մայիս","Հունիս",
+               "Հուլիս","Օգոստոս","Սեպտեմբեր","Հոկտեմբեր","Նոյեմբեր","Դեկտեմբեր"];
+elseif($LANG=='ENG')
+    $months=["January","February","March","April","May","June",
+               "July","August","September","October","November","December"]; 
+
+for($i=2021;$i>=1950;$i--)
+    $years[]=$i;
 ?>
 
 
@@ -37,19 +42,29 @@ $months=["January","February","March","April","May","June",
 </head>
 <body>
 	<div class = "header-text">
-		<p class = "text">Ստեղծի՛ր քո CV-ն</p>
+		<p class = "text"><?=$create?></p>
 	</div>
 	<div class = "container">
 		<div class = "top-first">
 			<div class = "gluing">
 				<i class="fa fa-user" aria-hidden="true"></i>
-				<p class ="descript">Personal Info</p>
+				<p class ="descript"><?=$personalinfo?></p>
 			</div>
 			<div class = "gluing">
-				<p class = "lng">CV Language</p>
+				<p class = "lng"><?=$cvlanguage?></p>
 				<select class = "select-first">
-					<option value = "1">English</option>
-					<option value = "2">Русский</option>
+					<?php
+					if($LANG=='ARM'){
+						$arm_selected='selected';
+                        $eng_selected='';
+                    }
+                    elseif($LANG=='ENG'){
+                          $arm_selected='';
+                          $eng_selected='selected';
+                    }    
+					?>
+					<option value = "1"<?=$eng_selected?>>English</option>
+					<option value = "2"<?=$arm_selected?>>Հայերեն</option>
 				</select>
 			</div>
 		</div>
@@ -67,7 +82,7 @@ $months=["January","February","March","April","May","June",
                            else{
                                $src='cv_images/camera.png';
                                $width='width="80px"';
-                               echo '<p class = "add-ph">Add photo</p>';
+                               echo '<p class = "add-ph">'.$addphoto.'</p>';
                                }
                         ?>				
 						<input name="img" type="file" id="file1" style="display:none"/>
@@ -78,16 +93,16 @@ $months=["January","February","March","April","May","June",
 				</div>
 			</div>
 				<div class = "column">
-					<p class = "aboutinput-f">Name*</p>
+					<p class = "aboutinput-f"><?=$name?>*</p>
 					<input type="text" required class = "input-name input vl" value="<?=$main_data['name']?>">
-					<p class = "aboutinput">Profession*</p>
-					<input  type="text" required class = "dev input vl" placeholder="e.g.Developer"value="<?=$main_data['profession']?>">
+					<p class = "aboutinput"><?=$profession?>*</p>
+					<input  type="text" required class = "dev input vl" placeholder="<?=$programmer?>"value="<?=$main_data['profession']?>">
 				</div>
 			</div>
 			<div class = "foot">
 				<div class = "column">
-					<p class = "about">A little about me*</p>
-					<textarea class = "textarea input vl about-me"placeholder="Introduce yourself" required ><?=$main_data['about_me']?></textarea>
+					<p class = "about"><?=$aboutme?>*</p>
+					<textarea class = "textarea input vl about-me"placeholder="<?=$introduce?>" required ><?=$main_data['about_me']?></textarea>
 					<div class = "empty"></div>
 				</div>
 			</div>
@@ -98,7 +113,7 @@ $months=["January","February","March","April","May","June",
 			<div class = "top">
 				<div class = "gluing">
 					<i class="fa fa-puzzle-piece" aria-hidden="true"></i>
-					<p class ="descript first">Skills</p>
+					<p class ="descript first"><?=$skills?></p>
 				</div>
 				<div class = "gluing" style = "padding-right:15px;">
 					<i class="fa fa-angle-down w" aria-hidden="true"></i>
@@ -197,7 +212,7 @@ case 3:
 	<div class = "section-first sfone">
 		<div class = "flex-th">
 			<div class = "left">
-				<p class = "skill">Skill</p>
+				<p class = "skill"><?=$skill?></p>
 				<select class="selector">
 					<option value="1">PHP</option>
 					<option value="2">Laravel</option>
@@ -205,11 +220,11 @@ case 3:
 				</select>
 			</div>
 			<div class = "right">
-				<p class = "level">Level</p>
+				<p class = "level"><?=$level?></p>
 				<div class = "flex-th">
 
 				
-				<div class = "check"><i class="fa fa-save" aria-hidden="true"></i><span class = "save">Save</span></div>
+				<div class = "check"><i class="fa fa-save" aria-hidden="true"></i><span class = "save"><?=$save?></span></div>
 
 					<input type="range" min="1" max="100" value="50" class = "slider">
 					<p class = "range-percent">50%</p>
@@ -219,7 +234,7 @@ case 3:
 	</div>
 	<div class = "buttons">
 		<div class = "center">
-			<div class = "skill-plus-first"><i class="fa fa-plus-circle" aria-hidden="true"></i><p class = "new-skill">Add another skill</p></div>
+			<div class = "skill-plus-first"><i class="fa fa-plus-circle" aria-hidden="true"></i><p class = "new-skill"><?=$anotherskill?></p></div>
 		</div>
 	</div>
 </div>
@@ -232,7 +247,7 @@ case 3:
 	<div class = "top">
 		<div class = "gluing">
 			<i class="fa fa-graduation-cap" aria-hidden="true"></i>
-			<p class ="descript second">Education</p>
+			<p class ="descript second"><?=$education?></p>
 		</div>
 		<div class = "gluing" style = "padding-right:15px;">
 			<i class="fa fa-angle-down w" aria-hidden="true"></i>
@@ -272,16 +287,16 @@ case 3:
      <div class="new-body" style="display: none;">
      	<div class="body-sec show-hide hides update_education"  style="background-color:#eaeaea;display:block;">
      		<div class="content">
-     			<p class="title-input">Specialization*</p>
-     			<input type="text" class="desc-ss" value="<?=$spec?>" placeholder="e.g.Web Design">
+     			<p class="title-input"><?=$specialization?>*</p>
+     			<input type="text" class="desc-ss" value="<?=$spec?>" placeholder="<?=$web?>">
      		</div>
      		<div class="content">
-     			<p class="title-input">Education*</p>
-     			<input type="text" class="desc-tt" value="<?=$educ?>" placeholder="e.g.Armenian State University">
+     			<p class="title-input"><?=$education_text?>*</p>
+     			<input type="text" class="desc-tt" value="<?=$educ?>" placeholder="<?=$school?>">
      		</div>
      		<div class="content" style="display: flex;">
      			<div class="part-one" style="margin-right: 22px;">
-     				<p class="title-input">Start Date</p>     				<div class="flex-content">
+     				<p class="title-input"><?=$startdate?></p>     				<div class="flex-content">
      					<select class="month-nn"  >
      						<?php
                              for($i=0;$i<12;$i++)
@@ -306,7 +321,7 @@ case 3:
      				</div>
      			</div>
      			<div class="part-two">
-     				<p class="title-input">End Date</p>
+     				<p class="title-input"><?=$enddate?></p>
      				<div class="flex-content">
      					<select class="monthSS-nn" value="<?=$end_month?>">
      						<?php
@@ -334,15 +349,15 @@ case 3:
      				</div>
      			</div>
      			<div class="content" style="padding-bottom:30px;">
-     				<p class="title-input">Description</p>
+     				<p class="title-input"><?=$description?></p>
      				<textarea class="textarea-ss" type="text" placeholder="Write your text..." style="margin-top: 7px;height:67px;"><?=$desc?></textarea>
      				<input type="hidden" class="edu_id" value="<?=$id?>">
      				<div class="close-secondd">
      					<i class="fa fa-trash" aria-hidden="true"></i>
-     					<span class="del">Delete</span>
+     					<span class="del"><?=$delete?></span>
      				</div><div class="check-secondd save_edu" >
      					<i class="fa fa-save" aria-hidden="true"></i>
-     					<span class="save ">Save</span>
+     					<span class="save "><?=$save?></span>
      				</div>
      			</div>
      		</div>
@@ -361,16 +376,16 @@ case 3:
 </div>
 		<div class = "body-sec show-hide s">
 			<div class = "content">
-				<p class = "title-input">Specialization*</p>
-				<input type = "text" id="specialization" class = "desc-s" placeholder="e.g.Web Design">
+				<p class = "title-input"><?=$specialization?>*</p>
+				<input type = "text" id="specialization" class = "desc-s" placeholder="<?=$web?>">
 			</div>
 			<div class = "content">
-				<p class = "title-input" >Education*</p>
-				<input type = "text" id="education" class = "desc-t"placeholder="e.g.Armenian State University">
+				<p class = "title-input" ><?=$education_text?>*</p>
+				<input type = "text" id="education" class = "desc-t"placeholder="<?=$school?>">
 			</div>
 			<div class = "content" style = "display: flex;">
 				<div class = "part-one" style="margin-right: 22px;">
-					<p class = "title-input">Start Date</p>
+					<p class = "title-input"><?=$startdate?></p>
 					<div class = "flex-content">
 						<select class="month">
 							<?php
@@ -387,7 +402,7 @@ case 3:
 					</div>
 				</div>
 				<div class = "part-two">
-					<p class = "title-input">End Date</p>
+					<p class = "title-input"><?=$enddate?></p>
 					<div class = "flex-content">
 						<select class="monthS">
 							<?php
@@ -405,16 +420,16 @@ case 3:
 				</div>
 			</div>
 			<div class = "content" style="padding-bottom:30px;">
-				<p class = "title-input">Description</p>
-				<textarea class = "textarea-s" type = "text" placeholder="Write your text..." style="margin-top: 7px;height:67px;" id="edu_description"></textarea>
+				<p class = "title-input"><?=$description?></p>
+				<textarea class = "textarea-s" type = "text" placeholder="<?=$write_text?>" style="margin-top: 7px;height:67px;" id="edu_description"></textarea>
 				
-				<div class = "close-second"><i class="fa fa-trash" aria-hidden="true"></i><span class = "del">Delete</span></div>
-				<div class = "check-second"><i class="fa fa-save" aria-hidden="true"></i><span class = "save edu_save">Save</span></div>
+				<div class = "close-second"><i class="fa fa-trash" aria-hidden="true"></i><span class = "del"><?=$delete?></span></div>
+				<div class = "check-second"><i class="fa fa-save" aria-hidden="true"></i><span class = "save edu_save"><?=$save?></span></div>
 	
 			</div>
 		</div>
 			<div class = "center" style="margin-top: 10px;">
-				<div class = "skill-plus-sec"><i class="fa fa-plus-circle" aria-hidden="true"></i><p class = "new-skill-s">Add another education</p></div>
+				<div class = "skill-plus-sec"><i class="fa fa-plus-circle" aria-hidden="true"></i><p class = "new-skill-s"><?=$new_education?></p></div>
 			</div>
 	</div>
 	
@@ -425,7 +440,7 @@ case 3:
 	<div class = "top">
 		<div class = "gluing">
 			<i class="fa fa-language" aria-hidden="true"></i>
-			<p class ="descript third">Languages</p>
+			<p class ="descript third"><?=$languages?></p>
 		</div>
 		<div class = "gluing" style = "padding-right:15px;">
 			<i class="fa fa-angle-down w" aria-hidden="true"></i>
@@ -458,18 +473,18 @@ case 3:
 		<div class = "body show-hide-third" style = "flex-direction: column;">
 			<div class = "center-sec">
 				<div class = "flex-col"style="height:auto;">
-					<p class = "langs">Language</p>
+					<p class = "langs"><?=$language?></p>
 				</div>
 			</div>
 			<div class = "input-lng">
-				<input type="text" name="" class = "inLng" id = "inLng" maxlength="15" placeholder="e.g. English">
+				<input type="text" name="" class = "inLng" id = "inLng" maxlength="15" placeholder="<?=$english?>">
 				
-				<div class = "close-four"><i class="fa fa-trash" aria-hidden="true"></i><span class = "del ">Delete</span></div>
-				<div class = "check-four"><i class="fa fa-save" aria-hidden="true"></i><span class = "save">Save</span></div>
+				<div class = "close-four"><i class="fa fa-trash" aria-hidden="true"></i><span class = "del "><?=$delete?></span></div>
+				<div class = "check-four"><i class="fa fa-save" aria-hidden="true"></i><span class = "save"><?=$save?></span></div>
      		 </div>
 		</div>
 
-			<div class = "skill-plus-th"><i class="fa fa-plus-circle" aria-hidden="true"></i><p class = 'new-lng'>Add another language</p></div>
+			<div class = "skill-plus-th"><i class="fa fa-plus-circle" aria-hidden="true"></i><p class = 'new-lng'><?=$anotherlanguage?></p></div>
 			<div class = "empty" style = "padding: 8px;"></div>
 		</div>
 	</div>
@@ -488,6 +503,7 @@ case 3:
 	<div class = "all-body-first">
 		<div class ="body-mini-th">
         <?php
+
 			foreach($expeiances as $exp){
                 $id=$exp['id'];
                $job_title=$exp['job_title'];
@@ -551,7 +567,7 @@ case 3:
 					</div>
 				</div>
 				<div class="part-two">
-					<p class="title-input">End Date</p>
+					<p class="title-input"><?=$enddate?></p>
 					<div class="flex-content">
 						<select class="monthSS-nn">
 								<?php
@@ -579,17 +595,17 @@ case 3:
 					</div>
 				</div>
 				<div class="content" style="padding-bottom:30px;">
-					<p class="title-input">Description</p>
+					<p class="title-input"><?=$description?></p>
 					<textarea id="<?=$id?>" class="textarea-ss" type="text" placeholder="Write your text..." style="margin-top: 7px;height:67px;"value="<?=$description?>"><?=$description?></textarea>
                     <!-- <input type="hidden" id="exper_id" value="<?=$id?>"> -->
 					<div class="close-secondd">
 						<i class="fa fa-trash" aria-hidden="true"></i>
-						<span class="del">Delete</span>
+						<span class="del"><?=$delete?></span>
 					</div>
 					
 					<div class="check-secondd save_exp">
 						<i class="fa fa-save" aria-hidden="true"></i>
-						<span class="save">Save</span>
+						<span class="save"><?=$save?></span>
 					</div>
 				</div>
 			</div>
@@ -620,7 +636,7 @@ case 3:
 						<select class="month-s">
 							<?php
                              for($i=0;$i<12;$i++)
-                            	echo "<option value='$month[$i]' >$month[$i]</option>";
+                            	echo "<option value='$months[$i]' >$months[$i]</option>";
                             ?>
 						</select> 
 						<select class="year-s" style = "margin-left: 10px;">
@@ -634,12 +650,12 @@ case 3:
 					</div>
 				</div>
 				<div class = "part-two">
-					<p class = "title-input">End Date</p>
+					<p class = "title-input"><?=$enddate?></p>
 					<div class = "flex-content">
 						<select class="monthS-s">
 							<?php
                              for($i=0;$i<12;$i++)
-                            	echo "<option value='$month[$i]' >$month[$i]</option>";
+                            	echo "<option value='$months[$i]' >$months[$i]</option>";
                             ?>
 						</select> 
 						<select class="yearS-s" style = "margin-left: 10px;">
@@ -652,11 +668,11 @@ case 3:
 				</div>
 			</div>
 			<div class = "content" style = "padding-bottom:30px;">
-				<p class = "title-input">Description</p>
+				<p class = "title-input"><?=$description?></p>
 				<textarea class = "textarea-t" type = "text" placeholder="Write your text..." style="margin-top: 7px;height:67px;"></textarea>
 			
-				<div class = "close-third"><i class="fa fa-trash" aria-hidden="true"></i><span class = "del">Delete</span></div>
-				<div class = "check-third"><i class="fa fa-save" aria-hidden="true"></i><span class = "save">Save</span></div>
+				<div class = "close-third"><i class="fa fa-trash" aria-hidden="true"></i><span class = "del"><?=$delete?></span></div>
+				<div class = "check-third"><i class="fa fa-save" aria-hidden="true"></i><span class = "save"><?=$save?></span></div>
 			</div>
 		</div>
 			<div class = "center">
@@ -743,13 +759,13 @@ case 3:
 	<label class = "label-end">
 		<div class="flex-end">
 			<input type="checkbox" name="" checked class ="checkbox">
-			<p class = "text-end">This is a public link</p>
+			<p class = "text-end"><?=$public_link?></p>
 		</div>
-		<p class = "text-end-second">If the link is public it will ba available to everyone</p>
+		<p class = "text-end-second"><?=$if_public?></p>
 	</label>
 	<div class = "flex-right">
 		<div class="callout">
-			<span style = "color:red">Please fill out all fields</span>
+			<span style = "color:red"><?=$required?></span>
 		</div>
 		<input type="button" class = "done" value="Done">
 	</form>
