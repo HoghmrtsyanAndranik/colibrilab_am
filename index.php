@@ -163,7 +163,7 @@ elseif($LANG=='ENG'){
                                 data-param3="" data-param4="" data-param5="" data-param6="" data-param7=""
                                 data-param8="" data-param9="" data-param10="" data-description="">
                                 <!-- MAIN IMAGE -->
-                                <img src="assets/img/transparent.png" data-bgcolor='#ffffff'' style='
+                                <img src="" data-bgcolor='#ffffff' style='
                                     background:#ffffff' alt="" data-bgposition="center center" data-bgfit="cover"
                                     data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
                                 <!-- LAYERS -->
@@ -1305,7 +1305,7 @@ elseif($LANG=='ENG'){
             <div class="row align-items-center teacher-img-text">
                      <div class="col-lg-3 col-md-6 text-center wow flipInY" data-wow-delay="0.6s">
                     <div class="teacher teacher-member">
-                        <img src="assets/img/1.jpg" class="img-fluid" alt="teacher-member">
+                        <img src="assets/img/hegine.jpg" class="img-fluid" alt="teacher-member">
                         <div class="overlay">
                             <div class="text">
                                 <div>
@@ -1561,7 +1561,7 @@ CV END
                 <div class="col-lg-4 col-md-6">
                     <div class="contact-box box2">
                         <h3><i class="icofont-envelope"></i><?=$email?></h3>
-                        <p><a href="mailto:#">info@gmail.com</a></p>
+                        <p><a href="mailto:#">infocolibrilab@gmail.com</a></p>
                         <p><a href="mailto:#">colibrilabcenter@gmail.com</a></p>
 <!--                        <p><a href="mailto:#">n1education.colibri@gmail.com</a></p>-->
                     </div>
@@ -1863,7 +1863,7 @@ $('.cv_send').click(function(){
 
        if(d.success==true){
         alert("Դուք հաջողությամբ գրանցվել եք");
-        //window.location.href = "http://localhost/colibrilab_am/cv/form?id="+d.message;
+        window.location.href = "cv/form?id="+d.message;
        }
         else
          $("#cv_error_text").html(d.message); 
@@ -1890,8 +1890,8 @@ $('.cv_login').click(function(){
     success:function(d){
 
        if(d.success==true){
-      alert("Էջը ժամանակավորապես անհասանելի է");
-        // window.location.href = "http://localhost/colibrilab_am/cv/form?id="+d.message;
+      //alert("Էջը ժամանակավորապես անհասանելի է");
+        window.location.href = "cv/form?id="+d.message;
        }
         else
          $("#cv_error_text1").html(d.message); 
