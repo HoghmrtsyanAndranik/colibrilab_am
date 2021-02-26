@@ -36,6 +36,16 @@ if($LANG=='ARM'){
    $language="Լեզու";
    $english="օր. Անգլերեն";
    $anotherlanguage="Ավելացնել լեզու";
+   $experiences="Աշխատանքային փորձը";
+   $jobtitle="Պաշտոնը";
+   $company="Կազմակերպություն";
+   $anotherworkexperience="Այլ կազմակերպություն";
+   $contacts="Կապ";
+   $adress="Հասցե";
+   $phonenumber="Հեռախոս";
+   $email="Էլ․ հասցե";
+   $connections_text="Սոց․ ցանցեր";
+   $link="";
 }
 
 
@@ -72,4 +82,14 @@ elseif($LANG=='ENG'){
    $language="Language";
    $english="e.g. English";
    $anotherlanguage="Add another language";
+   $experiences="Experiences";
+   $jobtitle="Job Title";
+   $company="Company";
+   $anotherworkexperience="Add another work experience";
+   $contacts="Contacts";
+   $adress="Adress";
+   $phonenumber="Phone Number";
+   $email="E-mail";
+   $connections_text="Connections";
+   $link="link";
 }

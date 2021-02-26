@@ -22,14 +22,8 @@ if($LANG=='ARM')
 elseif($LANG=='ENG')
     $months=["January","February","March","April","May","June",
                "July","August","September","October","November","December"]; 
-
 for($i=2021;$i>=1950;$i--)
     $years[]=$i;
-$months=["January","February","March","April","May","June",
-               "July","August","September","October","November","December"];
-               for($i=2021;$i>=1950;$i--)
-                   $years[]=$i;
-
 ?>
 
 
@@ -50,6 +44,9 @@ $months=["January","February","March","April","May","June",
 	<div class = "header-text">
 		<p class = "text"><?=$create?></p>
 	</div>
+	
+		
+	
 	<div class = "container">
 		<div class = "top-first">
 			<div class = "gluing">
@@ -99,6 +96,8 @@ $months=["January","February","March","April","May","June",
 				</div>
 			</div>
 				<div class = "column">
+                     
+                    <p class = "aboutinput-f">your cv adress is <a href="http://localhost/colibrilab_am/cv/my_cv?id=<?=$user_id?>">http://localhost/colibrilab_am/cv/my_cv?id=<?=$user_id?></a></p> 
 					<p class = "aboutinput-f"><?=$name?>*</p>
 					<input type="text" required class = "input-name input vl" value="<?=$main_data['name']?>">
 					<p class = "aboutinput"><?=$profession?>*</p>
@@ -501,7 +500,7 @@ case 3:
 	<div class = "top">
 		<div class = "gluing">
 			<i class="fa fa-suitcase" aria-hidden="true"></i>
-			<p class ="descript four">Experiences</p>
+			<p class ="descript four"><?=$experiences?></p>
 		</div>
 		<div class = "gluing" style = "padding-right:15px;">
 			<i class="fa fa-angle-down w" aria-hidden="true"></i>
@@ -536,19 +535,19 @@ case 3:
 	<div class="new-body">
 		<div class="body-sec show-hide hides" style="background-color:#eaeaea;display:block;">
 			<div class="content">
-				<p class="title-input">Job Title*</p>
-				<input type="text" class="desc-ss" value="<?=$job_title?>" placeholder="e.g.Web Design">
+				<p class="title-input"><?=$jobtitle?>*</p>
+				<input type="text" class="desc-ss" value="<?=$job_title?>" placeholder="<?=$web?>">
 				
 			
 				
 			</div>
 			<div class="content">
-				<p class="title-input">Company*</p>
-				<input type="text" class="desc-tt" value="<?=$company?>" placeholder="e.g.Armenian State University">
+				<p class="title-input"><?=$company?>*</p>
+				<input type="text" class="desc-tt" value="<?=$company?>" placeholder="<?=$school?>">
 			</div>
 			<div class="content" style="display: flex;">
 				<div class="part-one" style="margin-right: 22px;">
-					<p class="title-input">Start Date</p>
+					<p class="title-input"><?=$startdate?></p>
 					<div class="flex-content">
 						<select class="month-nn">
 								<?php
@@ -629,21 +628,23 @@ case 3:
 
 		<div class = "body-sec show-hide-second">
 			<div class = "content">
-				<p class = "title-input">Job Title*</p>
-				<input type = "text" placeholder="e.g.Developer" class = "input-lng-s">
+				<p class = "title-input"><?=$jobtitle?>*</p>
+				<input type = "text" placeholder="<?=$web?>" class = "input-lng-s">
 			</div>
 			<div class = "content">
-				<p class = "title-input">Company*</p>
-				<input type = "text" placeholder="" class = "input-comp">
+				<p class = "title-input"><?=$company?>*</p>
+				<input type = "text" placeholder="<?=$school?>" class = "input-comp">
 			</div>
 			<div class = "content" style = "display: flex;">
 				<div class = "part-one" style="margin-right: 22px;">
-					<p class = "title-input">Start Date</p>
+					<p class = "title-input"><?=$startdate?></p>
 					<div class = "flex-content">
-						<select class="month-s">
+						<select class="month-s" value="<?=$months[0]?>">
 							<?php
-                             for($i=0;$i<12;$i++)
-                            	echo "<option value='$months[$i]' >$months[$i]</option>";
+                              echo "<option value='$months[0]' selected >$months[0]</option>";
+                              for($i=1;$i<12;$i++){
+                            	 echo "<option value='$months[$i]' >$months[$i]</option>";
+                              }
                             ?>
 						</select> 
 						<select class="year-s" style = "margin-left: 10px;">
@@ -659,10 +660,12 @@ case 3:
 				<div class = "part-two">
 					<p class = "title-input"><?=$enddate?></p>
 					<div class = "flex-content">
-						<select class="monthS-s">
+						<select class="monthS-s" value="<?=$months[0]?>">
 							<?php
-                             for($i=0;$i<12;$i++)
+                             echo "<option value='$months[0]' selected >$months[0]</option>";
+                             for($i=1;$i<12;$i++){
                             	echo "<option value='$months[$i]' >$months[$i]</option>";
+                            }
                             ?>
 						</select> 
 						<select class="yearS-s" style = "margin-left: 10px;">
@@ -676,14 +679,14 @@ case 3:
 			</div>
 			<div class = "content" style = "padding-bottom:30px;">
 				<p class = "title-input"><?=$description?></p>
-				<textarea class = "textarea-t" type = "text" placeholder="Write your text..." style="margin-top: 7px;height:67px;"></textarea>
+				<textarea class = "textarea-t" type = "text" placeholder="<?=$write_text?>" style="margin-top: 7px;height:67px;"></textarea>
 			
 				<div class = "close-third"><i class="fa fa-trash" aria-hidden="true"></i><span class = "del"><?=$delete?></span></div>
 				<div class = "check-third"><i class="fa fa-save" aria-hidden="true"></i><span class = "save"><?=$save?></span></div>
 			</div>
 		</div>
 			<div class = "center">
-				<div class = "skill-plus"><i class="fa fa-plus-circle" aria-hidden="true"></i><p class = "new-lng-s">Add another work experience</p></div>
+				<div class = "skill-plus"><i class="fa fa-plus-circle" aria-hidden="true"></i><p class = "new-lng-s"><?=$anotherworkexperience?></p></div>
 			</div>
 	</div>
 </div>
@@ -691,7 +694,7 @@ case 3:
 	<div class = "top">
 		<div class = "gluing">
 			<i class="fa fa-phone" aria-hidden="true"></i>
-			<p class ="descript">Contacts</p>
+			<p class ="descript"><?=$contacts?></p>
 		</div>
 		<div class = "gluing" style = "padding-right:15px;">
 			<i class="fa fa-angle-down w" aria-hidden="true"></i>
@@ -699,18 +702,18 @@ case 3:
 	</div>
 	<div class = "all-body-first">
 		<div class = "content">
-			<p class = "title-input">Adress*</p>
+			<p class = "title-input"><?=$adress?>*</p>
 			<input type = "text" placeholder="" required class = "input-adress input vl" value="<?=$main_data['address']?>">
 		</div>
 		<div class = "content" style = "display: flex;">
 			<div class = "part-first">
-				<p class = "title-input" style = "margin-left: 0px;">Phone Number*</p>
+				<p class = "title-input" style = "margin-left: 0px;"><?=$phonenumber?>*</p>
 				<div class = "flex-content"style="margin-top: 5px;">
 					<input type="text" required placeholder = "+374 960000" class = "input-numb input vl" value="<?=$main_data['phon']?>">
 				</div>
 			</div>
 			<div class = "part-sec">
-				<p class = "title-input"style = "margin-left: 0px;">E-mail*<span id="wrong_email"></span></p>
+				<p class = "title-input"style = "margin-left: 0px;"><?=$email?>*<span id="wrong_email"></span></p>
 				<div class = "flex-content" style="margin-top: 5px;">
 					<input type="email" required class = "input-email input vl" value="<?=$main_data['email']?>">
 				</div>
@@ -722,7 +725,7 @@ case 3:
 	<div class = "top">
 		<div class = "gluing">
 			<i class="fa fa-link" aria-hidden="true"></i>
-			<p class ="descript six">Connections</p>
+			<p class ="descript six"><?=$connections_text?></p>
 		</div>
 		<div class = "gluing" style = "padding-right:15px;">
 			<i class="fa fa-angle-down w" aria-hidden="true"></i>
@@ -731,32 +734,32 @@ case 3:
 	<div class = "all-body-first" style="padding: 5px 0px 20px 0px;">
 		<div class="first-label">
 			<img src="img/facebook.svg" class = "linkIcon">
-			<p class="link-title">Facebook link</p>
+			<p class="link-title">Facebook <?=$link?></p>
 			<input type="url" name="" class = "end-links facebook" value="<?=$connections['facebook']?>"required>
 		</div>
 		<div class="first-label">
 			<img src="img/linkedin .svg" class = "linkIcon">
-			<p class="link-title">LinkedIn link</p>
+			<p class="link-title">LinkedIn <?=$link?></p>
 			<input type="url" name="" class = "end-links linkedin" style="margin-left: 30px;" value="<?=$connections['linkedIn']?>"required>
 		</div>
 		<div class="first-label">
 			<img src="img/twitter .svg" class = "linkIcon">
-			<p class="link-title">Twitter link</p>
+			<p class="link-title">Twitter <?=$link?></p>
 			<input type="url" name="" class = "end-links twitter"style="margin-left: 41px;" value="<?=$connections['twitter']?>" required>
 		</div>
 		<div class="first-label">
 			<img src="img/Dribble.svg" class = "linkIcon">
-			<p class="link-title">Dribble link</p>
+			<p class="link-title">Dribble <?=$link?></p>
 			<input type="url" name="" class = "end-links dribble" style="margin-left: 39px;" value="<?=$connections['dribble']?>" required>
 		</div>
 		<div class="first-label">
 			<img src="img/Github.svg" class = "linkIcon">
-			<p class="link-title">Github link</p>
+			<p class="link-title">Github <?=$link?></p>
 			<input type="url" name="" class = "end-links github" style="margin-left: 41px;" value="<?=$connections['github']?>" required>
 		</div>
 		<div class="first-label">
 			<img src="img/behance-logo.svg" class = "linkIcon">
-			<p class="link-title">Behance link</p>
+			<p class="link-title">Behance <?=$link?></p>
 			<input type="url" name="" class = "end-links behance" style="margin-left: 29px;" value="<?=$connections['behance']?>" required>
 		</div>
 
