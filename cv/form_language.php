@@ -46,6 +46,7 @@ if($LANG=='ARM'){
    $email="Էլ․ հասցե";
    $connections_text="Սոց․ ցանցեր";
    $link="";
+   $yourcvadressis="Ձեր CV-ի հղումն է";
 }
 
 
@@ -92,4 +93,5 @@ elseif($LANG=='ENG'){
    $email="E-mail";
    $connections_text="Connections";
    $link="link";
+   $yourcvadressis="your cv adress is";
 }

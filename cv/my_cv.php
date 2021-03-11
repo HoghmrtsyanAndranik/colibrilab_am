@@ -108,12 +108,24 @@ http://www.templatemo.com/tm-467-easy-profile
 <body data-spy="scroll" data-target=".navbar-collapse">
 <?php
  include('model.php');
-session_start();
+include('my_cv_language.php');
 if(isset($_GET['id']))
-	file_put_contents('usersession.php',$_GET['id']);
-
+	 $user_id=$_GET['id'];
+else{
+	echo'<h1>404<h1>';
+	die;
+}
 $model=new Model;
-$user_id=file_get_contents('usersession.php');
+$published=$model->if_published($user_id);
+
+if($published=='not published'){
+	echo'<h1>CV is not published<h1>';
+	die;
+}
+if($published=='not found'){
+	echo'<h1>You are not registrated<h1>';
+	die;
+}
 $user=$model->get_main_data($user_id); 
 if(!empty($user['image']))
    $src='cv_images/'.$user['image'];
@@ -121,7 +133,14 @@ else
 $src='cv_images/camera.png';
 
 $connections=$model->get_connections($user_id);
+if($LANG=='ARM'){
+  $hi='Ողջույն, ես '.$user['name'].'ն եմ ';
 
+}
+elseif($LANG=='ENG'){
+  $hi="Hi,I am ".$user['name']; 
+
+}
 
 //$name=$main_data['name'];
 //print_r($main_data)
@@ -139,9 +158,9 @@ $connections=$model->get_connections($user_id);
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 col-sm-12">
-				<img src="<?=$src?>" class="img-responsive img-circle tm-border" alt="templatemo easy profile">
+				<img src="<?=$src?>" class="img-responsive img-circle tm-border" alt="templatemo easy profile" width="25%">
 				<hr>
-				<h1 class="tm-title bold shadow">Hi,I am <?=$user['name']?></h1>
+				<h1 class="tm-title bold shadow"><?=$hi?></h1>
 				<h1 class="white bold shadow"><?=$user['profession']?></h1>
 			</div>
 		</div>
@@ -153,7 +172,7 @@ $connections=$model->get_connections($user_id);
 	<div class="row">
 		<div class="col-md-6 col-sm-12">
 			<div class="about">
-				<h3 class="accent">Easy Profile</h3>
+				<h3 class="accent"><?=$easyprofile?></h3>
 			
 				<p><?=$user['about_me']?></p>
 			</div>
@@ -161,7 +180,7 @@ $connections=$model->get_connections($user_id);
 		<div class="col-md-6 col-sm-12">
         
 			<div class="skills">
-				<h2 class="white">Skills</h2>
+				<h2 class="white"><?=$skills_text?></h2>
 
 				<div class="content">
         <?php
@@ -279,7 +298,7 @@ foreach($educations as $ed){
 
              
 			 <div class="slider-item fade">
-						<h2 class="white">EDUCATION</h2>
+						<h2 class="white"><?=$education_text?></h2>
 							<div class="education-content">
 								<h4 class="education-title accent"><?=$ed['specialization']?></h4>
 									<div class="education-school">
@@ -323,7 +342,7 @@ foreach($educations as $ed){
 		</div>
 		<div class="col-md-4 col-sm-12">
 			<div class="languages">
-				<h2>Languages</h2>
+				<h2><?=$languages?></h2>
 					<ul>
                         <?php
                           $languages=$model->get_languages($user_id);
@@ -343,21 +362,22 @@ foreach($educations as $ed){
 	<div class="row">
 		<div class="col-md-4 col-sm-12">
 			<div class="contact">
-				<h2>Contact</h2>
+				<h2><?=$contact?></h2>
 					<p><i class="fa fa-map-marker"></i><?=$user['address']?></p>
 					<p><i class="fa fa-phone"></i><?=$user['phon']?></p>
 					<p><i class="fa fa-envelope"></i><?=$user['email']?></p>
-					<p><i class="fa fa-globe"></i>what?</p>
+					
 			</div>
 		</div>
 		<div class="col-md-8 col-sm-12">
 			<div class="experience">
+			<h2 class="white"><?=$experiences?></h2>	
         <?php
            $expeiances=$model->get_experiances($user_id);
            foreach($expeiances as $exp){
        ?>
 			 <div class="slider-item-third fade">
-				<h2 class="white">Experiences1</h2>
+				
 					<div class="experience-content">
 						<h4 class="experience-title accent"><?=$exp['job_title']?></h4>
 						<h5><?=$exp['company']?></h5><span></span>

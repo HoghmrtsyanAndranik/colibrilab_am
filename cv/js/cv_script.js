@@ -818,7 +818,7 @@ let name=$('.input-name').val();
             linkedin:linkedin,
          	action:'main'},
          success:function(d){
-         	//alert(d)
+         	
          	console.log(d)
          	//location.reload();
          }
