@@ -10,11 +10,19 @@ class Model{
 
     public function __construct(){
 
+
+
 	    if($_SERVER['HTTP_HOST']=='colibrilab.am'){
            $host='db5001377111.hosting-data.io';
            $username='dbu636527';
            $password="Rafoc0l1br!";
            $db="dbs1166098";
+        }
+      elseif($_SERVER['HTTP_HOST']=='colibrilab.great-site.net'){
+           $host='sql307.epizy.com';
+           $username='epiz_27420886';
+           $password="2BYYivxZ9R";
+           $db="epiz_27420886_colibrilab";
         }
         elseif($_SERVER['HTTP_HOST']=='localhost'){
 	       $host='localhost';
@@ -38,15 +46,19 @@ class Model{
    
     
     public function register_cv_student($email,$pass){
-      $query="INSERT INTO cv_students (email,`password`)
+     $query="INSERT INTO cv_students (email,`password`)
               VALUES('$email','$pass')";
+  
              $res=mysqli_query($this->conn,$query);
+
              if($res)
               return(mysqli_insert_id($this->conn));
              else
-              return false;
+             // return(mysqli_error($this->conn));
+            return false;
     }
  public function check_cv_student($email,$pass){
+
         $query="SELECT id FROM cv_students where email='$email' and password='$pass'";
         $res=mysqli_query($this->conn,$query);
         if(mysqli_num_rows($res)>0)
@@ -156,7 +168,7 @@ $query="SELECT * FROM experiences where cv_students_id='$user_id'";
 
 
 public function add_main_data($user_id,$name,$profession,$about_me,$adress,$phon,$cv_email,$check,$facebook,$twitter,$dribble,$github,$linkedin,$behance){
-    $query="UPDATE cv_students
+  $query="UPDATE cv_students
              SET name='$name',
              profession='$profession',
              about_me='$about_me',
@@ -212,6 +224,15 @@ public function get_connections($user_id){
     $res=mysqli_query($this->conn,$query);
     return mysqli_fetch_assoc($res);
 
+}
+public function if_published($user_id){
+    $query="SELECT published FROM cv_students where id='$user_id'";
+        $res=mysqli_query($this->conn,$query);
+
+       if(!mysqli_num_rows($res))
+          return 'not found';
+       if(mysqli_fetch_row($res)[0]==0)
+          return 'not published'; 
 }
 
 }

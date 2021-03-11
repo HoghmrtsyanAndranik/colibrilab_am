@@ -53,7 +53,7 @@ if(empty($pass1)||empty($pass2)||empty($email)){
       die; 
  }
 
-$user_id=$model->register_cv_student($email,$pass1);
+ $user_id=$model->register_cv_student($email,$pass1);
 
 if(!$user_id){
     echo $model->output($fail,false);

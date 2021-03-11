@@ -1055,7 +1055,7 @@ textarea {
 	display: flex;
 	position: absolute;
 	top: 98px;
-	right: 78px;
+	right: 130px;
 	justify-content: center;
 	align-items: center;
 	border-radius: 2px;
@@ -1088,7 +1088,7 @@ textarea {
 	align-items: center;
 	border-radius: 2px;
 	color: #149A00;
-	width: 49px;
+	width: 100px;
 	height: 20px;
 	border: 1px solid #DFDFDF;
 	transition: 0.4s;
@@ -1113,7 +1113,7 @@ textarea {
 	display: flex;
 	position: absolute;
 	top: 98px;
-	right: 78px;
+	right: 130px;
 	justify-content: center;
 	align-items: center;
 	border-radius: 2px;
@@ -1146,7 +1146,7 @@ textarea {
 	align-items: center;
 	border-radius: 2px;
 	color: #149A00;
-	width: 49px;
+	width: 100px;
 	height: 20px;
 	border: 1px solid #DFDFDF;
 	transition: 0.4s;
@@ -1223,7 +1223,7 @@ textarea {
 	align-items: center;
 	border-radius: 2px;
 	color: #149A00;
-	width: 50px;
+	width: 100px;
 	height: 20px;
 	border: 1px solid #DFDFDF;
 	transition: 0.4s;
@@ -1245,7 +1245,7 @@ textarea {
 	display: flex;
 	position: absolute;
 	top: 13px;
-	right: 75px;
+	right: 130px;
 	justify-content: center;
 	align-items: center;
 	border-radius: 2px;
@@ -1278,7 +1278,7 @@ textarea {
 	align-items: center;
 	border-radius: 2px;
 	color: #149A00;
-	width: 48px;
+	width: 100px;
 	height: 20px;
 	border: 1px solid #DFDFDF;
 	transition: 0.4s;
