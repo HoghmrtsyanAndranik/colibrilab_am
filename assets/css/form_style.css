@@ -470,9 +470,6 @@ textarea {
   .main{
     padding: 40px 0px;
   }
-  .colLeft{
-    margin-left: 50px;
-  }
 }
 @media screen and (max-width: 1400px) {
   .appointment-form{

@@ -14,14 +14,17 @@ if($action=='main'){
     $phon=$_POST['phon'];
     $cv_email=$_POST['cv_email'];
     $check=0;
-    if($check=$_POST['check']>0);
-       $check=1;
+    if($_POST['check']=='true')
+      $check=1;
+  
+      
+
     $facebook=$_POST['facebook'];
     $twitter=$_POST['twitter'];
     $dribble=$_POST['dribble'];
     $github=$_POST['github'];
     $linkedin=$_POST['linkedin'];
-     $behance=$_POST['behance'];
+    $behance=$_POST['behance'];
     $model->add_main_data($user_id,$name,$profession,$about_me,$address,
    	   $phon,$cv_email,$check,$facebook,$twitter,$dribble,$github,$linkedin,$behance);
 

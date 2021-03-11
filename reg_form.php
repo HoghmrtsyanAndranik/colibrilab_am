@@ -9,10 +9,10 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title> ColibriLab</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="icon" href="assets_new/img/logo.png">
-  <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+  <link rel="icon" href="assets/img/logo.png">
+  <link rel="stylesheet" href="assets/fonts/material-design-iconic-font.min.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets_new/css/form_style.css">
+  <link rel="stylesheet" href="assets/css/form_style.css">
 </head>
 
 <body>
@@ -43,8 +43,8 @@ $course_type=$_GET['course']??false;
 <div class="size">
   <div class="row  m-0 p-0">
 
-    <div class=" col-lg-6 col-xl-5 p-0 colLeft padd">
-      <div class="main "> 
+    <div class=" col-lg-6 col-xl-6 p-0 colLeft padd">
+      <div class="main "style = "width: 90%;position: relative;right: 20px;margin-left: auto;"> 
    <div class="container1">
       <div class="appointment-form" id="appointment-form">
         <h2><?=$registerhere?></h2>
@@ -126,8 +126,9 @@ $course_type=$_GET['course']??false;
       </div> 
     </div>
 
-    <div class=" col-lg-6 col-xl-5 p-0  colLeft ">
-      <div class="contact  w-100 mb-5">
+    <div class=" col-lg-6 col-xl-6 p-0  colLeft" style=" justify-content: center; align-items: center;flex-direction: column;">
+      <div class="contact  w-100 mb-5  right" style="width: 87%!important; margin: auto;
+    margin-top: 40px;">
         <h3>ColibriLab <?=$trainingcenter?></h3>
         <p><span><?=$phone?></span> <a href="callto:#">+374 91 23-43-67 </a> <a href="callto:#">+374 77 51-46-31</a></p>
         <p><span><?=$email?></span> <a href="mailto:#">colibrilabcenter@gmail.com</a></p>
@@ -154,14 +155,15 @@ $course_type=$_GET['course']??false;
 
           </div>
       </div>
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1812.9674129850403!2d44.51244422674161!3d40.163761143817005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abc67bba0d8a1%3A0x6ba5de0299af1d0d!2zNDkgVGlncmFuIE1ldHMgQXZlLCBZZXJldmFuLCDQkNGA0LzQtdC90LjRjw!5e0!3m2!1sru!2s!4v1608040566176!5m2!1sru!2s" width="100%" height="530" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      <iframe  style="width: 87%!important;margin: auto;
+    display: block;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1812.9674129850403!2d44.51244422674161!3d40.163761143817005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x406abc67bba0d8a1%3A0x6ba5de0299af1d0d!2zNDkgVGlncmFuIE1ldHMgQXZlLCBZZXJldmFuLCDQkNGA0LzQtdC90LjRjw!5e0!3m2!1sru!2s!4v1608040566176!5m2!1sru!2s" width="100%" height="530" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </div>
   </div>
 </div>
 <div id='kkkk'></div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <!-- <script src="scripts/jquery.min.js"></script> -->
-  <script src="assets_new/js/main_form.js"></script>
+  <script src="assets/js/main_form.js"></script>
 
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
 <script>

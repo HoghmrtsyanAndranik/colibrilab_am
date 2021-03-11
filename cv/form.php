@@ -9,6 +9,7 @@ $model=new Model;
 $user_id=file_get_contents('usersession.php');
 
 $main_data=$model->get_main_data($user_id); 
+
 if(!empty($main_data['image']))
    $src='cv_images/'.$main_data['image'];
 else
@@ -97,7 +98,7 @@ for($i=2021;$i>=1950;$i--)
 			</div>
 				<div class = "column">
                      
-                    <p class = "aboutinput-f">your cv adress is <a href="http://localhost/colibrilab_am/cv/my_cv?id=<?=$user_id?>">http://localhost/colibrilab_am/cv/my_cv?id=<?=$user_id?></a></p> 
+                    <p class = "aboutinput-f"><?=$yourcvadressis?><a href="http://colibrilab.great-site.net/cv/my_cv?id=<?=$user_id?>">http://colibrilab.great-site.net/cv/my_cv?id=<?=$user_id?></a></p> 
 					<p class = "aboutinput-f"><?=$name?>*</p>
 					<input type="text" required class = "input-name input vl" value="<?=$main_data['name']?>">
 					<p class = "aboutinput"><?=$profession?>*</p>
@@ -768,7 +769,19 @@ case 3:
 <div class = "container" style = "background:none;box-shadow: none; position: relative;display: flex;">
 	<label class = "label-end">
 		<div class="flex-end">
-			<input type="checkbox" name="" checked class ="checkbox">
+			<?php
+            $checked='checked';
+         
+			if(isset($main_data['published'])){
+			if($main_data['published']==0)
+					$checked='';
+			else 
+				$checked='checked';
+
+			}
+
+			?>
+			<input type="checkbox" name="" <?=$checked?> class ="checkbox">
 			<p class = "text-end"><?=$public_link?></p>
 		</div>
 		<p class = "text-end-second"><?=$if_public?></p>
