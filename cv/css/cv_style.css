@@ -794,7 +794,7 @@ option{
 }
 .input-lng>input {
 	margin-left: 22px;
-	width: 70%;
+	width: 92%;
 	height: 33px;
 	border-radius: 3px;
 	border: 1px solid #EDEDED;
@@ -968,11 +968,11 @@ option{
 .text-end {
 	font-size: 10px;
 	margin-left: 10px;
-	color:white;
+	color:black;
 }
 
 .text-end-second {
-	color:white;
+	color:black;
 	font-size: 10px;
 	width: 300px;
 	margin-left: 25px;
@@ -1244,7 +1244,7 @@ textarea {
 	background-color: #FAFAFA;
 	display: flex;
 	position: absolute;
-	top: 13px;
+	top: 36px;
 	right: 130px;
 	justify-content: center;
 	align-items: center;
@@ -1270,7 +1270,7 @@ textarea {
 .check-four {
 	background-color: #FAFAFA;
 	position: absolute;
-	top: 13px;
+	top: 36px;
 	right: 23px;
 	font-size: 14px;
 	display: flex;
