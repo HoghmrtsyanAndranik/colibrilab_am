@@ -1260,7 +1260,7 @@ include ('header.php');
 <div class="container-fluid cv-block">
 <div class="container form-registr">
 <div class="text_form">
-<h1 style="color:red"><?=$create_your?><span><?=$online_cv?></span> <br><?=$few_min?></h1>
+<h1 style="color:red"><?=$create_your?><span> <?=$online_cv?></span> <br><?=$few_min?></h1>
 <p><?=$we_help?><br><?=$good_cv?><br>
 <span><?=$please_sign?></span></p>
 </div>

@@ -88,7 +88,7 @@ elseif($LANG=='ENG'){
    $company="Company";
    $anotherworkexperience="Add another work experience";
    $contacts="Contacts";
-   $adress="Adress";
+   $adress="Address";
    $phonenumber="Phone Number";
    $email="E-mail";
    $connections_text="Connections";

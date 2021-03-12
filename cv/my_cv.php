@@ -203,7 +203,7 @@ elseif($LANG=='ENG'){
 					<span class="pull-right"><?=$skills[$index]['percent']?>%</span>
 						<div class="progress">
 							<div class="progress-bar progress-bar-primary" role="progressbar" 
-	                        aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+	                        aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: <?=$skills[$index]['percent']?>%;"></div>
 			                  </div>
 			<?php
 
@@ -423,15 +423,34 @@ foreach($educations as $ed){
 	<div class="container">
 		<div class="row">
 			<div class="col-md-12 col-sm-12">
-				<p>Copyright &copy; 2084 Your Easy Profile</p>
+<!--				<p>Copyright &copy; 2021 Your Easy Profile</p>-->
 				<ul class="social-icons">
-
-					<li><a href="<?=$connections['facebook']?>" class="fa fa-facebook"></a></li>
-                    <li><a href="<?=$connections['linkedIn']?>" class="fa fa-linkedin"></a></li>
-					<li><a href="<?=$connections['twitter']?>" class="fa fa-twitter"></a></li>
-					<li><a href="<?=$connections['dribble']?>" class="fa fa-dribbble"></a></li>
-					<li><a href="<?=$connections['github']?>" class="fa fa-github"></a></li>
-					<li><a href="<?=$connections['behance']?>" class="fa fa-behance"></a></li>
+                    <?php
+                    if(!empty($connections['facebook'])){
+                        $href=$connections['facebook'];
+                        echo "<li><a href='$href' class='fa fa-facebook'></a></li>";
+                    }
+                    if(!empty($connections['linkedIn'])){
+                        $href=$connections['linkedIn'];
+                        echo "<li><a href='$href' class='fa fa-linkedin'></a></li>";
+                    }
+                    if(!empty($connections['twitter'])){
+                        $href=$connections['twitter'];
+                        echo "<li><a href='$href' class='fa fa-twitter'></a></li>";
+                    }
+                    if(!empty($connections['dribble'])){
+                        $href=$connections['dribble'];
+                        echo "<li><a href='$href' class='fa fa-dribbble'></a></li>";
+                    }
+                    if(!empty($connections['github'])){
+                        $href=$connections['github'];
+                        echo "<li><a href='$href' class='fa fa-github'></a></li>";
+                    }
+                    if(!empty($connections['behance'])){
+                        $href=$connections['behance'];
+                        echo "<li><a href='$href' class='fa fa-behance'></a></li>";
+                    }
+                    ?>
 				</ul>
 			</div>
 		</div>
