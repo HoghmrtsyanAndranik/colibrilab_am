@@ -315,7 +315,7 @@ $('.cv_login').click(function(){
 }
 a:hover{
   text-decoration: none !important;
-    color: white !important;
+    color: #00000080 !important;
 }
 .down{
   display: flex;
