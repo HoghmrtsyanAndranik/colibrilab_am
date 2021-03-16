@@ -65,7 +65,18 @@
   
  
   <div class="con">
-      <a href="">Անվտանգության քաղաքականություն</a>
+    <?php
+if($LANG=='ARM'){
+   $policy_link='privacy_policy';
+}
+elseif($LANG=='ENG'){
+    $policy_link='privacy_policy_eng';
+}
+
+
+
+    ?>
+      <a href="<?=$policy_link?>">Անվտանգության քաղաքականություն</a>
   </div>
  </div>
     <p style="color: white; padding-top: 20px; position: relative; " >2021 Colibrilab development company</p>

@@ -16,7 +16,7 @@ class Model{
            $password="Rafoc0l1br!";
            $db="dbs1166098";
         }
-        elseifif($_SERVER['HTTP_HOST']=='http://colibrilab.great-site.net/'){
+        elseif($_SERVER['HTTP_HOST']=='http://colibrilab.great-site.net/'){
            $host='sql307.epizy.com';
            $username='epiz_27420886';
            $password="2BYYivxZ9R";
