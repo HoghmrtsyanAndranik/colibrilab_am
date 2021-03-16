@@ -2388,6 +2388,12 @@ svg.svg-inline--fa.fa-react.fa-w-16, svg.svg-inline--fa.fa-laravel.fa-w-16 {
 background-color:#F5F9FF;
 padding: 30px;
 }
+
+.pas {
+    font-size: 12px !important;
+    text-align: right;
+    margin-top: 10px;
+}
 .form-registr{
 display: flex;
 /*justify-content: space-between;*/
@@ -2407,8 +2413,9 @@ padding: 55px;
 
 .reg{
 width:100%;
+height: 457px;
 max-width: 408px;
-padding: 27px 24px;
+padding: 15px 24px;
 
 background-color: #FFF;
 border-radius: 10px;
@@ -2435,36 +2442,61 @@ color: #4482F9;
 .reg p{
 font-size: 14px;
 line-height: 20px;
+color: #383f45;
+margin: 7px 0 17px;
 }
 .reg input{
 width: 100%;
 max-width: 360px;
-margin-top: 16px;
+margin-top: 6px;
+margin-bottom: 10px;
 border:1px solid #76899A;
 border-radius: 10px;
 height: 50px;
 outline-color: #4482F9;
-padding-left: 60px;
+padding-left: 52px;
+font-size: 16px;
 }
-.reg input[type=text]{
+.reg input[type=email]{
 background-image: url(../img/email.png);
 background-repeat: no-repeat;
 background-size: contain;
-background-size: 22px;
-background-position:20px center;
+background-size: 20.3px 14.7px;
+background-position:17px center;
 }
 .reg input[type=password]{
 background-image: url(../img/lock.png);
 background-repeat: no-repeat;
 background-size: contain;
-background-size: 22px;
-background-position:20px center;
+background-size: 15.7px 21.6px;
+background-position:17px center;
 }
 .reg button{
-margin-top: 32px;
-width: 200px;
-
+margin-top: 21px;
+width: 181px;
+font-size: 14px;
 }
+
+#Iagree {
+    width: 18px;
+    height: 18px;
+    margin-right: 11px;
+}
+
+.IagreeDiv {
+    display: flex;
+    align-items: center;
+}
+
+.IagreeDiv > span {
+    font-size: 12px;
+}
+
+.IagreeDiv > span > a {
+    font-size: 13px;
+    color: #4482f9;
+}
+
 .but{
 display: flex;
 justify-content: center;
@@ -2521,7 +2553,7 @@ margin-right: 10px;
 .ui-tabs .ui-tabs-nav {
     display: flex;
     justify-content: center;
-    font-size: 15px;
+    font-size: 18px;
 }
 
 .p-3 {
