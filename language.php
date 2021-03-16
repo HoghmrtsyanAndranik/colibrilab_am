@@ -50,6 +50,7 @@ if($LANG=='ARM'){
   $specialist="մասնագետ";
   $andranik="Անդրանիկ Հողմրցյան";
   $syuzanna="Սյուզաննա Անտոնյան";
+  $levon="Լևոն Երիցյան";
   $alisa="Ալիսա Մարգարյան";
   $alisatext="Սա շատ լավ և հաճելի ուսումնական կենտրոն է WEB ծրագրավորում սովորելու համար: ";
   $developer="Ծրագրավորող";
@@ -266,6 +267,10 @@ $few_min="մի քանի րոպեում";
 $we_help="Մենք կօգնենք քեզ ունենալ պրոֆեսիոնալ և";
 $good_cv="ներկայանալի ռեզյումե:";
 $please_sign="Ռեզյումեն ստեղծելու համար խնդրում ենք մուտք գործել";
+$supporters="Աջակիցներ";
+$frequently_questions="Հաճախակի տրվող հարցեր";
+$discount_policy="Զեղչային քաղաքականություն";
+$security_policy="Անվտանգության քաղաքականություն";
 }
 
 
@@ -309,6 +314,7 @@ elseif($LANG=='ENG'){
    $specialist="Specialist";
    $andranik="Andranik Hoghmrtsyan";
    $syuzanna="Syuzanna Antonyan";
+   $levon="Levon Eritsyan";
    $alisa="Alisa Margaryan";
    $alisatext="This is a great learning center for learning WEB programming";
    $developer="Developer";
@@ -494,5 +500,8 @@ $few_min="In a few mimutes";
 $we_help="We help You to have a professional and";
 $good_cv="presentable resume:";
 $please_sign="Please login to create a resume";
-
+$supporters="Supporters";
+$frequently_questions="Frequently Asked Questions";
+$discount_policy="Discount policy";
+$security_policy="Security policy";
 }
