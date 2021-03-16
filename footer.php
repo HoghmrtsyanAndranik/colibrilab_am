@@ -6,10 +6,10 @@
   <p class="dropdown-toggle drop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="ajak">
     <?=$supporters?>
   </p>
-  <div class="dropdown-menu d-menu">
+  <div class="dropdown-menu d-menu" style="width:325px">
  <div class="drop-content">
      <div>
-         <img src="assets/img/user1.jpg" height="30">
+         <img src="assets/img/user1.jpg" width="40">
      </div>
      <div>
         <p><?=$arevik?></p>
@@ -19,17 +19,17 @@
  </div>  
   <div class="drop-content">
      <div>
-         <img src="assets/img/user1.jpg" height="40">
+         <img src="assets/img/user1.jpg" width="40">
      </div>
      <div>
         <p><?=$andranik?></p>
-      
+      <a href="https://github.com/HoghmrtsyanAndranik">github.com/HoghmrtsyanAndranik</a>
 
      </div>
  </div> 
   <div class="drop-content">
      <div>
-         <img src="assets/img/user1.jpg" height="40">
+         <img src="assets/img/user1.jpg" width="40">
      </div>
      <div>
        <p><?=$levon?></p>
@@ -39,7 +39,7 @@
  </div> 
   <div class="drop-content">
      <div>
-         <img src="assets/img/user1.jpg" height="40">
+         <img src="assets/img/user1.jpg" width="40">
      </div>
 
     <div> 
