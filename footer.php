@@ -4,47 +4,48 @@
     <div class = "up">
 <div class = "fl">
   <p class="dropdown-toggle drop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="ajak">
-    Աջակիցներ
+    <?=$supporters?>
   </p>
   <div class="dropdown-menu d-menu">
  <div class="drop-content">
      <div>
-         <img src="assets/img/user1.jpg" width="30">
+         <img src="assets/img/user1.jpg" height="30">
      </div>
      <div>
-        <p>Անուն Ազգանուն</p>
-        <a href="#">githab.com/name1</a>
+        <p><?=$arevik?></p>
+       
 
      </div>
  </div>  
   <div class="drop-content">
      <div>
-         <img src="assets/img/user1.jpg" width="40">
+         <img src="assets/img/user1.jpg" height="40">
      </div>
      <div>
-        <p>Անուն Ազգանուն</p>
-        <a href="#">githab.com/name1</a>
+        <p><?=$andranik?></p>
+      
 
      </div>
  </div> 
   <div class="drop-content">
      <div>
-         <img src="assets/img/user1.jpg" width="40">
+         <img src="assets/img/user1.jpg" height="40">
      </div>
      <div>
-        <p>Անուն Ազգանուն</p>
-        <a href="#">githab.com/name1</a>
+       <p><?=$levon?></p>
+        
 
      </div>
  </div> 
   <div class="drop-content">
      <div>
-         <img src="assets/img/user1.jpg" width="40">
+         <img src="assets/img/user1.jpg" height="40">
      </div>
 
-    <div>
-        <p>Անուն Ազգանուն</p>
-        <a href="#">githab.com/name1</a>
+    <div> 
+      <p><?=$syuzanna?></p>
+        
+       
 
      </div>
  </div> 
@@ -52,11 +53,23 @@
  </div>
   <div class="bor"></div>
   <div class="con">
-      <a href="questions.php">Հաճախակի տրվող հարցեր</a>
+      <?php
+if($LANG=='ARM'){
+   $ques_link='questions';
+}
+elseif($LANG=='ENG'){
+    $ques_link='questions_eng';
+}
+
+
+
+    ?>
+      <a href="<?=$ques_link?>"><?=$frequently_questions?></a>
   </div>
   <div class="bor"></div>
   <div class="con">
-      <a href="">Զեղչային քաղաքականություն</a>
+
+      <a href=""><?=$discount_policy?></a>
   </div>
 </div>
   
@@ -76,7 +89,7 @@ elseif($LANG=='ENG'){
 
 
     ?>
-      <a href="<?=$policy_link?>">Անվտանգության քաղաքականություն</a>
+      <a href="<?=$policy_link?>"><?=$security_policy?></a>
   </div>
  </div>
     <p style="color: white; padding-top: 20px; position: relative; " >2021 Colibrilab development company</p>

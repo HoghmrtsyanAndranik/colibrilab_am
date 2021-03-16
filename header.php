@@ -25,7 +25,7 @@ elseif($LANG=='ENG'){
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>ColibriLab</title>
-    <!-- <link rel="icon" href="logo.png"> -->
+    <link rel="icon" href="assets/img/logo.png">
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -45,7 +45,7 @@ elseif($LANG=='ENG'){
     <script type="text/javascript" src="assets/js/revolution.extension.slideanims.min.js"></script>
     <script type="text/javascript" src="assets/js/revolution.extension.video.min.js"></script>
     <!-- Favicon -->
-    <link rel="shortcut icon" href="assets/img/icons/favicon.html" type="image/x-icon">
+    <!-- <link rel="shortcut icon" href="assets/img/icons/favicon.html" type="image/x-icon"> -->
     <!-- Google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&amp;display=swap" rel="stylesheet">
     <link
