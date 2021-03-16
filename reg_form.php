@@ -130,8 +130,9 @@ $course_type=$_GET['course']??false;
       <div class="contact  w-100 mb-5  right" style="width: 87%!important; margin: auto;
     margin-top: 40px;">
         <h3>ColibriLab <?=$trainingcenter?></h3>
-        <p><span><?=$phone?></span> <a href="callto:#">+374 91 23-43-67 </a> <a href="callto:#">+374 77 51-46-31</a></p>
-        <p><span><?=$email?></span> <a href="mailto:#">colibrilabcenter@gmail.com</a></p>
+        <p><span><?=$phone?></span> <a href="callto:#">+374 91 23-43-67, </a> <a href="callto:#"> +374 77 51-46-31</a></p>
+        <p><span><?=$email?></span> <a href="mailto:#">colibrilabcenter@gmail.com, </a><a href="mailto:#"> info@colibrilab.am</a></p>
+        
         <p><span><?=$addr?></span> <a href="https://goo.gl/maps/p1XuY33NcREqXVPP6"><?=$address?></a></p>
         <div class="list ">
             <p>
@@ -218,7 +219,7 @@ $course_type=$_GET['course']??false;
    let comment="";
     comment=$('#comment').val();
     $.ajax({
-          url:'register.php',
+          url:'register',
           type:'post',
           dataType:'json',
           data:{
@@ -235,7 +236,7 @@ $course_type=$_GET['course']??false;
          },
           success:function(d){
            alert(d.message)
-           window.location.href = "http://colibrilab.am";
+          // window.location.href = "http://colibrilab.am";
          }
 
       })
