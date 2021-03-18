@@ -3,7 +3,7 @@
 	padding: 0;
 	box-sizing: border-box;
 	transform: scale(1);
-	font-family: OpenSans;
+	font-family: 'Roboto', sans-serif;
 }
 
 @font-face {
@@ -28,13 +28,16 @@ input {
 .header-text {
 	width: 100%;
 	margin: auto;
-	padding:160px 0px 50px 0px;
+	padding:80px 0px 50px 0px;
 }
-
+.aboutinput-f>a{
+	font-size: 10px;
+	font-weight: 300;
+}
 .text {
 	text-align: center;
 	color: #1B2FB2;
-	font-weight: bold;
+	font-weight:700;
 	font-size: 31px;
 }
 
@@ -94,12 +97,13 @@ input {
 	width: 93px;
 	border-radius: 15px;
 	height: 24px;
-	color: #5A5A5A;
+	color: #272727;
 	font-size: 11px;
-	font-weight: 800;
-	background-color: #EDEDED;
+	font-weight: 600;
+	background-color: #eeeeee;
 	padding-left: 5px;
 	outline: none;
+	border: none;
 }
 
 .body {
@@ -173,30 +177,31 @@ input[type='file'] {
 
 .aboutinput {
 	font-size: 11px;
-	color: #5A5A5A;
-	font-weight: 800;
+	color: #272727;
+	font-weight: 700;
 	padding-top: 10px;
 	padding-bottom: 5px;
 }
 
 .aboutinput-f {
 	font-size: 11px;
-	color: #5A5A5A;
-	font-weight: 800;
+	color: #272727;
+	font-weight: 700;
 	padding-top: 10px;
 	padding-bottom: 5px;
 }
 
 ::placeholder {
-	font-size: 11px;
-	font-weight: bold;
+	font-size: 12px;
+	font-weight:300;
 }
 
 .column>input {
 	width: 94%;
 	height: 33px;
 	padding: 9px;
-	border: 1px solid #AFAFAF;
+	border: 1px solid #d3d3d3;
+    font-weight: 300;
 	outline: none;
 }
 
@@ -207,7 +212,7 @@ input[type='file'] {
 
 .about {
 	font-size: 11px;
-	color: #5A5A5A;
+	color: #272727;
 	font-weight: 800;
 	padding: 20px 0px 5px 20px;
 }
@@ -215,26 +220,28 @@ input[type='file'] {
 .textarea {
 	margin-left: 22px;
 	padding: 10px;
-	border: 1px solid #AFAFAF;
+	border: 1px solid #d3d3d3;
 	width: 92%;
 	height: 100px;
 	border-radius: 3px;
 	outline: none;
+    font-weight: 300;
 }
 
 .textarea-s {
 	margin-left: 22px;
 	padding: 10px;
-	border: 1px solid #AFAFAF;
+	border: 1px solid #d3d3d3;
 	width: 92%;
 	height: 100px;
 	border-radius: 3px;
 	outline: none;
+	font-weight: 300;
 }
 .textarea-ss {
 	margin-left: 22px;
 	padding: 10px;
-	border: 1px solid #AFAFAF;
+	border: 1px solid #d3d3d3;
 	width: 92%;
 	height: 100px;
 	border-radius: 3px;
@@ -244,7 +251,8 @@ input[type='file'] {
 .textarea-t {
 	margin-left: 22px;
 	padding: 10px;
-	border: 1px solid #AFAFAF;
+	border: 1px solid #d3d3d3;
+    font-weight: 300;
 	width: 92%;
 	height: 100px;
 	border-radius: 3px;
@@ -448,7 +456,7 @@ input[type='file'] {
 	margin-left: 23px;
 	border-radius: 3px;
 	outline: none;
-	border: 1px solid #AFAFAF;
+	border: 1px solid #d3d3d3;
 	padding-left: 10px;
 	font-weight: bold;
 	font-size: 11px;
@@ -626,10 +634,10 @@ input[type='file'] {
 
 .interval {
 	font-size: 10px;
-	font-weight: bold;
 	color: grey;
 	padding-bottom: 10px;
 	width: 50%;
+	font-weight: bold;
 }
 
 .intervalS {
@@ -654,10 +662,11 @@ input[type='file'] {
 	margin-left: 22px;
 	width: 92%;
 	border-radius: 3px;
-	border: 1px solid #EDEDED;
+	border: 1px solid #d3d3d3;
 	outline: none;
 	height: 32px;
 	margin-top: 5px;
+	font-weight: 300;
 	padding: 10px;
 }
 
@@ -798,10 +807,11 @@ option{
 	width: 92%;
 	height: 33px;
 	border-radius: 3px;
-	border: 1px solid #EDEDED;
+	border: 1px solid #d3d3d3;
 	outline: none;
 	padding-left: 10px;
 	margin-bottom: 10px;
+	font-weight: 300;
 }
 
 .skill-plus-th {
@@ -850,11 +860,12 @@ option{
 
 .flex-content>input {
 	border-radius: 3px;
-	border: 1px solid #EDEDED;
+	border: 1px solid #d3d3d3;
 	outline: none;
 	height: 33px;
 	width: 92%;
 	padding-left: 10px;
+	font-weight: 300;
 }
 
 .flex-right {
@@ -1297,10 +1308,10 @@ body{
 	zoom: 150%;
 }
 .selector>option{
-	font-size: 18px;
+	font-size: 12px;
 }
 .select-first>option{
-	font-size: 16px;
+	font-size: 12px;
 }
 .linkIcon{
 	margin-left: 22px;
@@ -1312,11 +1323,12 @@ body{
 	margin-left: 22px;
 	width: 63%;
 	border-radius: 3px;
-	border: 1px solid #EDEDED;
+	border: 1px solid #d3d3d3;
 	outline: none;
 	height: 32px;
 	margin-top: 5px;
 	padding: 10px;
+    font-weight: 300;
 }
 .first-label{
 	margin-top: 3px;

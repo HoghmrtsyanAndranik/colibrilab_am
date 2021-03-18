@@ -205,7 +205,7 @@ function add() {
 	newMessage.appendChild(newMessageS);
 	newMessage.appendChild(newMessageT);
 
-	newMessageT.innerHTML = "<i class='fa fa-times-circle x' aria-hidden='true' style = 'margin-left:40px;'></i><i class='fa fa-pencil pencil' style = 'display:none;'aria-hidden='true'></i><i class='fa fa fa-bars handleS' aria-hidden='true'></i>"
+	newMessageT.innerHTML = "<i class='fa fa-times-circle x del_lang' aria-hidden='true' style = 'margin-left:40px;'></i><i class='fa fa-pencil pencil' style = 'display:none;'aria-hidden='true'></i><i class='fa fa fa-bars handleS' aria-hidden='true'></i>"
 	
 	$(".x").click(function(){
 		
@@ -698,13 +698,13 @@ let	emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
         }
 
 /////////////////////////image///////////////   
-     if($('#new_img').attr('src')=='cv_images/camera.png'){
-     	   document.querySelector(".add-photo").style.border = "1px solid red"
-			document.querySelector(".callout").style.animation = "move 1s forwards"
-			setTimeout(()=>{
-				document.querySelector(".callout").style.animation = ""
-			},3000)
-		}
+  //    if($('#new_img').attr('src')=='cv_images/camera.png'){
+  //    	   document.querySelector(".add-photo").style.border = "1px solid red"
+		// 	document.querySelector(".callout").style.animation = "move 1s forwards"
+		// 	setTimeout(()=>{
+		// 		document.querySelector(".callout").style.animation = ""
+		// 	},3000)
+		// }
 		// vlImg.oninput= ()=>{
 		// 	document.querySelector(".add-photo").style.border = "1px solid #AFAFAF"
 		// 	numFive +=1

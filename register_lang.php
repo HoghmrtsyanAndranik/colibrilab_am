@@ -18,9 +18,9 @@ if($LANG=='ARM'){
     $twostudents="2 ուսանող 10% զեղչ";
     $threestudents="3 ուսանող 15% զեղչ";
     $fourstudents="4 ուսանող 20% զեղչ";
-    $morningtimes="Առավոտյան ժամեր";
-    $daytimes="Ցերեկային ժամեր";
-    $eveningtimes="Երեկոյան ժամեր";
+    // $morningtimes="Առավոտյան ժամեր";
+    // $daytimes="Ցերեկային ժամեր";
+    // $eveningtimes="Երեկոյան ժամեր";
     $message="Հաղորդագրություն";
     $trainingcenter="ուսումնական կենտրոն";
     $yerevan=" ք. Երևան,";
@@ -68,9 +68,9 @@ elseif($LANG=='ENG'){
     $twostudents="2 students 10% discount";
     $threestudents="3 students 15% discount";
     $fourstudents="4 students 20% discount";
-    $morningtimes="Morning hours";
-    $daytimes="Daytime hours";
-    $eveningtimes="Evening hours";
+    // $morningtimes="Morning hours";
+    // $daytimes="Daytime hours";
+    // $eveningtimes="Evening hours";
     $message="Message";
     $trainingcenter="training center";
     $yerevan="Yerevan,Armenia";

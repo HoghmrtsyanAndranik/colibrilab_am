@@ -15,109 +15,24 @@ http://www.templatemo.com/tm-467-easy-profile
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/font-awesome.min.css">
 	<link rel="stylesheet" href="css/templatemo-blue.css">
-	<style type="text/css">
-		
-.slider{
-	position: relative;
-}
-.content{
-  max-width: 500px;
-  position: relative;
-  margin: auto;
-}
-.mySlides {
-	display: none;
-}
-.prev:hover, .next:hover {
-  background-color: rgba(255,255,255,0.8);
-  cursor: pointer;
-}
-.prev{
-  position: absolute;
-  right: 85px;
-  padding: 7px;
-  top: 50px;
-  background-color: rgba(255,255,255,0.3);
-}
-.next{
-  position: absolute;
-  right: 50px;
-  padding: 7px;
-  top: 50px;
-  background-color: rgba(255,255,255,0.3);
-}
-.prev-second:hover, .next-second:hover {
-  background-color: rgba(255,255,255,0.8);
-  cursor: pointer;
-}
-.prev-second{
-  position: absolute;
-  right: 85px;
-  padding: 7px;
-  top: 50px;
-  background-color: rgba(255,255,255,0.3);
-}
-.next-second{
-  position: absolute;
-  right: 50px;
-  padding: 7px;
-  top: 50px;
-  background-color: rgba(255,255,255,0.3);
-}
-.prev-third:hover, .next-third:hover {
-  background-color: rgba(255,255,255,0.8);
-  cursor: pointer;
-}
-.prev-third{
-  position: absolute;
-  right: 85px;
-  padding: 7px;
-  top: 50px;
-  background-color: rgba(255,255,255,0.3);
-}
-.next-third{
-  position: absolute;
-  right: 50px;
-  padding: 7px;
-  top: 50px;
-  background-color: rgba(255,255,255,0.3);
-}
-.fade {
-  animation-name: fade;
-  animation-duration: 1.5s;
-  opacity: 1;
-}
-.slider-item{
-	display: none;
-}
-.slider-item-third{
-	display: none;
-}
-
-.slider-content{
-  position: relative;
-}
-
-@keyframes fade {
-  from {opacity: 0.4} 
-  to {opacity: 1}
-}
-	</style>
+	
 
 </head>
 <body data-spy="scroll" data-target=".navbar-collapse">
 <?php
  include('model.php');
 include('my_cv_language.php');
-if(isset($_GET['id']))
-	 $user_id=$_GET['id'];
-else{
-	echo'<h1>404<h1>';
-	die;
+session_start();
+if(!isset($_GET['id'])){
+   echo'<h1>404<h1>';
+   die;
 }
+
+$user_id=$_GET['id'];
 $model=new Model;
 $published=$model->if_published($user_id);
 
+if(!isset($_SESSION['cv_user_id'])||$_SESSION['cv_user_id']!=$_GET['id'])
 if($published=='not published'){
 	echo'<h1>CV is not published<h1>';
 	die;
@@ -152,6 +67,10 @@ elseif($LANG=='ENG'){
        <span class="sk-inner-circle"></span>
      </div>
 </div>
+<?php
+if(isset($_SESSION['cv_user_id'])&&$_SESSION['cv_user_id']==$_GET['id'])
+   echo "<a href='form?id=$user_id'><button>To Form</button></a>";
+?>
 
 <!-- header section -->
 <header>
@@ -542,6 +461,94 @@ function showSlidesT(nnn) {
 }
 
 </script>
+<style type="text/css">
+		
+.slider{
+	position: relative;
+}
+.content{
+  max-width: 500px;
+  position: relative;
+  margin: auto;
+}
+.mySlides {
+	display: none;
+}
+.prev:hover, .next:hover {
+  background-color: rgba(255,255,255,0.8);
+  cursor: pointer;
+}
+.prev{
+  position: absolute;
+  right: 85px;
+  padding: 7px;
+  top: 50px;
+  background-color: rgba(255,255,255,0.3);
+}
+.next{
+  position: absolute;
+  right: 50px;
+  padding: 7px;
+  top: 50px;
+  background-color: rgba(255,255,255,0.3);
+}
+.prev-second:hover, .next-second:hover {
+  background-color: rgba(255,255,255,0.8);
+  cursor: pointer;
+}
+.prev-second{
+  position: absolute;
+  right: 85px;
+  padding: 7px;
+  top: 50px;
+  background-color: rgba(255,255,255,0.3);
+}
+.next-second{
+  position: absolute;
+  right: 50px;
+  padding: 7px;
+  top: 50px;
+  background-color: rgba(255,255,255,0.3);
+}
+.prev-third:hover, .next-third:hover {
+  background-color: rgba(255,255,255,0.8);
+  cursor: pointer;
+}
+.prev-third{
+  position: absolute;
+  right: 85px;
+  padding: 7px;
+  top: 50px;
+  background-color: rgba(255,255,255,0.3);
+}
+.next-third{
+  position: absolute;
+  right: 50px;
+  padding: 7px;
+  top: 50px;
+  background-color: rgba(255,255,255,0.3);
+}
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+  opacity: 1;
+}
+.slider-item{
+	display: none;
+}
+.slider-item-third{
+	display: none;
+}
 
+.slider-content{
+  position: relative;
+}
+
+@keyframes fade {
+  from {opacity: 0.4} 
+  to {opacity: 1}
+}
+	</style>
 </body>
+
 </html>

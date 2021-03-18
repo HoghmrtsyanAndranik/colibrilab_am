@@ -1065,7 +1065,7 @@ include ('header.php');
                         <li><a href="#"><i class="icofont-user-suited"></i> Suren</a></li>
                         <!-- <li><a href="#"><i class="icofont-ui-clock"></i> 18 Nov 2019</a></li> -->
                     </ul>
-                    <h3><a href="usanoxneri_ashxatanqnery/HCB/suren/4/index.html">Html/Css/Bootstrap</a></h3>
+                    <h3><a href="usanoxneri_ashxatanqnery/HCB/suren/4/index.html" target="_blank">Html/Css/Bootstrap</a></h3>
                 </div>
             </div>
             <div class="grid blog-mt-30">
@@ -1288,7 +1288,7 @@ include ('header.php');
                         <button class="btn cv_send"> <?=$create?> </button>
                     </div>
               <!--   </form> -->
-                <span id="cv_error_text"style="color:red"></span>
+                <span id="cv_error_text1"></span>
 <!--                    <span>Ունե՞ք արդեն հաշիվ․ <a href="#">Մուտք գործեք</a></span>-->
             </fieldset>
             <fieldset id="tabs-2">
@@ -1297,11 +1297,11 @@ include ('header.php');
                 
                     <input type="email" id="cv_email_login" placeholder="<?=$email?>">
                     <input type="password" id="cv_pass_login" placeholder="<?=$password?>">
-                    <a href="#" class="pas"><p >Մոռացե՞լ եք գաղտնաբառը</p></a>
+                    <a href="forgot_password" class="pas"><p ><?=$forgot_password?></p></a>
                     <div class="but">
                         <button class="btn cv_login" ><?=$log_in?></button>
                     </div>
-                <span id="cv_error_text1"style="color:red"></span>
+                <span id="cv_error_text2"style="color:red"></span>
             </fieldset>
         </div>
     </div>

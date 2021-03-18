@@ -1,7 +1,7 @@
 <?php
 
 $LANG=file_get_contents('../session.php');
-
+session_start();
 //include('register_lang.php');
 include('model.php');
 $model=new Model;
@@ -49,6 +49,7 @@ if(!$user_id){
     die;
 }
 else{
+  $_SESSION['cv_user_id']=$user_id;
   echo $model->output($user_id,true);
     die;
 }

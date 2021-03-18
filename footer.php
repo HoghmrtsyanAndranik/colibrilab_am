@@ -1,4 +1,4 @@
-<div style="display: flex;justify-content: center;padding: 20px 0">
+<div style="display: flex;justify-content: center;padding: 20px 0; height: 0">
 
 <footer>
     <div class = "up">
@@ -19,7 +19,7 @@
  </div>  
   <div class="drop-content">
      <div>
-         <img src="assets/img/user1.jpg" width="40">
+         <img src="https://avatars.githubusercontent.com/u/9532499?s=60&amp;u=5cd8a861d4b8289bfcb45961eae953b114f562ec&amp;v=4" width="40">
      </div>
      <div>
         <p><?=$andranik?></p>
@@ -29,7 +29,7 @@
  </div> 
   <div class="drop-content">
      <div>
-         <img src="assets/img/user1.jpg" width="40">
+         <img src="https://avatars.githubusercontent.com/u/79191882?v=4" width="40">
      </div>
      <div>
        <p><?=$levon?></p>
@@ -79,10 +79,17 @@ elseif($LANG=='ENG'){
  
   <div class="con">
 
+
+
+
+    
+
+
       <a href="<?=$policy_link?>"><?=$security_policy?></a>
+
   </div>
  </div>
-    <p style="color: white; padding-top: 20px; position: relative; " >2021 Colibrilab development company</p>
+    <p style="color: white; padding-top: 30px; position: relative; " >2021 Colibrilab development company</p>
 </footer>
 </div>
     <!-- End footer -->
@@ -199,12 +206,9 @@ $('.cv_send').click(function(){
     },
     success:function(d){
       
-       if(d.success==true){
-        alert("Դուք հաջողությամբ գրանցվել եք");
-        window.location.href = "cv/form?id="+d.message;
-       }
-        else
-         $("#cv_error_text").html(d.message); 
+       if(d.success==true)$("#cv_error_text1").css('color','green');
+       else $("#cv_error_text1").css('color','red');
+       $("#cv_error_text1").html(d.message); 
     }
  })
 })
@@ -233,7 +237,7 @@ $('.cv_login').click(function(){
         window.location.href = "cv/form?id="+d.message;
        }
         else
-         $("#cv_error_text1").html(d.message); 
+         $("#cv_error_text2").html(d.message); 
       
     }
 
@@ -266,7 +270,7 @@ $('.cv_login').click(function(){
 .drop{
   color: white !important;
   cursor: pointer;
-  margin: 0px;
+  margin: 0;
 }
 .d-menu{
   height: 200px;
@@ -295,9 +299,11 @@ $('.cv_login').click(function(){
   align-items: center;
   height: 100%;
   width: 100%;
+  margin-top: 30px;
 }
 .con{
-  margin-left: 20px;
+  margin-left:20px;
+
 
 }
 .con a{
