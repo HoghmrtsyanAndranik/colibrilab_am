@@ -5,10 +5,12 @@ include('language.php');
 if($LANG=='ARM'){
    $is_arm='chosen';
    $is_eng='';
+    $policy_link='privacy_policy';
 }
 elseif($LANG=='ENG'){
     $is_arm='';
-      $is_eng='chosen';
+    $is_eng='chosen';
+    $policy_link='privacy_policy_eng';
 }
 
 ?>
