@@ -78,17 +78,7 @@ elseif($LANG=='ENG'){
   
  
   <div class="con">
-    <?php
-if($LANG=='ARM'){
-   $policy_link='privacy_policy';
-}
-elseif($LANG=='ENG'){
-    $policy_link='privacy_policy_eng';
-}
 
-
-
-    ?>
       <a href="<?=$policy_link?>"><?=$security_policy?></a>
   </div>
  </div>
