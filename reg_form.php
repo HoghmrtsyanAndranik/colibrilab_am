@@ -78,15 +78,15 @@ $course_type=$_GET['course']??false;
           <div class="form-check">
             <div>
               <input type="checkbox" name="morningtime" id="morningtime" class="morningtime" checked/>
-              <label for="morningtime" class="label-agree-term ml-0"><span><span></span></span><?=$morningtimes?></label>
+              <label for="morningtime" class="label-agree-term ml-0"><span><span></span></span>09:00 - 12:00</label>
             </div>
             <div>
               <input type="checkbox" name="daytime" id="daytime" class="daytime " checked/>
-              <label for="daytime" class="label-agree-term ml-4"><span><span></span></span><?=$daytimes?></label>
+              <label for="daytime" class="label-agree-term ml-4"><span><span></span></span>12:00 - 17:00</label>
             </div>
             <div>
               <input type="checkbox" name="eveningtime" id="eveningtime" class="eveningtime" checked/>
-              <label for="eveningtime" class="label-agree-term ml-4"><span><span></span></span><?=$eveningtimes?></label>
+              <label for="eveningtime" class="label-agree-term ml-4"><span><span></span></span>17:00 - 22:00</label>
             </div>
 
           </div>

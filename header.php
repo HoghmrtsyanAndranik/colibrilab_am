@@ -92,7 +92,7 @@ elseif($LANG=='ENG'){
     ==================================================================================-->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
         <div class="container">
-            <a class="navbar-brand js-scroll-trigger" href="#">
+            <a class="navbar-brand js-scroll-trigger" href="/">
                 <img src="assets/img/logo.png" alt="logo" width="150">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive"
@@ -122,8 +122,12 @@ elseif($LANG=='ENG'){
                         <a class="nav-link js-scroll-trigger" href="#eduservices-contact"><?=$contact?></a>
                     </li>
                     <li class="nav-item">
+                        <a href="#" class="nav-link js-scroll-trigger other">Other</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link js-scroll-trigger  login" href="reg_form.php"><?=$signup?></a>
                     </li>
+                 
                 
                     <li class="nav-item" id="last-li">
                         <div class="chooseLang">

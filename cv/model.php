@@ -234,6 +234,11 @@ public function if_published($user_id){
        if(mysqli_fetch_row($res)[0]==0)
           return 'not published'; 
 }
+public function get_if_email_exists($email){
+    $query="SELECT email FROM cv_students where email='$email'";
+        $res=mysqli_query($this->conn,$query);
+        return mysqli_num_rows($res);
+}
 
 }
 

@@ -1,6 +1,12 @@
 <?php
 include('model.php');
 include('form_language.php');
+session_start();
+if(!isset($_SESSION['cv_user_id'])||!isset($_GET['id'])||$_SESSION['cv_user_id']!=$_GET['id']){
+    echo '<h3>Please create account and log in</h3>';
+	header("Refresh:3; url=../");
+	die;
+}
 
 if(isset($_GET['id']))
 	file_put_contents('usersession.php',$_GET['id']);
@@ -37,9 +43,9 @@ for($i=2021;$i>=1950;$i--)
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-
-
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
 </head>
 <body>
 	<div class = "header-text">
@@ -98,7 +104,7 @@ for($i=2021;$i>=1950;$i--)
 			</div>
 				<div class = "column">
                      
-                    <p class = "aboutinput-f"><?=$yourcvadressis?><a href="http://colibrilab.great-site.net/cv/my_cv?id=<?=$user_id?>">http://colibrilab.great-site.net/cv/my_cv?id=<?=$user_id?></a></p> 
+                    <p class = "aboutinput-f"><?=$yourcvadressis?> <a href="http://colibrilab.great-site.net/cv/my_cv?id=<?=$user_id?>">http://colibrilab.great-site.net/cv/my_cv?id=<?=$user_id?></a></p> 
 					<p class = "aboutinput-f"><?=$name?>*</p>
 					<input type="text" required class = "input-name input vl" value="<?=$main_data['name']?>">
 					<p class = "aboutinput"><?=$profession?>*</p>

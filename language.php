@@ -268,9 +268,10 @@ $we_help="Մենք կօգնենք քեզ ունենալ պրոֆեսիոնալ �
 $good_cv="ներկայանալի ռեզյումե:";
 $please_sign="Ռեզյումեն ստեղծելու համար խնդրում ենք մուտք գործել";
 $supporters="Աջակիցներ";
-$frequently_questions="Հաճախակի տրվող հարցեր";
+$frequently_questions="ՀՏՀ";
 $discount_policy="Զեղչային քաղաքականություն";
 $security_policy="Անվտանգության քաղաքականություն";
+$forgot_password="Մոռացե՞լ եք գաղտնաբառը";
 }
 
 
@@ -501,7 +502,8 @@ $we_help="We help You to have a professional and";
 $good_cv="presentable resume:";
 $please_sign="Please login to create a resume";
 $supporters="Contributers";
-$frequently_questions="Frequently Asked Questions";
+$frequently_questions="FAQ";
 $discount_policy="Discount policy";
-$security_policy="Security policy";
+$security_policy="Privacy policy";
+$forgot_password="Forgot Password";
 }

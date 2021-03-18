@@ -11,17 +11,19 @@ $model=new Model;
 
 if($LANG=='ARM'){
    $invalid_email="Գոյություն չունեցող էլ․հասցե";
-   $success='Դուք հաջողությամբ գրանցվել եք։';
+   $success='Դուք հաջողությամբ գրանցվել եք։Խնդրում ենք մուտք գործել';
    $fail='Գրանցումը չի կատարվել։';
    $empty='Լրացրեք բոլոր դաշտերը';
    $not_match="Գաղտնաբառերը չեն համընկնում";
+   $email_exists="Նշված էլ հասցեն զբաղված է";
 }
 elseif($LANG=='ENG'){
    $invalid_email="Invalid email address";
-   $success='You are sign in successfully';
+   $success='You are sign in successfully․Please log in';
    $fail='You are not sign in successfully';
    $empty='All fields are required';
    $not_match="Passwords not matching";
+   $email_exists="Email already taken";
 }	
 
  function test_input( $data):string {
@@ -46,7 +48,11 @@ if(empty($pass1)||empty($pass2)||empty($email)){
      echo $model->output($invalid_email,false);
      die; 
  }  
-
+ 
+  if($model->get_if_email_exists($email)){
+     echo $model->output($email_exists,false);
+     die;
+  }
 
  if($pass1!=$pass2){
      echo $model->output($not_match,false);
@@ -60,7 +66,7 @@ if(!$user_id){
     die;
 }
 else{
-  echo $model->output($user_id,true);
+  echo $model->output($success,true);
     die;
 }
 
