@@ -78,18 +78,15 @@ elseif($LANG=='ENG'){
   
  
   <div class="con">
-    <?php
-if($LANG=='ARM'){
-   $policy_link='privacy_policy';
-}
-elseif($LANG=='ENG'){
-    $policy_link='privacy_policy_eng';
-}
 
 
 
-    ?>
-      <a href="<?=$policy_link?>" style="  position: relative; top: 15px;"><?=$security_policy?></a>
+
+    
+
+
+      <a href="<?=$policy_link?>"><?=$security_policy?></a>
+
   </div>
  </div>
     <p style="color: white; padding-top: 30px; position: relative; " >2021 Colibrilab development company</p>
