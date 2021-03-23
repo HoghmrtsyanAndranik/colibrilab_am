@@ -23,14 +23,25 @@ $src='cv_images/camera.png';
 $expeiances=$model->get_experiances($user_id);
 $connections=$model->get_connections($user_id);
 
-if($LANG=='ARM')
+if($LANG=='ARM'){
     $months=["Հունվար","Փետրվար","Մարտ","Ապրիլ","Մայիս","Հունիս",
                "Հուլիս","Օգոստոս","Սեպտեմբեր","Հոկտեմբեր","Նոյեմբեր","Դեկտեմբեր"];
-elseif($LANG=='ENG')
+    $months_end=["Մինչ այժմ","Հունվար","Փետրվար","Մարտ","Ապրիլ","Մայիս","Հունիս",
+               "Հուլիս","Օգոստոս","Սեպտեմբեր","Հոկտեմբեր","Նոյեմբեր","Դեկտեմբեր"];           
+}
+elseif($LANG=='ENG'){
     $months=["January","February","March","April","May","June",
                "July","August","September","October","November","December"]; 
-for($i=2021;$i>=1950;$i--)
+   $months_end=["Until now","January","February","March","April","May","June",
+               "July","August","September","October","November","December"];           
+}
+
+for($i=date('Y');$i>=1950;$i--)
     $years[]=$i;
+
+$years_end[0]="";
+for($i=date('Y');$i>=1950;$i--)
+    $years_end[]=$i;
 ?>
 
 
@@ -298,7 +309,7 @@ case 3:
      	<i class="fa fa fa-bars handleT" aria-hidden="true"></i>
      </div>
      <div class="new-body" style="display: none;">
-     	<div class="body-sec show-hide hides update_education"  style="background-color:#eaeaea;display:block;">
+     	<div class="body-sec show-hide hides update_education"  style="display:block;">
      		<div class="content">
      			<p class="title-input"><?=$specialization?>*</p>
      			<input type="text" class="desc-ss" value="<?=$spec?>" placeholder="<?=$web?>">
@@ -323,7 +334,7 @@ case 3:
                         </select>
      					<select class="yearr" style="margin-left: 10px;" value="<?=$begin_year?>">
      						<?php
-							for($i=0;$i<=71;$i++)
+							for($i=0;$i<count($years);$i++)
 								if($years[$i]==$begin_year)
 							        echo "<option value='$years[$i]' selected>$years[$i]</option>";
 							    else
@@ -338,22 +349,22 @@ case 3:
      				<div class="flex-content">
      					<select class="monthSS-nn" value="<?=$end_month?>">
      						<?php
-     						for($i=0;$i<12;$i++)
-                                 if($months[$i]==$end_month)
+     						for($i=0;$i<13;$i++)
+                                 if($months_end[$i]==$end_month)
                                  	echo "<option value='$end_month' selected>$end_month</option>";
                               
                                   else
-                                 	 echo  "<option value='$months[$i]'>$months[$i]</option>";
+                                 	 echo  "<option value='$months_end[$i]'>$months_end[$i]</option>";
                             ?>
      					</select>
      					 <select class="yearS-nn" style="margin-left: 10px;"value="<?=$end_year?>">
      					 
 							<?php
-							for($i=0;$i<=71;$i++)
-								if($years[$i]==$end_year)
-							        echo "<option value='$years[$i]' selected>$years[$i]</option>";
+							for($i=0;$i<count($years_end);$i++)
+								if($years_end[$i]==$end_year)
+							        echo "<option value='$years_end[$i]' selected>$years_end[$i]</option>";
 							    else
-							    	echo "<option value='$years[$i]'>$years[$i]</option>";
+							    	echo "<option value='$years_end[$i]'>$years_end[$i]</option>";
 
 						     ?>
 						  
@@ -408,7 +419,7 @@ case 3:
 						</select> 
 						<select class="year" style = "margin-left: 10px;">
 							<?php
-							for($i=2021;$i>=1950;$i--)
+							for($i=date('Y');$i>=1950;$i--)
 							echo "<option value=$i>$i</option>";
 						     ?>
 						</select>
@@ -419,13 +430,14 @@ case 3:
 					<div class = "flex-content">
 						<select class="monthS">
 							<?php
-     						for($i=0;$i<12;$i++)
-                               echo  "<option value='$months[$i]'>$months[$i]</option>";
+     						for($i=0;$i<13;$i++)
+                               echo  "<option value='$months_end[$i]'>$months_end[$i]</option>";
                             ?>
 						</select> 
 						<select class="yearS" style = "margin-left: 10px;">
 							<?php
-							for($i=2021;$i>=1950;$i--)
+							echo "<option value=''></option>";
+							for($i=date('Y');$i>=1950;$i--)
 							echo "<option value=$i>$i</option>";
 						     ?>
 						</select>
@@ -519,6 +531,7 @@ case 3:
 
 			foreach($expeiances as $exp){
                 $id=$exp['id'];
+
                $job_title=$exp['job_title'];
                $company=$exp['company'];
                $begin_month=$exp['start_month'];
@@ -540,7 +553,7 @@ case 3:
 		<i class="fa fa fa-bars handleF" aria-hidden="true"></i>
 	</div>
 	<div class="new-body">
-		<div class="body-sec show-hide hides" style="background-color:#eaeaea;display:block;">
+		<div class="body-sec show-hide hides" style="display:block;">
 			<div class="content">
 				<p class="title-input"><?=$jobtitle?>*</p>
 				<input type="text" class="desc-ss" value="<?=$job_title?>" placeholder="<?=$web?>">
@@ -569,7 +582,7 @@ case 3:
 						</select>
 						<select class="yearr" style="margin-left: 10px;">
 							<?php
-							for($i=0;$i<=71;$i++)
+							for($i=0;$i<=date('Y')-1950;$i++)
 								if($years[$i]==$begin_year)
 							        echo "<option value='$years[$i]' selected>$years[$i]</option>";
 							    else
@@ -584,23 +597,23 @@ case 3:
 					<div class="flex-content">
 						<select class="monthSS-nn">
 								<?php
-                             for($i=0;$i<12;$i++)
-                                 if($months[$i]==$end_month)
+                             for($i=0;$i<13;$i++)
+                                 if($months_end[$i]==$end_month)
                                  	echo "<option value='$begin_month' selected>$end_month</option>";
                               
                                   else
-                                 	 echo  "<option value='$months[$i]'>$months[$i]</option>";
+                                 	 echo  "<option value='$months_end[$i]'>$months_end[$i]</option>";
                             
                              	?>
                              		
                              	</select>
 							<select class="yearS-nn" style="margin-left: 10px;">
 								<?php
-							for($i=0;$i<=71;$i++)
-								if($years[$i]==$end_year)
-							        echo "<option value='$years[$i]' selected>$years[$i]</option>";
+							for($i=0;$i<=date('Y')-1950;$i++)
+								if($years_end[$i]==$end_year)
+							        echo "<option value='$years_end[$i]' selected>$years_end[$i]</option>";
 							    else
-							    	echo "<option value='$years[$i]'>$years[$i]</option>";
+							    	echo "<option value='$years_end[$i]'>$years_end[$i]</option>";
 
 						     ?>
 							</select>
@@ -646,10 +659,12 @@ case 3:
 				<div class = "part-one" style="margin-right: 22px;">
 					<p class = "title-input"><?=$startdate?></p>
 					<div class = "flex-content">
-						<select class="month-s" value="<?=$months[0]?>">
+						<select class="month-s" >
 							<?php
-                              echo "<option value='$months[0]' selected >$months[0]</option>";
-                              for($i=1;$i<12;$i++){
+
+                             echo "<option value='$months[0]' selected >$months[0]</option>";
+                              for($i=0;$i<12;$i++){
+
                             	 echo "<option value='$months[$i]' >$months[$i]</option>";
                               }
                             ?>
@@ -657,8 +672,9 @@ case 3:
 						<select class="year-s" style = "margin-left: 10px;">
 
 							<?php
-							for($i=2021;$i>=1950;$i--)
-							echo "<option value=$i>$i</option>";
+
+							for($i=date('Y');$i>=1950;--$i)
+							   echo "<option value=$i>$i</option>";
 						     ?>
 							
 						</select>
@@ -667,17 +683,18 @@ case 3:
 				<div class = "part-two">
 					<p class = "title-input"><?=$enddate?></p>
 					<div class = "flex-content">
-						<select class="monthS-s" value="<?=$months[0]?>">
+						<select class="monthS-s" value="<?=$months_end[0]?>">
 							<?php
-                             echo "<option value='$months[0]' selected >$months[0]</option>";
-                             for($i=1;$i<12;$i++){
-                            	echo "<option value='$months[$i]' >$months[$i]</option>";
+                             echo "<option value='$months_end[0]' selected >$months_end[0]</option>";
+                             for($i=1;$i<13;$i++){
+                            	echo "<option value='$months_end[$i]' >$months_end[$i]</option>";
                             }
                             ?>
 						</select> 
 						<select class="yearS-s" style = "margin-left: 10px;">
 							<?php
-							for($i=1950;$i<2022;$i++)
+							echo "<option value=''></option>";
+							for($i=date('Y');$i>=1950;--$i)
 							echo "<option value=$i>$i</option>";
 						     ?>
 						</select>

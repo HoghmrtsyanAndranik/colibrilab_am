@@ -196,13 +196,17 @@ $('.cv_send').click(function(){
    let email=$('#cv_email').val();
    let pass1=$('#cv_pass1').val();
    let pass2=$('#cv_pass2').val();
-
+   let agree=0;
+   if($('#Iagree').prop('checked')==true)
+       agree==1;
+  
+    
  $.ajax({
     url:'cv/register.php',
     type:'post',
     dataType:'JSON',
     data:{
-        pass1:pass1,pass2:pass2,email:email
+        pass1:pass1,pass2:pass2,email:email,agree:agree
     },
     success:function(d){
       
