@@ -228,4 +228,18 @@
         }
     });
 
+    $('.pas').on("click",function () {
+        $('#tabs-2').hide();
+        $('#tabs-3').show();
+    })
+
+    $('.forg_cancel').on("click",function () {
+        $('#tabs-2').show();
+        $('#tabs-3').hide();
+    })
+
+    $('#ui-id-2').on("click",function () {
+        $('#tabs-3').hide();
+    })
+
 }(jQuery));

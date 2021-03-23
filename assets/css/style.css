@@ -114,7 +114,7 @@ strong {
 
 .block {
     position: relative;
-    margin: 97px;
+    margin: 97px 0;
 }
 
 .ptb-100 {
@@ -657,7 +657,7 @@ button {
     -webkit-transition: .3s;
     transition: .3s;
     border-radius: 10px;
-    height: 35vh;
+    /*height: 35vh;*/
 }
 
 /*.single-box::before {
@@ -2392,6 +2392,7 @@ padding: 30px;
 .pas {
     text-align: right;
     margin-top: 10px;
+    cursor: pointer;
 }
 .form-registr{
 display: flex;
@@ -2412,7 +2413,7 @@ padding: 55px;
 
 .reg{
 width:100%;
-height: 457px;
+height: 477px;
 max-width: 408px;
 padding: 15px 24px;
 
@@ -2558,4 +2559,21 @@ margin-right: 10px;
 .p-3 {
     color: #427dff;
     cursor: pointer;
+}
+
+#tabs-3 {
+    display: none;
+}
+
+.but_forg {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+button.btn.forg_cancel{
+    color: #ff8559;
+}
+
+button.btn.forg_cancel::after {
+    background: none;
 }
