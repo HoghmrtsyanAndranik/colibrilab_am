@@ -16,6 +16,7 @@ if($LANG=='ARM'){
    $empty='Լրացրեք բոլոր դաշտերը';
    $not_match="Գաղտնաբառերը չեն համընկնում";
    $email_exists="Նշված էլ հասցեն զբաղված է";
+   $must_agree="Դուք պետք է համաձայնեք կայքի կանոնադրությանը";
 }
 elseif($LANG=='ENG'){
    $invalid_email="Invalid email address";
@@ -24,6 +25,7 @@ elseif($LANG=='ENG'){
    $empty='All fields are required';
    $not_match="Passwords not matching";
    $email_exists="Email already taken";
+   $must_agree="You must agree to the terms of the site";
 }	
 
  function test_input( $data):string {
@@ -36,12 +38,17 @@ elseif($LANG=='ENG'){
  $email = test_input($_REQUEST["email"]); 
  $pass1=test_input($_POST['pass1']);
  $pass2=test_input($_POST['pass2']);
-
+ $agree=$_POST['agree'];
+echo $model->output($agree.'6666',false);
+ 
 if(empty($pass1)||empty($pass2)||empty($email)){
     echo $model->output($empty,false);
      die; 
 }
-
+// if(!$agree){
+//     echo $model->output($must_agree,false);
+//      die; 
+// }
  
 
  if (!filter_var($email, FILTER_VALIDATE_EMAIL)){

@@ -272,6 +272,8 @@ $frequently_questions="ՀՏՀ";
 $discount_policy="Զեղչային քաղաքականություն";
 $security_policy="Անվտանգության քաղաքականություն";
 $forgot_password="Մոռացե՞լ եք գաղտնաբառը";
+$agree="Համաձայն եմ կայքի";
+$chapter="կանոնադրությանը";
 }
 
 
@@ -506,4 +508,6 @@ $frequently_questions="FAQ";
 $discount_policy="Discount policy";
 $security_policy="Privacy policy";
 $forgot_password="Forgot Password";
+$agree="I agree with the ";
+$chapter=" site statute";
 }

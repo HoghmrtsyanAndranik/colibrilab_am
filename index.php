@@ -1282,7 +1282,7 @@ include ('header.php');
                     <input type="password" id="cv_pass2"  placeholder="<?=$password?>">
                     <div class="IagreeDiv">
                         <input type="checkbox" name="" id="Iagree" checked>
-                        <span>Համաձայն եմ կայքի <a href="<?=$policy_link?>">կանոնադրությանը</a></span>
+                        <span><?=$agree?> <a href="<?=$policy_link?>"> <?=$chapter?></a></span>
                     </div>
                     <div class="but">
                         <button class="btn cv_send"> <?=$create?> </button>
