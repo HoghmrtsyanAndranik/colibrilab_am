@@ -1297,11 +1297,20 @@ include ('header.php');
                 
                     <input type="email" id="cv_email_login" placeholder="<?=$email?>">
                     <input type="password" id="cv_pass_login" placeholder="<?=$password?>">
-                    <a href="forgot_password" class="pas"><p ><?=$forgot_password?></p></a>
+                    <!--<a href="forgot_password" class="pas">--><p class="pas"><?=$forgot_password?></p></a>
                     <div class="but">
                         <button class="btn cv_login" ><?=$log_in?></button>
                     </div>
                 <span id="cv_error_text2"style="color:red"></span>
+            </fieldset>
+            <fieldset id="tabs-3" class="ui-tabs-panel ui-corner-bottom ui-widget-content">
+                <p>Մոռացե՞լ եք գաղտնաբառը</p>
+                <input type="email" id="cv_email_login_forgot" placeholder="<?=$email?>">
+                <div class="but but_forg">
+                    <button class="btn forg_next">Առաջ</button>
+                    <button class="btn forg_cancel">Չեղարկել</button>
+                </div>
+                <span id="cv_error_text2_forgot"style="color:red"></span>
             </fieldset>
         </div>
     </div>

@@ -10,7 +10,7 @@
 @media only screen and (max-width : 1620px) {
 
 	.single-box {
-		height: 40vh;
+		/*height: 40vh;*/
 	}
 }
 @media only screen and (min-width : 1367px) and (max-width : 1650px){
@@ -152,7 +152,8 @@
 	.single-box {
 		margin-bottom: 30px;
 		margin: 0 auto;
-		margin: 20px;
+		margin: 20px 0;
+		width: 100%;
 	}
 
 	.boxes-area-two {
@@ -522,13 +523,32 @@
 }
 @media(min-width: 320px) and (max-width: 430px){
 .reg_form{
-padding: 15px;
+	padding: 15px;
+	width: 140%;
 }
 #last-li{
 	display:flex;
 	justify-content: center;
 	width: 59%;
 }
+	a#ui-id-1, a#ui-id-2  {
+		font-size: 15px;
+	}
+	li.ui-tabs-tab.ui-corner-top.ui-state-default.ui-tab {
+		padding: 0 !important;
+	}
+	.reg button {
+		margin-top: 10px;
+	}
+	.text_form h1 {
+		font-size: 25px;
+		width: 101%;
+		line-height: 30px;
+	}
+	.text_form p {
+		font-size: 14px;
+		margin-bottom: 20px;
+	}
 }
 
 @media(min-width: 425px) and (max-width: 768px){
