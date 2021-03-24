@@ -1,96 +1,61 @@
 <div style="display: flex;justify-content: center;padding: 20px 0; height: 0">
 
-<footer>
-    <div class = "up">
-<div class = "fl">
-  <p class="dropdown-toggle drop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" id="ajak">
-    <?=$supporters?>
-  </p>
-  <div class="dropdown-menu d-menu" style="width:325px">
- <div class="drop-content">
-     <div>
-         <img src="assets/img/user1.jpg" width="40">
-     </div>
-     <div>
-        <p><?=$arevik?></p>
-       
 
-     </div>
- </div>  
-  <div class="drop-content">
-     <div>
-         <img src="https://avatars.githubusercontent.com/u/9532499?s=60&amp;u=5cd8a861d4b8289bfcb45961eae953b114f562ec&amp;v=4" width="40">
-     </div>
-     <div>
-        <p><?=$andranik?></p>
-      <a href="https://github.com/HoghmrtsyanAndranik">github.com/HoghmrtsyanAndranik</a>
+ <section class="footer1">
+    <div class="footer1-content">
+      <div class="ajak">
+        <a href="#" class="aj" style="padding-left:20px">Աջակիցներ</a>
+        <a href="#"><i class="fas fa-angle-down"></i></a>
+          <div class="box">
+            <div class="main">
+              <div class="img">
+              <img src="https://avatars.githubusercontent.com/u/9532499?s=460&u=5cd8a861d4b8289bfcb45961eae953b114f562ec&v=4" style="width: 40px; height: 40px; margin-top: 25px; border-radius: 50%; ">
+            </div>
+            <div class="cont">
+              <p>Անուն Ազգանուն</p>
+              <a href="#" class="a">https://github.com/HoghmrtsyanAndranik</a>
+            </div>
+            </div>
+            <div class="main">
+              <div class="img">
+              <img src="https://avatars.githubusercontent.com/u/9532499?s=460&u=5cd8a861d4b8289bfcb45961eae953b114f562ec&v=4" style="width: 40px; height: 40px; margin-top: 25px; border-radius: 50%; ">
+            </div>
+            <div class="cont">
+              <p>Անուն Ազգանուն</p>
+              <a href="#">https://github.com/HoghmrtsyanAndranik</a>
+            </div>
+            </div>
+            <div class="main">
+              <div class="img">
+              <img src="https://avatars.githubusercontent.com/u/9532499?s=460&u=5cd8a861d4b8289bfcb45961eae953b114f562ec&v=4" style="width: 40px; height: 40px; margin-top: 25px; border-radius: 50%; ">
+            </div>
+            <div class="cont">
+              <p>Անուն Ազգանուն</p>
+              <a href="#">https://github.com/HoghmrtsyanAndranik</a>
+            </div>
+            </div>
+            <div class="main">
+              <div class="img">
+              <img src="https://avatars.githubusercontent.com/u/9532499?s=460&u=5cd8a861d4b8289bfcb45961eae953b114f562ec&v=4" style="width: 40px; height: 40px; margin-top: 25px; border-radius: 50%; ">
+            </div>
+            <div class="cont">
+              <p>Անուն Ազգանուն</p>
+              <a href="#">https://github.com/HoghmrtsyanAndranik</a>
+            </div>
+            </div>
+            
+        </div>
+      </div>
+      
+      <a href="#" class="border"></a>
+      <a href="#" class="hth" style="padding-left: 20px">ՀՏՀ</a>
+      <a href="#" class="border"></a>
+      <a href="#" class="zex" style="padding-left: 20px">Զեղչային քաղաքականություն</a>
+      <a href="#" style="line-height: 3">Անվտանգության քաղաքականություն</a>
+    </div>
+    <p style="color: white; text-align: center; padding-top: 40px" class="col">2021 Colibri lab development company</p>
+  </section>
 
-     </div>
- </div> 
-  <div class="drop-content">
-     <div>
-         <img src="https://avatars.githubusercontent.com/u/79191882?v=4" width="40">
-     </div>
-     <div>
-       <p><?=$levon?></p>
-        
-
-     </div>
- </div> 
-  <div class="drop-content">
-     <div>
-         <img src="assets/img/user1.jpg" width="40">
-     </div>
-
-    <div> 
-      <p><?=$syuzanna?></p>
-        
-       
-
-     </div>
- </div> 
-
- </div>
-  <div class="bor"></div>
-  <div class="con">
-      <?php
-if($LANG=='ARM'){
-   $ques_link='questions';
-}
-elseif($LANG=='ENG'){
-    $ques_link='questions_eng';
-}
-
-
-
-    ?>
-      <a href="<?=$ques_link?>"><?=$frequently_questions?></a>
-  </div>
-  <div class="bor"></div>
-  <div class="con">
-
-      <a href=""><?=$discount_policy?></a>
-  </div>
-</div>
-  
- </div>
- <div class = "down">
-  
- 
-  <div class="con">
-
-
-
-
-    
-
-
-      <a href="<?=$policy_link?>"><?=$security_policy?></a>
-
-  </div>
- </div>
-    <p style="color: white; padding-top: 30px; position: relative; " >2021 Colibrilab development company</p>
-</footer>
 </div>
     <!-- End footer -->
 
@@ -217,7 +182,35 @@ $('.cv_send').click(function(){
  })
 })
 
+$('.forg_next').click(function(){
+   let email=$('#cv_email_login_forgot').val();
 
+    $.ajax({
+    url:'cv/forgot.php',
+    type:'post',
+  dataType:'JSON',
+    data:{
+        email:email
+    },
+    success:function(d){
+
+       if(d.success==true){
+
+      //alert("Էջը ժամանակավորապես անհասանելի է");
+        window.location.href = "cv/form?id="+d.message;
+       }
+        else
+         $("#cv_error_text2").html(d.message); 
+      
+    }
+
+
+
+
+  }) 
+
+
+})
                     
 
 
@@ -261,7 +254,7 @@ $('.cv_login').click(function(){
 </body>
 
 <style>
- footer{
+ /*footer{
   width: 100%;
   height: 200px;
   background-color: #2d3748;
@@ -331,8 +324,146 @@ a:hover{
     background-repeat: no-repeat;
     background-size: 14px;
     background-position: 28px center;
-}
+}*/
+body{
+    margin: 0 auto
+  }
+  .footer1{
+    background-color: #2d3748;
+    width: 100%;
+    height: 250px;
+    font-family: sans-serif;
+  }
+  .footer1 a{
+    color: white;
+    text-decoration: none;
+  }
+  .footer1-content{
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 80px;
+    /*line-height: 2;*/
+  }
+  .ajak{
+    display: inline-block;
+    position: relative;
 
+  }
+  .box{
+    position: absolute;
+    display: none;
+    background-color: white;
+    width: 350px;
+    height: 150px;
+    overflow-y: scroll;
+    scroll-behavior:blue;
+  }
+  .ajak:hover .box{
+    display: block;
+
+  }
+  .footer1-content a:hover{
+    color: #DCDCDC;
+  }
+  .cont>a{
+    color:black;
+    font-size: 13px;
+    text-align: center;
+    margin: 10px;
+  }
+  .cont>a:hover{
+    color: #29293d;
+  }
+  .cont>p{
+    margin-right: 110px;
+    /*margin-top:-50px !important;*/
+    position: relative;
+    top:15px;
+  }
+  .main{
+    display: flex;
+    /*text-align: center;*/
+  }
+  .box::-webkit-scrollbar-track {
+      border: 1px solid #000;
+    padding: 2px 0;
+      background-color: #404040;
+  }
+
+  .box::-webkit-scrollbar {
+      width: 8px;
+  }
+
+  .box::-webkit-scrollbar-thumb {
+      border-radius: 10px;
+      box-shadow: inset 0 0 6px rgba(0,0,0,.3);
+      background-color: #DCDCDC;
+      border: 1px solid #000;
+  }
+  .img{
+    margin-left: 15px;
+  }
+  .border{
+    border:1px solid white; 
+    border-radius: 5px; 
+    margin-left: 20px
+  }
+@media only screen and (max-width: 600px) {
+    .footer1-content{
+      display: flex;
+      flex-direction: column;
+      font-size: 18px;
+      border:none !important;
+      
+  }
+  .border{
+    border:none !important;
+  }
+  .hth{
+    padding-top: 10px
+  }
+  .footer1{
+    background-color: #2d3748;
+    width: 100%;
+    height: 300px;
+    font-family: sans-serif;
+    overflow: hidden;
+  }
+  .zex{
+    padding-top: 10px
+  }
+  .footer1-content{
+    position: relative;
+    top: -40px;
+  }
+  .col{
+    margin-top: -20px;
+  }
+  .box{
+    position: absolute;
+    display: none;
+    background-color: white;
+    width: 350px;
+    height: 150px;
+    overflow-x: hidden;
+    scroll-behavior:gray;
+    margin-left: 90px
+
+  }
+
+  .cont>p{
+    margin-right: 110px;
+    /*margin-top:-50px !important;*/
+    position: relative;
+    top:15px;
+    font-size: 15px;
+  }
+  .img{
+    margin-right:-5px;
+  }
+
+}
 
 </style>
 
