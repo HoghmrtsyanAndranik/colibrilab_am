@@ -195,14 +195,18 @@ $('.forg_next').click(function(){
         email:email
     },
     success:function(d){
-
+        alert(d.message)
+        
+        $("#cv_error_text2_forgot").html(d.message); 
        if(d.success==true){
 
       //alert("Էջը ժամանակավորապես անհասանելի է");
-        window.location.href = "cv/form?id="+d.message;
+        //window.location.href = "cv/form?id="+d.message;
        }
-        else
-         $("#cv_error_text2").html(d.message); 
+        else{
+          
+        // $("#cv_error_text2_forgot").html(d.message); 
+        }
       
     }
 

@@ -42,13 +42,13 @@ if(!filter_var($email,FILTER_VALIDATE_EMAIL)){
 $body="email - $email<br>message - $message";
 
 
-use PHPMailer\PHPMailer\PHPMailer;
+
+require 'src/SMTP.php';use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
 // Load Composer's autoloader
 require 'src/PHPMailer.php';
-require 'src/SMTP.php';
 require 'src/Exception.php';
 // Instantiation and passing `true` enables exceptions
 $mail = new PHPMailer;
