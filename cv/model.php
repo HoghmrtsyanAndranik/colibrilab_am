@@ -247,6 +247,17 @@ public function get_student_by_email($email){
     }
     return false;
 }
+public function get_random_password() {
+    $alphabet = "0123456789abcdefghijklmnopqrstuwxyz0123456789ABCDEFGHIJKLMNOPQRSTUWXYZ0123456789";
+    $str=str_shuffle($alphabet);
+    $pass=substr($str,0,6);
+    return $pass;
+}
+public function change_password($id,$new_pass){
+     $query="UPDATE  cv_students SET password='$new_pass' where id='$id'";
+     mysqli_query($this->conn,$query);
+
+}
 
 }
 
