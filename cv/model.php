@@ -239,6 +239,14 @@ public function get_if_email_exists($email){
         $res=mysqli_query($this->conn,$query);
         return mysqli_num_rows($res);
 }
+public function get_student_by_email($email){
+    $query="SELECT * FROM cv_students where email='$email'";
+    $res=mysqli_query($this->conn,$query);
+    if(mysqli_num_rows($res)>0){
+        return mysqli_fetch_assoc($res);
+    }
+    return false;
+}
 
 }
 
