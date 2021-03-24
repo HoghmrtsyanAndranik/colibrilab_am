@@ -4,8 +4,10 @@
  <section class="footer1">
     <div class="footer1-content">
       <div class="ajak">
-        <a href="#" class="aj" style="padding-left:20px">Աջակիցներ</a>
-        <a href="#"><i class="fas fa-angle-down"></i></a>
+        <div class="ajakicner">
+          <p class="aj" style="padding-left:20px">Աջակիցներ</p>
+          <p style="padding-left:10px"><i class="fas fa-angle-down"></i></p>
+        </div>
           <div class="box">
             <div class="main">
               <div class="img">
@@ -326,7 +328,10 @@ a:hover{
     background-position: 28px center;
 }*/
 body{
-    margin: 0 auto
+    margin: 0 auto;
+  }
+  .col{
+    position: absolute;
   }
   .footer1{
     background-color: #2d3748;
@@ -338,8 +343,11 @@ body{
     color: white;
     text-decoration: none;
   }
+  .footer1 p{
+    color: white;
+  }
   .footer1-content{
-    width: 500px;
+    width: 550px;
     margin: 0 auto;
     text-align: center;
     padding-top: 80px;
@@ -355,7 +363,7 @@ body{
     display: none;
     background-color: white;
     width: 350px;
-    height: 150px;
+    height: 130px;
     overflow-y: scroll;
     scroll-behavior:blue;
   }
@@ -376,7 +384,7 @@ body{
     color: #29293d;
   }
   .cont>p{
-    margin-right: 110px;
+    margin-right: 95px;
     /*margin-top:-50px !important;*/
     position: relative;
     top:15px;
@@ -409,12 +417,19 @@ body{
     border-radius: 5px; 
     margin-left: 20px
   }
+  .ajakicner{
+    display:inline-flex;
+  }
 @media only screen and (max-width: 600px) {
+  /*  .footer1{
+      width: 100%
+    }*/
     .footer1-content{
       display: flex;
       flex-direction: column;
       font-size: 18px;
       border:none !important;
+      text-align: center;
       
   }
   .border{
@@ -429,16 +444,18 @@ body{
     height: 300px;
     font-family: sans-serif;
     overflow: hidden;
+    width: 100%;
   }
   .zex{
     padding-top: 10px
   }
   .footer1-content{
     position: relative;
-    top: -40px;
-  }
+    right:55px;
+    top: -30px;
+      }
   .col{
-    margin-top: -20px;
+    margin-top: -50px;
   }
   .box{
     position: absolute;
@@ -464,7 +481,51 @@ body{
   }
 
 }
-
+@media only screen and (max-width: 400px) {
+    body{
+      margin: 0 auto;
+    }
+    .footer{
+    width: 100%;
+  }
+    .footer1-content{
+    position: relative;
+    right:115px;
+    top: -30px;
+    font-size: 13px;
+  }
+  .box{
+    width:300px;
+    position: relative;
+    left: 35px;
+    height: 150px;
+  }
+  .cont{
+    width: 200px;
+    justify-content: center;
+    text-align: center;
+    align-items:center;
+  }
+   .cont>p{
+    margin-right: 20px;
+    /*margin-top:-50px !important;*/
+    position: relative;
+    top:20px;
+    color:black;
+   /* font-size: 15px;
+     text-align: center;
+     justify-content: center;
+     align-items: center;*/
+  }
+  .cont>a{
+    word-break: break-all;
+    position: relative;
+    top: 15px;
+    left:20px
+  }
+  .col{
+    font-size: 15px;
+  }
 </style>
 
 
