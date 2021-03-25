@@ -46,7 +46,7 @@ include ('header.php');
                                     style="z-index: 5;"><img src="assets/img/1bg.jpg" alt=""
                                         data-ww="['full-proportional','full-proportional','full-proportional','full-proportional']"
                                         data-hh="['full-proportional','full-proportional','full-proportional','full-proportional']"
-                                        width="1920" height="1281" data-no-retina  id="bg_img" "> </div>
+                                        width="1920" height="1281" data-no-retina  id="bg_img" > </div>
 
                                 <!-- LAYER NR. 2 -->
                                 <div class="tp-caption   tp-resizeme size-header" id="slide-10-layer-6"
@@ -1156,7 +1156,20 @@ include ('header.php');
         </div>
     </section>
     <!-- end recent blog -->
-
+    <!-- Typing Test -->
+    <div class="test">
+        <div class="tasting">
+            <div class="tasting-content">
+            <h3>Typing Test - Ստուգիր տեքստ մուտքագրելու 
+            արագությունդ</h3>
+            <p>Թեստը կօգնի պարզել, թե ինչ արագությամբ ես կարողանում գրել ստեղնաշարով</p>
+            <button class="btn1">Սկսել թեստը</button>
+        </div>
+        
+        </div>
+    </div>
+   
+    <!-- End Typing test -->
     <!--================================================================================= 
                                 Start Our teacher
     ==================================================================================-->
