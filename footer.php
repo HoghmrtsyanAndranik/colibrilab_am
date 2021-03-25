@@ -354,12 +354,13 @@ body{
     width: 550px;
     margin: 0 auto;
     text-align: center;
-    padding-top: 80px;
+    padding-top: 68px;
     /*line-height: 2;*/
   }
   .ajak{
     display: inline-block;
     position: relative;
+    cursor: pointer;
 
   }
   .box{
@@ -392,6 +393,7 @@ body{
     /*margin-top:-50px !important;*/
     position: relative;
     top:15px;
+    color: black;
   }
   .main{
     display: flex;
