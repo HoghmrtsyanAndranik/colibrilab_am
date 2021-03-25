@@ -166,7 +166,7 @@ $('.cv_send').click(function(){
    let agree=0;
    if($('#Iagree').prop('checked')==true)
        agree==1;
-  
+ 
     
  $.ajax({
     url:'cv/register.php',

@@ -39,7 +39,7 @@ elseif($LANG=='ENG'){
  $pass1=test_input($_POST['pass1']);
  $pass2=test_input($_POST['pass2']);
  $agree=$_POST['agree'];
-echo $model->output($agree.'6666',false);
+
  
 if(empty($pass1)||empty($pass2)||empty($email)){
     echo $model->output($empty,false);
