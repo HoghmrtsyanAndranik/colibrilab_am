@@ -427,21 +427,29 @@ button {
 .pulseDiv1 {
     top: -100px;
     left: 100px;
+    width: 0;
+    height: 0;
 }
 
 .pulseDiv2 {
     top: -19px;
     left: 550px;
+    width: 0;
+    height: 0;
 }
 
 .pulseDiv3 {
     top: -109px;
     right: 550px;
+    width: 0;
+    height: 0;
 }
 
 .pulseDiv4 {
     /* top: -15px; */
     right: 90px;
+    width: 0;
+    height: 0;
 }
 
 .circleSpan {
@@ -657,7 +665,7 @@ button {
     -webkit-transition: .3s;
     transition: .3s;
     border-radius: 10px;
-    /*height: 35vh;*/
+    height: 400px;
 }
 
 /*.single-box::before {
