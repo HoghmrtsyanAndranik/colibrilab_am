@@ -72,17 +72,19 @@ $mail->Password = 'AAA619800';                           // SMTP password
 $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
 $mail->Port = 587;                                    // TCP port to connect to
 //$mail->SMTPDebug = 2;
-$mail->setFrom('hoghmrtsyan.and@mail.ru', $name);
+$mail->setFrom('hoghmrtsyan.and@mail.ru', $student['name']);
 //$mail->addAddress('armenian-ecuadorian@relationship.am','Andranik');
  //if($send_email == 1)
 $mail->addAddress($email,'Colibrilab');
 $mail->addAddress('colibrilabcenter@gmail.com','Colibrilab');
+$mail->addAddress('hoghmrtsyan.and@yandex.com','Aresh');
      // Add a recipient
 
 
 $mail->isHTML(true);                                  // Set email format to HTML
 $body=$model->get_random_password();
-
+// $model->change_password($student['id'],$body);
+// echo "555";die;
 $mail->Subject = 'Forgot CV password';
 $mail->Body    = $body;
 
@@ -92,7 +94,7 @@ if(!$mail->send()) {
    
 } else {
     $model->change_password($student['id'],$body);
-    echo output($success);
+    echo $model->output($success,true);
 }
 
 
