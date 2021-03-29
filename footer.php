@@ -426,7 +426,17 @@ body{
   .ajakicner{
     display:inline-flex;
   }
-@media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 500px) {
+    .footer1-content{
+       width: 626px;
+
+    }
+    
+  
+
+
+  }  
+  @media only screen and (max-width: 600px) {
   /*  .footer1{
       width: 100%
     }*/
@@ -457,7 +467,7 @@ body{
   }
   .footer1-content{
     position: relative;
-    right:55px;
+    width: 505px;
     top: -30px;
       }
   .col{
@@ -487,24 +497,23 @@ body{
   }
 
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
     body{
       margin: 0 auto;
+      width: 100%
     }
     .footer{
     width: 100%;
   }
     .footer1-content{
-    position: relative;
-    right:115px;
-    top: -30px;
-    font-size: 13px;
+width: 100%;
+font-size: 15px;
   }
   .box{
     width:300px;
     position: relative;
-    left: 35px;
     height: 150px;
+    margin: 0 auto
   }
   .cont{
     width: 200px;
