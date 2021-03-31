@@ -661,7 +661,7 @@ button {
     -webkit-transition: .3s;
     transition: .3s;
     border-radius: 10px;
-    /*height: 35vh;*/
+    height: 400px;
 }
 
 /*.single-box::before {
@@ -770,6 +770,7 @@ button {
     color: #3b566e;
     position: relative;
     z-index: 1;
+    height: 120px;
 }
 
 .tabs li a:hover,
@@ -2611,6 +2612,9 @@ button.btn.forg_cancel::after {
         }
         .tasting-content p{
             padding-top: 20px;
+        }
+        a.btn.btn1 {
+            background-color: #ef6c67;
         }
         .btn1{
             background-color: #fff;
