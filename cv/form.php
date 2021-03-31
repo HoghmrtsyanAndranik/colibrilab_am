@@ -66,12 +66,12 @@ for($i=date('Y');$i>=1950;$i--)
 		
 	
 	<div class = "container">
-		<div class = "top-first">
+		<div class = "top-first res">
 			<div class = "gluing">
 				<i class="fa fa-user" aria-hidden="true"></i>
 				<p class ="descript"><?=$personalinfo?></p>
 			</div>
-			<div class = "gluing">
+			<div class = "gluing res-f">
 				<p class = "lng"><?=$cvlanguage?></p>
 				<select class = "select-first">
 					<?php
@@ -91,7 +91,7 @@ for($i=date('Y');$i>=1950;$i--)
 		</div>
 					<form action="">
 		<div class = "body">
-			<div class = "gluing">
+			<div class = "gluing res-elev">
 				<div class = "add-photo">
 				    <form enctype="multipart/form-data">	
 				 				<!-- 	<i class="fa fa-camera" class = "add-ph" aria-hidden="true"></i> -->
@@ -102,13 +102,13 @@ for($i=date('Y');$i>=1950;$i--)
                            }
                            else{
                                $src='cv_images/camera.png';
-                               $width='width="80px"';
+                               $width='width="100px"';
                                echo '<p class = "add-ph">'.$addphoto.'</p>';
                                }
                         ?>				
 						<input name="img" type="file" id="file1" style="display:none"/>
 						<input type="button" id="new_image" class="foto" style="display:none"/>
-						<label id="image" for="file1"><img  id="new_img" src="<?=$src?>" <?=$width?> height="120px" style = "border-radius: 100%;"></label>
+						<label id="image" for="file1"><img  id="new_img" src="<?=$src?>" <?=$width?> height="100px" style = "border-radius: 100%;"></label>
 				    </form>
 					
 				</div>
@@ -116,15 +116,15 @@ for($i=date('Y');$i>=1950;$i--)
 				<div class = "column">
                      
                     <p class = "aboutinput-f"><?=$yourcvadressis?> <a href="http://colibrilab.great-site.net/cv/my_cv?id=<?=$user_id?>">http://colibrilab.great-site.net/cv/my_cv?id=<?=$user_id?></a></p> 
-					<p class = "aboutinput-f"><?=$name?>*</p>
+					<p class = "aboutinput-f"><?=$name?><span class = "ch-red">*</span></p>
 					<input type="text" required class = "input-name input vl" value="<?=$main_data['name']?>">
-					<p class = "aboutinput"><?=$profession?>*</p>
+					<p class = "aboutinput"><?=$profession?><span class = "ch-red">*</span></p>
 					<input  type="text" required class = "dev input vl" placeholder="<?=$programmer?>"value="<?=$main_data['profession']?>">
 				</div>
 			</div>
 			<div class = "foot">
 				<div class = "column">
-					<p class = "about"><?=$aboutme?>*</p>
+					<p class = "about"><?=$aboutme?><span class = "ch-red">*</span></p>
 					<textarea class = "textarea input vl about-me"placeholder="<?=$introduce?>" required ><?=$main_data['about_me']?></textarea>
 					<div class = "empty"></div>
 				</div>
@@ -234,7 +234,7 @@ case 3:
     </div>
 
 	<div class = "section-first sfone">
-		<div class = "flex-th">
+		<div class = "flex-th res-t">
 			<div class = "left">
 				<p class = "skill"><?=$skill?></p>
 				<select class="selector">
@@ -256,7 +256,7 @@ case 3:
 			</div>
 		</div>
 	</div>
-	<div class = "buttons">
+	<div class = "buttons res-tr">
 		<div class = "center">
 			<div class = "skill-plus-first"><i class="fa fa-plus-circle" aria-hidden="true"></i><p class = "new-skill"><?=$anotherskill?></p></div>
 		</div>
@@ -303,7 +303,7 @@ case 3:
      	<p class="th-of-ec"><?=$spec?></p>
      	<div class="interval"><?=$begin_year?> <?=$begin_month?>  - <?=$end_year?>  <?=$end_month?> </div>
      </div>
-     <div class="flex-sec">
+     <div class="flex-sec res-fr">
      	<i class="fa fa-times-circle x education" aria-hidden="true"></i>
      	<i class="fa fa-pencil pencil pen-one fff" aria-hidden="true"></i>
      	<i class="fa fa fa-bars handleT" aria-hidden="true"></i>
@@ -311,11 +311,11 @@ case 3:
      <div class="new-body" style="display: none;">
      	<div class="body-sec show-hide hides update_education"  style="display:block;">
      		<div class="content">
-     			<p class="title-input"><?=$specialization?>*</p>
+     			<p class="title-input"><?=$specialization?><span class = "ch-red">*</span></p>
      			<input type="text" class="desc-ss" value="<?=$spec?>" placeholder="<?=$web?>">
      		</div>
      		<div class="content">
-     			<p class="title-input"><?=$education_text?>*</p>
+     			<p class="title-input"><?=$education_text?><span class = "ch-red">*</span></p>
      			<input type="text" class="desc-tt" value="<?=$educ?>" placeholder="<?=$school?>">
      		</div>
      		<div class="content" style="display: flex;">
@@ -400,14 +400,14 @@ case 3:
 </div>
 		<div class = "body-sec show-hide s">
 			<div class = "content">
-				<p class = "title-input"><?=$specialization?>*</p>
+				<p class = "title-input"><?=$specialization?><span class = "ch-red">*</span></p>
 				<input type = "text" id="specialization" class = "desc-s" placeholder="<?=$web?>">
 			</div>
 			<div class = "content">
-				<p class = "title-input" ><?=$education_text?>*</p>
+				<p class = "title-input" ><?=$education_text?><span class = "ch-red">*</span></p>
 				<input type = "text" id="education" class = "desc-t"placeholder="<?=$school?>">
 			</div>
-			<div class = "content" style = "display: flex;">
+			<div class = "content  res-fv" style = "display: flex;">
 				<div class = "part-one" style="margin-right: 22px;">
 					<p class = "title-input"><?=$startdate?></p>
 					<div class = "flex-content">
@@ -484,7 +484,7 @@ case 3:
 			<div class="line-first-lng" id="<?=$id?>">
 	            <p class="lang"><?=$language?></p>
 	            <div class="flex-sq">
-		           <i class="fa fa-times-circle x del_lang" aria-hidden="true" style="margin-left:40px;"></i>
+		           <i class="fa fa-times-circle x del_lang res-te" aria-hidden="true" style="margin-left:40px;"></i>
 		           <i class="fa fa-pencil pencil" style="display:none;" aria-hidden="true"></i>
 		           <i class="fa fa fa-bars handleS" aria-hidden="true"></i>
 	            </div>
@@ -515,7 +515,7 @@ case 3:
 	</div>
 </div>
 <!-- ////experiences -->
-<div class = "container">
+<div class = "container res-nin">
 	<div class = "top">
 		<div class = "gluing">
 			<i class="fa fa-suitcase" aria-hidden="true"></i>
@@ -555,14 +555,14 @@ case 3:
 	<div class="new-body">
 		<div class="body-sec show-hide hides" style="display:block;">
 			<div class="content">
-				<p class="title-input"><?=$jobtitle?>*</p>
+				<p class="title-input"><?=$jobtitle?><span class = "ch-red">*</span></p>
 				<input type="text" class="desc-ss" value="<?=$job_title?>" placeholder="<?=$web?>">
 				
 			
 				
 			</div>
 			<div class="content">
-				<p class="title-input"><?=$company?>*</p>
+				<p class="title-input"><?=$company?><span class = "ch-red">*</span></p>
 				<input type="text" class="desc-tt" value="<?=$company?>" placeholder="<?=$school?>">
 			</div>
 			<div class="content" style="display: flex;">
@@ -648,14 +648,14 @@ case 3:
 
 		<div class = "body-sec show-hide-second">
 			<div class = "content">
-				<p class = "title-input"><?=$jobtitle?>*</p>
+				<p class = "title-input"><?=$jobtitle?><span class = "ch-red">*</span></p>
 				<input type = "text" placeholder="<?=$web?>" class = "input-lng-s">
 			</div>
 			<div class = "content">
-				<p class = "title-input"><?=$company?>*</p>
+				<p class = "title-input"><?=$company?><span class = "ch-red">*</span></p>
 				<input type = "text" placeholder="<?=$school?>" class = "input-comp">
 			</div>
-			<div class = "content" style = "display: flex;">
+			<div class = "content res-sx" style = "display: flex;">
 				<div class = "part-one" style="margin-right: 22px;">
 					<p class = "title-input"><?=$startdate?></p>
 					<div class = "flex-content">
@@ -726,18 +726,18 @@ case 3:
 	</div>
 	<div class = "all-body-first">
 		<div class = "content">
-			<p class = "title-input"><?=$adress?>*</p>
+			<p class = "title-input"><?=$adress?><span class = "ch-red">*</span></p>
 			<input type = "text" placeholder="" required class = "input-adress input vl" value="<?=$main_data['address']?>">
 		</div>
 		<div class = "content" style = "display: flex;">
 			<div class = "part-first">
-				<p class = "title-input" style = "margin-left: 0px;"><?=$phonenumber?>*</p>
+				<p class = "title-input res-sv" style = "margin-left: 0px;"><?=$phonenumber?><span class = "ch-red">*</span></p>
 				<div class = "flex-content"style="margin-top: 5px;">
 					<input type="text" required placeholder = "+374 960000" class = "input-numb input vl" value="<?=$main_data['phon']?>">
 				</div>
 			</div>
 			<div class = "part-sec">
-				<p class = "title-input"style = "margin-left: 0px;"><?=$email?>*<span id="wrong_email"></span></p>
+				<p class = "title-input res-sv"style = "margin-left: 0px;"><?=$email?><span class = "ch-red">*</span><span id="wrong_email"></span></p>
 				<div class = "flex-content" style="margin-top: 5px;">
 					<input type="email" required class = "input-email input vl" value="<?=$main_data['email']?>">
 				</div>
@@ -757,39 +757,51 @@ case 3:
 	</div>
 	<div class = "all-body-first" style="padding: 5px 0px 20px 0px;">
 		<div class="first-label">
+			<div class="left-flex">
 			<img src="img/facebook.svg" class = "linkIcon">
 			<p class="link-title">Facebook <?=$link?></p>
+			</div>
 			<input type="url" name="" class = "end-links facebook" value="<?=$connections['facebook']?>"required>
 		</div>
 		<div class="first-label">
+			<div class="left-flex">
 			<img src="img/linkedin .svg" class = "linkIcon">
 			<p class="link-title">LinkedIn <?=$link?></p>
-			<input type="url" name="" class = "end-links linkedin" style="margin-left: 30px;" value="<?=$connections['linkedIn']?>"required>
+			</div>
+			<input type="url" name="" class = "end-links linkedin" value="<?=$connections['linkedIn']?>"required>
 		</div>
 		<div class="first-label">
+			<div class="left-flex">
 			<img src="img/twitter .svg" class = "linkIcon">
 			<p class="link-title">Twitter <?=$link?></p>
-			<input type="url" name="" class = "end-links twitter"style="margin-left: 41px;" value="<?=$connections['twitter']?>" required>
+			</div>
+			<input type="url" name="" class = "end-links twitter" value="<?=$connections['twitter']?>" required>
 		</div>
 		<div class="first-label">
+			<div class="left-flex">
 			<img src="img/Dribble.svg" class = "linkIcon">
 			<p class="link-title">Dribble <?=$link?></p>
-			<input type="url" name="" class = "end-links dribble" style="margin-left: 39px;" value="<?=$connections['dribble']?>" required>
+			</div>
+			<input type="url" name="" class = "end-links dribble"  value="<?=$connections['dribble']?>" required>
 		</div>
 		<div class="first-label">
-			<img src="img/Github.svg" class = "linkIcon">
-			<p class="link-title">Github <?=$link?></p>
-			<input type="url" name="" class = "end-links github" style="margin-left: 41px;" value="<?=$connections['github']?>" required>
+			<div class="left-flex">
+				<img src="img/Github.svg" class = "linkIcon">
+				<p class="link-title">Github <?=$link?></p>
+			</div>
+			<input type="url" name="" class = "end-links github"  value="<?=$connections['github']?>" required>
 		</div>
 		<div class="first-label">
-			<img src="img/behance-logo.svg" class = "linkIcon">
-			<p class="link-title">Behance <?=$link?></p>
-			<input type="url" name="" class = "end-links behance" style="margin-left: 29px;" value="<?=$connections['behance']?>" required>
+			<div class="left-flex">
+				<img src="img/behance-logo.svg" class = "linkIcon">
+				<p class="link-title">Behance <?=$link?></p>
+			</div>
+			<input type="url" name="" class = "end-links behance"  value="<?=$connections['behance']?>" required>
 		</div>
 
 	</div>
 </div>
-<div class = "container" style = "background:none;box-shadow: none; position: relative;display: flex;">
+<div class = "container res-ei" style = "background:none;box-shadow: none; position: relative;display: flex;">
 	<label class = "label-end">
 		<div class="flex-end">
 			<?php

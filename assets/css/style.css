@@ -427,21 +427,25 @@ button {
 .pulseDiv1 {
     top: -100px;
     left: 100px;
+
 }
 
 .pulseDiv2 {
     top: -19px;
     left: 550px;
+
 }
 
 .pulseDiv3 {
     top: -109px;
     right: 550px;
+
 }
 
 .pulseDiv4 {
     /* top: -15px; */
     right: 90px;
+
 }
 
 .circleSpan {
@@ -2577,6 +2581,7 @@ button.btn.forg_cancel{
 button.btn.forg_cancel::after {
     background: none;
 }
+
 .test{
             margin: 0 auto;
             font-family: sans-serif;
@@ -2675,3 +2680,4 @@ button.btn.forg_cancel::after {
             height: 35px;
         }
 }
+

@@ -2,7 +2,6 @@
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
-	transform: scale(1);
 	font-family: 'Roboto', sans-serif;
 }
 
@@ -47,6 +46,7 @@ input {
 	box-shadow: 0px 0px 15px 0px #BABABA;
 	background-color: white;
 	margin-bottom: 15px;
+	border-radius: 5px;
 }
 
 .container-plus-first {
@@ -1304,7 +1304,14 @@ textarea {
 	border: 1px solid #A3A3A3;
 }
 body{
-	zoom: 150%;
+	zoom: 170%;
+}
+.add-ph{
+	display: none;
+}
+#new_img{
+	width: 125px!important;
+	height: 125px!important;
 }
 .selector>option{
 	font-size: 12px;
@@ -1368,11 +1375,211 @@ body{
 .callout>span{
 	margin-top: -10px;
 }
-
-@media only screen and (max-width: 877px) {
-  body{
-	zoom: 130%;
+.ch-red{
+	color: red;
 }
+.left-flex{
+	width: 187px;
+}
+.end-links{
+	margin-left: 0px;
+}
+.first-label{
+	display: flex;
+}
+@media only screen and (max-width: 500px) {
+.container {
+	width: 96%!important;
+	margin: 0 auto;
+	box-shadow: 0px 0px 15px 0px #BABABA;
+	background-color: white;
+	margin-bottom: 15px;
+}
+.textarea{
+	width: 93%;
+	margin-left: 10px;
+}
+.add-photo{
+	width: 100px;
+	height: 100px;
+}
+.about{
+	padding-left: 10px;
+}
+.text{
+	width: 100%;
+}
+.res{
+    display: flex;
+    flex-direction: column-reverse;
+}
+.res-f{
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.lng{
+	font-size: 12px;
+}
+.text{
+	margin-right: 0px!important;
+}
+.fl{
+	left:22px!important;
+}
+.res-t{
+	flex-direction: column;
+}
+.res-t>.right{
+	left: 22px;
+	width: 90%;
+}
+.res-t>.left{
+	width: 96%;
+}
+.res-tr{
+	margin-top: 30px;
+}
+.res-t>.right>.flex-th>.check{
+	top: 33px;
+}
+#new_img{
+	width: 100px!important;
+	height: 100px!important;
+}
+
+.gluing{
+    padding: 0px 10px 0px 10px;
+}
+.chargeline, .chargeline-sec, .chargeline-th{
+	margin-left: 10px;
+}
+.skill{
+    padding: 12px 0px 5px 10px;
+}
+.left>select{
+	margin-left: 10px;
+	width: 96%;
+}
+.no-flex{
+	width: 46%;
+}
+.flex{
+	width: 50%;
+}
+.range-percent{
+	margin-left: 26px;
+}
+.res-fr>i{
+	margin-right: 15px!important;
+}
+.res-fr>.handleT{
+	margin-right: -10px!important;
+}
+.flex-col{
+	padding-left: 10px!important;
+}
+.title-input{
+	margin-left: 10px!important;
+}
+.content>input{
+	margin-left: 10px!important;
+}
+.top>.gluing{
+	padding-right: 0px!important;
+}
+.res-fv{
+	flex-direction: column;
+}
+.flex-content>select{
+	margin-left: 10px;
+	width: 120px!important;
+}
+.part-one{
+	margin-right: 0px!important;
+}
+.textarea-s{
+	margin-left: 10px;
+}
+.input-lng>input{
+	margin-left: 10px;
+}
+.skill-plus-th{
+	margin-top: 30px!important;
+}
+.check-four{
+	top: 43px;
+    right: 13px;
+}
+.close-four{
+	top: 43px;
+    right: 118px;
+}
+.res-sx{
+	flex-direction: column;
+}
+.textarea-t{
+	margin-left: 10px;
+}
+.check-third,.check-second{
+	right: 13px;
+}
+.close-third,.close-second{
+    right: 118px;
+}
+.part-first{
+    margin: 0px 10px 40px 10px;
+}
+.res-sv{
+	margin-left: 0px!important;
+	margin-right: 0px!important;
+}
+.res-ei{
+	flex-direction: column;
+}
+.done{
+	width: 100%;
+}
+.text-end-second{
+	color: #707070;
+}
+.res-ei>.flex-right{
+    margin-bottom: 10px;
+}
+.res-nin>.all-body-first>.body-mini-th>.line-first>.flex-sec>i{
+	margin-right: 15px;
+}
+.handleF{
+	margin-right: -10px!important;
+}
+.handleS{
+	margin-right: -10px!important;
+}
+.res-te{
+	margin-right: 15px!important;
+}
+.res-elev{
+	align-items: flex-start!important;
+	padding-top: 10px;
+}
+.lang{
+	padding-left: 10px;
+}
+.linkIcon{
+	margin-left: 10px;
+}
+.link-title{
+	margin-left: 3px;
+	font-size: 12px;
+}
+.end-links{
+	width: 48%;
+}
+.left-flex{
+	width: 130px;
+}
+} 
+/*@media only screen and (max-width: 877px) {
+
 } 
 @media only screen and (max-width: 827px) {
   body{
@@ -1407,4 +1614,4 @@ body{
   body{
 	zoom: 80%;
 }
-} 
+} */

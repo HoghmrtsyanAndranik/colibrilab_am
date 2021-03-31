@@ -67,13 +67,14 @@ $phone = test_input($_REQUEST["phone"]);
 $course_type= test_input($_REQUEST["course_type"]);   
 $confirm_type= test_input($_REQUEST["confirm_type"]);   
 $agree_term[0]= test_input($_REQUEST["morningtime"]);             
-$agree_term[1]=test_input($_REQUEST["daytime"]);             
+$agree_term[1]=test_input($_REQUEST["daytime"]); 
+
 $agree_term[2]= test_input($_REQUEST["eveningtime"]);
 
 $comment= test_input($_REQUEST["comment"]);                         
-$all_terms=serialize($agree_term); 
-$students_count=(int)$confirm_type;
+$all_terms=implode(':',$agree_term); 
 
+$students_count=(int)$confirm_type;
 
 
 
@@ -98,13 +99,13 @@ $students_count=(int)$confirm_type;
 $user_id=$model->register_student($name,$age,$phone,$course_type,$confirm_type,$email,$all_terms,$comment);
 
 if(!$user_id){
-    echo $model->output($fail,false);
+    echo $model->output($user_id,false);
     die;
 }
 
 
-//echo true;
-
+// echo $model->output($agree_term,true);
+// die;
 $time="";
 if($agree_term[0]=='true')
 	$time.="Առավոտյան,";
@@ -529,50 +530,60 @@ $ourhtml="<!DOCTYPE html>
 // Նախնտրելի է։ $time<br>
 // Հաղորդագրություն։ $comment <br>";
 
+require 'src/PHPMailer.php';
+require 'src/SMTP.php';
 
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
-use PHPMailer\PHPMailer\Exception;
+
 
 // Load Composer's autoloader
-require 'src/PHPMailer.php';
-require 'src/SMTP.php';
-require 'src/Exception.php';
 
-$mail = new PHPMailer;
+
+
+$mail = new PHPMailer();
+
+$mail->isSMTP();
 $mail->CharSet = "UTF-8";
-$mail->isSMTP();                                      // Set mailer to use SMTP
-$mail->Host = 'smtp.mail.ru';  // Specify main and backup SMTP servers
-$mail->SMTPAuth = true;                               // Enable SMTP authentication
-$mail->Username = 'hoghmrtsyan.and@mail.ru';                 // SMTP username
-$mail->Password = 'AAA619800';                           // SMTP password
-$mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
-$mail->Port = 587;                                    // TCP port to connect to
-$mail->setFrom('hoghmrtsyan.and@mail.ru', $name);
+$mail->Host = 'smtp.gmail.com';
+$mail->Port = 587;
+$mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+$mail->SMTPAuth = true;
+$mail->Username = 'hoghmrtsyan.and@gmail.com';
+$mail->Password = 'oobjrgtduvjbvnow';
+$mail->setFrom('from@example.com', 'Colibrilab');
 $mail->addAddress($email,'Colibrilab');
-$mail->isHTML(true);                        
+//$mail->isHTML(true);                                  // Set email format to HTML
 $mail->Subject = 'study';
-$mail->Body=$html; 
+$mail->msgHTML($html);
+
+
+                                  // Set mailer to use SMTP
+                              // Enable SMTP authentication
+                          // SMTP password
+                           // Enable TLS encryption, `ssl` also accepted
+                                  // TCP port to connect to
+
+                
 if($mail->send()) {
- 	  $model->update_student($user_id);
+ 	  //$model->update_student($user_id);
     echo $model->output($success,true);
  }
  else 
     echo $model->output($fail,false);
-$mail_to_us = new PHPMailer;
-$mail_to_us->CharSet = "UTF-8";
-$mail_to_us->isSMTP();                                      // Set mailer to use SMTP
-$mail_to_us->Host = 'smtp.mail.ru';  // Specify main and backup SMTP servers
-$mail_to_us->SMTPAuth = true;                               // Enable SMTP authentication
-$mail_to_us->Username = 'hoghmrtsyan.and@mail.ru';                 // SMTP username
-$mail_to_us->Password = 'AAA619800';                           // SMTP password
-$mail_to_us->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
-$mail_to_us->Port = 587;                                    // TCP port to connect to
-$mail_to_us->setFrom('hoghmrtsyan.and@mail.ru', $name);
-$mail_to_us->addAddress('colibrilabcenter@gmail.com','Colibrilab');
-$mail_to_us->addAddress('hoghmrtsyan.and@gmail.com','Colibrilab');
-$mail_to_us->isHTML(true);                        
-$mail_to_us->Subject = 'study';
-$mail_to_us->Body=$ourhtml; 
-$mail_to_us->send();
 
+    $mail1 = new PHPMailer();
+    $mail1->isSMTP();
+    $mail1->CharSet = "UTF-8";
+    $mail1->Host = 'smtp.gmail.com';
+    $mail1->Port = 587;
+    $mail1->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
+    $mail1->SMTPAuth = true;
+    $mail1->Username = 'hoghmrtsyan.and@gmail.com';
+    $mail1->Password = 'oobjrgtduvjbvnow';
+    $mail1->setFrom('from@example.com', 'Colibrilab');
+     $mail1->addAddress('hoghmrtsyan.and@mail.ru','Colibrilab');
+    $mail1->isHTML(true);                                  // Set email format to HTML
+    $mail1->Subject = 'study';
+    $mail1->Body    = $ourhtml;
+    $mail1->send();

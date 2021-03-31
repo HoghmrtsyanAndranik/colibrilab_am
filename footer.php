@@ -194,33 +194,21 @@ $('.cv_send').click(function(){
 
 $('.forg_next').click(function(){
    let email=$('#cv_email_login_forgot').val();
-
+alert(555)
     $.ajax({
     url:'cv/forgot.php',
     type:'post',
-  dataType:'JSON',
+    dataType:'JSON',
     data:{
         email:email
     },
     success:function(d){
-        alert(d.message)
-        
-        $("#cv_error_text2_forgot").html(d.message); 
-       if(d.success==true){
+console.log(d);
+       if(d.success==true)$("#cv_error_text2_forgot").css('color','green');
+       else  $("#cv_error_text2_forgot").css('color','red');
 
-      //alert("Էջը ժամանակավորապես անհասանելի է");
-        //window.location.href = "cv/form?id="+d.message;
-       }
-        else{
-          
-        // $("#cv_error_text2_forgot").html(d.message); 
-        }
-      
+      $("#cv_error_text2_forgot").html(d.message);
     }
-
-
-
-
   }) 
 
 

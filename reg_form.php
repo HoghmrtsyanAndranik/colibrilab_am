@@ -235,6 +235,8 @@ $course_type=$_GET['course']??false;
               comment:comment
          },
           success:function(d){
+            console.log(d)
+            console.log(d.message)
            alert(d.message)
           // window.location.href = "http://colibrilab.am";
          }
