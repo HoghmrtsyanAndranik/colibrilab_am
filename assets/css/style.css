@@ -427,29 +427,25 @@ button {
 .pulseDiv1 {
     top: -100px;
     left: 100px;
-    /*width: 0;*/
-    /*height: 0;*/
+
 }
 
 .pulseDiv2 {
     top: -19px;
     left: 550px;
-    /*width: 0;*/
-    /*height: 0;*/
+
 }
 
 .pulseDiv3 {
     top: -109px;
     right: 550px;
-    /*width: 0;*/
-    /*height: 0;*/
+
 }
 
 .pulseDiv4 {
     /* top: -15px; */
     right: 90px;
-    /*width: 0;*/
-    /*height: 0;*/
+
 }
 
 .circleSpan {
@@ -665,7 +661,7 @@ button {
     -webkit-transition: .3s;
     transition: .3s;
     border-radius: 10px;
-    height: 400px;
+    /*height: 35vh;*/
 }
 
 /*.single-box::before {
@@ -2585,3 +2581,103 @@ button.btn.forg_cancel{
 button.btn.forg_cancel::after {
     background: none;
 }
+
+.test{
+            margin: 0 auto;
+            font-family: sans-serif;
+            color: #fff;
+        }
+        .tasting{
+            background-image: url('../img/test_bg.png');
+            background-repeat: no-repeat;
+            width: 100% !important;
+            height: 277px;
+            background-size: 2200px !important;
+            text-align: center;
+            padding-top: 50px;
+            
+        }
+        .tasting-content {
+            width: 700px;
+            margin: 0 auto;
+            margin-top:-22px;
+
+        }
+        .tasting-content h3{
+            font-size: 28px;
+            font-weight: 400;
+            color: white !important;
+
+        }
+        .tasting-content p{
+            padding-top: 20px;
+        }
+        .btn1{
+            background-color: #fff;
+            color: #387dff;
+            width: 181px;
+            height: 49px;
+            border-radius: 22px;
+            outline: none !important;
+            border: solid 1px #ffffff;
+            box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+            text-transform: uppercase;
+            margin-top: 30px;
+            cursor: pointer;
+            transition: 0.85s;
+
+        }
+        .btn1:hover{
+            background-color: #655be2;
+            color: white;
+            outline: none;
+            border:none;
+
+            
+
+        }
+        /*}*/
+        @media only screen and (max-width: 700px) {
+            .tasting{
+                width: 100%;
+            }
+    .tasting-content {
+        width: 100%;
+        font-size: 15px !important;
+        text-align: center !important;
+    }
+    .tasting-content h3{
+        font-size: 25px;
+    }
+    .tasting-content p{
+        width: 320px;
+    }
+    .btn1{
+            width: 150px;
+            height: 35px;
+        }
+}
+@media only screen  and ( max-width: 700px) {
+   .tasting{
+                width: 100% !important;
+            }
+    .tasting-content {
+        width: 100% !important;
+        font-size: 15px !important;
+        text-align: center !important;
+        margin: 0 auto;
+    }
+    .tasting-content h3{
+        font-size: 15px;
+
+    }
+    .tasting-content p{
+        /*width: 400px;*/
+        margin: 0 auto;
+    }
+    .btn1{
+            width: 150px;
+            height: 35px;
+        }
+}
+

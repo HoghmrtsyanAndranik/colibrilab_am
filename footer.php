@@ -3,12 +3,20 @@
 
  <section class="footer1">
     <div class="footer1-content">
-      <div class="ajak">
-        <div class="ajakicner">
+      <!-- <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Page 1-1</a></li>
+          <li><a href="#">Page 1-2</a></li>
+          <li><a href="#">Page 1-3</a></li> -->
+
+      <div class="dropdown ajak hide">
+        <div class="  ajakicner" data-toggle="dropdown">
           <p class="aj" style="padding-left:20px">Աջակիցներ</p>
           <p style="padding-left:10px"><i class="fas fa-angle-down"></i></p>
         </div>
-          <div class="box">
+          <div class="dropdown-menu box">
             <div class="main">
               <div class="img">
               <img src="https://avatars.githubusercontent.com/u/9532499?s=460&u=5cd8a861d4b8289bfcb45961eae953b114f562ec&v=4" style="width: 40px; height: 40px; margin-top: 25px; border-radius: 50%; ">
@@ -349,6 +357,7 @@ body{
     display: inline-block;
     position: relative;
     cursor: pointer;
+    background-color: #2d3748;
 
   }
   .box{
@@ -360,7 +369,7 @@ body{
     overflow-y: scroll;
     scroll-behavior:blue;
   }
-  .ajak:hover .box{
+  .ajak:onclick .box{
     display: block;
 
   }
@@ -377,8 +386,8 @@ body{
     color: #29293d;
   }
   .cont>p{
-    margin-right: 95px;
-    /*margin-top:-50px !important;*/
+    margin-left: 10px;
+    margin-top:7px;
     position: relative;
     top:15px;
     color: black;
@@ -414,7 +423,13 @@ body{
   .ajakicner{
     display:inline-flex;
   }
-@media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 320px) {
+    .footer1-content{
+       width: 626px;
+
+    }
+  }  
+  @media only screen and (max-width: 600px) {
   /*  .footer1{
       width: 100%
     }*/
@@ -445,7 +460,7 @@ body{
   }
   .footer1-content{
     position: relative;
-    right:55px;
+    width: 505px;
     top: -30px;
       }
   .col{
@@ -475,24 +490,23 @@ body{
   }
 
 }
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
     body{
       margin: 0 auto;
+      width: 100%
     }
     .footer{
     width: 100%;
   }
     .footer1-content{
-    position: relative;
-    right:115px;
-    top: -30px;
-    font-size: 13px;
+width: 100%;
+font-size: 15px;
   }
   .box{
     width:300px;
-    position: relative;
-    left: 35px;
+    position: relative; 
     height: 150px;
+    margin: 0 -85px;
   }
   .cont{
     width: 200px;
