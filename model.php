@@ -16,7 +16,7 @@ class Model{
            $password="Rafoc0l1br!";
            $db="dbs1166098";
         }
-        elseif($_SERVER['HTTP_HOST']=='http://colibrilab.great-site.net/'){
+        elseif($_SERVER['HTTP_HOST']=='colibrilab.great-site.net'){
            $host='sql307.epizy.com';
            $username='epiz_27420886';
            $password="2BYYivxZ9R";
@@ -42,13 +42,13 @@ class Model{
     }
 
     public function register_student($name,$age,$phone,$course_type,$confirm_type,$email,$all_terms,$comment){
-         $query="INSERT INTO students (fullname,age,phone,course_type,confirm_type,email,agree_term,`comment`)
-              VALUES('$name','$age','$phone','$course_type','$confirm_type','$email','$all_terms','$comment')";
+        $query="INSERT INTO students (fullname,age,phone,course_type,confirm_type,email,agree_term,`comment`)
+            VALUES('{$name}','{$age}','{$phone}','{$course_type}','{$confirm_type}','{$email}','{$all_terms}','{$comment}')";
              $res=mysqli_query($this->conn,$query);
              if($res)
              	return(mysqli_insert_id($this->conn));
              else
-              return false;
+              return mysqli_error($this->conn);
     }
     public function update_student($id){
        $query="UPDATE students set mail_sended=1 where id=$id";

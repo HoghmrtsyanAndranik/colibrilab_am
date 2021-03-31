@@ -133,7 +133,7 @@ new Sortable(player,{
 
 $(".top").click(function(){
 	let indexS = $(".top").index(this);
-	$(".all-body-first").eq(indexS).slideToggle()
+	$(".all-body-first").eq(indexS).toggle()
 	$(".w").eq(indexS).toggleClass("rot");
 })
 

@@ -274,6 +274,8 @@ $security_policy="Անվտանգության քաղաքականություն";
 $forgot_password="Մոռացե՞լ եք գաղտնաբառը";
 $agree="Համաձայն եմ կայքի";
 $chapter="կանոնադրությանը";
+$next="Առաջ";
+$cancel="Չեղարկել";
 }
 
 
@@ -510,4 +512,6 @@ $security_policy="Privacy policy";
 $forgot_password="Forgot Password";
 $agree="I agree with the ";
 $chapter=" site statute";
+$next="Next";
+$cancel="Cancel";
 }

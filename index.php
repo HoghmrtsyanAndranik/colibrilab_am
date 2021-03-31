@@ -1317,11 +1317,11 @@ include ('header.php');
                 <span id="cv_error_text2"style="color:red"></span>
             </fieldset>
             <fieldset id="tabs-3" class="ui-tabs-panel ui-corner-bottom ui-widget-content">
-                <p>Մոռացե՞լ եք գաղտնաբառը</p>
+                <p><?=$forgot_password?></p>
                 <input type="email" id="cv_email_login_forgot" placeholder="<?=$email?>">
                 <div class="but but_forg">
-                    <button class="btn forg_next">Առաջ</button>
-                    <button class="btn forg_cancel">Չեղարկել</button>
+                    <button class="btn forg_next"><?=$next?></button>
+                    <button class="btn forg_cancel"><?=$cancel?></button>
                 </div>
                 <span id="cv_error_text2_forgot"style="color:red"></span>
             </fieldset>
