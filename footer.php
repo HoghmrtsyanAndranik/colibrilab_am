@@ -13,7 +13,7 @@
 
       <div class="dropdown ajak hide">
         <div class="  ajakicner" data-toggle="dropdown">
-          <p class="aj" style="padding-left:20px">Աջակիցներ</p>
+          <p class="aj" style="padding-left:20px"><?=$supporters?></p>
           <p style="padding-left:10px"><i class="fas fa-angle-down"></i></p>
         </div>
           <div class="dropdown-menu box">
@@ -56,12 +56,24 @@
             
         </div>
       </div>
-      
+      <?php
+      if($LANG=='ARM'){
+        $questions_href="questions";
+        $discount_href="#";
+        $security_href="privacy_policy";
+      }
+      elseif($LANG=='ENG'){
+        $questions_href="questions_eng";
+        $discount_href="#";
+        $security_href="privacy_policy_eng";
+      }
+      ?>
       <a href="#" class="border"></a>
-      <a href="#" class="hth" style="padding-left: 20px">ՀՏՀ</a>
+      <a href="<?=$questions_href?>" class="hth" style="padding-left: 20px"><?=$frequently_questions?></a>
       <a href="#" class="border"></a>
-      <a href="#" class="zex" style="padding-left: 20px">Զեղչային քաղաքականություն</a>
-      <a href="#" style="line-height: 3">Անվտանգության քաղաքականություն</a>
+      <a href="<?=$discount_href?>" class="zex" style="padding-left: 20px"><?=$discount_policy?></a>
+      <a href="#" class="border"></a>
+      <a href="<?=$security_href?>" style="line-height: 3;padding-left: 20px"><?=$security_policy?></a>
     </div>
     <p style="color: white; text-align: center; padding-top: 40px" class="col">2021 Colibri lab development company</p>
   </section>
