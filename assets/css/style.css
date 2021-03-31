@@ -2621,7 +2621,6 @@ button.btn.forg_cancel::after {
             cursor: pointer;
             transition: 0.85s;
 
-
         }
         .btn1:hover{
             background-color: #655be2;
@@ -2632,7 +2631,7 @@ button.btn.forg_cancel::after {
             
 
         }
-        }
+        /*}*/
         @media only screen and (max-width: 700px) {
             .tasting{
                 width: 100%;
