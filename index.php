@@ -1160,10 +1160,9 @@ include ('header.php');
     <div class="test">
         <div class="tasting">
             <div class="tasting-content">
-            <h3>Typing Test - Ստուգիր տեքստ մուտքագրելու 
-            արագությունդ</h3>
-            <p>Թեստը կօգնի պարզել, թե ինչ արագությամբ ես կարողանում գրել ստեղնաշարով</p>
-            <button class="btn1">Սկսել թեստը</button>
+            <h3>Typing Test - <?=$check_speed?></h3>
+            <p><?=$test_help?></p>
+            <button class="btn1"><?=$starttest?></button>
         </div>
         
         </div>

@@ -75,7 +75,7 @@
       <a href="#" class="border"></a>
       <a href="<?=$security_href?>" style="line-height: 3;padding-left: 20px"><?=$security_policy?></a>
     </div>
-    <p style="color: white; text-align: center; padding-top: 40px" class="col">2021 Colibri lab development company</p>
+    <p style="color: white; text-align: center; padding-top: 40px" class="col">2021 Colibrilab development company</p>
   </section>
 
 </div>
@@ -206,8 +206,7 @@ $('.cv_send').click(function(){
 
 $('.forg_next').click(function(){
    let email=$('#cv_email_login_forgot').val();
-alert(555)
-    $.ajax({
+   $.ajax({
     url:'cv/forgot.php',
     type:'post',
     dataType:'JSON',
