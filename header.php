@@ -125,7 +125,7 @@ elseif($LANG=='ENG'){
                         <a class="nav-link js-scroll-trigger" href="#eduservices-contact"><?=$contact?></a>
                     </li>
                     <li class="nav-item">
-                        <a href="#" class="nav-link js-scroll-trigger other">Other</a>
+                        <a href="#" class="nav-link js-scroll-trigger other"><?=$other?></a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger  login" href="reg_form.php"><?=$signup?></a>
