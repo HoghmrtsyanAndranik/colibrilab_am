@@ -819,8 +819,8 @@ let name=$('.input-name').val();
          	action:'main'},
          success:function(d){
          	
-         	console.log(d)
-         	//location.reload();
+         	//console.log()
+         	window.location.href = $('#cv_address').text();
          }
     })  
 

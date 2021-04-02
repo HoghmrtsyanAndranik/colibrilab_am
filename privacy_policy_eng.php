@@ -7,6 +7,7 @@
     <link rel="stylesheet" type="text/css" href="assets/css/privacy_style.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/img/logo.png">
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
     </style>

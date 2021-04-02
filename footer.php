@@ -69,11 +69,11 @@
       }
       ?>
       <a href="#" class="border"></a>
-      <a href="<?=$questions_href?>" class="hth" style="padding-left: 20px"><?=$frequently_questions?></a>
+      <a href="<?=$questions_href?>" class="hth" style="padding-left: 20px" target="_blank"><?=$frequently_questions?></a>
       <a href="#" class="border"></a>
-      <a href="<?=$discount_href?>" class="zex" style="padding-left: 20px"><?=$discount_policy?></a>
+      <a href="<?=$discount_href?>" class="zex" style="padding-left: 20px" target="_blank"><?=$discount_policy?></a>
       <a href="#" class="border"></a>
-      <a href="<?=$security_href?>" style="line-height: 3;padding-left: 20px"><?=$security_policy?></a>
+      <a href="<?=$security_href?>" style="line-height: 3;padding-left: 20px" target="_blank"><?=$security_policy?></a>
     </div>
     <p style="color: white; text-align: center; padding-top: 40px" class="col">2021 Colibrilab development company</p>
   </section>
@@ -130,7 +130,7 @@ $('.send').click(function(){
    let name=$('#name').val();
    let email=$('#email').val();
    let message=$('#message').val();
-   
+  
    $("#form-messages").html("");
  $.ajax({
     url:'sendmail.php',
@@ -159,7 +159,7 @@ $('.send').click(function(){
    $('#subscribe_btn').click(function(){
 
        let email=$('#mc-email').val();
-       
+    
        $.ajax({
            url:'subscribe.php',
            type:'post',
