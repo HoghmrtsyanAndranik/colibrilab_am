@@ -14,17 +14,21 @@
 	}
 }
 @media only screen and (min-width : 1367px) and (max-width : 1650px){
+	.pulseDiv1 {
+		top: -103px;
+		left: 60px;
+	}
 	.pulseDiv2 {
-		top: -45px;
-		left: 370px;
+		top: -38px;
+		left: 424px;
 	}
 	.pulseDiv3 {
 		top: -109px;
-		right: 440px;
+		right: 580px;
 	}
 	.pulseDiv4 {
-		top: -25px;
-		right: 70px;
+		top: -33px;
+		right: 280px;
 	}
 }
 @media only screen and (max-width : 1366px) {
@@ -45,15 +49,15 @@
 	}
 	.pulseDiv2 {
 		top: -45px;
-		left: 330px;
+		left: 360px;
 	}
 	.pulseDiv3 {
-		top: -109px;
-		right: 300px;
+		top: -110px;
+		right: 520px;
 	}
 	.pulseDiv4 {
-		top: -53px;
-		right: 70px;
+		top: -32px;
+		right: 200px;
 	}
 	/*.navbar-nav {
 		margin-left: 50px !important;
@@ -177,6 +181,7 @@
 
 	.tabs li a {
 		padding: 20px 5px 10px;
+		font-size: 11px;
 	}
 
 	.tabs li a i {
@@ -469,7 +474,7 @@
 	}
 
 	.size-header {
-	font-size: 24px !important;
+	font-size: 22px !important;
 	}
 	.testimonial .testimonial-single{
 	padding: 10px !important;
@@ -486,9 +491,9 @@
 		height: 450px;
 	}
 }
-@media only screen and (min-width : 100px) and (max-width :325px){
+@media only screen and (min-width : 100px) and (max-width :320px){
 	.size-header {
-	font-size: 20px !important;
+	font-size: 18px !important;
 	}
 	h2 {
 	font-size: 20px !important;
@@ -522,6 +527,9 @@
 
 }
 @media(min-width: 320px) and (max-width: 430px){
+.single-box p {
+	font-size: 13px;
+}
 .reg_form{
 	padding: 15px;
 	width: 140%;
