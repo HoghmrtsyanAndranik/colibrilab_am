@@ -424,6 +424,14 @@ button {
 
 }
 
+.pulseDiv1,
+.pulseDiv2,
+.pulseDiv3,
+.pulseDiv4 {
+    width: 25px;
+    height: 25px;
+}
+
 .pulseDiv1 {
     top: -100px;
     left: 100px;
