@@ -50,11 +50,11 @@ $src='cv_images/camera.png';
 $connections=$model->get_connections($user_id);
 if($LANG=='ARM'){
   $hi='Ողջույն, ես '.$user['name'].'ն եմ ';
-
+  $edit="Խմբագրել CV-ին ";
 }
 elseif($LANG=='ENG'){
   $hi="Hi,I am ".$user['name']; 
-
+  $edit="Edit CV"; 
 }
 
 //$name=$main_data['name'];
@@ -69,7 +69,8 @@ elseif($LANG=='ENG'){
 </div>
 <?php
 if(isset($_SESSION['cv_user_id'])&&$_SESSION['cv_user_id']==$_GET['id'])
-   echo "<a href='form?id=$user_id'><button>To Form</button></a>";
+   // echo "<a href='form?id=$user_id'><button>To Form</button></a>";
+   echo "<a href='form?id=$user_id'><i class='fa fa-pencil penMyCv' aria-hidden='true' title='$edit'></i></a>";
 ?>
 
 <!-- header section -->

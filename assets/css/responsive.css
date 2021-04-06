@@ -527,6 +527,9 @@
 
 }
 @media(min-width: 320px) and (max-width: 430px){
+.size-header {
+   font-size: 18px !important;
+}
 .single-box p {
 	font-size: 13px;
 }
