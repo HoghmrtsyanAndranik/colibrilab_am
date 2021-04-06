@@ -271,6 +271,18 @@ footer {
   color: #fff;
 }
 
+.penMyCv {
+    position: absolute;
+    right: 0;
+    font-size: 25px;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 50%;
+    color: white;
+    background: #3366cc;
+    z-index: 1;
+  }
+
 @media ( max-width: 980px ) {
   .skills {
     margin-top: 30px;
