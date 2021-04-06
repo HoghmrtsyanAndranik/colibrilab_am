@@ -1,19 +1,12 @@
+<?php
+include ('header.php');
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="assets/css/privacy_style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-    </style>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-</head>
-<body>
-    <div class="container">
+
+?>
+
+
+
+    <div class="container" id="priv" style="margin-top: 130px">
         <p><span>Անվտանգության Քաղաքականություն</span></p>
         <p>Գաղտնիության քաղաքականություն</p>
  
@@ -53,6 +46,6 @@
         <p>Եթե դուք ունեք այլ հարցեր կամ կասկածներ գաղտնիության քաղաքականության վերաբերյալ, խնդրում ենք ուղարկել մեզ նամակ info@aist էլ. հասցեին:</p>
     </div>
 
-
-</body>
-</html>
+<?php
+    include ('footer.php');
+?>

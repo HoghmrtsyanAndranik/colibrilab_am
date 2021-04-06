@@ -16,7 +16,7 @@
           <p class="aj" style="padding-left:20px"><?=$supporters?></p>
           <p style="padding-left:10px"><i class="fas fa-angle-down"></i></p>
         </div>
-          <div class="dropdown-menu box">
+          <div class="dropdown-menu box" style="margin: 0 12px">
             <div class="main">
               <div class="img">
               <img src="https://avatars.githubusercontent.com/u/9532499?s=460&u=5cd8a861d4b8289bfcb45961eae953b114f562ec&v=4" style="width: 40px; height: 40px; margin-top: 25px; border-radius: 50%; ">
@@ -69,11 +69,10 @@
       }
       ?>
       <a href="#" class="border"></a>
-      <a href="<?=$questions_href?>" class="hth" style="padding-left: 20px"><?=$frequently_questions?></a>
+      <a href="<?=$questions_href?>" class="hth" style="padding-left: 20px; font-size: 20px"><?=$frequently_questions?></a>
       <a href="#" class="border"></a>
-      <a href="<?=$discount_href?>" class="zex" style="padding-left: 20px"><?=$discount_policy?></a>
-      <a href="#" class="border"></a>
-      <a href="<?=$security_href?>" style="line-height: 3;padding-left: 20px"><?=$security_policy?></a>
+      <a href="<?=$discount_href?>" class="zex" style="padding-left: 20px; font-size: 20px"><?=$discount_policy?></a>
+      <a href="<?=$security_href?>" class="anv" style="line-height: 3;padding-left: 20px; font-size: 20px"><?=$security_policy?></a>
     </div>
     <p style="color: white; text-align: center; padding-top: 40px" class="col">2021 Colibri lab development company</p>
   </section>
@@ -359,7 +358,7 @@ body{
     color: white;
   }
   .footer1-content{
-    width: 550px;
+    width: 730px;
     margin: 0 auto;
     text-align: center;
     padding-top: 68px;
@@ -370,6 +369,7 @@ body{
     position: relative;
     cursor: pointer;
     background-color: #2d3748;
+    font-size: 20px;
 
   }
   .box{
@@ -456,23 +456,28 @@ body{
   .border{
     border:none !important;
   }
-  .hth{
-    padding-top: 10px
+  .hth>a{
+    padding-top: 10px;
+    font-size: 30px !important;
+  }
+  .anv{
+    font-size: 20px;
   }
   .footer1{
     background-color: #2d3748;
     width: 100%;
-    height: 300px;
+    height: 340px;
     font-family: sans-serif;
     overflow: hidden;
     width: 100%;
   }
   .zex{
-    padding-top: 10px
+    padding-top: 10px;
+    font-size: 20px;
   }
   .footer1-content{
     position: relative;
-    width: 505px;
+    width: 728px;
     top: -30px;
       }
   .col{
@@ -512,7 +517,7 @@ body{
   }
     .footer1-content{
 width: 100%;
-font-size: 15px;
+font-size: 15px !important;
   }
   .box{
     width:300px;
