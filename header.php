@@ -29,7 +29,10 @@ elseif($LANG=='ENG'){
     <title>ColibriLab</title>
     <link rel="icon" href="assets/img/logo.png">
     <script src='https://kit.fontawesome.com/a076d05399.js'></script>
-
+    <link rel="stylesheet" type="text/css" href="assets/css/privacy_style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
     <link rel="stylesheet" type="text/css" href="assets/css/settings.css">
@@ -124,9 +127,19 @@ elseif($LANG=='ENG'){
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger" href="#eduservices-contact"><?=$contact?></a>
                     </li>
+                    <div class="dropdown">
                     <li class="nav-item">
-                        <a href="#" class="nav-link js-scroll-trigger other"><?=$other?></a>
-                    </li>
+                    <a class="nav-link js-scroll-trigger" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?=$other?>
+                    </a>
+                    
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Կապ</a>
+                        <a class="dropdown-item" href="#">Ստեղծել CV</a>
+                        <a class="dropdown-item" href="#">Մուտքագրման արագության թեստ</a>
+                        <a class="dropdown-item" href="#">Հաճախակի տրվող հարցեր</a>
+                    </div>
+                    </div>
+                        </li>
                     <li class="nav-item">
                         <a class="nav-link js-scroll-trigger  login" href="reg_form.php"><?=$signup?></a>
                     </li>
