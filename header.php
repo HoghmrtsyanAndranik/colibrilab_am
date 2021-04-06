@@ -129,7 +129,7 @@ elseif($LANG=='ENG'){
                     </li>
                     <div class="dropdown">
                     <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Այլ
+                    <a class="nav-link js-scroll-trigger" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?=$other?>
                     </a>
                     
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">

@@ -276,6 +276,10 @@ $agree="Համաձայն եմ կայքի";
 $chapter="կանոնադրությանը";
 $next="Առաջ";
 $cancel="Չեղարկել";
+$other="Այլ";
+$check_speed="Ստուգիր տեքստ մուտքագրելու արագությունդ";
+$test_help="Թեստը կօգնի պարզել, թե ինչ արագությամբ ես կարողանում գրել ստեղնաշարով";
+$starttest="Սկսել տեստը";
 }
 
 
@@ -514,4 +518,8 @@ $agree="I agree with the ";
 $chapter=" site statute";
 $next="Next";
 $cancel="Cancel";
+$other="Other";
+$check_speed="Check your typing speed";
+$test_help="The test will help you figure out how fast you can type with the keyboard";
+$starttest="Start the test";
 }

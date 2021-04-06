@@ -435,6 +435,15 @@ button {
     z-index: 8;
 
 }
+
+.pulseDiv1,
+.pulseDiv2,
+.pulseDiv3,
+.pulseDiv4 {
+    width: 25px;
+    height: 25px;
+}
+
 .pulseDiv1 {
     top: -100px;
     left: 100px;
@@ -1207,6 +1216,9 @@ svg.svg-inline--fa.fa-react.fa-w-16, svg.svg-inline--fa.fa-laravel.fa-w-16 {
     cursor: pointer;
 }
 
+i.icofont-linkedin {
+    color: white;
+}
 /* ==========================================================================
    08. Pricing Table
 ========================================================================== */

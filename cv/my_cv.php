@@ -195,9 +195,13 @@ if(isset($_SESSION['cv_user_id'])&&$_SESSION['cv_user_id']==$_GET['id'])
 			</div>
 			</div>
 
+<?php
+if(count($skills)>3){
 
+?>
 <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
 <a class="next" onclick="plusSlides(1)">&#10095;</a>
+<?php }?>
 		</div>
 	</div>
 </section>
