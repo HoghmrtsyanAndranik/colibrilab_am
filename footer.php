@@ -443,7 +443,7 @@ body{
 
     }
   }  
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 700px) {
   /*  .footer1{
       width: 100%
     }*/
@@ -453,6 +453,8 @@ body{
       font-size: 18px;
       border:none !important;
       text-align: center;
+      width: 100% !important;
+      margin: 0 auto;
       
   }
   .border{

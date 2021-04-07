@@ -1,20 +1,11 @@
 
-<!DOCTYPE html>
-<html>
-<head>
-    <title></title>
-    <meta charset="utf-8">
-    <link rel="stylesheet" type="text/css" href="assets/css/privacy_style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
-    <link rel="icon" href="assets/img/logo.png">
-    <style>
-    @import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
-    </style>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-</head>
-<body>
-    <div class="container">
+<?php
+include ('header.php');
+
+
+
+?>
+    <div class="container" style="margin-top: 130px">
         <p><span>Privacy Policy</span></p>
         <p>Privacy Policy</p>
  
@@ -55,6 +46,10 @@
         <p>If you have any other questions or concerns about the Privacy Policy, please email us at info@aist.</p>
     </div>
 
+<?php
+include ('footer.php');
 
-</body>
-</html>
+
+
+?>
+
