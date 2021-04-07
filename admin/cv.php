@@ -1,37 +1,29 @@
 
-
-<!DOCTYPE html>
-
 <?php
 include ('header.php');
+include ('Admin_model.php');
 session_start();
 if(!isset($_SESSION['admin'])){
    header('location:index.php');
     die;
 }
-include ('Admin_model.php');
 $model=new Admin_model;
-$students=$model->get_students();
-
-
-
-
-
+$cv_students=$model->get_cv_students();
 ?>
+
 <div class="container">
-  <h2>Our students</h2>
+  <h2>CV students</h2>
   
   <table class="table">
     <thead>
       <tr>
+      	<th></th>
+      	<th>ID</th>
         <th>Name</th>
-        <th>Age</th>
-        <th>Phon</th>
         <th>Email</th>
-        <th>Course Type</th>
-        <th>Members</th>
-        <th>Agree Term</th>
-        <th>Comment</th>
+        <th>Phon</th>
+        <th>Address</th>
+        <th>Show CV</th>
         <th>Delete</th>
       </tr>
     </thead>
@@ -40,38 +32,37 @@ $students=$model->get_students();
     	<?php
     	$ind=0;
     	$classes=['success',"danger","info","warning","active"];
-      foreach($students as $stud){
-
-           $agree=explode(':',$stud['agree_term']);
-            $agree_term='';
-            if($agree[0])
-            	$agree_term.='morning,';
-            if($agree[1])
-            	$agree_term.='daytime,'; 
-            if($agree[2])
-            	$agree_term.='evening';
+      foreach($cv_students as $stud){
+            if(!empty($stud['image']))
+                $src='../cv/cv_images/'.$stud['image'];
+                else
+             $src='../cv/cv_images/camera.png';
+          
             $id=$stud['id'];
-            $name=$stud['fullname'];
-            $age=$stud['age'];
-            $phone=$stud['phone'];
+            $name=$stud['name'];
             $email=$stud['email'];
-            $course_type=$stud['course_type'];
-            $confirm_type=$stud['confirm_type'];
-            $agree_term=trim($agree_term,',');
-            $comment=$stud['comment'];
+            $phone=$stud['phon'];
+            $address=$stud['address'];
+            $published=$stud['published'];
+            if($published)
+            	$elem="<a href='http://colibrilab.am/cv/my_cv.php?id=$id'>show</a>";
+            else
+            	$elem="Not published";
+
             $class=$classes[$ind];
             $ind++;
             $ind=$ind%5;
 
           echo"  <tr class='$class'>
+          <td><img src=$src width=75></td>
+        <td>$id</td>  
         <td>$name</td>
-        <td>$age</td>
-        <td>$phone</td>
         <td>$email</td>
-        <td>$course_type</td>
-        <td>$confirm_type</td>
-        <td>$agree_term</td>
-        <td>$comment</td>
+        <td>$phone</td>
+        
+        <td>$address</td>
+       
+        <td>$elem</td>
         <td><button class='btn btn-danger' id=$id>Delete</button</td>
       </tr>";
        }
@@ -90,7 +81,7 @@ $students=$model->get_students();
            url:'delete.php',
            type:'post',
            data:{
-             id:id,type:'student'
+             id:id,type:'cv'
            },
            success:function(d){
             //alert(d)
@@ -105,5 +96,3 @@ include ('footer.php');
 
 
 ?>
-
-

@@ -115,7 +115,7 @@ for($i=date('Y');$i>=1950;$i--)
 			</div>
 				<div class = "column">
                      
-                    <p class = "aboutinput-f" ><?=$yourcvadressis?> <a href="http://colibrilab.great-site.net/cv/my_cv?id=<?=$user_id?>" id="cv_address">http://colibrilab.great-site.net/cv/my_cv?id=<?=$user_id?></a></p> 
+                    <p class = "aboutinput-f" ><?=$yourcvadressis?> <a href="http://colibrilab.am/cv/my_cv?id=<?=$user_id?>" id="cv_address">http://colibrilab.am/cv/my_cv?id=<?=$user_id?></a></p> 
 					<p class = "aboutinput-f"><?=$name?><span class = "ch-red">*</span></p>
 					<input type="text" required class = "input-name input vl" value="<?=$main_data['name']?>">
 					<p class = "aboutinput"><?=$profession?><span class = "ch-red">*</span></p>
