@@ -66,11 +66,7 @@ class Model{
 
 
     }
-    public function get_students(){
-       $query="SELECT * FROM students";
-       $res=mysqli_query($this->conn,$query);
-        return mysqli_fetch_all($res,MYSQLI_ASSOC);
-    }
+   
 
     public function register_cv_student($email,$pass){
       $query="INSERT INTO cv_students (email,`password`)
