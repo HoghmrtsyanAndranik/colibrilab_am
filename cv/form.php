@@ -9,13 +9,8 @@ if(!isset($_SESSION['cv_user_id'])||!isset($_GET['id'])||$_SESSION['cv_user_id']
 }
 
 
-
-
-if(isset($_GET['id']))
-	file_put_contents('usersession.php',$_GET['id']);
-
 $model=new Model;
-$user_id=file_get_contents('usersession.php');
+$user_id=$_SESSION['cv_user_id'];
 /////setting my_cv href
 if($_SERVER['HTTP_HOST']=='colibrilab.am'){
       $mycv_href="http://colibrilab.am/cv/my_cv?id=$user_id";          
