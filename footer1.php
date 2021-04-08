@@ -16,7 +16,7 @@
           <p class="aj" style="padding-left:20px"><?=$supporters?></p>
           <p style="padding-left:10px"><i class="fas fa-angle-down"></i></p>
         </div>
-          <div class="dropdown-menu box" style="margin: 0 12px" x-placement="none !important">
+          <div class="dropdown-menu box" style="margin: 0 12px">
             <div class="main">
               <div class="img">
               <img src="https://avatars.githubusercontent.com/u/9532499?s=460&u=5cd8a861d4b8289bfcb45961eae953b114f562ec&v=4" style="width: 40px; height: 40px; margin-top: 25px; border-radius: 50%; ">
@@ -294,6 +294,7 @@ $('.cv_login').click(function(){
   display: flex!important;
   
 }
+
 .drop-content a{
   display: block;
   margin: 0 auto;
@@ -314,6 +315,8 @@ $('.cv_login').click(function(){
 }
 .con{
   margin-left:20px;
+
+
 }
 .con a{
     color: white !important;
