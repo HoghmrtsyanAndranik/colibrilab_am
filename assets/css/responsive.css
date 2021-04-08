@@ -67,7 +67,11 @@
 		margin: 2px !important;
 	}
 }
-
+@media only screen and (max-width : 1400px) {
+	.show{
+		margin: 0 -25px;
+	}
+}
 @media only screen and (max-width : 1024px) {
 	.contactForm {
 		margin-top: 30px;
@@ -85,7 +89,14 @@
 	}
 }
 
-
+@media only screen and (max-width : 1000px) {
+		.other5>.other6{
+		display: none !important;
+	}
+	.other5>.ana{
+    display: block !important;
+}
+}
 
 @media only screen and (max-width : 767px) {
 
@@ -249,6 +260,10 @@
 
 	.copyright {
 		padding-bottom: 30px;
+	}
+	.login{
+		width: 300px !important;
+		margin: 0 auto !important;
 	}
 }
 
