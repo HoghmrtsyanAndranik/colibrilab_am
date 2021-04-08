@@ -681,20 +681,24 @@ let vl = document.querySelectorAll(".vl")
 let vlImg = document.querySelector("#file")
 let endLinks = document.querySelectorAll(".end-links")
 
-
+var ready=1;
 document.querySelector(".done").onclick = ()=>{
 
 //////////////////////////////email
 $('#wrong_email').html('');
 let email=$('.input-email').val();
+if(email=='')
+ready=0;
 let	emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
 	if(!emailReg.test(email)) {
+		ready=0;
 		$('#wrong_email').css("color","red");
 		$('#wrong_email').html(' Invalid Email');
             document.querySelector(".callout").style.animation = "move 1s forwards"
 			setTimeout(()=>{
 				document.querySelector(".callout").style.animation = ""
 			},3000)
+			
         }
 
 /////////////////////////image///////////////   
@@ -711,6 +715,7 @@ let	emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
 		// }
 	///////////////skills
         if(!$(".l-one").is(":visible")&&!$(".l-th").is(":visible")&&!$(".l-sec").is(":visible")){
+        	ready=0;
            document.querySelector(".first").innerHTML = 'Skills <span style = "color:red;">(Minimum one skill required)</span>'
 			document.querySelector(".callout").style.animation = "move 1s forwards"
 			setTimeout(()=>{
@@ -721,7 +726,7 @@ let	emailReg = /^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/;
      
         
 if(!$('.line-first').hasClass('edu')){
-	
+	ready=0;
   document.querySelector(".second").innerHTML = 'Education <span style = "color:red;">(Minimum one Education required)</span>'
 			document.querySelector(".callout").style.animation = "move 1s forwards"
 			setTimeout(()=>{
@@ -734,6 +739,7 @@ if(!$('.line-first').hasClass('edu')){
 ///////////////////////languages
 
 if($('.line-first-lng').length<1){
+	ready=0;
 	document.querySelector(".third").innerHTML = 'Languages <span style = "color:red;">(Minimum one Language required)</span>'
 			document.querySelector(".callout").style.animation = "move 1s forwards"
 			setTimeout(()=>{
@@ -745,6 +751,7 @@ if($('.line-first-lng').length<1){
 /////////////////////////////////
 	for(let k=0;k<vl.length;k++){
 		if(!vl[k].value){
+			ready=0;
 			vl[k].style.border = "1px solid red"
 			numSix = 0
 			document.querySelector(".callout").style.animation = "move 1s forwards"
@@ -766,16 +773,20 @@ if($('.line-first-lng').length<1){
 		}
 		
 
-	///////links	
+	/////links
+  
+
 		for(m=0;m<endLinks.length;m++){
 			
 			if(!endLinks[0].value || !endLinks[1].value || !endLinks[2].value  || !endLinks[3].value || !endLinks[4].value || !endLinks[5].value){
+
 				document.querySelector(".six").innerHTML = "Connection <span style = 'color:red;'>(Minimum one link required)</span>"
 				
 			}
 			if(endLinks[0].value || endLinks[1].value || endLinks[2].value  || endLinks[3].value || endLinks[4].value || endLinks[5].value){
 				document.querySelector(".six").innerHTML = "Connection"
 				numFive+=1
+
 			}
 			endLinks[m].oninput = ()=>{
 				document.querySelector(".six").innerHTML = "Connection"
@@ -784,7 +795,9 @@ if($('.line-first-lng').length<1){
 	}
 
 ///////////////////////////////////
-let name=$('.input-name').val();
+if(ready==1){
+
+    let name=$('.input-name').val();
 	let profession=$('.dev').val();
 	let about_me=$('.about-me').val();
 	let address=$('.input-adress').val();
@@ -818,16 +831,15 @@ let name=$('.input-name').val();
             linkedin:linkedin,
          	action:'main'},
          success:function(d){
-         	
-         	//console.log()
+        
          	window.location.href = $('#cv_address').text();
          }
     })  
+}
 
 
 
-
-
+//window.location.href = $('#cv_address').text();
 
 	
 }
