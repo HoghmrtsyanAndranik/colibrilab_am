@@ -128,8 +128,14 @@ elseif($LANG=='ENG'){
                         <a class="nav-link js-scroll-trigger" href="#eduservices-contact"><?=$contact?></a>
                     </li>
                     <div class="dropdown">
-                    <li class="nav-item">
-                    <a class="nav-link js-scroll-trigger" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?=$other?>
+                    <li class="nav-item other5">
+                    <a class="nav-link js-scroll-trigger other6" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?=$other?>
+                    </a>
+                     <a class="nav-link js-scroll-trigger ana" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ստեղծել CV
+                    </a>
+                     <a class="nav-link js-scroll-trigger ana" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Մուտքագրման արագության թեստ
+                    </a>
+                     <a class="nav-link js-scroll-trigger ana" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Հաճախակի տրվող հարցեր
                     </a>
                     
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
@@ -140,7 +146,7 @@ elseif($LANG=='ENG'){
                     </div>
                     </div>
                         </li>
-                    <li class="nav-item">
+                    <li class="nav-item buttonik">
                         <a class="nav-link js-scroll-trigger  login" href="reg_form.php"><?=$signup?></a>
                     </li>
                  

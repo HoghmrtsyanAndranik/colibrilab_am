@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,14 +23,14 @@ http://www.templatemo.com/tm-467-easy-profile
 </head>
 <body data-spy="scroll" data-target=".navbar-collapse">
 <?php
- include('model.php');
+
+include('model.php');
 include('my_cv_language.php');
-session_start();
+
 if(!isset($_GET['id'])){
    echo'<h1>404<h1>';
    die;
 }
-
 $user_id=$_GET['id'];
 
 $model=new Model;
@@ -35,9 +38,11 @@ $published=$model->if_published($user_id);
 
 if(!isset($_SESSION['cv_user_id'])||$_SESSION['cv_user_id']!=$_GET['id'])
 if($published=='not published'){
+
 	echo'<h1>CV is not published<h1>';
 	die;
 }
+
 if($published=='not found'){
 	echo'<h1>You are not registrated<h1>';
 	die;

@@ -8,11 +8,26 @@ if(!isset($_SESSION['cv_user_id'])||!isset($_GET['id'])||$_SESSION['cv_user_id']
 	die;
 }
 
+
+
+
 if(isset($_GET['id']))
 	file_put_contents('usersession.php',$_GET['id']);
 
 $model=new Model;
 $user_id=file_get_contents('usersession.php');
+/////setting my_cv href
+if($_SERVER['HTTP_HOST']=='colibrilab.am'){
+      $mycv_href="http://colibrilab.am/cv/my_cv?id=$user_id";          
+}
+elseif($_SERVER['HTTP_HOST']=='colibrilab.great-site.net'){
+      $mycv_href="http://colibrilab.great-site.net/cv/my_cv?id=$user_id";     
+}
+elseif($_SERVER['HTTP_HOST']=='localhost'){
+    $mycv_href="http://localhost/colibrilab_am/cv/my_cv?id=$user_id";       
+}
+//////////////////
+
 
 $main_data=$model->get_main_data($user_id); 
 
@@ -115,7 +130,7 @@ for($i=date('Y');$i>=1950;$i--)
 			</div>
 				<div class = "column">
                      
-                    <p class = "aboutinput-f" ><?=$yourcvadressis?> <a href="http://localhost/colibrilab_am/cv/my_cv?id=<?=$user_id?>" id="cv_address">http://localhost/colibrilab_am/cv/my_cv?id=<?=$user_id?></a></p> 
+                    <p class = "aboutinput-f" ><?=$yourcvadressis?> <a href="<?=$mycv_href?>" id="cv_address"><?=$mycv_href?></a></p> 
 					<p class = "aboutinput-f"><?=$name?><span class = "ch-red">*</span></p>
 					<input type="text" required class = "input-name input vl" value="<?=$main_data['name']?>">
 					<p class = "aboutinput"><?=$profession?><span class = "ch-red">*</span></p>

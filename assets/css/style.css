@@ -371,6 +371,9 @@ button {
     color: #545f7e;
     padding: 2px 10px;
 }
+.other5>.ana{
+    display: none !important;
+}
 
 .color-set {
     background: #fff;
@@ -870,6 +873,9 @@ svg.svg-inline--fa.fa-react.fa-w-16, svg.svg-inline--fa.fa-laravel.fa-w-16 {
     border-radius: 38px;
     padding: 5px 20px !important;
     animation: pulse1 2s infinite;
+    width: 150px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .tabs li:first-child a::before {
