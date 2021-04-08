@@ -305,7 +305,7 @@ website:   	http://www.themepunch.com
     max-width: none!important;
     transition: none;
     margin-top: 50px;
-    padding: 300px;
+    /*padding: 300px;*/
     border: none
 }
 

@@ -2,7 +2,8 @@
 
 include('model.php');
 $model=new Model;
-$user_id=file_get_contents('usersession.php');
+session_start();
+$user_id=$_SESSION['cv_user_id'];
 $action=$_POST['action']??false;
 
 if($action=='main'){
