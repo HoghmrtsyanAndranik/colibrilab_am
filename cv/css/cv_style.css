@@ -890,6 +890,7 @@ option{
 	margin-bottom: 85px;
 	border: 1px solid white;
 	outline: none;
+	z-index: 2;
 }
 
 .done:hover {
@@ -1365,7 +1366,7 @@ body{
 	background-image: url(img/callout.png);
 	background-size: contain;
 	position: absolute;
-	z-index: -5;
+	z-index: 1;
 	opacity: 0;
 }
 @keyframes move{

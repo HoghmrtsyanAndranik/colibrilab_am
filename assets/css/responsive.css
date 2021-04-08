@@ -53,11 +53,11 @@
 	}
 	.pulseDiv3 {
 		top: -110px;
-		right: 520px;
+		right: 570px;
 	}
 	.pulseDiv4 {
-		top: -32px;
-		right: 200px;
+		top: -48px;
+		right: 280px;
 	}
 	/*.navbar-nav {
 		margin-left: 50px !important;
@@ -342,9 +342,15 @@
 	}
 }
 
+@media (max-width: 992px) {
+		.fixed-top {
+		    background: white;
+		}
+}
+
 @media only screen and (min-width : 992px) and (max-width : 1199px) {
 	.single-box {
-		padding: 30px 15px;
+		padding: 10px 15px;
 		/* height: 44vh; */
 	}
 
@@ -576,4 +582,10 @@
 	justify-content: center;
 	width: 79%;
 }
+}
+
+@media(min-width: 320px) and (max-width: 800px){
+	.form-registr {
+		flex-wrap: wrap;
+	}
 }
