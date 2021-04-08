@@ -29,6 +29,7 @@ if(!isset($_GET['id'])){
 }
 
 $user_id=$_GET['id'];
+
 $model=new Model;
 $published=$model->if_published($user_id);
 

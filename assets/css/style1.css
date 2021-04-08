@@ -115,11 +115,6 @@ strong {
 .block {
     position: relative;
     margin: 97px 0;
-    padding-top: 50px;
-}
-
-div#rev_slider_4_1_wrapper {
-    height: 100% !important;
 }
 
 .ptb-100 {
@@ -159,9 +154,9 @@ button {
 .mt-30 {
     margin-top: 30px;
 }
-/*.block{
+.block{
     margin: 150px auto;
-}*/
+}
 .accordion-wrapper{
     margin-bottom: 15px;
     box-shadow: 10px 5px 5px #c5d8f5;
@@ -240,6 +235,7 @@ button {
 	width: 35px;
 	height: 5px;
 	margin: 0 8px 0 0;
+
 	position: relative;
 	border-radius: 3px;
 	-moz-transition: .3s;
@@ -462,13 +458,13 @@ button {
 
 .pulseDiv3 {
     top: -109px;
-    right: 650px;
+    right: 550px;
 
 }
 
 .pulseDiv4 {
     /* top: -15px; */
-    right: 280px;
+    right: 90px;
 
 }
 
@@ -660,7 +656,7 @@ button {
     z-index: 3;
     /* padding-top: 80px; */
     position: relative;
-    top: -220px;
+    top: -190px;
     background-image: url(../img/1.png);
     background-repeat: no-repeat;
     background-size: 100%;
@@ -699,6 +695,7 @@ button {
     opacity: 0;
     visibility: hidden;
 }
+
 .single-box:hover::before {
 	opacity: 1;
     height: 100%;
@@ -2545,7 +2542,7 @@ color: #4482F9;
 }
 
 .show{
-margin-top: 0 !important;
+margin-top: 0!important
 }
 .drop{
 border: 1px solid #B8B8B8;
@@ -2579,7 +2576,7 @@ border-radius: 50%;
 margin-right: 10px;
 }
 
-.dropdown-menu-menu.show {
+.dropdown-menu.d-menu.show {
     transition: none !important;
 }
 
@@ -2695,14 +2692,3 @@ button.btn.forg_cancel::after {
         }
     }
 
-.show {
-    -moz-transition: .0s;
-    -o-transition: .0s;
-    -ms-transition: .0s;
-    -webkit-transition: .0s;
-    transition: .0s;
-}
-
-.fixed-top {
-    background: white;
-}
