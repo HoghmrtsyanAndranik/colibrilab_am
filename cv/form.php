@@ -388,7 +388,7 @@ case 3:
      				<input type="hidden" class="edu_id" value="<?=$id?>">
      				<div class="close-secondd">
      					<i class="fa fa-trash" aria-hidden="true"></i>
-     					<span class="del"><?=$delete?></span>
+     					<span class="del education" id=<?=$id?>><?=$delete?></span>
      				</div><div class="check-secondd save_edu" >
      					<i class="fa fa-save" aria-hidden="true"></i>
      					<span class="save "><?=$save?></span>
@@ -636,7 +636,7 @@ case 3:
                     <!-- <input type="hidden" id="exper_id" value="<?=$id?>"> -->
 					<div class="close-secondd">
 						<i class="fa fa-trash" aria-hidden="true"></i>
-						<span class="del"><?=$delete?></span>
+						<span class="del experiences" id=<?=$id?>><?=$delete?></span>
 					</div>
 					
 					<div class="check-secondd save_exp">

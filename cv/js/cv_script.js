@@ -24,7 +24,7 @@ $(".x").click(function(){
 	}
     if($(this).hasClass( "education" )){
 	     let id = $(this).parents('.line-first').attr('id')
-	   
+	  
 	     $.ajax({
          url:'add_cv.php',
          type:'post',
@@ -681,8 +681,8 @@ let vl = document.querySelectorAll(".vl")
 let vlImg = document.querySelector("#file")
 let endLinks = document.querySelectorAll(".end-links")
 
-var ready=1;
 document.querySelector(".done").onclick = ()=>{
+var ready=1;
 
 //////////////////////////////email
 $('#wrong_email').html('');
@@ -839,7 +839,7 @@ if(ready==1){
 
 
 
-//window.location.href = $('#cv_address').text();
+
 
 	
 }
@@ -896,110 +896,7 @@ $('.select-first').change(function(){
     })
 
 
-// $('.edit_experiance').click(function(){
-// 	showSecond.style.display = "block"
-// 	let self=$(this).parents('.exper');
-// 	let id=self.attr('id');
-// 	let title=self.find('.th-of-ec-S').text();
-// 	let desc=self.find('.exp_desc').text();
-// 	let company=self.find('.exp_comp').text();
-// 	let begin_year=self.find('.exp_begin_year').text();
-// 	let begin_month=self.find('.exp_begin_month').text();
-// 	let end_year=self.find('.exp_end_year').text();
-// 	let end_month=self.find('.exp_end_month').text();
-// 	$('.exp_id').attr('id', id);
-//  $('#jobtitle').val(title);
-//  $('.input-comp').val(company);
-//  $(".month-s").val(begin_month);
-//  $(".year-s").val(begin_year);
-//  $(".monthS-s").val(end_month);
-//  $(".yearS-s").val(end_year);
-//  $('#exper_desciption').val(desc);
 
-// })
-
-
-
-// $('.exper_save').click(function(){
-// 	let title=$("#jobtitle").val();
-// 	let company=$(".input-comp").val();
-// 	let start_month=$(".month-s").val();
-// 	let start_year=$(".year-s").val();
-// 	let end_month=$(".monthS-s").val();
-// 	let end_year=$(".yearS-s").val();
-//     let description=$('#exper_desciption').val();
-// 	let id=$('.exp_id').attr('id');
-//   $.ajax({
-//          url:'add_cv.php',
-//          type:'post',
-//          data:{
-//          	id:id,
-//          	title:title,
-//             company:company,
-//             start_month:start_month,
-//             start_year:start_year,
-//             end_month:end_month,
-//             end_year:end_year,
-//             description:description,
-//          	action:'add_experiance'},
-//          success:function(d){
-//          	console.log(d)
-//          	//location.reload();
-//          }
-//     })  
-// })
-
-// $('.main-save').click(function(){
-
-// 	let name=$('.input-name').val();
-// 	let profession=$('.prof').val();
-// 	let about_me=$('.about-me').val();
-// 	let address=$('.input-adress').val();
-// 	let phon=$('.input-numb').val();
-// 	let cv_email=$('.input-email').val();
-//     let check=$('.checkbox').val();
-//     let facebook=$('#facebook').val();
-//     let twitter=$('#twitter').val();
-//     let dribble=$('#dribble').val();
-//     let github=$('#github').val();
-//     let behance=$('#behance').val();
-//     let linkedin=$('#linkedin').val();
-
-//     $.ajax({
-//         url:'add_cv.php',
-//         type:'post',
-//         data:{
-//          	name:name,
-//             profession:profession,
-//             about_me:about_me,
-//             address:address,
-//             phon:phon,
-//             cv_email:cv_email,
-//             check:check,
-//             facebook:facebook,
-//             twitter:twitter,
-//             dribble:dribble,
-//             github:github,
-//             behance:behance,
-//             linkedin:linkedin,
-//          	action:'main'},
-//          success:function(d){
-//          	//alert(d)
-//          	console.log(d)
-//          	//location.reload();
-//          }
-//     })  
-
-// })
-
-// })
-/////////////////////
-// $('.foto').click(function(){
-
-//   parentTR=$(this).parents('tr');
- 
-
-// });
 
 $(':file').on('change', function() {
 
@@ -1023,5 +920,36 @@ $(':file').on('change', function() {
 
 
 });
+
+//deletions
+
+ $(".education").click(function(){ 
+    let id=$(this).attr('id')
+    
+    $.ajax({
+         url:'add_cv.php',
+         type:'post',
+         data:{id:id,action:'del_education'},
+         success:function(d){
+         	
+         }
+     })
+
+ })
+
+ $(".experiences").click(function(){ 
+    let id=$(this).attr('id')
+  
+    $.ajax({
+         url:'add_cv.php',
+         type:'post',
+         data:{id:id,action:'del_exp'},
+         success:function(d){
+         	
+         }
+     })
+
+ })
+
 
 });
