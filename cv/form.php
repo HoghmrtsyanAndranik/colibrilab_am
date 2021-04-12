@@ -155,57 +155,69 @@ for($i=date('Y');$i>=1950;$i--)
 			<div class = "all-body-first">
 <?php
 
-$skills=$model->get_skills($user_id);
+$skills1=$model->get_skills($user_id);
 
-$phpstyle='none';
-$php_percent=50;
-$laravelstyle='none';
-$laravel_percent=50;
-$javastyle='none';
-$java_percent=50;
-if($skills){
+// $phpstyle='none';
+// $php_percent=50;
+// $laravelstyle='none';
+// $laravel_percent=50;
+// $javastyle='none';
+// $java_percent=50;
+// if($skills){
 
-   foreach($skills as $sk){
-   	switch($sk['language']){
- case 1:
-     $phpstyle='block';
-     $php_percent=$sk['percent'];
-     break;
-case 2:
-     $laravelstyle='block';
-     $laravel_percent=$sk['percent'];
-     break;
-case 3:
-     $javastyle='block';
-     $java_percent=$sk['percent'];
-     break;     
+//    foreach($skills as $sk){
+//    	switch($sk['language']){
+//  case 1:
+//      $phpstyle='block';
+//      $php_percent=$sk['percent'];
+//      break;
+// case 2:
+//      $laravelstyle='block';
+//      $laravel_percent=$sk['percent'];
+//      break;
+// case 3:
+//      $javastyle='block';
+//      $java_percent=$sk['percent'];
+//      break;     
 
-   	}
+//    	}
   
-}
-}
+// }
+// }
 ?>
 
     <div class = "body-nn" style="flex-direction: column;">
-        <div class = "line-first handle l-one" style="display:<?=$phpstyle?>;" >
+       <?php
+      if($skills1)
+        foreach($skills1 as $sk){
+        $name=$sk['name'];
+        $percent=$sk['percent'];
+        $lang=$sk['language'];
+        $id=$sk['id'];
+     ?>
+        <div class = "line-first handle l-one"  >
             <div class = "gluing">
                 <div class = "flex">
-                    <p class = "phplaravel">PHP</p>
-                    <div class ="percent"><?=$php_percent?>%</div>
+                    <p class = "phplaravel"><?=$name?></p>
+                    <div class ="percent"><?=$percent?>%</div>
                 </div>
                 <div class = "flex-sec fl" style="left: 166px;top:0px;">
-                    <i class="fa fa-times-circle skills x" aria-hidden="true" style="margin-left: 40px;"></i>
+                    <i class="fa fa-times-circle skills x" aria-hidden="true" style="margin-left: 40px;" id="<?=$id?>"></i>
                     <i class="fa fa-pencil pen-one" aria-hidden="true" style="display: none;"></i>
                     <i class="fa fa-bars handle" aria-hidden="true"></i>
                 </div>
             </div>
             <div class = "no-flex">
-                <div class = "chargeline"><div class = "charge" style="width:<?=$php_percent?>% !important"></div>
+                <div class = "chargeline"><div class = "charge" style="width:<?=$percent?>% !important"></div>
             </div>
         </div>
             <div class = "empty"></div>
         </div>
-        <div class = "line-first handle l-sec" style="display:<?=$laravelstyle?>;">
+        <?php
+         }
+        ?>
+
+        <!-- <div class = "line-first handle l-sec" style="display:<?=$laravelstyle?>;">
             <div class = "gluing">
                 <div class = "flex">
                     <p class = "phplaravel-sec">Laravel</p>
@@ -223,7 +235,9 @@ case 3:
         </div>
             <div class = "empty"></div>
         </div>
-        <div class = "line-first handle l-th" style="display:<?=$javastyle?>;">
+ -->
+
+       <!--  <div class = "line-first handle l-th" style="display:<?=$javastyle?>;">
             <div class = "gluing">
                 <div class = "flex">
                     <p class = "phplaravel-th">Javascript</p>
@@ -240,7 +254,7 @@ case 3:
                 </div>
             </div>
             <div class = "empty"></div>
-        </div>
+        </div> -->
     </div>
 
 	<div class = "section-first sfone">
@@ -248,9 +262,15 @@ case 3:
 			<div class = "left">
 				<p class = "skill"><?=$skill?></p>
 				<select class="selector">
-					<option value="1">PHP</option>
-					<option value="2">Laravel</option>
-					<option value="3">Javascript</option>
+                <?php    
+                $prog_langs=$model->get_prog_langs();
+                foreach($prog_langs as $lang){
+                    $id=$lang['id'];
+                    $name=$lang['name'];
+                
+					echo "<option value='$id'>$name</option>";
+				}	
+                ?>    
 				</select>
 			</div>
 			<div class = "right">
@@ -487,12 +507,12 @@ case 3:
              $languages=$model->get_languages($user_id);
              foreach($languages as $lang){
 	           $id=$lang['id'];
-	           $language=$lang['language'];
+	           $language1=$lang['language'];
 	      ?>
 
 
 			<div class="line-first-lng" id="<?=$id?>">
-	            <p class="lang"><?=$language?></p>
+	            <p class="lang"><?=$language1?></p>
 	            <div class="flex-sq">
 		           <i class="fa fa-times-circle x del_lang res-te" aria-hidden="true" style="margin-left:40px;"></i>
 		           <i class="fa fa-pencil pencil" style="display:none;" aria-hidden="true"></i>
@@ -543,12 +563,12 @@ case 3:
                 $id=$exp['id'];
 
                $job_title=$exp['job_title'];
-               $company=$exp['company'];
+               $company1=$exp['company'];
                $begin_month=$exp['start_month'];
                $begin_year=$exp['start_year'];
                $end_month=$exp['end_month'];
                $end_year=$exp['end_year'];
-               $description=$exp['description'];
+               $description1=$exp['description'];
            
 		?>
 
@@ -573,7 +593,7 @@ case 3:
 			</div>
 			<div class="content">
 				<p class="title-input"><?=$company?><span class = "ch-red">*</span></p>
-				<input type="text" class="desc-tt" value="<?=$company?>" placeholder="<?=$school?>">
+				<input type="text" class="desc-tt" value="<?=$company1?>" placeholder="<?=$school?>">
 			</div>
 			<div class="content" style="display: flex;">
 				<div class="part-one" style="margin-right: 22px;">
@@ -632,7 +652,7 @@ case 3:
 				</div>
 				<div class="content" style="padding-bottom:30px;">
 					<p class="title-input"><?=$description?></p>
-					<textarea id="<?=$id?>" class="textarea-ss" type="text" placeholder="Write your text..." style="margin-top: 7px;height:67px;"value="<?=$description?>"><?=$description?></textarea>
+					<textarea id="<?=$id?>" class="textarea-ss" type="text" placeholder="Write your text..." style="margin-top: 7px;height:67px;"value="<?=$description?>"><?=$description1?></textarea>
                     <!-- <input type="hidden" id="exper_id" value="<?=$id?>"> -->
 					<div class="close-secondd">
 						<i class="fa fa-trash" aria-hidden="true"></i>

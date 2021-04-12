@@ -38,8 +38,8 @@ if($action=='skills'){
 }
 
 if($action=='del_skill'){
-  $lang=$_POST['lang']+1;
-  $model->del_skill($user_id,$lang);
+  $lang=$_POST['lang'];
+  $model->del_skill($lang);
   
 }
 

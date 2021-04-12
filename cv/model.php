@@ -79,14 +79,15 @@ public function add_skill($user_id,$lang,$percent){
     $res=mysqli_query($this->conn,$query);
 }
 
-public function del_skill($user_id,$lang){
-     $query="DELETE FROM skills where cv_students_id='$user_id' and language='$lang'";
+public function del_skill($lang){
+     $query="DELETE FROM skills where id='$lang'";
      mysqli_query($this->conn,$query);
 }
 public function get_skills($user_id){
-   $query="SELECT * FROM skills where cv_students_id='$user_id'";
+   $query="SELECT skills.*,`prog_langs`.name FROM skills join prog_langs on `prog_langs`.id=language where cv_students_id='$user_id'";
    $res=mysqli_query($this->conn,$query);
    if(mysqli_num_rows( $res)>0)
+
       return mysqli_fetch_all($res,MYSQLI_ASSOC);
   else
    return false;
@@ -258,10 +259,13 @@ public function change_password($id,$new_pass){
      mysqli_query($this->conn,$query);
 
 }
-
+public function get_prog_langs(){ 
+    $query="SELECT * FROM prog_langs";
+    $res=mysqli_query($this->conn,$query);
+    return mysqli_fetch_all($res,MYSQLI_ASSOC);
 }
 
-
+}
 
 
 

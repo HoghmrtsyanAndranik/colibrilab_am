@@ -8,17 +8,20 @@ let numSix = 0
 $(".x").click(function(){
 	// alert($(this).parents('.line-first'))
 
-   let index = $(".x").index(this);
+   //let index = $(".x").index(this);
  //     alert(index)
 	if($(this).hasClass( "skills" )){
-		// $(this).parent().parent().next().remove();
-		$(this).parent().parent().next().hide()
+		let id=$(this).attr('id');
+
+		 $(this).parent().parent().next().remove();
+
+		//$(this).parents('.line-first').find('.empty').remove();
 		$.ajax({
          url:'add_cv.php',
          type:'post',
-         data:{lang:index,action:'del_skill'},
+         data:{lang:id,action:'del_skill'},
          success:function(d){
-           //location.reload();
+          //location.reload();
          }
      })
 	}
@@ -83,41 +86,41 @@ document.querySelector(".check").onclick = ()=>{
          type:'post',
          data:{lang:prc,percent:sldr,action:'skills'},
          success:function(d){
-         	
+         	location.reload()
          }
     })
 
 
-	if(prc == 1){
-		$(".l-one").css("display", "block");
-		 document.querySelector(".l-one").style.display = "block"
-		$('.l-one').find('.gluing').css('display','flex')
-		$('.l-one').find('.no-flex').css('display','block')
-		 document.querySelector(".percent").innerHTML = `${sldr}%`
-		 document.querySelector(".charge").style.width = `${sldr}%`
-		// numOne+=1
-		 document.querySelector(".first").innerHTML = 'Skills'
+	// if(prc == 1){
+	// 	$(".l-one").css("display", "block");
+	// 	 document.querySelector(".l-one").style.display = "block"
+	// 	$('.l-one').find('.gluing').css('display','flex')
+	// 	$('.l-one').find('.no-flex').css('display','block')
+	// 	 document.querySelector(".percent").innerHTML = `${sldr}%`
+	// 	 document.querySelector(".charge").style.width = `${sldr}%`
+	// 	// numOne+=1
+	// 	 document.querySelector(".first").innerHTML = 'Skills'
 
-	}
-	else if (prc == 2){
-		 document.querySelector(".l-sec").style.display = "block"
-		$(".l-sec").find('.gluing').css('display','flex')
-		$(".l-sec").find('.no-flex').css('display','block')
-		 document.querySelector(".percent-sec").innerHTML = `${sldr}%`
-	 document.querySelector(".charge-sec").style.width = `${sldr}%`
-		// numOne+=1
-		 document.querySelector(".first").innerHTML = 'Skills'
- }
-	else if (prc == 3){
+	// }
+	// else if (prc == 2){
+	// 	 document.querySelector(".l-sec").style.display = "block"
+	// 	$(".l-sec").find('.gluing').css('display','flex')
+	// 	$(".l-sec").find('.no-flex').css('display','block')
+	// 	 document.querySelector(".percent-sec").innerHTML = `${sldr}%`
+	//  document.querySelector(".charge-sec").style.width = `${sldr}%`
+	// 	// numOne+=1
+	// 	 document.querySelector(".first").innerHTML = 'Skills'
+ // }
+	// else if (prc == 3){
 		
-		 document.querySelector(".l-th").style.display = "block"
-		$('.l-th').find('.gluing').css('display','flex')
-		$('.l-th').find('.no-flex').css('display','block')
-	document.querySelector(".percent-th").innerHTML = `${sldr}%`
-		 document.querySelector(".charge-th").style.width = `${sldr}%`
-		// numOne+=1
-		document.querySelector(".first").innerHTML = 'Skills'
-	}
+	// 	 document.querySelector(".l-th").style.display = "block"
+	// 	$('.l-th').find('.gluing').css('display','flex')
+	// 	$('.l-th').find('.no-flex').css('display','block')
+	// document.querySelector(".percent-th").innerHTML = `${sldr}%`
+	// 	 document.querySelector(".charge-th").style.width = `${sldr}%`
+	// 	// numOne+=1
+	// 	document.querySelector(".first").innerHTML = 'Skills'
+	// }
 
  document.querySelector(".sfone").style.display = "none"
 
@@ -259,8 +262,8 @@ for(let c=0;c<fff.length;c++){
 		document.querySelectorAll(".line-first")[c+3].classList.toggle("line-first-toggle")
 	}
 	ccc[c].onclick = ()=>{
-
-		document.querySelectorAll(".line-first")[c+3].remove()
+       // alert(55555222)
+		//document.querySelectorAll(".line-first")[c+3].remove()
 	}
 
 // $('.save_exp1').click(function(){
@@ -558,7 +561,8 @@ function addT() {
 				document.querySelectorAll(".line-first")[c+3].classList.toggle("line-first-toggle")
 		}
 		ccc[c].onclick = ()=>{
-			document.querySelectorAll(".line-first")[c+3].remove()
+			alert(33333)
+			//document.querySelectorAll(".line-first")[c+3].remove()
 		}
 				document.querySelectorAll(".check-secondd")[c].onclick=()=>{
 				document.querySelectorAll(".th-of-ec")[c].innerText = document.querySelectorAll(".desc-ss")[c].value
@@ -939,7 +943,8 @@ $(':file').on('change', function() {
 
  $(".experiences").click(function(){ 
     let id=$(this).attr('id')
-  
+    $(this).parents(".line-first").remove();
+
     $.ajax({
          url:'add_cv.php',
          type:'post',
