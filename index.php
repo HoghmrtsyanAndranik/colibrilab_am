@@ -912,6 +912,7 @@ include ('header.php');
                                 <li><i class="fa fa-check"></i> Responsive design, Bootstrap</li>
                                 <li><i class="fa fa-check"></i> JavaScript, OOP, jQuery</li>
                                 <li><i class="fa fa-check"></i> React.js </li>
+                                 <li><i class="fa fa-check"></i> Redux</li>
                             </ul>
                             <div class="pricing-content-btn pricing-btn ">
                                 <a class="btn btn2" href="reg_form.php?course=front"><?=$signup?></a>

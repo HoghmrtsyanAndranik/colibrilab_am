@@ -217,10 +217,19 @@ $('.forg_next').click(function(){
     },
     success:function(d){
 console.log(d);
-       if(d.success==true)$("#cv_error_text2_forgot").css('color','green');
-       else  $("#cv_error_text2_forgot").css('color','red');
-
-      $("#cv_error_text2_forgot").html(d.message);
+       if(d.success==true){
+        
+        $('#tabs-2').show();
+        $('#tabs-3').hide();
+        $("#cv_error_text2").css('color','green')
+        $("#cv_error_text2").html(d.message)
+       }
+       else{ 
+        
+        $("#cv_error_text2_forgot").css('color','red')
+        $("#cv_error_text2_forgot").html(d.message);
+       }
+       
     }
   }) 
 
