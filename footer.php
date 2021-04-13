@@ -357,11 +357,12 @@ body{
     color: white;
   }
   .footer1-content{
-    width: 730px;
+    width: 550px;
     margin: 0 auto;
     text-align: center;
-    padding-top: 68px;
+    padding-top: 52px;
     /*line-height: 2;*/
+    font-family: cursive;
   }
   .ajak{
     display: inline-block;

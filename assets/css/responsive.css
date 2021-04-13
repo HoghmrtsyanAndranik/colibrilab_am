@@ -399,7 +399,9 @@
 	#font-size {
 		font-size: 30px;
 	}
-
+		.buttonik{
+    padding-top: 20px !important;
+}
 	.nav-link {
 		text-align: center;
 	}
@@ -511,6 +513,9 @@
 	.testimonial-single{
 		height: 450px;
 	}
+	.buttonik{
+    padding-top: 20px !important;
+}
 }
 @media only screen and (min-width : 100px) and (max-width :320px){
 	.size-header {
@@ -561,7 +566,8 @@
 #last-li{
 	display:flex;
 	justify-content: center;
-	width: 59%;
+	width: 65%;
+	padding-top: 7px;
 }
 	a#ui-id-1, a#ui-id-2  {
 		font-size: 15px;
@@ -587,7 +593,7 @@
 	#last-li{
 	display:flex;
 	justify-content: center;
-	width: 69%;
+	width: 80%;
 }
 }
 

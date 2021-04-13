@@ -1443,14 +1443,16 @@ CV END
 
             <div class="row">
                 <div class="col-lg-4 col-md-6">
-                    <div class="contact-box">
+                    <div class="contact-box" style="padding: 47px 20px;
+
+                    ">
                         <h3><i class="icofont-google-map"></i><?=$addr?></h3>
                         <p><a href="https://goo.gl/maps/Ld22zFYgNaXCDDM29" target="_blank"><?=$yerevan?><br><?=$address?></a></p>
                     </div>
                 </div>
 
                 <div class="col-lg-4 col-md-6">
-                    <div class="contact-box box2">
+                    <div class="contact-box box2" style="padding: 47px 20px;">
                         <h3><i class="icofont-envelope"></i><?=$email?></h3>
                         <p><a href="mailto:#">colibrilabcenter@gmail.com</a></p>
                         <p><a href="mailto:#">info@colibrilab.am</a></p>
@@ -1462,8 +1464,9 @@ CV END
                 <div class="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
                     <div class="contact-box box3">
                         <h3><i class="icofont-phone"></i> <?=$phone?></h3>
-                        <p><a href="callto:37491234367">+374 91 23-43-67</a></p>
-                        <p><a href="callto:+37477514631">+374 77 51-46-31</a></p>
+                        <p><a href="callto:37491234367">+374 98 75-73-50</a></p>
+                        <p><a href="callto:+37477514631">+374 55 75-73-50</a></p>
+                        <p><a href="callto:+37477514631">+374 33 75-73-50</a></p>
                     </div>
                 </div>
 
