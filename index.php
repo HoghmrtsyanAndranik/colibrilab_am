@@ -88,7 +88,7 @@ include ('header.php');
                                 data-param3="" data-param4="" data-param5="" data-param6="" data-param7=""
                                 data-param8="" data-param9="" data-param10="" data-description="">
                                 <!-- MAIN IMAGE -->
-                                <img src="assets/img/transparent.png" data-bgcolor='#ffffff' style='
+                                <img src="" data-bgcolor='#ffffff' style='
                                     background:#ffffff' alt="" data-bgposition="center center" data-bgfit="cover"
                                     data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
                                 <!-- LAYERS -->
@@ -912,6 +912,7 @@ include ('header.php');
                                 <li><i class="fa fa-check"></i> Responsive design, Bootstrap</li>
                                 <li><i class="fa fa-check"></i> JavaScript, OOP, jQuery</li>
                                 <li><i class="fa fa-check"></i> React.js </li>
+                                 <li><i class="fa fa-check"></i> Redux</li>
                             </ul>
                             <div class="pricing-content-btn pricing-btn ">
                                 <a class="btn btn2" href="reg_form.php?course=front"><?=$signup?></a>
@@ -1162,7 +1163,7 @@ include ('header.php');
             <div class="tasting-content">
             <h3>Typing Test - <?=$check_speed?></h3>
             <p><?=$test_help?></p>
-            <button class="btn1"><?=$starttest?></button>
+            <a href="typing-test" target="_blank"><button class="btn1"><?=$starttest?></button></a>
         </div>
         
         </div>

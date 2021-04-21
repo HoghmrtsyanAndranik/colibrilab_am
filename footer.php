@@ -58,22 +58,21 @@
       </div>
       <?php
       if($LANG=='ARM'){
-        $questions_href="questions";
+       
         $discount_href="#";
-        $security_href="privacy_policy";
+       
       }
       elseif($LANG=='ENG'){
-        $questions_href="questions_eng";
+       
         $discount_href="#";
-        $security_href="privacy_policy_eng";
-      }
+        }
       ?>
       <a href="#" class="border"></a>
 
-      <a href="<?=$questions_href?>" class="hth" style="padding-left: 20px; font-size: 20px"><?=$frequently_questions?></a>
+      <a href="questions" class="hth" style="padding-left: 20px; font-size: 20px"><?=$frequently_questions?></a>
       <a href="#" class="border"></a>
-      <a href="<?=$discount_href?>" class="zex" style="padding-left: 20px; font-size: 20px"><?=$discount_policy?></a><br>
-      <a href="<?=$security_href?>" class="anv" style="line-height: 3;padding-left: 20px; font-size: 20px"><?=$security_policy?></a>
+      <a href="<?=$discount_href?>" class="zex" style="padding-left: 20px; font-size: 20px"><?=$discount_policy?></a>
+      <a href="privacy_policy" class="anv" style="line-height: 3;padding-left: 38px; font-size: 20px"><?=$security_policy?></a>
 
 
     </div>
@@ -217,10 +216,19 @@ $('.forg_next').click(function(){
     },
     success:function(d){
 console.log(d);
-       if(d.success==true)$("#cv_error_text2_forgot").css('color','green');
-       else  $("#cv_error_text2_forgot").css('color','red');
-
-      $("#cv_error_text2_forgot").html(d.message);
+       if(d.success==true){
+        
+        $('#tabs-2').show();
+        $('#tabs-3').hide();
+        $("#cv_error_text2").css('color','green')
+        $("#cv_error_text2").html(d.message)
+       }
+       else{ 
+        
+        $("#cv_error_text2_forgot").css('color','red')
+        $("#cv_error_text2_forgot").html(d.message);
+       }
+       
     }
   }) 
 
