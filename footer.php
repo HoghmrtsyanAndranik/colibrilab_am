@@ -71,13 +71,10 @@
 
       <a href="questions" class="hth" style="padding-left: 20px; font-size: 20px"><?=$frequently_questions?></a>
       <a href="#" class="border"></a>
-<<<<<<< HEAD
+
       <a href="<?=$discount_href?>" class="zex" style="padding-left: 20px; font-size: 20px"><?=$discount_policy?></a><br>
-      <a href="<?=$security_href?>" class="anv" style="line-height: 3;padding-left: 20px; font-size: 20px"><?=$security_policy?></a>
-=======
-      <a href="<?=$discount_href?>" class="zex" style="padding-left: 20px; font-size: 20px"><?=$discount_policy?></a>
       <a href="privacy_policy" class="anv" style="line-height: 3;padding-left: 38px; font-size: 20px"><?=$security_policy?></a>
->>>>>>> 9b820675c351f7a371ec6d9ae7d6db38958036fd
+
 
 
     </div>
