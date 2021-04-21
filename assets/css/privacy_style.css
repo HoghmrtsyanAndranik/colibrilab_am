@@ -20,6 +20,7 @@ p span{
 .container h2{
   font-size: 21px;
   font-weight: 700 !important;
+  padding: 10px 0;
 }
 @media (max-width: 500px){
 p span{

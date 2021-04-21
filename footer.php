@@ -72,7 +72,7 @@
 
       <a href="<?=$questions_href?>" class="hth" style="padding-left: 20px; font-size: 20px"><?=$frequently_questions?></a>
       <a href="#" class="border"></a>
-      <a href="<?=$discount_href?>" class="zex" style="padding-left: 20px; font-size: 20px"><?=$discount_policy?></a>
+      <a href="<?=$discount_href?>" class="zex" style="padding-left: 20px; font-size: 20px"><?=$discount_policy?></a><br>
       <a href="<?=$security_href?>" class="anv" style="line-height: 3;padding-left: 20px; font-size: 20px"><?=$security_policy?></a>
 
 
@@ -345,9 +345,8 @@ body{
   }
   .footer1{
     background-color: #2d3748;
-    width: 100%;
+    width: 100% !important;
     height: 250px;
-    font-family: sans-serif;
   }
   .footer1 a{
     color: white;
@@ -357,12 +356,12 @@ body{
     color: white;
   }
   .footer1-content{
-    width: 550px;
+    width: 590px;
     margin: 0 auto;
     text-align: center;
     padding-top: 52px;
     /*line-height: 2;*/
-    font-family: cursive;
+    font-family: 'Roboto', sans-serif;
   }
   .ajak{
     display: inline-block;
