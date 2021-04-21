@@ -7,7 +7,7 @@ include ('header.php');
 ?>
     <div class="container" style="margin-top: 130px">
         <p><span>Privacy Policy</span></p>
-        <p>Privacy Policy</p>
+        <h2>Privacy Policy</h2>
  
         <p>When you make a request on ColibriLab.am website, you may be asked for the following information: your name, e-mail address, phone number. ColibriLab collects only the minimum information (which you provide) needed to process and execute your request.</p>
 
@@ -43,7 +43,7 @@ include ('header.php');
 
         <p>To protect the privacy and security of your information, we verify your identity before giving you access and making corrections. If you want to access and edit your personal information, write to us. Email: info@aist.global.</p>
 
-        <p>If you have any other questions or concerns about the Privacy Policy, please email us at info@aist.</p>
+        <p style="padding-bottom: 100px">If you have any other questions or concerns about the Privacy Policy, please email us at info@aist.</p>
     </div>
 
 <?php

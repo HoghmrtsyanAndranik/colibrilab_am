@@ -543,12 +543,12 @@ case 3:
                 $id=$exp['id'];
 
                $job_title=$exp['job_title'];
-               $company=$exp['company'];
+               $company1=$exp['company'];
                $begin_month=$exp['start_month'];
                $begin_year=$exp['start_year'];
                $end_month=$exp['end_month'];
                $end_year=$exp['end_year'];
-               $description=$exp['description'];
+               $description1=$exp['description'];
            
 		?>
 
@@ -573,7 +573,7 @@ case 3:
 			</div>
 			<div class="content">
 				<p class="title-input"><?=$company?><span class = "ch-red">*</span></p>
-				<input type="text" class="desc-tt" value="<?=$company?>" placeholder="<?=$school?>">
+				<input type="text" class="desc-tt" value="<?=$company1?>" placeholder="<?=$school?>">
 			</div>
 			<div class="content" style="display: flex;">
 				<div class="part-one" style="margin-right: 22px;">
@@ -632,7 +632,7 @@ case 3:
 				</div>
 				<div class="content" style="padding-bottom:30px;">
 					<p class="title-input"><?=$description?></p>
-					<textarea id="<?=$id?>" class="textarea-ss" type="text" placeholder="Write your text..." style="margin-top: 7px;height:67px;"value="<?=$description?>"><?=$description?></textarea>
+					<textarea id="<?=$id?>" class="textarea-ss" type="text" placeholder="Write your text..." style="margin-top: 7px;height:67px;"value="<?=$description?>"><?=$description1?></textarea>
                     <!-- <input type="hidden" id="exper_id" value="<?=$id?>"> -->
 					<div class="close-secondd">
 						<i class="fa fa-trash" aria-hidden="true"></i>

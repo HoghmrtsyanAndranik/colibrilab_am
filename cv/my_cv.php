@@ -51,7 +51,7 @@ $user=$model->get_main_data($user_id);
 if(!empty($user['image']))
    $src='cv_images/'.$user['image'];
 else
-$src='cv_images/camera.png';
+$src='cv_images/user.jpg';
 
 $connections=$model->get_connections($user_id);
 if($LANG=='ARM'){
@@ -111,14 +111,12 @@ if(isset($_SESSION['cv_user_id'])&&$_SESSION['cv_user_id']==$_GET['id'])
 				<div class="content">
         <?php
          $skills=$model->get_skills($user_id);
-        $page=count($skills)/3;
+        $page=(int)(count($skills)/3);
         if(count($skills)%3)
            $page++;
-
-
           $index=0;
        $language=['','PHP','LARAVEL','JAVASCRIPT'];
-
+    
 
            for($i=0;$i<$page;$i++){
               echo'<div class = "mySlides fade">';
@@ -132,9 +130,6 @@ if(isset($_SESSION['cv_user_id'])&&$_SESSION['cv_user_id']==$_GET['id'])
 	                        aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: <?=$skills[$index]['percent']?>%;"></div>
 			                  </div>
 			<?php
-
-					
-
                $index++;
               }
 
