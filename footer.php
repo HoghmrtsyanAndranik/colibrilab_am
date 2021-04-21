@@ -353,9 +353,8 @@ body{
   }
   .footer1{
     background-color: #2d3748;
-    width: 100%;
+    width: 100% !important;
     height: 250px;
-    font-family: sans-serif;
   }
   .footer1 a{
     color: white;
@@ -365,12 +364,12 @@ body{
     color: white;
   }
   .footer1-content{
-    width: 550px;
+    width: 590px;
     margin: 0 auto;
     text-align: center;
     padding-top: 52px;
     /*line-height: 2;*/
-    font-family: cursive;
+    font-family: 'Roboto', sans-serif;
   }
   .ajak{
     display: inline-block;
