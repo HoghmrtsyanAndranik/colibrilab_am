@@ -279,7 +279,7 @@ $cancel="Չեղարկել";
 $other="Այլ";
 $check_speed="Ստուգիր տեքստ մուտքագրելու արագությունդ";
 $test_help="Թեստը կօգնի պարզել, թե ինչ արագությամբ ես կարողանում գրել ստեղնաշարով";
-$starttest="Սկսել տեստը";
+$starttest="Սկսել թեստը";
 }
 
 
@@ -505,14 +505,14 @@ $create='CREATE';
 $password='Password';
 $create_your="Create your"; 
 $online_cv="online CV";
-$few_min="In a few mimutes";
+$few_min="In a few minutes";
 $we_help="We help You to have a professional and";
 $good_cv="presentable resume:";
 $please_sign="Please login to create a resume";
 $supporters="Contributers";
 $frequently_questions="FAQ";
 $discount_policy="Discount policy";
-$security_policy="| &nbsp;&nbsp;Privacy policy";
+$security_policy="Privacy policy";
 $forgot_password="Forgot Password";
 $agree="I agree with the ";
 $chapter=" site statute";

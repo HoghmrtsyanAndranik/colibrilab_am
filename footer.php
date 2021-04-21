@@ -58,22 +58,21 @@
       </div>
       <?php
       if($LANG=='ARM'){
-        $questions_href="questions";
+       
         $discount_href="#";
-        $security_href="privacy_policy";
+       
       }
       elseif($LANG=='ENG'){
-        $questions_href="questions_eng";
+       
         $discount_href="#";
-        $security_href="privacy_policy_eng";
-      }
+        }
       ?>
       <a href="#" class="border"></a>
 
-      <a href="<?=$questions_href?>" class="hth" style="padding-left: 20px; font-size: 20px"><?=$frequently_questions?></a>
+      <a href="questions" class="hth" style="padding-left: 20px; font-size: 20px"><?=$frequently_questions?></a>
       <a href="#" class="border"></a>
       <a href="<?=$discount_href?>" class="zex" style="padding-left: 20px; font-size: 20px"><?=$discount_policy?></a>
-      <a href="<?=$security_href?>" class="anv" style="line-height: 3;padding-left: 20px; font-size: 20px"><?=$security_policy?></a>
+      <a href="privacy_policy" class="anv" style="line-height: 3;padding-left: 38px; font-size: 20px"><?=$security_policy?></a>
 
 
     </div>
