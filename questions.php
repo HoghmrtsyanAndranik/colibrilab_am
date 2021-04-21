@@ -3,6 +3,7 @@
  $LANG=file_get_contents('session.php');
  if($LANG=="ARM"){
 
+
 ?> 
  <canvas class="nokey" style="position: absolute;z-index: 0;width: 100%;"></canvas>
 <div class="container pt-5 block" style="margin: 100px auto">
