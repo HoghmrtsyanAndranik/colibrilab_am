@@ -185,7 +185,7 @@ $react_more="<li>React ներածություն: Ինչ է ReactJs-ը </li>
     <li>ReactJs-ի էլեմենտները ,կոմպոնենտները </li>
     <li>ReactJs-ի հիմնական տարրերը և բաղադրիչները</li>
     <li>Virtual DOM, բաղադրիչների միջև կապը և հաղորդակցությունը(Props, Refs)</li>
-    <li>ReactJs-ի կոմպոնենտները:Կոմպոնենտ class- էր,Կոմպոնենտ function- էր</li>
+    <li>ReactJs-ի կոմպոնենտները:Կոմպոնենտ class- ներ,Կոմպոնենտ function- ներ</li>
     <li>Կոմպոնենտների state- ներ, event- ներ</li>
     <li>Ինչ է routing-ը : Link, Navlink :Ինչպես է աշխատում Router-ը
     </li>

@@ -552,6 +552,12 @@
 	}
 
 }
+@media(min-width: 430px) and (max-width: 610px){
+   .reg_form{
+      padding: 15px;
+      width: 140%;
+   }
+}
 @media(min-width: 320px) and (max-width: 430px){
 .size-header {
    font-size: 18px !important;

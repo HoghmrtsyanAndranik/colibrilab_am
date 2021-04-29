@@ -13,6 +13,10 @@
     <link rel="stylesheet" href="css/popup.css">
     <link rel="stylesheet" href="css/pointer.css">
 </head>
+<?php
+include('lang.php');
+
+?>
     <body>
         </div>
         <div class="container">
@@ -23,17 +27,17 @@
             <div class="left_margin"></div> 
             <div class="content">
                 <div id="pointer">
-                    <p>Սկսել թեստը</p>
+                    <p><?=$start?></p>
                     <div id="pointer_in">
                     </div>
                 </div>
                 <div class="title">
-                    <h1>Ստուգիր տեքստ մուտքագրելու արագությունդ</h1>
+                    <h1><?=$check_speed?></h1>
                 </div>
                 <div class="timer">
                     <div class="inner">
                         <h1 class="timer_seconds">60</h1>
-                        <p>վրկ</p>
+                        <p><?=$sec?></p>
                     </div>
                     <div class="item html">
                         <svg width="160" height="160" xmlns="http://www.w3.org/2000/svg">
@@ -77,15 +81,15 @@
                             <img class='popup_animal_photo' src="img/popup_img/snail@3x.png" alt="">
                         </div>
                         <div class="popup_info">
-                            <h1 class="qualify">Նորից փորձի ։)</h1>
-                            <div class="stat_wpn"><p class="statistic">0 բառ մեկ րոպեում</p><p id="statistic_wpm">(0 WPM):</p></div>
-                            <p class="accuracy">Ճշգրտությունը ՝ <span id="accuracy_procent">0 %:</span></p> 
-                            <p class="advice">Փորձիր ավելի արագ!</p> 
+                            <h1 class="qualify"><?=$tray?></h1>
+                            <div class="stat_wpn"><p class="statistic">0 <?=$per_min?></p><p id="statistic_wpm">(0 WPM):</p></div>
+                            <p class="accuracy"><?=$accuracy?><span id="accuracy_procent">0 %:</span></p> 
+                            <p class="advice"><?=$try_faster?></p> 
                         </div>
                     </div>
                 </div>     
                 <div class="share">
-                    <span>Կիսվել՝</span>
+                    <span><?=$share?></span>
                     <a href="#" class="facebook_share">
                         <img src="img/popup_img/facebook@3x.png" alt="facebook">
                     </a>
@@ -97,7 +101,7 @@
                     </a>
                 </div>
 
-                <button class="try_again_btn">ԿՐԿԻՆ ՓՈՐՁԵԼ</button>
+                <button class="try_again_btn"><?=$try_again?></button>
             </div>
         </div>
     </div>
@@ -105,8 +109,15 @@
             </div>
         </div>
     </div>
-
-
+    <script >
+      var tooslow_php ="<?=$tooslow?>";
+      var good_php ="<?=$good?>";
+      var superspeed_php ="<?=$superspeed?>";
+      var word_php="<?=$word?>";
+      var wordspermin_php="<?=$wordspermin?>";
+      var seconds_php="<?=$seconds?>";
+      var lang_php="<?=$lang?>";
+ </script>  
     <script src="script.js"></script>
         
     </body>

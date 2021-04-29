@@ -109,23 +109,23 @@ elseif($LANG=='ENG'){
                 <ul class="navbar-nav ml-auto">
                     
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#eduservices-pricing"><?=$courses?></a>
+                        <a class="nav-link js-scroll-trigger" href="/#eduservices-pricing"><?=$courses?></a>
                     </li>
                    <li class="nav-item">
                         
                     </li> 
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#eduservices-blog"><?=$portfolio?></a>
+                        <a class="nav-link js-scroll-trigger" href="/#eduservices-blog"><?=$portfolio?></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#eduservices-teacher"><?=$ourteam?></a>
+                        <a class="nav-link js-scroll-trigger" href="/#eduservices-teacher"><?=$ourteam?></a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#eduservices-testimonial"><?=$opinions?></a>
+                        <a class="nav-link js-scroll-trigger" href="/#eduservices-testimonial"><?=$opinions?></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link js-scroll-trigger" href="#eduservices-contact"><?=$contact?></a>
+                        <a class="nav-link js-scroll-trigger" href="/#eduservices-contact"><?=$contact?></a>
                     </li>
                     <div class="dropdown">
                     <li class="nav-item other5">
@@ -139,10 +139,10 @@ elseif($LANG=='ENG'){
                     </a>
                     
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        <a class="dropdown-item" href="#">Կապ</a>
-                        <a class="dropdown-item" href="#">Ստեղծել CV</a>
-                        <a class="dropdown-item" href="#">Մուտքագրման արագության թեստ</a>
-                        <a class="dropdown-item" href="#">Հաճախակի տրվող հարցեր</a>
+                        <a class="dropdown-item" href="/#eduservices-contact">Կապ</a>
+                        <a class="dropdown-item" href="/#tabs">Ստեղծել CV</a>
+                        <a class="dropdown-item" href="typing-test/" target="_blank">Մուտքագրման արագության թեստ</a>
+                        <a class="dropdown-item" href="questions" target="_blank">Հաճախակի տրվող հարցեր</a>
                     </div>
                     </div>
                         </li>

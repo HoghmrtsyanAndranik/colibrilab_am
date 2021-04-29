@@ -83,19 +83,24 @@ inputText.addEventListener('input', () => {
     })
 })
 
-
+ 
 function stopGameAndCheckStatistics() {
     inputText.disabled = true
     clearInterval(timer)
     const spansWithClassNameWrong = document.querySelectorAll('.wrong').length
     const spansWithClassNameDone = document.querySelectorAll('.done').length
-
+     if(lang_php=='en'){
+       var html1=`${inputWordsCount} ${word_php} in ${currentSeconds} ${seconds_php}`
+     }
+     else{
+        var html1=`${inputWordsCount} ${word_php}  ${currentSeconds} ${seconds_php}`
+     }
    if(spansWithClassNameWrong > spansWithClassNameDone ) {
     let stat = (spansWithClassNameDone * 100) / spansWithClassNameWrong
     document.getElementById('accuracy_procent').innerText = stat.toFixed(2) +' %'
     document.getElementById('statistic_wpm').innerText = `(${inputWordsCount}) WPM`
-    document.querySelector('.statistic').innerText = currentSeconds < 59 ? `${inputWordsCount} բառ ${currentSeconds} վայրկյանում` 
-                                                    : `${inputWordsCount} բառ մեկ րոպեում`
+    document.querySelector('.statistic').innerText = currentSeconds < 59 ? html1 
+                                                  : `${inputWordsCount} ${wordspermin_php}`
 
     photoSrcAndDescription = popupPhotoSrcChangeAndGameDescription(inputWordsCount)
     document.querySelector('.qualify').innerText = photoSrcAndDescription.description
@@ -109,8 +114,8 @@ function stopGameAndCheckStatistics() {
     let stat = (spansWithClassNameWrong * 100) / spansWithClassNameDone
     document.getElementById('accuracy_procent').innerText = (100 - stat).toFixed(2) +' %'
     document.getElementById('statistic_wpm').innerText = `(${inputWordsCount}) WPM`
-    document.querySelector('.statistic').innerText = currentSeconds < 59 ? `${inputWordsCount} բառ ${currentSeconds} վայրկյանում` 
-                                                    : `${inputWordsCount} բառ մեկ րոպեում`
+    document.querySelector('.statistic').innerText = currentSeconds < 59 ? html1 
+                                                    : `${inputWordsCount} ${wordspermin_php}`
 
     photoSrcAndDescription = popupPhotoSrcChangeAndGameDescription(inputWordsCount)
     document.querySelector('.qualify').innerText = photoSrcAndDescription.description
@@ -159,21 +164,22 @@ function _createNewRow() {
         return newRow
 }
 
+     
 function popupPhotoSrcChangeAndGameDescription(wordsCounts) { 
     if (wordsCounts < 25) {
         return {
             src: './img/popup_img/snail@3x.png',
-            description: 'Շա՜տ դանդաղ էր ։(' 
+            description: tooslow_php 
          }
     } else if (wordsCounts > 25 && wordsCounts < 45) {
         return {
            src: './img/popup_img/penguin@3x.png',
-           description: 'Բավականին արագ ես գրում!' 
+           description: good_php 
         }
     } else if (wordsCounts > 45) {
         return {
             src: './img/popup_img/octopus@3x.png',
-            description: 'Սուպեր Արագություն!'
+            description: superspeed_php
          }
     }
 }
