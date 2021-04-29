@@ -158,6 +158,9 @@
         
         //preloader
         $(".book_preload").delay(2000).fadeOut(200);
+        $(document).ready(function() {
+            $(".fixed-top").css("position","fixed")
+        })
         $(".book").on('click', function() {
              $(".book_preload").fadeOut(200);
         })

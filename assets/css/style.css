@@ -2720,3 +2720,7 @@ button.btn.forg_cancel::after {
 /*.fixed-top {*/
 /*    background: white;*/
 /*}*/
+
+.fixed-top {
+    position: relative;
+}

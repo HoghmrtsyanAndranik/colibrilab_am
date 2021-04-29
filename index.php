@@ -1465,9 +1465,9 @@ CV END
                 <div class="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
                     <div class="contact-box box3">
                         <h3><i class="icofont-phone"></i> <?=$phone?></h3>
-                        <p><a href="callto:37491234367">+374 98 75-73-50</a></p>
-                        <p><a href="callto:+37477514631">+374 55 75-73-50</a></p>
-                        <p><a href="callto:+37477514631">+374 33 75-73-50</a></p>
+                        <p><a href="callto:+37498757350">+374 98 75-73-50</a></p>
+                        <p><a href="callto:+37455757350">+374 55 75-73-50</a></p>
+                        <p><a href="callto:+37433757350">+374 33 75-73-50</a></p>
                     </div>
                 </div>
 

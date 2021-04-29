@@ -743,7 +743,7 @@ case 3:
 			<div class = "part-first">
 				<p class = "title-input res-sv" style = "margin-left: 0px;"><?=$phonenumber?><span class = "ch-red">*</span></p>
 				<div class = "flex-content"style="margin-top: 5px;">
-					<input type="text" required placeholder = "+374 960000" class = "input-numb input vl" value="<?=$main_data['phon']?>">
+					<input type="text" required placeholder = "+374 960000" class = "input-numb input vl" value="<?=$main_data['phone']?>">
 				</div>
 			</div>
 			<div class = "part-sec">
