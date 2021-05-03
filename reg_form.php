@@ -130,7 +130,7 @@ $course_type=$_GET['course']??false;
       <div class="contact  w-100 mb-5  right" style="width: 87%!important; margin: auto;
     margin-top: 40px;">
         <h3>ColibriLab <?=$trainingcenter?></h3>
-        <p><span><?=$phone?></span> <a href="callto:+37498757350">+374 98 75-73-50, </a> <a href="callto:+37455757350"> +374 55 75-73-50</a><a href="callto:+37433757350"> +374 33 75-73-50</a></p>
+        <p><span><?=$phone?></span> <a href="callto:+37498757350">+374 98 75-73-50  </a> <a href="callto:+37455757350"> +374 55 75-73-50 </a><a href="callto:+37433757350"> +374 33 75-73-50 </a></p>
         <p><span><?=$email?></span> <a href="mailto:#">colibrilabcenter@gmail.com, </a><a href="mailto:#"> info@colibrilab.am</a></p>
         
         <p><span><?=$addr?></span> <a href="https://goo.gl/maps/p1XuY33NcREqXVPP6"><?=$address?></a></p>
