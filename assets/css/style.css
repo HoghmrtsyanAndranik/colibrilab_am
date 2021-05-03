@@ -1233,7 +1233,7 @@ svg.svg-inline--fa.fa-react.fa-w-16, svg.svg-inline--fa.fa-laravel.fa-w-16 {
     cursor: pointer;
 }
 
-i.icofont-linkedin {
+i.icofont-linkedin, i.icofont-facebook {
     color: white;
 }
 /* ==========================================================================
@@ -1296,7 +1296,7 @@ i.icofont-linkedin {
 
 .single-pricing-table:hover {
     transition: all .5s !important;
-    background: white;
+    background: white !important;
     transform: scale(1.1) !important;
 }
 
@@ -1400,7 +1400,7 @@ i.icofont-linkedin {
 }
 
 .pricing-content-btn {
-    padding: 20px 0px 10px;
+    padding: 10px 0px 10px;
 }
 
 
@@ -1639,6 +1639,7 @@ i.icofont-linkedin {
     transition: all 0.3s ease 0s;
     position: relative;
     padding-left: 60px;
+    cursor: pointer;
 }
 
 .funFact:hover {
@@ -2723,4 +2724,48 @@ button.btn.forg_cancel::after {
 
 .fixed-top {
     position: relative;
+}
+
+.col-lg-4.col-md-6.reveal-left-fade {
+    padding-bottom: 40px;
+}
+
+.row {
+    justify-content: center;
+}
+
+.floor-2_1 .single-pricing-table2{
+    background-image: linear-gradient(-179deg, #2A68B9  0, #358CB4 96%);
+}
+
+.floor-2_1 .single-pricing-table2:hover .pricing-content-price strong, .floor-2_1 .single-pricing-table2:hover .pricing-table-plan h3 {
+    color: #2A68B9;
+}
+
+.floor-2_1 .single-pricing-table:hover .pricing-btn a.btn2 {
+    background-image: linear-gradient(-179deg, #2A68B9  0, #358CB4 96%) !important;
+}
+
+.floor-2_2 .single-pricing-table2{
+    background-image: linear-gradient(-179deg, #574D84  0, #745DDE 96%);
+}
+
+.floor-2_2 .single-pricing-table2:hover .pricing-content-price strong, .floor-2_2 .single-pricing-table2:hover .pricing-table-plan h3 {
+    color: #574D84;
+}
+
+.floor-2_2 .single-pricing-table:hover .pricing-btn a.btn2 {
+    background-image: linear-gradient(-179deg, #574D84  0, #745DDE 96%) !important;
+}
+
+.single-pricing-table.single-pricing-table2.single-pricing-center.reveal-bottom-fade,
+.single-pricing-table.single-pricing-table3.single-pricing-center.reveal-bottom-fade,
+.single-pricing-table.single-pricing-table1.single-pricing-center.reveal-bottom-fade{
+    height: 585px;
+}
+
+@media (min-width: 768px) {
+    .offset-md-3 {
+        margin-left: 0px !important;
+    }
 }
