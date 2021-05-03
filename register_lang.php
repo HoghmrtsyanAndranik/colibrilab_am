@@ -51,7 +51,7 @@ if($LANG=='ARM'){
     $members_count='Մասնակիցների քանակը՝';
     $notreplay="Խնդրում ենք չպատասխանել այս նամակին։ Մենք կկապվենք Ձեզ հետ:";
     $ifquestions="Եթե ունեք հարցեր խնդրում ենք կապ հաստատել մեզ հետ մեր <a href='http://colibrilab.am/' style='color: #4F8BFF'>վեբ կայքի</a> միջոցով կամ զանգահարել հետևյալ
-                  հեռախոսահամարներով՝ +374 91 23-43-67, +374 77 51-46-31 ։"; 
+                  հեռախոսահամարներով՝ +374 98 75-73-50, +374 55 75-73-50, +374 33 75-73-50 ։"; 
     $prefered_hours="Նախընտրած ժամերը";  
     $comment_text="Հաղորդագրություն";            
 }
@@ -101,7 +101,7 @@ elseif($LANG=='ENG'){
     $dram='dram';
     $members_count='Members count';
     $notreplay="Please,do not reply to this email.We will contact you.";
-    $ifquestions=" If you have any questions,please contact us through our <a href='http://colibrilab.am/' style='color: #4F8BFF'>website</a> or call the following phone nombers:+374 91 23-43-67, +374 77 51-46-31"; 
+    $ifquestions=" If you have any questions,please contact us through our <a href='http://colibrilab.am/' style='color: #4F8BFF'>website</a> or call the following phone nombers:+374 98 75-73-50, +374 55 75-73-50, +374 33 75-73-50"; 
     $prefered_hours="Prefered hours";  
     $comment_text="Comment";      
 }
