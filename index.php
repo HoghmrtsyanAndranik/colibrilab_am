@@ -1224,7 +1224,7 @@ include ('header.php');
     </section>
     <!-- end recent blog -->
     <!-- Typing Test -->
-    <div class="test">
+    <div class="tast">
         <div class="tasting">
             <div class="tasting-content">
                 <h3>Typing Test - <?=$check_speed?></h3>

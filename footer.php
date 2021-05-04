@@ -13,7 +13,7 @@
 
       <div class="dropdown ajak hide">
         <div class="  ajakicner" data-toggle="dropdown">
-          <p class="aj" style="padding-left:20px"><?=$supporters?></p>
+          <p class="aj" ><?=$supporters?></p>
           <p style="padding-left:10px"><i class="fas fa-angle-down"></i></p>
         </div>
           <div class="dropdown-menu box" style="margin: 0 12px" x-placement="none !important">
@@ -69,11 +69,11 @@
       ?>
       <a href="#" class="border"></a>
 
-      <a href="questions" class="hth" style="padding-left: 20px; font-size: 20px"><?=$frequently_questions?></a>
+      <a href="questions" class="hth" style=" font-size: 20px"><?=$frequently_questions?></a>
       <a href="#" class="border"></a>
 
-      <a href="<?=$discount_href?>" class="zex" style="padding-left: 20px; font-size: 20px"><?=$discount_policy?></a><br>
-      <a href="privacy_policy" class="anv" style="line-height: 3;padding-left: 38px; font-size: 20px"><?=$security_policy?></a>
+      <a href="<?=$discount_href?>" class="zex" style=" font-size: 20px"><?=$discount_policy?></a><br>
+      <a href="privacy_policy" class="anv" style=" font-size: 20px"><?=$security_policy?></a>
 
 
 
@@ -366,7 +366,7 @@ body{
     color: white;
   }
   .footer1-content{
-    width: 590px;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
     padding-top: 52px;
@@ -439,14 +439,14 @@ body{
   .border{
     border:1px solid white; 
     border-radius: 5px; 
-    margin-left: 20px
+    margin:0 20px;
   }
   .ajakicner{
     display:inline-flex;
   }
   @media only screen and (max-width: 320px) {
     .footer1-content{
-       width: 626px;
+       width: 100%;
 
     }
   }  
@@ -473,14 +473,14 @@ body{
   }
   .anv{
     font-size: 20px;
+    margin-top:-19px;
   }
   .footer1{
     background-color: #2d3748;
-    width: 100%;
-    height: 340px;
+    height: 280px;
     font-family: sans-serif;
     overflow: hidden;
-    width: 100%;
+    width: 100% !important;
   }
   .zex{
     padding-top: 10px;
@@ -488,11 +488,11 @@ body{
   }
   .footer1-content{
     position: relative;
-    width: 728px;
-    top: -30px;
+    width: 100%;
+    top: -20px;
       }
   .col{
-    margin-top: -50px;
+    margin-top: -21px;
   }
   .box{
     position: absolute;
@@ -527,8 +527,7 @@ body{
     width: 100%;
   }
     .footer1-content{
-width: 100%;
-font-size: 15px !important;
+    width: 100% !important;
   }
   .box{
     width:300px;
@@ -562,6 +561,19 @@ font-size: 15px !important;
   .col{
     font-size: 15px;
   }
+  .ajakicner{
+    font-size: 17px;
+  }
+  .hth{
+    font-size: 17px !important;
+  }
+  .zex{
+    font-size: 17px !important;
+  }
+  .anv{
+    font-size: 17px !important;
+  }
+}
 </style>
 
 

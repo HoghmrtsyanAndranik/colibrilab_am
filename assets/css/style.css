@@ -2627,7 +2627,7 @@ button.btn.forg_cancel::after {
     background: none;
 }
 
-.test{
+.tast{
             margin: 0 auto;
             font-family: sans-serif;
             color: #fff;
@@ -2637,13 +2637,13 @@ button.btn.forg_cancel::after {
             background-repeat: no-repeat;
             width: 100% !important;
             height: 277px;
-            background-size: 2200px !important;
+            background-size:cover;
             text-align: center;
             padding-top: 50px;
             
         }
         .tasting-content {
-            width: 800px;
+            width: 100%;
             margin: 0 auto;
 
         }
@@ -2683,12 +2683,13 @@ button.btn.forg_cancel::after {
             
 
         }
-        /*}*/
-        @media only screen and (max-width: 700px) {
+        /*}
+        @media (min-width: 300px) and (max-width: 700px) {
             .tasting{
             width: 100%;
              background-size: cover !important;
              background-position: right !important;
+             padding-top: 35px;
             }
     .tasting-content {
         width: 100%;
@@ -2707,6 +2708,7 @@ button.btn.forg_cancel::after {
             height: 35px;
             background-color: #1E90FF;
             color: white;
+
         }
     }
 
@@ -2725,6 +2727,98 @@ button.btn.forg_cancel::after {
 .fixed-top {
     position: relative;
 }
+
+/*@media only screen and (max-width: 320) {
+.btn1{
+            width: 150px;
+            height: 35px;
+            background-color: #1E90FF;
+            color: white;
+        }
+}*/
+/*discount_policy*/
+/*body{
+    min-height: 100vh;
+}*/
+.ynd{
+        display: flex;
+    flex-wrap: wrap;
+    width: 1200px;
+    margin: 100px auto;
+}
+.ynd .big{
+    background-color: white;
+    width: 370px;
+    height: 370px;
+    margin: 10px 10px;
+    position: relative;
+}
+.amboxj>h6{
+    text-align: center;
+    padding-top: 70px;
+    font-weight: 700;
+    color: #272727;
+
+}
+.big>.amboxj{
+    color: #6d7c95;
+    font-size:60px;
+    text-align: center;
+    font-weight: bold;
+    transition: ease-in-out 1s;
+    height: 200px
+}
+.big>img{
+    margin: 28px 105px;
+}
+.glxavor{
+    text-align: center;
+    transition: 10s;
+
+}
+.glxavor>h1{
+    font-size: 30px;
+    color: #2d3748;
+    font-weight: 700;
+
+}
+.nuyn{
+    font-size: 15px;
+   padding-top: 60px;
+   color: black !important  ;
+
+}
+.big{
+    overflow: hidden;
+    
+}
+.big>.amboxj{
+    -webkit-animation: in 1s;
+}
+.amboxj{
+    position: absolute;
+}
+
+.glxavor>p{
+    text-align: center;
+}
+.big:hover .amboxj{
+   -webkit-animation: out 1s;
+   top: -250px;
+    /*transition: ease-in-out 10s;*/
+
+}
+
+@-webkit-keyframes out {
+    from {top: 0px;}
+  to {top: -250px;}
+}
+
+@-webkit-keyframes in {
+    from {top: -250px;}
+  to {top: 0px;}
+  }
+
 
 .col-lg-4.col-md-6.reveal-left-fade {
     padding-bottom: 40px;
@@ -2769,3 +2863,4 @@ button.btn.forg_cancel::after {
         margin-left: 0px !important;
     }
 }
+
