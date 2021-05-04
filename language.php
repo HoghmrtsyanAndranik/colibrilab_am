@@ -51,6 +51,12 @@ if($LANG=='ARM'){
   $andranik="Անդրանիկ Հողմրցյան";
   $syuzanna="Սյուզաննա Անտոնյան";
   $levon="Լևոն Երիցյան";
+  $ishxan="Իշխան Մելքոնյան";
+  $azniv="Ազնիվ Գոջանյան";
+  $anna="Աննա Մուրադյան";
+  $manager="Մենեջեր";
+  $administrator="Ադմինիստրատոր";
+  $coordinator="Համակարգող";
   $alisa="Ալիսա Մարգարյան";
   $alisatext="Սա շատ լավ և հաճելի ուսումնական կենտրոն է WEB ծրագրավորում սովորելու համար: ";
   $developer="Ծրագրավորող";
@@ -323,7 +329,13 @@ elseif($LANG=='ENG'){
    $specialist="Specialist";
    $andranik="Andranik Hoghmrtsyan";
    $syuzanna="Syuzanna Antonyan";
-   $levon="Levon Eritsyan";
+   $levon="Levon Yeritsyan";
+   $ishxan="Ishkhan Melqonyan";
+   $azniv="Azniv Gojanyan";
+   $anna="Anna Muradyan";
+   $manager="Manager";
+   $administrator="Administrator";
+   $coordinator="Coordinator";
    $alisa="Alisa Margaryan";
    $alisatext="This is a great learning center for learning WEB programming";
    $developer="Developer";
@@ -339,7 +351,7 @@ elseif($LANG=='ENG'){
    $hovhanneskhachatryantext="It is one of the best training centers, I would recommend everyone to attend.)";
    $contactus="CONTACT US";
    $followus="FOLLOW US";
-   $yerevan="Yerevan,Armenia";
+   $yerevan="Yerevan, Armenia";
    $address="49 Tigran Mets Ave.,3rd floor";
    $addr="Address";
    $email="Email";

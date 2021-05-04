@@ -22,13 +22,17 @@ include('register_lang.php');
 $course_type=$_GET['course']??false;
   
   if($course_type=='full')
-       $course_type='Full Stack Web Development';
+        $course_type='Full Stack PHP Development';
   elseif($course_type=='front')
-       $course_type='Front-End React Web Development';
+        $course_type='Front End React Development';
   elseif($course_type=='back')
-       $course_type='Back-End Php Development';
+        $course_type='Back End PHP Development';
+  elseif($course_type=='node')
+        $course_type='Full Stack Node Development';
+  elseif($course_type=='python')
+        $course_type='Full Stack Python Development';
   else
-       $course_type=$course;
+        $course_type=$course;
 
 
 
@@ -56,10 +60,12 @@ $course_type=$_GET['course']??false;
           <input type="text" name="phone" id="phone" placeholder="<?=$phone?>"  />
           <div class="select-list">
             <select name="course_type" id="course_type">
-              <option value=""><?=$course_type?></option>
-              <option value="full" >Full Stack Web Development</option>
-              <option value="front">Front-End React Web Development</option>
-              <option value="back">Back-End Php Development</option>
+                <option value=""><?=$course_type?></option>
+                <option value="node">Full Stack Node Development</option>
+                <option value="full" >Full Stack PHP Development</option>
+                <option value="python">Full Stack Python Development</option>
+                <option value="front">Front End React Development</option>
+                <option value="back">Back End PHP Development</option>
             </select>
           </div>
         </div>
@@ -130,7 +136,7 @@ $course_type=$_GET['course']??false;
       <div class="contact  w-100 mb-5  right" style="width: 87%!important; margin: auto;
     margin-top: 40px;">
         <h3>ColibriLab <?=$trainingcenter?></h3>
-        <p><span><?=$phone?></span> <a href="callto:+37498757350">+374 98 75-73-50, </a> <a href="callto:+37455757350"> +374 55 75-73-50</a><a href="callto:+37433757350"> +374 33 75-73-50</a></p>
+        <p><span><?=$phone?></span> <a href="callto:+37498757350">+374 98 75-73-50  </a> <a href="callto:+37455757350"> +374 55 75-73-50 </a><a href="callto:+37433757350"> +374 33 75-73-50 </a></p>
         <p><span><?=$email?></span> <a href="mailto:#">colibrilabcenter@gmail.com, </a><a href="mailto:#"> info@colibrilab.am</a></p>
         
         <p><span><?=$addr?></span> <a href="https://goo.gl/maps/p1XuY33NcREqXVPP6"><?=$address?></a></p>

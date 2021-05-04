@@ -1,7 +1,5 @@
 <?php
 include ('header.php');
-
-
 ?>
     <!--================================================================================= 
                                 Start Main Banner Area
@@ -831,10 +829,7 @@ include ('header.php');
             </div>
         </div>
     </section>
-
-
     <!-- End Courses Area -->
-
     <!--================================================================================= 
                                 Start Fun Facts Area
     ==================================================================================-->
@@ -848,7 +843,6 @@ include ('header.php');
                         <span><?=$year?></span>
                     </div>
                 </div>
-
                 <div class="col-lg-4 col-md-12 col-12 wow fadeInUp d-flex justify-content-center w-100" data-wow-delay=".6s">
                     <div class="funFact">
                         <i class="icofont-users-alt-2"></i>
@@ -856,7 +850,6 @@ include ('header.php');
                         <span><?=$student?></span>
                     </div>
                 </div>
-
                 <div class="col-lg-4 col-md-12 col-12 wow fadeInUp d-flex justify-content-center w-100" data-wow-delay=".8s">
                     <div class="funFact">
                         <i class="icofont-flag-alt-2"></i>
@@ -864,14 +857,11 @@ include ('header.php');
                         <span><?=$lesson?></span>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
     <!-- End Fun Facts Area -->
-
-    <!--
-  ================================================================================= 
+    <!--=================================================================================
                                 Start pricing section
     ==================================================================================-->
     <section id="eduservices-pricing" class="ptb-100">
@@ -881,18 +871,132 @@ include ('header.php');
                 <!-- <span>A modern and unique style</span> -->
             </div>
             <div class="row mt-5">
-
-                <div class="col-lg-4 col-md-6">
+                <div class="col-lg-4 col-md-6 floor-2_1">
                     <div class="single-pricing-table  single-pricing-table2 single-pricing-center reveal-bottom-fade">
-                         <div class="single-pricing-treangle">
+                        <div class="single-pricing-treangle">
                             <span class=" treangle-span"><?=$beginner?></span>
                         </div>
                         <div class="pricing-table-plan pt-3">
-                            <h3>Front-End Web<br> Development </h3>
+                            <h3>Full Stack Node<br> Development </h3>
                         </div>
                         <div class="pricing-table-content">
                             <div class="pricing-content-price ">
-                                <strong>40 000</strong>
+                                <strong>30 000</strong>
+                                <br>
+                                <sup> <?=$dram?></sup>
+                                <sub>/<?=$month?></sub>
+                            </div>
+                            <div class="row pricing-content-lesson text-light ">
+                                <div class="col-6 pt-2 mt-1">
+                                    <div class=" border-right">
+                                        <i class="fa fa-calendar mr-2"></i>
+                                        3 <?=$month?>
+                                    </div>
+
+                                </div>
+                                <div class="col-6 ">3 <?=$lessonsperweek?> <br> 2 <?=$hours?></div>
+                            </div>
+                            <ul class="list-item text-left pl-4 mt-4">
+                                <li><i class="fa fa-check"></i> Html, Css</li>
+                                <li><i class="fa fa-check"></i> Responsive design, Bootstrap</li>
+                                <li><i class="fa fa-check"></i> JavaScript, jQuery, Ajax</li>
+                                <li><i class="fa fa-check"></i> Node.js</li>
+                                <li><i class="fa fa-check"></i> MongoDB</li>
+                            </ul>
+                            <br>
+                            <div class="pricing-content-btn pricing-btn ">
+                                <a class="btn btn2" href="reg_form.php?course=node"><?=$signup?></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 reveal-left-fade">
+                    <div class="single-pricing-table single-pricing-table1 single-pricing-center reveal-bottom-fade">
+                        <div class="single-pricing-treangle">
+                            <span class=" treangle-span"><?=$beginner?></span>
+                        </div>
+                        <div class="pricing-table-plan pt-3">
+                            <h3>Full Stack PHP<br> Development </h3>
+                        </div>
+                        <div class="pricing-table-content">
+                            <div class="pricing-content-price">
+                                <strong>30 000</strong> <br>
+                                <sup><?=$dram?></sup>
+                                <sub>/<?=$month?></sub>
+                            </div>
+                            <div class="row pricing-content-lesson text-light ">
+                                <div class="col-6 pt-2 mt-1">
+                                    <div class="border-right ">
+                                        <i class="fa fa-calendar mr-2"></i>
+                                        6 <?=$month?>
+                                    </div>
+
+                                </div>
+                                <div class="col-6 ">3 <?=$lessonsperweek?> <br> 2 <?=$hours?></div>
+                            </div>
+                            <ul class="list-item text-left pl-4 mt-4">
+                                <li><i class="fa fa-check"></i> Html, Css</li>
+                                <li><i class="fa fa-check"></i> Responsive design, Bootstrap</li>
+                                <li><i class="fa fa-check"></i> JavaScript, jQuery, Ajax</li>
+                                <li><i class="fa fa-check"></i> PHP, MySQL, OOP</li>
+                                <li><i class="fa fa-check"></i> MVC, Laravel (additional)</li>
+                            </ul>
+                            <div class="pricing-content-btn pricing-btn ">
+                                <a class="btn btn1" href="reg_form.php?course=python"><?=$signup?></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 floor-2_2">
+                    <div class="single-pricing-table  single-pricing-table2 single-pricing-center reveal-bottom-fade">
+                        <div class="single-pricing-treangle">
+                            <span class=" treangle-span"><?=$beginner?></span>
+                        </div>
+                        <div class="pricing-table-plan pt-3">
+                            <h3>Full Stack Python<br> Development </h3>
+                        </div>
+                        <div class="pricing-table-content">
+                            <div class="pricing-content-price ">
+                                <strong>30 000</strong>
+                                <br>
+                                <sup> <?=$dram?></sup>
+                                <sub>/<?=$month?></sub>
+                            </div>
+                            <div class="row pricing-content-lesson text-light ">
+                                <div class="col-6 pt-2 mt-1">
+                                    <div class=" border-right">
+                                        <i class="fa fa-calendar mr-2"></i>
+                                        3 <?=$month?>
+                                    </div>
+
+                                </div>
+                                <div class="col-6 ">3 <?=$lessonsperweek?> <br> 2 <?=$hours?></div>
+                            </div>
+                            <ul class="list-item text-left pl-4 mt-4">
+                                <li><i class="fa fa-check"></i> Html, Css</li>
+                                <li><i class="fa fa-check"></i> Responsive design, Bootstrap</li>
+                                <li><i class="fa fa-check"></i> JavaScript, jQuery, Ajax</li>
+                                <li><i class="fa fa-check"></i> Python</li>
+                                <li><i class="fa fa-check"></i> MongoDB</li>
+                                <li><i class="fa fa-check"></i> Diango</li>
+                            </ul>
+                            <div class="pricing-content-btn pricing-btn ">
+                                <a class="btn btn2" href="reg_form.php?course=front"><?=$signup?></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="single-pricing-table  single-pricing-table2 single-pricing-center reveal-bottom-fade">
+                        <div class="single-pricing-treangle">
+                            <span class=" treangle-span"><?=$beginner?></span>
+                        </div>
+                        <div class="pricing-table-plan pt-3">
+                            <h3>Front End React<br> Development </h3>
+                        </div>
+                        <div class="pricing-table-content">
+                            <div class="pricing-content-price ">
+                                <strong>30 000</strong>
                                 <br>
                                 <sup> <?=$dram?></sup>
                                 <sub>/<?=$month?></sub>
@@ -912,7 +1016,7 @@ include ('header.php');
                                 <li><i class="fa fa-check"></i> Responsive design, Bootstrap</li>
                                 <li><i class="fa fa-check"></i> JavaScript, OOP, jQuery</li>
                                 <li><i class="fa fa-check"></i> React.js </li>
-                                 <li><i class="fa fa-check"></i> Redux</li>
+                                <li><i class="fa fa-check"></i> Redux</li>
                             </ul>
                             <div class="pricing-content-btn pricing-btn ">
                                 <a class="btn btn2" href="reg_form.php?course=front"><?=$signup?></a>
@@ -920,51 +1024,14 @@ include ('header.php');
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 reveal-left-fade">
-                    <div class="single-pricing-table single-pricing-table1 single-pricing-center reveal-bottom-fade">
-                        <div class="single-pricing-treangle">
-                            <span class=" treangle-span"><?=$beginner?></span>
-                        </div>
-                        <div class="pricing-table-plan pt-3">
-                            <h3>Full Stack Web<br> Development </h3>
-                        </div>
-                        <div class="pricing-table-content">
-                            <div class="pricing-content-price">
-                                <strong>40 000</strong> <br>
-                                <sup><?=$dram?></sup>
-                                <sub>/<?=$month?></sub>
-                            </div>
-                            <div class="row pricing-content-lesson text-light ">
-                                <div class="col-6 pt-2 mt-1">
-                                    <div class="border-right ">
-                                        <i class="fa fa-calendar mr-2"></i>
-                                        6 <?=$month?>
-                                    </div>
-
-                                </div>
-                                <div class="col-6 ">3 <?=$lessonsperweek?> <br> 2 <?=$hours?></div>
-                            </div>
-                            <ul class="list-item text-left pl-4 mt-4">
-                                <li><i class="fa fa-check"></i> Html, Css</li>
-                                <li><i class="fa fa-check"></i> Responsive design, Bootstrap</li>
-                                <li><i class="fa fa-check"></i> JavaScript, jQuery, Ajax</li>
-                                <li><i class="fa fa-check"></i> PHP, MySQL, OOP</li>
-                                <li><i class="fa fa-check"></i> MVC, Laravel(additional)</li>
-                            </ul>
-                            <div class="pricing-content-btn pricing-btn ">
-                                <a class="btn btn1" href="reg_form.php?course=full"><?=$signup?></a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
                 <div class="col-lg-4 col-md-6 offset-lg-0 offset-md-3 reveal-right-fade">
                     <div class=" single-pricing-table single-pricing-table3 single-pricing-center reveal-bottom-fade">
                         <div class="pricing-table-plan pt-3">
-                            <h3>Back-End Php<br> Development</h3>
+                            <h3>Back End PHP<br> Development</h3>
                         </div>
                         <div class="pricing-table-content">
                             <div class="pricing-content-price">
-                                <strong>50 000</strong>
+                                <strong>40 000</strong>
                                 <br>
                                 <sup><?=$dram?></sup>
                                 <sub>/<?=$month?></sub>
@@ -980,11 +1047,12 @@ include ('header.php');
                                 <div class="col-6">3 <?=$lessonsperweek?> <br> 2 <?=$hours?></div>
                             </div>
                             <ul class="list-item text-left mt-4 pl-4">
-                                <li><i class="fa fa-check"></i> Php, OOP</li>
-                                <li><i class="fa fa-check"></i>Ajax, MySQL</li>
+                                <li><i class="fa fa-check"></i> PHP, OOP</li>
+                                <li><i class="fa fa-check"></i> Ajax, MySQL</li>
                                 <li><i class="fa fa-check"></i> MVC</li>
                                 <li><i class="fa fa-check"></i> Laravel</li>
                             </ul>
+                            <br>
                             <div class="pricing-content-btn pricing-btn">
                                 <a class="btn btn3" href="reg_form.php?course=back"><?=$signup?></a>
                             </div>
@@ -994,7 +1062,6 @@ include ('header.php');
             </div>
         </div>
     </section>
-
     <!--================================================================================= 
                                 Start recent Blog
     ==================================================================================-->
@@ -1139,7 +1206,6 @@ include ('header.php');
                             target="_blank">JavaScript/jQuery</a></h3>
                 </div>
             </div>
-
             <div class="grid blog-mt ">
                 <div class="entry-media">
                     <img src="assets/img/usanoxneri_ashxatanq_img/a10.PNG" alt>
@@ -1161,14 +1227,12 @@ include ('header.php');
     <div class="tast">
         <div class="tasting">
             <div class="tasting-content">
-            <h3>Typing Test - <?=$check_speed?></h3>
-            <p><?=$test_help?></p>
-            <a href="typing-test" target="_blank"><button class="btn1"><?=$starttest?></button></a>
-        </div>
-        
+                <h3>Typing Test - <?=$check_speed?></h3>
+                <p><?=$test_help?></p>
+                <a href="typing-test" target="_blank"><button class="btn1"><?=$starttest?></button></a>
+            </div>
         </div>
     </div>
-   
     <!-- End Typing test -->
     <!--================================================================================= 
                                 Start Our teacher
@@ -1180,21 +1244,20 @@ include ('header.php');
                 <span><?=$becomeoneofus?></span>
             </div>
             <div class="row align-items-center teacher-img-text">
-                     <div class="col-lg-3 col-md-6 text-center wow flipInY" data-wow-delay="0.6s">
+                <div class="col-lg-3 col-md-6 text-center wow flipInY" data-wow-delay="0.6s">
                     <div class="teacher teacher-member">
-                        <img src="assets/img/hegine.jpg" class="img-fluid" alt="teacher-member">
+                        <img src="assets/img/ishxan-img.png" class="img-fluid" alt="teacher-member">
                         <div class="overlay">
                             <div class="text">
                                 <div>
-                                    <h3>
-                                        <?=$hegine?></h3>
-                                    <p>Administrator</p>
+                                    <h3><?=$ishxan?></h3>
+                                    <p><?=$manager?>, <br> Front End <?=$specialist?></p>
                                 </div>
                                 <div>
                                     <ul class="text-center">
-                                        <li><i class="icofont-facebook"></i></li>
-                                        <li><i class="icofont-twitter"></i></li>
-                                        <li><i class="icofont-linkedin"></i></li>
+                                        <li><a href="https://www.facebook.com/profile.php?id=100022387127816" target="_blank"><i class="icofont-facebook"></i></a></li>
+<!--                                        <li><i class="icofont-twitter"></i></li>-->
+                                        <li><a href="https://www.linkedin.com/in/melqonyan-ishkhan-065489203" target="_blank"><i class="icofont-linkedin"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -1203,18 +1266,18 @@ include ('header.php');
                 </div>
                 <div class="col-lg-3 col-md-6 text-center wow flipInY">
                     <div class="teacher teacher-member">
-                        <img src="assets/img/Artboard1.jpg" class="img-fluid" alt="teacher-member">
+                        <img src="assets/img/levon_img.png" class="img-fluid" alt="teacher-member">
                         <div class="overlay">
                             <div class="text">
                                 <div>
-                                    <h3><?=$arevik?></h3>
-                                    <p>Front End <?=$specialist?></p>
+                                    <h3><?=$levon?></h3>
+                                    <p>Full Stack <?=$specialist?></p>
                                 </div>
                                 <div>
                                     <ul class="text-center">
                                         <li><i class="icofont-facebook"></i></li>
-                                        <li><i class="icofont-twitter"></i></li>
-                                        <li><a href="https://www.linkedin.com/in/arevik-hayrapetyan-2602b8204/"><i class="icofont-linkedin"></i></a></li>
+<!--                                        <li><i class="icofont-twitter"></i></li>-->
+                                        <li><a href="https://www.linkedin.com/in/levon-yeritsyan" target="_blank"><i class="icofont-linkedin"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -1232,44 +1295,82 @@ include ('header.php');
                                 </div>
                                 <div>
                                     <ul class="text-center">
-                                        <li><i class="icofont-facebook"></i></li>
-                                        <li><i class="icofont-twitter"></i></li>
-                                        <li><a href="https://www.linkedin.com/in/andranik-hoghmrtsyan-526a55204/"><i class="icofont-linkedin"></i></a></li>
+                                        <li><a href="https://www.facebook.com/andranik.hoghmrtsyan" target="_blank"><i class="icofont-facebook"></i></a></li>
+<!--                                        <li><i class="icofont-twitter"></i></li>-->
+                                        <li><a href="https://www.linkedin.com/in/andranik-hoghmrtsyan-526a55204" target="_blank"><i class="icofont-linkedin"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 text-center wow flipInY" data-wow-delay="0.4s">
+            </div>
+            <div class="row align-items-center teacher-img-text">
+                <div class="col-lg-3 col-md-6 text-center wow flipInY" data-wow-delay="0.6s">
                     <div class="teacher teacher-member">
-                        <img src="assets/img/image.jpg" class="img-fluid" alt="teacher-member">
+                        <img src="assets/img/hegine.jpg" class="img-fluid" alt="teacher-member">
                         <div class="overlay">
                             <div class="text">
                                 <div>
-                                    <h3><?=$syuzanna?></h3>
+                                    <h3><?=$hegine?></h3>
+                                    <p>Coordinator</p>
+                                </div>
+                                <div>
+                                    <ul class="text-center">
+                                        <li><a href="https://www.facebook.com/helena.mkrtchyan.3" target="_blank"><i class="icofont-facebook"></i></a></li>
+<!--                                        <li><i class="icofont-twitter"></i></li>-->
+                                        <li><a href="https://www.linkedin.com/in/heghine-mkrtchyan-a3ab55194" target="_blank"><i class="icofont-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center wow flipInY">
+                    <div class="teacher teacher-member">
+                        <img src="assets/img/azniv-img.png" class="img-fluid" alt="teacher-member">
+                        <div class="overlay">
+                            <div class="text">
+                                <div>
+                                    <h3><?=$azniv?></h3>
                                     <p>Front End <?=$specialist?></p>
                                 </div>
                                 <div>
                                     <ul class="text-center">
-                                        <li><i class="icofont-facebook"></i></li>
-                                        <li><i class="icofont-twitter"></i></li>
-                                        <li><i class="icofont-linkedin"></i></li>
+                                        <li><a href="https://www.facebook.com/azniv.gojanyan.5" target="_blank"><i class="icofont-facebook"></i></a></li>
+<!--                                        <li><i class="icofont-twitter"></i></li>-->
+                                        <li><a href="https://www.linkedin.com/in/azi-yan-a493861aa" target="_blank"><i class="icofont-linkedin"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-           
+                <div class="col-lg-3 col-md-6 text-center wow flipInY" data-wow-delay="0.2s">
+                    <div class="teacher teacher-member">
+                        <img src="assets/img/anna_img.png" class="img-fluid" alt="teacher-member">
+                        <div class="overlay">
+                            <div class="text">
+                                <div>
+                                    <h3><?=$anna?></h3>
+                                    <p><?=$administrator?></p>
+                                </div>
+                                <div>
+                                    <ul class="text-center">
+                                        <li><a href="https://www.facebook.com/people/Anna-Muradyan/100009256391420" target="_blank"><i class="icofont-facebook"></i></a></li>
+<!--                                        <li><i class="icofont-twitter"></i></li>-->
+                                        <li><a href="https://www.linkedin.com/in/anna-muradyan-1a4a40206" target="_blank"><i class="icofont-linkedin"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     <!--End Our teacher -->
     <!-- CV start-->
-
-
-
 <div class="container-fluid cv-block">
 <div class="container form-registr">
 <div class="text_form">
@@ -1330,16 +1431,9 @@ include ('header.php');
 
 </div>
 </div>
-
-
-
-
-
-
-
-<!--=================================================================================
-CV END
-==================================================================================-->
+    <!--=================================================================================
+    CV END
+    ==================================================================================-->
     <!--================================================================================= 
                                 Start testimonial
     ==================================================================================-->
@@ -1352,7 +1446,6 @@ CV END
                 <div class="col-lg-6 col-md-8">
                     <div class="testimonial-content reveal-right-fade">
                         <div class="testimonial-carousel owl-carousel ">
-
                             <div class="testimonial-single">
                                 <img src="assets/img/Alisa.jpg" alt="">
                                 <h5><?=$alisa?></h5>
@@ -1360,7 +1453,6 @@ CV END
                                 <p><?=$alisatext?>:
                                 </p>
                             </div>
-
                             <div class="testimonial-single">
                                 <img src="assets/img/narek.jpg" alt="">
                                 <h5><?=$nareksardaryan?></h5>
@@ -1368,7 +1460,6 @@ CV END
                                 <p><?=$nareksardaryantext?>
                                 </p>
                             </div>
-
                             <div class="testimonial-single">
                                 <img src="assets/img/NE.jpg" alt="">
                                 <h5><?=$narekyazeryan?></h5>
@@ -1376,7 +1467,6 @@ CV END
                                 <p><?=$narekyazeryantext?>
                                 </p>
                             </div>
-
                             <div class="testimonial-single">
                                 <img src="assets/img/levon.jpg" alt="">
                                 <h5><?=$levonhakhyan?></h5>
@@ -1384,7 +1474,6 @@ CV END
                                 <p><?=$levonhakhyantext?>
                                 </p>
                             </div>
-
                             <div class="testimonial-single">
                                 <img src="assets/img/hripsime.jpg" alt="">
                                 <h5><?=$hripsimemanukyan?></h5>
@@ -1408,30 +1497,25 @@ CV END
     <!-- End testimonial -->
 
     <section class="container mt-5 pt-5 mb-4">
-
         <div class="row">
             <div class="col-lg-4 col-md-6">
                 <div class="contact-box1">
                     <img src="assets/img/Ars.jpg" alt="">
                 </div>
             </div>
-
             <div class="col-lg-4 col-md-6">
                 <div class="contact-box1">
                     <img src="assets/img/Charity.jpg" alt="">
                 </div>
             </div>
-
             <div class="col-lg-4 col-md-6 offset-lg-0 offset-md-3">
                 <div class="contact-box1">
                     <img src="assets/img/1.jpg" alt="">
                 </div>
             </div>
-
         </div>
-        </div>
+        </div> <!-- ? -->
     </section>
-
     <!--================================================================================= 
                                 Start Contact Area
     ==================================================================================-->
