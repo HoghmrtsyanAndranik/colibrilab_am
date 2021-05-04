@@ -120,21 +120,26 @@ if($LANG=='ENG'){
   }
 
  $mon=3;
- $month_fee='40 000';
- if($course_type=='Full Stack Web Development'){
- $course='Html, Css Responsive design, Bootstrap JavaScript,
-         jQuery, Ajax PHP, MySQL, OOP MVC, Laravel(additional)';
+ $month_fee='30 000';
+ if($course_type=='Full Stack PHP Development'){
+ $course='Html, Css Responsive design, Bootstrap, JavaScript,
+         jQuery, Ajax, PHP, MySQL, OOP, MVC, Laravel(additional)';
          $mon=6;
 
  }
- elseif($course_type=='Front-End React Web Development'){
-  $course='Html, CSS,Responsive design, Bootstrap,JavaScript, OOP, jQuery,React.js';
-   
+ elseif($course_type=='Front End React Development'){
+     $course='Html, CSS, Responsive design, Bootstrap, JavaScript, OOP, jQuery, React.js, Redux';
  }
- else{
-   $course='Php, OOP,Ajax, MySQL,MVC,Laravel(additional)';
-   $month_fee='50 000';
-    }
+ elseif($course_type=='Back End PHP Development'){
+     $course='PHP, OOP, Ajax, MySQL, MVC, Laravel';
+     $month_fee='40 000';
+ }
+ elseif($course_type=='Full Stack Node Development'){
+     $course='Html, CSS, Responsive design, Bootstrap, JavaScript, jQuery, Ajax, Node.js, MongoDB';
+ }
+ elseif($course_type=='Full Stack Python'){
+     $course='Html, CSS, Responsive design, Bootstrap, JavaScript, jQuery, Ajax, Python, MongoDB, Diango';
+ }
 
 
 

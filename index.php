@@ -877,7 +877,7 @@ include ('header.php');
                             <span class=" treangle-span"><?=$beginner?></span>
                         </div>
                         <div class="pricing-table-plan pt-3">
-                            <h3>Full stack Node<br> Development </h3>
+                            <h3>Full Stack Node<br> Development </h3>
                         </div>
                         <div class="pricing-table-content">
                             <div class="pricing-content-price ">
@@ -905,7 +905,7 @@ include ('header.php');
                             </ul>
                             <br>
                             <div class="pricing-content-btn pricing-btn ">
-                                <a class="btn btn2" href="reg_form.php?course=front"><?=$signup?></a>
+                                <a class="btn btn2" href="reg_form.php?course=node"><?=$signup?></a>
                             </div>
                         </div>
                     </div>
@@ -916,7 +916,7 @@ include ('header.php');
                             <span class=" treangle-span"><?=$beginner?></span>
                         </div>
                         <div class="pricing-table-plan pt-3">
-                            <h3>Full Stack Php<br> Development </h3>
+                            <h3>Full Stack PHP<br> Development </h3>
                         </div>
                         <div class="pricing-table-content">
                             <div class="pricing-content-price">
@@ -942,7 +942,7 @@ include ('header.php');
                                 <li><i class="fa fa-check"></i> MVC, Laravel (additional)</li>
                             </ul>
                             <div class="pricing-content-btn pricing-btn ">
-                                <a class="btn btn1" href="reg_form.php?course=full"><?=$signup?></a>
+                                <a class="btn btn1" href="reg_form.php?course=python"><?=$signup?></a>
                             </div>
                         </div>
                     </div>
@@ -953,7 +953,7 @@ include ('header.php');
                             <span class=" treangle-span"><?=$beginner?></span>
                         </div>
                         <div class="pricing-table-plan pt-3">
-                            <h3>Full stack Python<br> Development </h3>
+                            <h3>Full Stack Python<br> Development </h3>
                         </div>
                         <div class="pricing-table-content">
                             <div class="pricing-content-price ">
@@ -992,7 +992,7 @@ include ('header.php');
                             <span class=" treangle-span"><?=$beginner?></span>
                         </div>
                         <div class="pricing-table-plan pt-3">
-                            <h3>Front-End React<br> Development </h3>
+                            <h3>Front End React<br> Development </h3>
                         </div>
                         <div class="pricing-table-content">
                             <div class="pricing-content-price ">
@@ -1027,7 +1027,7 @@ include ('header.php');
                 <div class="col-lg-4 col-md-6 offset-lg-0 offset-md-3 reveal-right-fade">
                     <div class=" single-pricing-table single-pricing-table3 single-pricing-center reveal-bottom-fade">
                         <div class="pricing-table-plan pt-3">
-                            <h3>Back-End Php<br> Development</h3>
+                            <h3>Back End PHP<br> Development</h3>
                         </div>
                         <div class="pricing-table-content">
                             <div class="pricing-content-price">
@@ -1047,8 +1047,8 @@ include ('header.php');
                                 <div class="col-6">3 <?=$lessonsperweek?> <br> 2 <?=$hours?></div>
                             </div>
                             <ul class="list-item text-left mt-4 pl-4">
-                                <li><i class="fa fa-check"></i> Php, OOP</li>
-                                <li><i class="fa fa-check"></i>Ajax, MySQL</li>
+                                <li><i class="fa fa-check"></i> PHP, OOP</li>
+                                <li><i class="fa fa-check"></i> Ajax, MySQL</li>
                                 <li><i class="fa fa-check"></i> MVC</li>
                                 <li><i class="fa fa-check"></i> Laravel</li>
                             </ul>
