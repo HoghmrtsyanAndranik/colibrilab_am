@@ -1,4 +1,5 @@
 <?php
+
 include ('header.php');
 ?>
     <!--================================================================================= 
@@ -890,7 +891,7 @@ include ('header.php');
                                 <div class="col-6 pt-2 mt-1">
                                     <div class=" border-right">
                                         <i class="fa fa-calendar mr-2"></i>
-                                        3 <?=$month?>
+                                        5 <?=$month?>
                                     </div>
 
                                 </div>
@@ -966,7 +967,7 @@ include ('header.php');
                                 <div class="col-6 pt-2 mt-1">
                                     <div class=" border-right">
                                         <i class="fa fa-calendar mr-2"></i>
-                                        3 <?=$month?>
+                                        6 <?=$month?>
                                     </div>
 
                                 </div>
@@ -1005,7 +1006,7 @@ include ('header.php');
                                 <div class="col-6 pt-2 mt-1">
                                     <div class=" border-right">
                                         <i class="fa fa-calendar mr-2"></i>
-                                        3 <?=$month?>
+                                        5 <?=$month?>
                                     </div>
 
                                 </div>
@@ -1255,7 +1256,7 @@ include ('header.php');
                                 </div>
                                 <div>
                                     <ul class="text-center">
-                                        <li><a href="https://www.facebook.com/profile.php?id=100022387127816" target="_blank"><i class="icofont-facebook"></i></a></li>
+                                        <!-- <li><a href="https://www.facebook.com/profile.php?id=100022387127816" target="_blank"><i class="icofont-facebook"></i></a></li> -->
 <!--                                        <li><i class="icofont-twitter"></i></li>-->
                                         <li><a href="https://www.linkedin.com/in/melqonyan-ishkhan-065489203" target="_blank"><i class="icofont-linkedin"></i></a></li>
                                     </ul>
@@ -1275,7 +1276,7 @@ include ('header.php');
                                 </div>
                                 <div>
                                     <ul class="text-center">
-                                        <li><i class="icofont-facebook"></i></li>
+                                       <!--  <li><i class="icofont-facebook"></i></li> -->
 <!--                                        <li><i class="icofont-twitter"></i></li>-->
                                         <li><a href="https://www.linkedin.com/in/levon-yeritsyan" target="_blank"><i class="icofont-linkedin"></i></a></li>
                                     </ul>
@@ -1295,7 +1296,7 @@ include ('header.php');
                                 </div>
                                 <div>
                                     <ul class="text-center">
-                                        <li><a href="https://www.facebook.com/andranik.hoghmrtsyan" target="_blank"><i class="icofont-facebook"></i></a></li>
+                                        <!-- <li><a href="https://www.facebook.com/andranik.hoghmrtsyan" target="_blank"><i class="icofont-facebook"></i></a></li> -->
 <!--                                        <li><i class="icofont-twitter"></i></li>-->
                                         <li><a href="https://www.linkedin.com/in/andranik-hoghmrtsyan-526a55204" target="_blank"><i class="icofont-linkedin"></i></a></li>
                                     </ul>
@@ -1317,7 +1318,7 @@ include ('header.php');
                                 </div>
                                 <div>
                                     <ul class="text-center">
-                                        <li><a href="https://www.facebook.com/helena.mkrtchyan.3" target="_blank"><i class="icofont-facebook"></i></a></li>
+                                        <!-- <li><a href="https://www.facebook.com/helena.mkrtchyan.3" target="_blank"><i class="icofont-facebook"></i></a></li> -->
 <!--                                        <li><i class="icofont-twitter"></i></li>-->
                                         <li><a href="https://www.linkedin.com/in/heghine-mkrtchyan-a3ab55194" target="_blank"><i class="icofont-linkedin"></i></a></li>
                                     </ul>
@@ -1337,7 +1338,7 @@ include ('header.php');
                                 </div>
                                 <div>
                                     <ul class="text-center">
-                                        <li><a href="https://www.facebook.com/azniv.gojanyan.5" target="_blank"><i class="icofont-facebook"></i></a></li>
+                                        <!-- <li><a href="https://www.facebook.com/azniv.gojanyan.5" target="_blank"><i class="icofont-facebook"></i></a></li> -->
 <!--                                        <li><i class="icofont-twitter"></i></li>-->
                                         <li><a href="https://www.linkedin.com/in/azi-yan-a493861aa" target="_blank"><i class="icofont-linkedin"></i></a></li>
                                     </ul>
@@ -1357,7 +1358,7 @@ include ('header.php');
                                 </div>
                                 <div>
                                     <ul class="text-center">
-                                        <li><a href="https://www.facebook.com/people/Anna-Muradyan/100009256391420" target="_blank"><i class="icofont-facebook"></i></a></li>
+                                        <!-- <li><a href="https://www.facebook.com/people/Anna-Muradyan/100009256391420" target="_blank"><i class="icofont-facebook"></i></a></li> -->
 <!--                                        <li><i class="icofont-twitter"></i></li>-->
                                         <li><a href="https://www.linkedin.com/in/anna-muradyan-1a4a40206" target="_blank"><i class="icofont-linkedin"></i></a></li>
                                     </ul>
