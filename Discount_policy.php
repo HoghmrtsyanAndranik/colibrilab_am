@@ -13,7 +13,7 @@ include ('header.php');
 			<p>50%</p>
 			<img src="assets/img/kal.png" alt="kal">
 			<h6>Հաշմանդամություններ ունեցողներ</h6>
-			<p class="lo nuyn">Տրամադրում ենք 50% զեղչ սահմանափակ շարժումներ ունեցող ուսանողներին՝ կարևորելով նրանց ներգրավվածությունը ՏՏ ոլորտում։Անհրաժեշտ է ներկայացնել հաշմանադամության կարգը։</p>
+			<p class="lo nuyn">Տրամադրում ենք 50% զեղչ սահմանափակ շարժումներ ունեցող ուսանողներին՝ կարևորելով նրանց ներգրավվածությունը ՏՏ ոլորտում։*Անհրաժեշտ է ներկայացնել հաշմանադամության կարգը։</p>
 		</div>
 		
 	</div>
@@ -22,7 +22,9 @@ include ('header.php');
 			<p>30%</p>
 			<img src="assets/img/ver.png" alt="kal">
 			<h6>Պատերազմի մասնակիցներ</h6>
-			<p class="lo nuyn">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quibusdam debitis minus assumenda a incidunt inventore necessitatibus ab laborum, aperiam nobis nemo voluptatem totam consequuntur ducimus deleniti. Perferendis, aliquid. Atque?</p>
+			<p class="lo nuyn">Պատերազմի բոլոր մասնակիցներին տրամադրվում է 30% զեղչ։
+*Հասանելիք զեղչից օգտվելու համար անհրաժեշտ է ներկայացնել զինվորական գրքույկը, որտեղ առկա կլինի զինվորական կոմիսարիատի կողմից  պատերազմին մասնակցելը փաստող համապատասխան կնիքը կամ նշումը։
+</p>
 		</div>
 		
 	</div>
@@ -31,7 +33,9 @@ include ('header.php');
 			<p>25%</p>
 			<img src="assets/img/house.png" alt="kal">
 			<h6>Մեկ ընտանիքից 2 անձ</h6>
-			<p class="lo nuyn">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quibusdam debitis minus assumenda a incidunt inventore necessitatibus ab laborum, aperiam nobis nemo voluptatem totam consequuntur ducimus deleniti. Perferendis, aliquid. Atque?</p>
+			<p class="lo nuyn">Եթե մեկ ընտանիքից դասընթացներին մասնակցում է 2 անձ, նրանցից յուրաքանչյուրին տրամադրվում է 25% զեղչ։
+*Անհրաժեշտ է ներկայացնել համապատասխան փաստաթղթեր(ամուսնության վկայական, ծննդյան վկայական ևն), որոնք կփաստեն դիմորդների՝ մեկ ընտանիքից լինելու փաստը։
+</p>
 		</div>
 	</div>
 	<div style="display: flex; margin: 0 auto">
@@ -40,7 +44,7 @@ include ('header.php');
 			<p>10%</p>
 			<img src="assets/img/army.png" alt="kal">
 			<h6>ՀՀ ԶՈՒ-ում ծառայողներ</h6>
-			<p class="lo nuyn">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quibusdam debitis minus assumenda a incidunt inventore necessitatibus ab laborum, aperiam nobis nemo voluptatem totam consequuntur ducimus deleniti. Perferendis, aliquid. Atque?</p>
+			<p class="lo nuyn">Տվյալ պահի դրությամբ ՀՀ զինված ուժերում ծառայող բոլոր անձինք հնարավորություն ունեն օգտվելու 10% զեղչից, եթե ներկայացնում են զինվորական գրքույկը կամ տեղեկանք՝ համապատասխան զինվորական կոմիսարիատից։</p>
 		</div>
 	</div>
 	<div class="big">
@@ -48,7 +52,9 @@ include ('header.php');
 			<p>10%</p>
 			<img src="assets/img/friends.png" alt="kal">
 			<h6>Ընկերոջ հետ</h6>
-			<p class="lo nuyn">Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quibusdam debitis minus assumenda a incidunt inventore necessitatibus ab laborum, aperiam nobis nemo voluptatem totam consequuntur ducimus deleniti. Perferendis, aliquid. Atque?</p>
+			<p class="lo nuyn">Եթե գալիս ես ընկերոջդ հետ ապա ստանում ես զեղչ՝ 10%-ի չափով։ Յուրաքանչյուր նոր ընկեր ավելացնում է տրամադրվող զեղչի չափը 5%-ով։
+*Դիմորդի/ների/ համաձայնությամբ զեղչը կարող է տրամադրվել ինչպես մեկին, այնպես էլ բաշխվել նրանց միջև։
+</p>
 		</div>
 		
 	</div>
