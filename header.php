@@ -6,11 +6,13 @@ if($LANG=='ARM'){
    $is_arm='chosen';
    $is_eng='';
     $policy_link='privacy_policy';
+    $discount_href="Discount_policy";
 }
 elseif($LANG=='ENG'){
     $is_arm='';
     $is_eng='chosen';
     $policy_link='privacy_policy_eng';
+    $discount_href="Discount_policy";
 }
 
 ?>
@@ -22,7 +24,12 @@ elseif($LANG=='ENG'){
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="description" content="Slider Revolution Example" />
-    <meta name="keywords" content="fullscreen image, grid layout, flexbox grid, transition" />
+    <meta name="keywords" content="cragravorum,cragravorum ashxatanq,
+cragravorum usucum,cragravorum anvchar das@ntacner,cragravorum daser,cragravorum cragir,cragravorum hayastanum,cragravorum kentron,cragravorum vanadzorum,cragravorum dasntacner,web cragravorum dasntacner,ve cragravorum das@ntacner,web cragravorum daser,cragravorum das@ntacner erevanum,
+hamakargchayin cragravorum das@ntacner,cragravorum erexaneri hamar,inch e cragravorum,inch e cragravorumy,cragravorum gyumrium,html cragravorum,java cragravorum,cragravorum lezu,cragravorum masin,web cragravorum das@ntacner,cragravorum das@ntacner,cragravorum das@ntacner online,notebook cragravorum,
+online cragravorum,php cragravorum,veb tsragravorum,veb cragravorum,web tsragravorum,web cragravorum,ծրագրավորում համալսարան,ծրագրավորում պրակտիկա,web ծրագրավորում,վեբ ծրագրավորում,
+python ծրագրավորում,աշխատանք ծրագրավորում,գծային ծրագրավորում,սովորել ծրագրավորում,Ծրագրավորում,ծրագրավորում աշխատանք,ծրագրավորում ուսուցում,ծրագրավորում անվճար դասընթացներ,ծրագրավորման անվճար դասընթացներ,ծրագրավորում դասեր,ծրագրավորում ծրագիր,ծրագրավորման օնլայն դասեր,ծրագրավորում Հայաստանում,ծրագրավորում կենտրոն,ծրագրավորման կենտրոն,ծրագրավորում կենտրոնում,ծրագրավորում Վանաձորում,ծրագրավորում դասընթացներ,ծրագրավորման դասընթացներ,web ծրագրավորում դասընթացներ, web ծրագրավորման դասընթացներ,web ծրագրավորման դասեր,web ծրագրավորում դասեր,veb ծրագրավորում դասեր,veb ծրագրավորման դասեր,veb ծրագրավորման դասընթացներ,veb ծրագրավորում դասընթացներ,ծրագրավորման դասընթացներ Երևանում,ծրագրավորման դասընթացներ Երեվանում,ծրագրավորման դասեր Երևանում,ծրագրավորման դասեր Երեվանում,համակարգչային ծրագրավորման դասընթացներ,ծրագրավորում երեխաների համար,ծրագրավորման դասեր երեխաների համար,ծրագրավորման դասընթացներ երեխաների համար,ինչ է ծրագրավորումը,ծրագրավորում Գյումրիում,html ծրագրավորում,java ծրագրավորում,javascript  ծրագրավորում,ծրագրավորման լեզու,ծրագրավորման մասին,ծրագրավորման դասընթացներ օնլայն,ծրագրավորման օնլայն դասընթացներ,օնլայն ծրագրավորման դասընթացներ,ծրագրավորման դասեր օնլայն,ծրագրավորման օնլայն դասեր,օնլայն ծրագրավորման դասեր,նոթբուք ծրագրավորում,օնլայն ծրագրավորում,ծրագրավորում օնլայն,php ծրագրավորում,
+ծրագրավորում php,react ծրագրավորում,ծրագրավորում react,python ծրագրավորում,ծրագրավորում python" />
     <meta name="author" content="ThemePunch" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
