@@ -137,13 +137,13 @@ python ծրագրավորում,աշխատանք ծրագրավորում,գծա
                     <div class="dropdown">
                     <li class="nav-item other5">
                     <a class="nav-link js-scroll-trigger other6" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><?=$other?>
-                    </a>
+                  <!--   </a>
                      <a class="nav-link js-scroll-trigger ana" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Ստեղծել CV
                     </a>
                      <a class="nav-link js-scroll-trigger ana" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Մուտքագրման արագության թեստ
                     </a>
                      <a class="nav-link js-scroll-trigger ana" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Հաճախակի տրվող հարցեր
-                    </a>
+                    </a> -->
                     
                     <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
                         <a class="dropdown-item" href="/#eduservices-contact">Կապ</a>
