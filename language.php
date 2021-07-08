@@ -126,7 +126,11 @@ $react="React (երբեմն ձևակերպված է React.js կամ ReactJS), բ
             Laravel- ը թողարկվում է MIT լիցենզիայի ներքո:
             Ծրագրի սկզբնական կոդը տեղադրված է GitHub- ում: 2013 թ.-ի դեկտեմբերին
             sitepoint.com հարցման արդյունքում ՝ PHP- ի ամենահայտնի շրջանակների
-            համար, Laravel-ը դասվել է 2014 թ.-ի ամենահեռանկարային նախագիծը"; 
+            համար, Laravel-ը դասվել է 2014 թ.-ի ամենահեռանկարային նախագիծը";
+ $python="Python — ը ընդհանուր նշանակության բարձր մակարդակի ծրագրավորման լեզու է, 
+            դինամիկ խիստ տիպավորմամբ եւ հիշողության ավտոմատ կառավարմամբ, 
+            որը կենտրոնացած է մշակողի արտադրողականության, կոդի ընթերցանության եւ դրա որակի բարձրացման վրա, 
+            ինչպես նաեւ դրա վրա գրված ծրագրերի դյուրատարության ապահովման վրա";
 $html_css="<li> HTML ֆունդամենտալ թեգեր, սիմվոլներ, ցուցակներ</li>
             <li> Աղյուսակներ, iframe թեգ, մուլտիմեդիա</li>
             <li>head թեգում գործածվող թեգեր, վեբ էջի հիմնական կառուցվածք</li>
@@ -259,7 +263,10 @@ $laravel_more=
 <li>Facad-ներ</li>
 <li>Անվտանգություն</li>
 <li>Թեստ</li>
-";        
+";
+$python_more="
+<li>Թեստ</li>
+";
 $create_account='Ստեղծել հաշիվ';
 $log_in='Մուտք գործել';
 $public_link='Սա հասանելի հղում է';
@@ -379,7 +386,8 @@ elseif($LANG=='ENG'){
    $jquery="JQuery is the library of JavaScript that focuses on facilitating JavaScript and HTML interaction. With the help of jQuery library one can easily select the DOM element, apply its attributes and content, change them. jQuery also has a clear API for working with AJAX."; 
    $react="React (sometimes formatted as React.js or ReactJS) is an open-source JavaScript library for building user interfaces. React allows developers to create a large web application that uses data which changes over time without reloading the page. Its main purpose is to be fast, simple and large-scale. React only uses the user interface in applications."; 
    $php="PHP (PHP: Hypertext Preprocessor) is a general purpose scripting language used extensively in web programming. It is currently supported by the vast majority of hosting companies and is one of the leading programming languages used to create dynamic websites." ; 
-  $laravel="Laravel is a free, open-source web framework designed to develop the MVC Model View Controller. Laravel is released under the MIT license. The source code of the program is posted on GitHub. In a December 2013 sitepoint.com survey of the most popular PHP frameworks, Laravel was named the most promising project of 2014.";
+   $laravel="Laravel is a free, open-source web framework designed to develop the MVC Model View Controller. Laravel is released under the MIT license. The source code of the program is posted on GitHub. In a December 2013 sitepoint.com survey of the most popular PHP frameworks, Laravel was named the most promising project of 2014.";
+   $python="Python is a high — level general-purpose programming language with dynamic strong typing and automatic memory management, focused on improving developer productivity, code readability and quality, as well as ensuring the portability of programs written in it.";
 $html_css="<li> HTML fundamental tags, symbols, lists</li>
     <li> Spreadsheets, iframe tag, multimedia</li>
     <li>Tags used in head, basic web page structure</li>
@@ -506,6 +514,9 @@ $laravel_more=
 <li>HTTP Exceptions</li>
 <li>Facades</li>
 <li>Security</li>
+<li>Test</li>
+";
+$python_more="
 <li>Test</li>
 ";
 $create_account='Create Account';

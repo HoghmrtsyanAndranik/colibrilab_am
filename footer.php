@@ -83,8 +83,6 @@
 
 </div>
     <!-- End footer -->
-
-
     <script type="text/javascript" src="assets/js/warning.js"></script>
     <!-- Scroll to top -->
     <div class="go-top"><i class="icofont-stylish-up"></i></div>
@@ -117,8 +115,9 @@
     <!-- scrollreveal js -->
     <script src="assets/js/scrollreveal.min.js"></script>
     <!-- Main JS -->
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
     <script src="assets/js/main.js"></script>
-     <script src="assets/js/script.js"></script>
+    <script src="assets/js/script.js"></script>
     <script>
    $(document).ready(function(){
     $('.dropdown-toggle').click(function(){

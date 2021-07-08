@@ -99,7 +99,11 @@
 }
 
 @media only screen and (max-width : 767px) {
-
+	svg.svg-inline--fa.fa-react.fa-w-16,
+	svg.svg-inline--fa.fa-laravel.fa-w-16,
+	svg.svg-inline--fa.fa-python.fa-w-14 {
+		width: 140px;
+	}
 	.d-table {
 		display: block !important;
 	}
@@ -196,7 +200,7 @@
 	}
 
 	.tabs li a i {
-		font-size: 25px;
+		font-size: 60px;
 		margin-bottom: 10px;
 	}
 
