@@ -85,10 +85,9 @@ python ծրագրավորում,աշխատանք ծրագրավորում,գծա
     <style>
         .dropdown-menu{x-placement:none;} 
     </style>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 </head>
-
 <body>
-
     <!--================================================================================= 
                                 START PRELOADER
     ==================================================================================-->

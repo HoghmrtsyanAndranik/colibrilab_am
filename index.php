@@ -2,7 +2,7 @@
 
 include ('header.php');
 ?>
-    <!--================================================================================= 
+    <!--=================================================================================
                                 Start Main Banner Area
     ==================================================================================-->
     <div id="eduservices-home">
@@ -12,10 +12,10 @@ include ('header.php');
             <article class="content">
 
                 <div id="rev_slider_4_1_wrapper" class="rev_slider_wrapper fullscreen-container"
-                    data-alias="particle-effect-one5" data-source="gallery" style="background:#eef0f1;padding:0px; ">
+                     data-alias="particle-effect-one5" data-source="gallery" style="background:#eef0f1;padding:0px; ">
                     <!-- START REVOLUTION SLIDER 5.4.1 fullscreen mode -->
                     <div id="rev_slider_4_1" class="rev_slider fullscreenbanner" style="display:none;"
-                        data-version="5.4.1">
+                         data-version="5.4.1">
                         <ul>
                             <!-- SLIDE  -->
                             <li data-index="rs-10" data-transition="fade" data-slotamount="default"
@@ -28,51 +28,51 @@ include ('header.php');
                                 <!-- MAIN IMAGE -->
                                 <img src="" data-bgcolor='#ffffff' style='
                                     background:#ffffff' alt="" data-bgposition="center center" data-bgfit="cover"
-                                    data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                                     data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
                                 <!-- LAYERS -->
 
                                 <!-- LAYER NR. 1 -->
                                 <div class="tp-caption  " id="slide-10-layer-4"
-                                    data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-                                    data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
-                                    data-width="full-proportional" data-height="full-proportional"
-                                    data-whitespace="nowrap" data-type="image" data-basealign="slide"
-                                    data-responsive_offset="off" data-wrapper_class="tp-nopointer" data-responsive="off"
-                                    data-frames='[{"delay":600,"speed":1500,"frame":"0","from":"sX:1;sY:1;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":1500,"frame":"999","to":"opacity:0;","ease":"Power4.easeOut"}]'
-                                    data-textAlign="['inherit','inherit','inherit','inherit']"
-                                    data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
-                                    data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-blendmode="screen"
-                                    style="z-index: 5;"><img src="assets/img/1bg.jpg" alt=""
-                                        data-ww="['full-proportional','full-proportional','full-proportional','full-proportional']"
-                                        data-hh="['full-proportional','full-proportional','full-proportional','full-proportional']"
-                                        width="1920" height="1281" data-no-retina  id="bg_img" > </div>
+                                     data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                                     data-y="['middle','middle','middle','middle']" data-voffset="['0','0','0','0']"
+                                     data-width="full-proportional" data-height="full-proportional"
+                                     data-whitespace="nowrap" data-type="image" data-basealign="slide"
+                                     data-responsive_offset="off" data-wrapper_class="tp-nopointer" data-responsive="off"
+                                     data-frames='[{"delay":600,"speed":1500,"frame":"0","from":"sX:1;sY:1;opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":1500,"frame":"999","to":"opacity:0;","ease":"Power4.easeOut"}]'
+                                     data-textAlign="['inherit','inherit','inherit','inherit']"
+                                     data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
+                                     data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-blendmode="screen"
+                                     style="z-index: 5;"><img src="assets/img/1bg.jpg" alt=""
+                                                              data-ww="['full-proportional','full-proportional','full-proportional','full-proportional']"
+                                                              data-hh="['full-proportional','full-proportional','full-proportional','full-proportional']"
+                                                              width="1920" height="1281" data-no-retina  id="bg_img" > </div>
 
                                 <!-- LAYER NR. 2 -->
                                 <div class="tp-caption   tp-resizeme size-header" id="slide-10-layer-6"
-                                    data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-                                    data-y="['middle','middle','middle','middle']"
-                                    data-voffset="['-70','-100','-100','-100']" data-width="none" data-height="none"
-                                    data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
-                                    data-wrapper_class="tp-nopointer"
-                                    data-frames='[{"delay":500,"split":"chars","splitdelay":0.1,"speed":300,"frame":"0","from":"y:[-100%];sX:1;sY:2;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;fb:0;","ease":"Power3.easeInOut"}]'
-                                    data-textAlign="['inherit','inherit','inherit','inherit']"
-                                    data-paddingtop="[0,0,0,0]" data-paddingright="[20,20,20,20]"
-                                    data-paddingbottom="[0,0,0,0]" data-paddingleft="[20,20,20,20]"
-                                    style="z-index: 6; white-space: nowrap; font-size: 60px; line-height: 80px; font-weight: 700; color: rgba(45,48,50,1);font-family:arial;">
+                                     data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                                     data-y="['middle','middle','middle','middle']"
+                                     data-voffset="['-70','-100','-100','-100']" data-width="none" data-height="none"
+                                     data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
+                                     data-wrapper_class="tp-nopointer"
+                                     data-frames='[{"delay":500,"split":"chars","splitdelay":0.1,"speed":300,"frame":"0","from":"y:[-100%];sX:1;sY:2;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;fb:0;","ease":"Power3.easeInOut"}]'
+                                     data-textAlign="['inherit','inherit','inherit','inherit']"
+                                     data-paddingtop="[0,0,0,0]" data-paddingright="[20,20,20,20]"
+                                     data-paddingbottom="[0,0,0,0]" data-paddingleft="[20,20,20,20]"
+                                     style="z-index: 6; white-space: nowrap; font-size: 60px; line-height: 80px; font-weight: 700; color: rgba(45,48,50,1);font-family:arial;">
                                     <?=$yourpath?></div>
 
                                 <!-- LAYER NR. 3 -->
                                 <div class="tp-caption   tp-resizeme" id="slide-10-layer-8"
-                                    data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-                                    data-y="['middle','middle','middle','middle']"
-                                    data-voffset="['0','-30','-20','-20']" data-width="['none','none','361','330']"
-                                    data-height="none" data-whitespace="['nowrap','nowrap','normal','normal']"
-                                    data-type="text" data-responsive_offset="on" data-wrapper_class="tp-nopointer"
-                                    data-frames='[{"delay":600,"speed":1000,"frame":"0","from":"y:-20px;sX:1;sY:1;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":600,"frame":"999","to":"auto:auto;fb:0;","ease":"Power3.easeInOut"}]'
-                                    data-textAlign="['inherit','inherit','center','center']" data-paddingtop="[0,0,0,0]"
-                                    data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
-                                    data-paddingleft="[0,0,0,0]"
-                                    style="z-index: 7; white-space: nowrap; font-size: 17px; line-height: 25px; font-weight: 700; color:#ff8559;font-family:Poppins;letter-spacing:10px;">
+                                     data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                                     data-y="['middle','middle','middle','middle']"
+                                     data-voffset="['0','-30','-20','-20']" data-width="['none','none','361','330']"
+                                     data-height="none" data-whitespace="['nowrap','nowrap','normal','normal']"
+                                     data-type="text" data-responsive_offset="on" data-wrapper_class="tp-nopointer"
+                                     data-frames='[{"delay":600,"speed":1000,"frame":"0","from":"y:-20px;sX:1;sY:1;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":600,"frame":"999","to":"auto:auto;fb:0;","ease":"Power3.easeInOut"}]'
+                                     data-textAlign="['inherit','inherit','center','center']" data-paddingtop="[0,0,0,0]"
+                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                     data-paddingleft="[0,0,0,0]"
+                                     style="z-index: 7; white-space: nowrap; font-size: 17px; line-height: 25px; font-weight: 700; color:#ff8559;font-family:Poppins;letter-spacing:10px;">
                                     <?=$thebest?></div>
 
                                 <!-- LAYER NR. 4 -->
@@ -89,71 +89,71 @@ include ('header.php');
                                 <!-- MAIN IMAGE -->
                                 <img src="" data-bgcolor='#ffffff' style='
                                     background:#ffffff' alt="" data-bgposition="center center" data-bgfit="cover"
-                                    data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
+                                     data-bgrepeat="no-repeat" class="rev-slidebg" data-no-retina>
                                 <!-- LAYERS -->
 
                                 <!-- LAYER NR. 9 -->
                                 <div class="tp-caption   fullscreenvideo  disabled_lc tp-videolayer"
-                                    id="slide-12-layer-12" data-x="0" data-y="0" data-whitespace="nowrap"
-                                    data-type="video" data-basealign="slide" data-responsive_offset="off"
-                                    data-wrapper_class="tp-nopointer" data-responsive="off"
-                                    data-frames='[{"delay":600,"speed":1500,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":1500,"frame":"999","to":"opacity:0;","ease":"Power4.easeOut"}]'
-                                    data-videocontrols="none" data-videowidth="100%" data-videoheight="100%"
-                                    data-videoposter="../../assets/images/tp_vid_clouds-1.jpg"
-                                    data-videomp4="../../assets/images/tp_vid_clouds.mp4" data-noposteronmobile="off"
-                                    data-videopreload="auto" data-videoloop="loop" data-forceCover="1"
-                                    data-aspectratio="16:9" data-textAlign="['inherit','inherit','inherit','inherit']"
-                                    data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
-                                    data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-blendmode="screen"
-                                    data-autoplay="on" style="z-index: 5;">
+                                     id="slide-12-layer-12" data-x="0" data-y="0" data-whitespace="nowrap"
+                                     data-type="video" data-basealign="slide" data-responsive_offset="off"
+                                     data-wrapper_class="tp-nopointer" data-responsive="off"
+                                     data-frames='[{"delay":600,"speed":1500,"frame":"0","from":"opacity:0;","to":"o:1;","ease":"Power4.easeOut"},{"delay":"wait","speed":1500,"frame":"999","to":"opacity:0;","ease":"Power4.easeOut"}]'
+                                     data-videocontrols="none" data-videowidth="100%" data-videoheight="100%"
+                                     data-videoposter="../../assets/images/tp_vid_clouds-1.jpg"
+                                     data-videomp4="../../assets/images/tp_vid_clouds.mp4" data-noposteronmobile="off"
+                                     data-videopreload="auto" data-videoloop="loop" data-forceCover="1"
+                                     data-aspectratio="16:9" data-textAlign="['inherit','inherit','inherit','inherit']"
+                                     data-paddingtop="[0,0,0,0]" data-paddingright="[0,0,0,0]"
+                                     data-paddingbottom="[0,0,0,0]" data-paddingleft="[0,0,0,0]" data-blendmode="screen"
+                                     data-autoplay="on" style="z-index: 5;">
                                     <img src="assets/img/2.jpg" alt=""
-                                        data-ww="['full-proportional','full-proportional','full-proportional','full-proportional']"
-                                        data-hh="['full-proportional','full-proportional','full-proportional','full-proportional']"
-                                        width="1920" height="1281" data-no-retina id="bg_img1">
+                                         data-ww="['full-proportional','full-proportional','full-proportional','full-proportional']"
+                                         data-hh="['full-proportional','full-proportional','full-proportional','full-proportional']"
+                                         width="1920" height="1281" data-no-retina id="bg_img1">
                                 </div>
 
                                 <!-- LAYER NR. 10 -->
                                 <div class="tp-caption   tp-resizeme size-header" id="slide-12-layer-6"
-                                    data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-                                    data-y="['middle','middle','middle','middle']"
-                                    data-voffset="['-70','-100','-100','-100']" data-width="none" data-height="none"
-                                    data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
-                                    data-wrapper_class="tp-nopointer"
-                                    data-frames='[{"delay":500,"split":"chars","splitdelay":0.1,"speed":300,"frame":"0","from":"y:[-100%];sX:1;sY:2;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;fb:0;","ease":"Power3.easeInOut"}]'
-                                    data-textAlign="['inherit','inherit','inherit','inherit']"
-                                    data-paddingtop="[0,0,0,0]" data-paddingright="[20,20,20,20]"
-                                    data-paddingbottom="[0,0,0,0]" data-paddingleft="[20,20,20,20]"
-                                    data-blendmode="exclusion"
-                                    style="z-index: 6; white-space: nowrap; font-size: 60px; line-height: 80px; font-weight: 700; color: rgba(255,255,255,0.85);font-family:Poppins;">
+                                     data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                                     data-y="['middle','middle','middle','middle']"
+                                     data-voffset="['-70','-100','-100','-100']" data-width="none" data-height="none"
+                                     data-whitespace="nowrap" data-type="text" data-responsive_offset="on"
+                                     data-wrapper_class="tp-nopointer"
+                                     data-frames='[{"delay":500,"split":"chars","splitdelay":0.1,"speed":300,"frame":"0","from":"y:[-100%];sX:1;sY:2;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power3.easeInOut"},{"delay":"wait","speed":300,"frame":"999","to":"auto:auto;fb:0;","ease":"Power3.easeInOut"}]'
+                                     data-textAlign="['inherit','inherit','inherit','inherit']"
+                                     data-paddingtop="[0,0,0,0]" data-paddingright="[20,20,20,20]"
+                                     data-paddingbottom="[0,0,0,0]" data-paddingleft="[20,20,20,20]"
+                                     data-blendmode="exclusion"
+                                     style="z-index: 6; white-space: nowrap; font-size: 60px; line-height: 80px; font-weight: 700; color: rgba(255,255,255,0.85);font-family:Poppins;">
                                     <?=$makingpower?></div>
 
                                 <!-- LAYER NR. 11 -->
                                 <div class="tp-caption   tp-resizeme" id="slide-12-layer-8"
-                                    data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-                                    data-y="['middle','middle','middle','middle']"
-                                    data-voffset="['1','-30','-20','-20']" data-width="['none','none','361','330']"
-                                    data-height="none" data-whitespace="['nowrap','nowrap','normal','normal']"
-                                    data-type="text" data-responsive_offset="on" data-wrapper_class="tp-nopointer"
-                                    data-frames='[{"delay":600,"speed":1000,"frame":"0","from":"y:-20px;sX:1;sY:1;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":600,"frame":"999","to":"auto:auto;fb:0;","ease":"Power3.easeInOut"}]'
-                                    data-textAlign="['inherit','inherit','center','center']" data-paddingtop="[0,0,0,0]"
-                                    data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
-                                    data-paddingleft="[0,0,0,0]" data-blendmode="exclusion"
-                                    style="z-index: 7; white-space: nowrap; font-size: 17px; line-height: 25px; font-weight: 700; color: #ff8559 !important;font-family:Poppins;letter-spacing:10px;">
+                                     data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                                     data-y="['middle','middle','middle','middle']"
+                                     data-voffset="['1','-30','-20','-20']" data-width="['none','none','361','330']"
+                                     data-height="none" data-whitespace="['nowrap','nowrap','normal','normal']"
+                                     data-type="text" data-responsive_offset="on" data-wrapper_class="tp-nopointer"
+                                     data-frames='[{"delay":600,"speed":1000,"frame":"0","from":"y:-20px;sX:1;sY:1;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":600,"frame":"999","to":"auto:auto;fb:0;","ease":"Power3.easeInOut"}]'
+                                     data-textAlign="['inherit','inherit','center','center']" data-paddingtop="[0,0,0,0]"
+                                     data-paddingright="[0,0,0,0]" data-paddingbottom="[0,0,0,0]"
+                                     data-paddingleft="[0,0,0,0]" data-blendmode="exclusion"
+                                     style="z-index: 7; white-space: nowrap; font-size: 17px; line-height: 25px; font-weight: 700; color: #ff8559 !important;font-family:Poppins;letter-spacing:10px;">
                                     <?=$joinus?> </div>
 
                                 <!-- LAYER NR. 12 -->
                                 <a class="tp-caption rev-btn  tp-resizeme"
-                                    href="http://codecanyon.net/item/slider-revolution-responsive-wordpress-plugin/2751380?ref=themepunch&license=regular&open_purchase_for_item_id=2751380&purchasable=source"
-                                    target="_blank" id="slide-12-layer-10"
-                                    data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
-                                    data-y="['middle','middle','middle','middle']" data-voffset="['70','40','60','60']"
-                                    data-width="none" data-height="none" data-whitespace="nowrap" data-type="button"
-                                    data-actions='' data-responsive_offset="on"
-                                    data-frames='[{"delay":1000,"speed":1000,"frame":"0","from":"y:-20px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":600,"frame":"999","to":"auto:auto;fb:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"200","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;fb:0;","style":"c:rgba(255,255,255,1);bg:rgba(45,48,50,1);bs:solid;bw:0 0 0 0;"}]'
-                                    data-textAlign="['inherit','inherit','inherit','inherit']"
-                                    data-paddingtop="[0,0,0,0]" data-paddingright="[35,35,35,35]"
-                                    data-paddingbottom="[0,0,0,0]" data-paddingleft="[35,35,35,35]"
-                                    style="z-index: 8; white-space: nowrap; font-size: 15px; line-height: 50px; font-weight: 700; color: rgba(45,48,50,1);font-family:Poppins;background-color:rgba(250,254,144,1);border-color:rgba(0,0,0,1);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;text-decoration: none;"></a>
+                                   href="http://codecanyon.net/item/slider-revolution-responsive-wordpress-plugin/2751380?ref=themepunch&license=regular&open_purchase_for_item_id=2751380&purchasable=source"
+                                   target="_blank" id="slide-12-layer-10"
+                                   data-x="['center','center','center','center']" data-hoffset="['0','0','0','0']"
+                                   data-y="['middle','middle','middle','middle']" data-voffset="['70','40','60','60']"
+                                   data-width="none" data-height="none" data-whitespace="nowrap" data-type="button"
+                                   data-actions='' data-responsive_offset="on"
+                                   data-frames='[{"delay":1000,"speed":1000,"frame":"0","from":"y:-20px;opacity:0;fb:10px;","to":"o:1;fb:0;","ease":"Power4.easeOut"},{"delay":"wait","speed":600,"frame":"999","to":"auto:auto;fb:0;","ease":"Power3.easeInOut"},{"frame":"hover","speed":"200","ease":"Linear.easeNone","to":"o:1;rX:0;rY:0;rZ:0;z:0;fb:0;","style":"c:rgba(255,255,255,1);bg:rgba(45,48,50,1);bs:solid;bw:0 0 0 0;"}]'
+                                   data-textAlign="['inherit','inherit','inherit','inherit']"
+                                   data-paddingtop="[0,0,0,0]" data-paddingright="[35,35,35,35]"
+                                   data-paddingbottom="[0,0,0,0]" data-paddingleft="[35,35,35,35]"
+                                   style="z-index: 8; white-space: nowrap; font-size: 15px; line-height: 50px; font-weight: 700; color: rgba(45,48,50,1);font-family:Poppins;background-color:rgba(250,254,144,1);border-color:rgba(0,0,0,1);outline:none;box-shadow:none;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;cursor:pointer;text-decoration: none;"></a>
                             </li>
                         </ul>
                         <div class="tp-bannertimer tp-bottom" style="visibility: hidden !important;"></div>
@@ -329,7 +329,7 @@ include ('header.php');
     </div>
     <!-- End Main Banner Area -->
 
-    <!--================================================================================= 
+    <!--=================================================================================
                                Start About us
     ==================================================================================-->
     <section class="boxes-area ">
@@ -400,7 +400,7 @@ include ('header.php');
     </section>
     <!-- End About US -->
 
-    <!--================================================================================= 
+    <!--=================================================================================
                                 Start Courses Area
     ==================================================================================-->
     <section id="eduservices-course" class="courses-area ptb-100 bg-f9faff">
@@ -413,7 +413,8 @@ include ('header.php');
             <div class="row">
                 <div class="col-lg-12 col-md-12">
                     <div class="tab ">
-                        <ul class="tabs">
+<!--<div class="responsivee">-->
+                        <ul class="tabs responsivee">
                             <li>
                                 <a href="#">
                                     <i class="icofont-file-html5"></i>
@@ -444,7 +445,7 @@ include ('header.php');
 
                             <li>
                                 <a href="#">
-<!--                                    <i class='fab fa-react'></i>-->
+                                    <!--                                    <i class='fab fa-react'></i>-->
                                     <svg aria-hidden="true"
                                          focusable="false"
                                          data-prefix="fab"
@@ -469,7 +470,7 @@ include ('header.php');
                             </li>
                             <li>
                                 <a href="#">
-<!--                                    <i class='fab fa-laravel'></i>-->
+                                    <!--                                    <i class='fab fa-laravel'></i>-->
                                     <svg aria-hidden="true"
                                          focusable="false"
                                          data-prefix="fab"
@@ -484,14 +485,30 @@ include ('header.php');
                                     <br>LARAVEL
                                 </a>
                             </li>
+                            <li>
+                                <a href="#">
+                                    <svg aria-hidden="true"
+                                         focusable="false"
+                                         data-prefix="fab"
+                                         data-icon="python"
+                                         class="svg-inline--fa fa-python fa-w-14"
+                                         role="img"
+                                         xmlns="http://www.w3.org/2000/svg"
+                                         viewBox="-350 0 1200 600">
+                                        <path d="M439.8 200.5c-7.7-30.9-22.3-54.2-53.4-54.2h-40.1v47.4c0 36.8-31.2 67.8-66.8 67.8H172.7c-29.2 0-53.4 25-53.4 54.3v101.8c0 29 25.2 46 53.4 54.3 33.8 9.9 66.3 11.7 106.8 0 26.9-7.8 53.4-23.5 53.4-54.3v-40.7H226.2v-13.6h160.2c31.1 0 42.6-21.7 53.4-54.2 11.2-33.5 10.7-65.7 0-108.6zM286.2 404c11.1 0 20.1 9.1 20.1 20.3 0 11.3-9 20.4-20.1 20.4-11 0-20.1-9.2-20.1-20.4.1-11.3 9.1-20.3 20.1-20.3zM167.8 248.1h106.8c29.7 0 53.4-24.5 53.4-54.3V91.9c0-29-24.4-50.7-53.4-55.6-35.8-5.9-74.7-5.6-106.8.1-45.2 8-53.4 24.7-53.4 55.6v40.7h106.9v13.6h-147c-31.1 0-58.3 18.7-66.8 54.2-9.8 40.7-10.2 66.1 0 108.6 7.6 31.6 25.7 54.2 56.8 54.2H101v-48.8c0-35.3 30.5-66.4 66.8-66.4zm-6.7-142.6c-11.1 0-20.1-9.1-20.1-20.3.1-11.3 9-20.4 20.1-20.4 11 0 20.1 9.2 20.1 20.4s-9 20.3-20.1 20.3z">
+                                        </path>
+                                    </svg>
+                                    <br>PYTHON
+                                </a>
+                            </li>
                         </ul>
-
+<!--</div>-->
                         <div class="tab_content">
                             <div class="tabs_item">
                                 <div class="row">
                                     <div class="col-lg-6 col-md-12 ">
                                         <div class="tabs_item_img">
-                                        <img src="assets/img/html.png" alt="Course">
+                                            <img src="assets/img/html.png" alt="Course">
                                         </div>
                                     </div>
 
@@ -504,17 +521,17 @@ include ('header.php');
                                             </ul>
                                             <a href="#" class="btn " data-toggle="modal" data-target="#exampleModal">
                                                 <?=$learnmore?>
-                                                
+
                                             </a>
                                             <div class="modal fade show1" id="exampleModal" tabindex="-1" role="dialog"
-                                                aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                                 aria-labelledby="exampleModalLabel" aria-hidden="true">
                                                 <div class="modal-dialog" role="document">
                                                     <div class="modal-content">
                                                         <div class="modal-header">
                                                             <h4 class="modal-title " id="exampleModalLabel">Html/Css
                                                             </h4>
                                                             <button type="button" class="close" data-dismiss="modal"
-                                                                aria-label="Close">
+                                                                    aria-label="Close">
                                                                 <span aria-hidden="true">&times;</span>
                                                             </button>
                                                         </div>
@@ -525,7 +542,7 @@ include ('header.php');
                                                         </div>
                                                         <div class="modal-footer">
                                                             <button type="button" class="btn btn-link"
-                                                                data-dismiss="modal"><?=$close?></button>
+                                                                    data-dismiss="modal"><?=$close?></button>
 
                                                         </div>
                                                     </div>
@@ -535,12 +552,11 @@ include ('header.php');
                                     </div>
                                 </div>
                             </div>
-
                             <div class="tabs_item">
                                 <div class="row">
                                     <div class="col-lg-6 col-md-12">
                                         <div class="tabs_item_img">
-                                        <img src="assets/img/bootstrap.png" alt="Course">
+                                            <img src="assets/img/bootstrap.png" alt="Course">
                                         </div>
                                     </div>
                                     <div class="col-lg-6 col-md-12">
@@ -558,12 +574,12 @@ include ('header.php');
                                                             <h4 class="modal-title"><?=$learnmore?></h4>
 
                                                             <button type="button" class="close"
-                                                                data-dismiss="modal">&times;</button>
+                                                                    data-dismiss="modal">&times;</button>
                                                         </div>
-                                                        
+
                                                         <!-- Modal body -->
                                                         <div class="modal-body">
-                                                           <ul>
+                                                            <ul>
                                                                 <?=$bootstrap_more?>
                                                             </ul>
                                                         </div>
@@ -571,7 +587,7 @@ include ('header.php');
                                                         <!-- Modal footer -->
                                                         <div class="modal-footer">
                                                             <button type="button" class="btn btn-link"
-                                                                data-dismiss="modal"><?=$close?></button>
+                                                                    data-dismiss="modal"><?=$close?></button>
                                                         </div>
 
                                                     </div>
@@ -581,7 +597,6 @@ include ('header.php');
                                     </div>
                                 </div>
                             </div>
-
                             <div class="tabs_item">
                                 <div class="row">
                                     <div class="col-lg-6 col-md-12">
@@ -611,7 +626,7 @@ include ('header.php');
                                                         <div class="modal-header">
                                                             <h4 class="modal-title">JavaScript </h4>
                                                             <button type="button" class="close"
-                                                                data-dismiss="modal">&times;</button>
+                                                                    data-dismiss="modal">&times;</button>
                                                         </div>
 
                                                         <!-- Modal body -->
@@ -624,7 +639,7 @@ include ('header.php');
                                                         <!-- Modal footer -->
                                                         <div class="modal-footer">
                                                             <button type="button" class="btn btn-link"
-                                                                data-dismiss="modal"><?=$close?></button>
+                                                                    data-dismiss="modal"><?=$close?></button>
                                                         </div>
 
                                                     </div>
@@ -634,7 +649,6 @@ include ('header.php');
                                     </div>
                                 </div>
                             </div>
-
                             <div class="tabs_item">
                                 <div class="row">
                                     <div class="col-lg-6 col-md-12">
@@ -659,20 +673,20 @@ include ('header.php');
                                                         <div class="modal-header">
                                                             <h4 class="modal-title"><?=$learnmore?></h4>
                                                             <button type="button" class="close"
-                                                                data-dismiss="modal">&times;</button>
+                                                                    data-dismiss="modal">&times;</button>
                                                         </div>
 
                                                         <!-- Modal body -->
                                                         <div class="modal-body">
-                                                         <ul>
-                                                            <?=$jquery_more?> 
-                                                         </ul>
+                                                            <ul>
+                                                                <?=$jquery_more?>
+                                                            </ul>
                                                         </div>
 
                                                         <!-- Modal footer -->
                                                         <div class="modal-footer">
                                                             <button type="button" class="btn btn-link"
-                                                                data-dismiss="modal"><?=$close?></button>
+                                                                    data-dismiss="modal"><?=$close?></button>
                                                         </div>
 
                                                     </div>
@@ -682,7 +696,6 @@ include ('header.php');
                                     </div>
                                 </div>
                             </div>
-
                             <div class="tabs_item">
                                 <div class="row">
                                     <div class="col-lg-6 col-md-12">
@@ -707,7 +720,7 @@ include ('header.php');
                                                         <div class="modal-header">
                                                             <h4 class="modal-title">ReactJs</h4>
                                                             <button type="button" class="close"
-                                                                data-dismiss="modal">&times;</button>
+                                                                    data-dismiss="modal">&times;</button>
                                                         </div>
 
                                                         <!-- Modal body -->
@@ -720,7 +733,7 @@ include ('header.php');
                                                         <!-- Modal footer -->
                                                         <div class="modal-footer">
                                                             <button type="button" class="btn btn-link"
-                                                                data-dismiss="modal"><?=$close?></button>
+                                                                    data-dismiss="modal"><?=$close?></button>
                                                         </div>
 
                                                     </div>
@@ -730,7 +743,6 @@ include ('header.php');
                                     </div>
                                 </div>
                             </div>
-
                             <div class="tabs_item">
                                 <div class="row">
                                     <div class="col-lg-6 col-md-12">
@@ -756,18 +768,18 @@ include ('header.php');
                                                         <div class="modal-header">
                                                             <h4 class="modal-title"><?=$learnmore?></h4>
                                                             <button type="button" class="close"
-                                                                data-dismiss="modal">&times;</button>
+                                                                    data-dismiss="modal">&times;</button>
                                                         </div>
 
                                                         <!-- Modal body -->
                                                         <div class="modal-body">
-                                                          <ul><?=$php_more?></ul>
+                                                            <ul><?=$php_more?></ul>
                                                         </div>
 
                                                         <!-- Modal footer -->
                                                         <div class="modal-footer">
                                                             <button type="button" class="btn btn-link"
-                                                                data-dismiss="modal"><?=$close?></button>
+                                                                    data-dismiss="modal"><?=$close?></button>
                                                         </div>
 
                                                     </div>
@@ -803,18 +815,65 @@ include ('header.php');
                                                         <div class="modal-header">
                                                             <h4 class="modal-title"><?=$learnmore?></h4>
                                                             <button type="button" class="close"
-                                                                data-dismiss="modal">&times;</button>
+                                                                    data-dismiss="modal">&times;</button>
                                                         </div>
 
                                                         <!-- Modal body -->
                                                         <div class="modal-body">
-                                                           <ul><?=$laravel_more?></ul>
+                                                            <ul><?=$laravel_more?></ul>
                                                         </div>
 
                                                         <!-- Modal footer -->
                                                         <div class="modal-footer">
                                                             <button type="button" class="btn btn-link"
-                                                                data-dismiss="modal"><?=$close?></button>
+                                                                    data-dismiss="modal"><?=$close?></button>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tabs_item">
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="tabs_item_img">
+                                            <img src="assets/img/Laravel.png" alt="Course">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-md-12">
+                                        <div class="tabs_item_content">
+                                            <h3>Python</h3>
+                                            <p><?=$python?>:
+                                            </p>
+                                            <!-- <a href="#" class="btn">Start Learn Now</a> -->
+                                            <a href="" class="btn" data-toggle="modal" data-target="#myModal8">
+                                                <?=$learnmore?>
+                                            </a>
+
+                                            <!-- The Modal -->
+                                            <div class="modal show1" id="myModal8">
+                                                <div class="modal-dialog">
+                                                    <div class="modal-content">
+
+                                                        <!-- Modal Header -->
+                                                        <div class="modal-header">
+                                                            <h4 class="modal-title"><?=$learnmore?></h4>
+                                                            <button type="button" class="close"
+                                                                    data-dismiss="modal">&times;</button>
+                                                        </div>
+
+                                                        <!-- Modal body -->
+                                                        <div class="modal-body">
+                                                            <ul><?=$python_more?></ul>
+                                                        </div>
+
+                                                        <!-- Modal footer -->
+                                                        <div class="modal-footer">
+                                                            <button type="button" class="btn btn-link"
+                                                                    data-dismiss="modal"><?=$close?></button>
                                                         </div>
 
                                                     </div>
@@ -831,7 +890,7 @@ include ('header.php');
         </div>
     </section>
     <!-- End Courses Area -->
-    <!--================================================================================= 
+    <!--=================================================================================
                                 Start Fun Facts Area
     ==================================================================================-->
     <section id="eduservices-fun-facts" class="fun-facts-area ptb-100">
@@ -1063,7 +1122,7 @@ include ('header.php');
             </div>
         </div>
     </section>
-    <!--================================================================================= 
+    <!--=================================================================================
                                 Start recent Blog
     ==================================================================================-->
     <section id="eduservices-blog" class="recent-blog-section ptb-100">
@@ -1148,7 +1207,7 @@ include ('header.php');
                     </ul>
                     <div class="separator"></div>
                     <h3><a href="usanoxneri_ashxatanqnery/HCB/Vazgen/Homework 14/index.html"
-                            target="_blank">Html/Css</a></h3>
+                           target="_blank">Html/Css</a></h3>
                 </div>
             </div>
             <div class="grid blog-mt">
@@ -1176,7 +1235,7 @@ include ('header.php');
                     </ul>
                     <div class="separator"></div>
                     <h3><a href="usanoxneri_ashxatanqnery/jQuery/Digital Clock/Clock (2).html"
-                            target="_blank">JavaScript/jQuery</a></h3>
+                           target="_blank">JavaScript/jQuery</a></h3>
                 </div>
             </div>
             <div class="grid blog-mt ">
@@ -1204,7 +1263,7 @@ include ('header.php');
                     </ul>
                     <div class="separator"></div>
                     <h3><a href="usanoxneri_ashxatanqnery/jQuery/JQueryExamSur/index.html"
-                            target="_blank">JavaScript/jQuery</a></h3>
+                           target="_blank">JavaScript/jQuery</a></h3>
                 </div>
             </div>
             <div class="grid blog-mt ">
@@ -1235,7 +1294,7 @@ include ('header.php');
         </div>
     </div>
     <!-- End Typing test -->
-    <!--================================================================================= 
+    <!--=================================================================================
                                 Start Our teacher
     ==================================================================================-->
     <section id="eduservices-teacher" class="teacher-inner teacher-color section ptb-100">
@@ -1257,7 +1316,7 @@ include ('header.php');
                                 <div>
                                     <ul class="text-center">
                                         <!-- <li><a href="https://www.facebook.com/profile.php?id=100022387127816" target="_blank"><i class="icofont-facebook"></i></a></li> -->
-<!--                                        <li><i class="icofont-twitter"></i></li>-->
+                                        <!--                                        <li><i class="icofont-twitter"></i></li>-->
                                         <li><a href="https://www.linkedin.com/in/melqonyan-ishkhan-065489203" target="_blank"><i class="icofont-linkedin"></i></a></li>
                                     </ul>
                                 </div>
@@ -1276,8 +1335,8 @@ include ('header.php');
                                 </div>
                                 <div>
                                     <ul class="text-center">
-                                       <!--  <li><i class="icofont-facebook"></i></li> -->
-<!--                                        <li><i class="icofont-twitter"></i></li>-->
+                                        <!--  <li><i class="icofont-facebook"></i></li> -->
+                                        <!--                                        <li><i class="icofont-twitter"></i></li>-->
                                         <li><a href="https://www.linkedin.com/in/levon-yeritsyan" target="_blank"><i class="icofont-linkedin"></i></a></li>
                                     </ul>
                                 </div>
@@ -1297,7 +1356,7 @@ include ('header.php');
                                 <div>
                                     <ul class="text-center">
                                         <!-- <li><a href="https://www.facebook.com/andranik.hoghmrtsyan" target="_blank"><i class="icofont-facebook"></i></a></li> -->
-<!--                                        <li><i class="icofont-twitter"></i></li>-->
+                                        <!--                                        <li><i class="icofont-twitter"></i></li>-->
                                         <li><a href="https://www.linkedin.com/in/andranik-hoghmrtsyan-526a55204" target="_blank"><i class="icofont-linkedin"></i></a></li>
                                     </ul>
                                 </div>
@@ -1319,7 +1378,7 @@ include ('header.php');
                                 <div>
                                     <ul class="text-center">
                                         <!-- <li><a href="https://www.facebook.com/helena.mkrtchyan.3" target="_blank"><i class="icofont-facebook"></i></a></li> -->
-<!--                                        <li><i class="icofont-twitter"></i></li>-->
+                                        <!--                                        <li><i class="icofont-twitter"></i></li>-->
                                         <li><a href="https://www.linkedin.com/in/heghine-mkrtchyan-a3ab55194" target="_blank"><i class="icofont-linkedin"></i></a></li>
                                     </ul>
                                 </div>
@@ -1339,7 +1398,7 @@ include ('header.php');
                                 <div>
                                     <ul class="text-center">
                                         <!-- <li><a href="https://www.facebook.com/azniv.gojanyan.5" target="_blank"><i class="icofont-facebook"></i></a></li> -->
-<!--                                        <li><i class="icofont-twitter"></i></li>-->
+                                        <!--                                        <li><i class="icofont-twitter"></i></li>-->
                                         <li><a href="https://www.linkedin.com/in/azi-yan-a493861aa" target="_blank"><i class="icofont-linkedin"></i></a></li>
                                     </ul>
                                 </div>
@@ -1359,7 +1418,7 @@ include ('header.php');
                                 <div>
                                     <ul class="text-center">
                                         <!-- <li><a href="https://www.facebook.com/people/Anna-Muradyan/100009256391420" target="_blank"><i class="icofont-facebook"></i></a></li> -->
-<!--                                        <li><i class="icofont-twitter"></i></li>-->
+                                        <!--                                        <li><i class="icofont-twitter"></i></li>-->
                                         <li><a href="https://www.linkedin.com/in/anna-muradyan-1a4a40206" target="_blank"><i class="icofont-linkedin"></i></a></li>
                                     </ul>
                                 </div>
@@ -1372,7 +1431,7 @@ include ('header.php');
     </section>
     <!--End Our teacher -->
     <!-- CV start-->
-<!-- <div class="container-fluid cv-block">
+<div class="container-fluid cv-block">
 <div class="container form-registr">
 <div class="text_form">
 <h1><?=$create_your?><span> <?=$online_cv?></span> <br><?=$few_min?></h1>
@@ -1431,11 +1490,11 @@ include ('header.php');
     </div>
 
 </div>
-</div> -->
+</div>
     <!--=================================================================================
     CV END
     ==================================================================================-->
-    <!--================================================================================= 
+    <!--=================================================================================
                                 Start testimonial
     ==================================================================================-->
     <div id="eduservices-testimonial" class="p-3 ">
@@ -1517,7 +1576,7 @@ include ('header.php');
         </div>
         </div> <!-- ? -->
     </section>
-    <!--================================================================================= 
+    <!--=================================================================================
                                 Start Contact Area
     ==================================================================================-->
     <section id="eduservices-contact" class="contact-area ptb-100">
@@ -1542,8 +1601,8 @@ include ('header.php');
                         <h3><i class="icofont-envelope"></i><?=$email?></h3>
                         <p><a href="mailto:#">colibrilabcenter@gmail.com</a></p>
                         <p><a href="mailto:#">info@colibrilab.am</a></p>
-                        
-<!--                        <p><a href="mailto:#">n1education.colibri@gmail.com</a></p>-->
+
+                        <!--                        <p><a href="mailto:#">n1education.colibri@gmail.com</a></p>-->
                     </div>
                 </div>
 
@@ -1566,49 +1625,49 @@ include ('header.php');
 
                 <div class="col-lg-8 col-md-12 wow rotateIn" data-wow-offset="10" data-wow-duration="1.5s">
                     <!-- <form id="contactForm"> -->
-                    
-                     
-                        <div class="row">
-                            <div class="col-lg-6 col-md-6">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" name="name" id="name"
-                                        placeholder="<?=$yourname?>">
-                                </div>
-                            </div>
 
-                            <div class="col-lg-6 col-md-6">
-                                <div class="form-group">
-                                    <input type="email" class="form-control" name="email" id="email"
-                                        placeholder="<?=$emailadress?>" autocomplete="off">
-                                </div>
-                            </div>
 
-                            <div class="col-lg-12 col-md-12">
-                                <div class="form-group">
-                                    <textarea name="message" class="form-control " cols="30" rows="4" name="message"
-                                        id="message" placeholder="<?=$enteryourmessage?>" autocomplete="off"></textarea>
-                                </div>
-                            </div>
-
-                            <div class="col-lg-12 col-md-12">
-                                <button type="button" class="contact-btn btn send"><?=$send?></button>
-                                <!--Result notification -->
-                                <div id="error-message" class="text-center">
-                                 
-
-                                 
-                                </div>
-                                <div id="form-messages"></div>
+                    <div class="row">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" name="name" id="name"
+                                       placeholder="<?=$yourname?>">
                             </div>
                         </div>
-                    
+
+                        <div class="col-lg-6 col-md-6">
+                            <div class="form-group">
+                                <input type="email" class="form-control" name="email" id="email"
+                                       placeholder="<?=$emailadress?>" autocomplete="off">
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 col-md-12">
+                            <div class="form-group">
+                                    <textarea name="message" class="form-control " cols="30" rows="4" name="message"
+                                              id="message" placeholder="<?=$enteryourmessage?>" autocomplete="off"></textarea>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-12 col-md-12">
+                            <button type="button" class="contact-btn btn send"><?=$send?></button>
+                            <!--Result notification -->
+                            <div id="error-message" class="text-center">
+
+
+
+                            </div>
+                            <div id="form-messages"></div>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
     </section>
     <!-- End Contact Area -->
 
-    <!--================================================================================= 
+    <!--=================================================================================
          START FOOTER
   ==================================================================================-->
     <div id="eduservices-footer" class="footer">
@@ -1629,17 +1688,17 @@ include ('header.php');
                                 <div class="subscribe-form">
                                     <div class="subscribe-form-inner">
                                         <!-- Newsletter form -->
-                                       <!--  <form class="form-inline dv-form" id="mc-form"> -->
-                                            <div class="form-group">
-                                                <input id="mc-email" type="email" name="EMAIL"
-                                                    placeholder="<?=$emailadress?>" class="form-control"> <br>
-                                                <button class="btn" name="Subscribe" id="subscribe_btn"
+                                        <!--  <form class="form-inline dv-form" id="mc-form"> -->
+                                        <div class="form-group">
+                                            <input id="mc-email" type="email" name="EMAIL"
+                                                   placeholder="<?=$emailadress?>" class="form-control"> <br>
+                                            <button class="btn" name="Subscribe" id="subscribe_btn"
                                                     type="button"><?=$send?></button>
-                                            </div>
-                                            <br>
-                                            <label for="mc-email"></label>
-                                            <div id="subscribe-result"></div>
-                                       <!--  </form> -->
+                                        </div>
+                                        <br>
+                                        <label for="mc-email"></label>
+                                        <div id="subscribe-result"></div>
+                                        <!--  </form> -->
                                     </div>
                                 </div>
                             </div>
@@ -1657,7 +1716,7 @@ include ('header.php');
                                 </li>
                                 <li>
                                     <a href="https://www.facebook.com/%D4%BF%D5%B8%D5%AC%D5%AB%D5%A2%D6%80%D5%AB%D4%BC%D5%A1%D5%A2-%D5%B8%D6%82%D5%BD%D5%B8%D6%82%D5%B4%D5%B6%D5%A1%D5%AF%D5%A1%D5%B6-%D5%AF%D5%A5%D5%B6%D5%BF%D6%80%D5%B8%D5%B6-1495050270734324"
-                                        target="_blank">
+                                       target="_blank">
                                         <i class="icofont-facebook"></i>
                                     </a>
                                 </li>
@@ -1678,7 +1737,7 @@ include ('header.php');
         </div>
     </div>
 
-<!-- Default dropup button -->
+    <!-- Default dropup button -->
 <?php
-    include ('footer.php');
+include ('footer.php');
 ?>

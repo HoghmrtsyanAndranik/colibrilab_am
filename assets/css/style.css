@@ -814,17 +814,22 @@ button {
     color: #fff;
 }
 
-svg.svg-inline--fa.fa-react.fa-w-16, svg.svg-inline--fa.fa-laravel.fa-w-16 {
+svg.svg-inline--fa.fa-react.fa-w-16,
+svg.svg-inline--fa.fa-laravel.fa-w-16,
+svg.svg-inline--fa.fa-python.fa-w-14 {
     fill: #ff8559;
+    width: 110px;
 }
 
 .tabs li a:hover svg.svg-inline--fa.fa-react.fa-w-16,
-.tabs li a:hover svg.svg-inline--fa.fa-laravel.fa-w-16 {
+.tabs li a:hover svg.svg-inline--fa.fa-laravel.fa-w-16,
+.tabs li a:hover svg.svg-inline--fa.fa-python.fa-w-14 {
     fill: #fff;
 }
 
 .tabs li.current a svg.svg-inline--fa.fa-react.fa-w-16,
-.tabs li.current a svg.svg-inline--fa.fa-laravel.fa-w-16 {
+.tabs li.current a svg.svg-inline--fa.fa-laravel.fa-w-16,
+.tabs li.current a svg.svg-inline--fa.fa-python.fa-w-14{
     fill: #fff;
 }
 
@@ -903,7 +908,7 @@ svg.svg-inline--fa.fa-react.fa-w-16, svg.svg-inline--fa.fa-laravel.fa-w-16 {
 }
 
 .tabs_item:first-child {
-    display: block;
+    /*display: block;*/
 }
 
 .tabs_item {
@@ -2876,3 +2881,32 @@ button.btn.forg_cancel::after {
     }
 }
 
+/* Точки (булиты) */
+.slick-dots{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.slick-dots li{
+    list-style: none;
+}
+/* Активная точка */
+.slick-dots li.slick-active button{
+    background: #869791;
+}
+/* Элемент точки */
+.slick-dots button{
+    font-size: 0;
+    width: 10px;
+    height: 10px;
+    background: #eee;
+    border-radius: 50%;
+    border: none;
+}
+
+ul.slick-dots > li {
+    flex: 0 !important;
+}
+/*li.slick-slide {*/
+/*    width: 130px!important;*/
+/*}*/
